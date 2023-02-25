@@ -104,3 +104,76 @@ For website performance reasons, the mathematical feature won't be loaded by def
 math: true
 ---
 ```
+
+## Mermaid
+
+[**Mermaid**](https://github.com/mermaid-js/mermaid) is a great diagrams generation tool. To enable it on your post, add the following to the YAML block:
+
+```yaml
+---
+mermaid: true
+---
+```
+
+Then you can use it like other markdown languages: surround the graph code with ```` ```mermaid ```` and ```` ``` ````.
+
+## Images
+
+### Caption
+
+Add italics to the next line of an image，then it will become the caption and appear at the bottom of the image:
+
+```markdown
+![img-description](/path/to/image)
+_Image Caption_
+```
+{: .nolineno}
+
+### Size
+
+In order to prevent the page content layout from shifting when the image is loaded, we should set the width and height for each image.
+
+```markdown
+![Desktop View](/assets/img/sample/mockup.png){: width="700" height="400" }
+```
+{: .nolineno}
+
+> For an SVG, you have to at least specify its _width_, otherwise it won't be rendered.
+{: .prompt-info }
+
+Starting from _Chirpy v5.0.0_, `height` and `width` support abbreviations (`height` → `h`, `width` → `w`). The following example has the same effect as the above:
+
+```markdown
+![Desktop View](/assets/img/sample/mockup.png){: w="700" h="400" }
+```
+{: .nolineno}
+
+### Position
+
+By default, the image is centered, but you can specify the position by using one of the classes `normal`, `left`, and `right`.
+
+> Once the position is specified, the image caption should not be added.
+{: .prompt-warning }
+
+- **Normal position**
+
+  Image will be left aligned in below sample:
+
+  ```markdown
+  ![Desktop View](/assets/img/sample/mockup.png){: .normal }
+  ```
+  {: .nolineno}
+
+- **Float to the left**
+
+  ```markdown
+  ![Desktop View](/assets/img/sample/mockup.png){: .left }
+  ```
+  {: .nolineno}
+
+- **Float to the right**
+
+  ```markdown
+  ![Desktop View](/assets/img/sample/mockup.png){: .right }
+  ```
+  {: .nolineno}
