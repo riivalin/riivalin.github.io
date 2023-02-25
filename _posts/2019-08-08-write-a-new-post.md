@@ -72,3 +72,35 @@ Having said that, the key `author` can also identify multiple entries.
 
 > The benefit of reading the author information from the file `_data/authors.yml`{: .filepath } is that the page will have the meta tag `twitter:creator`, which enriches the [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started#card-and-content-attribution) and is good for SEO.
 {: .prompt-info }
+
+## Table of Contents
+
+By default, the **T**able **o**f **C**ontents (TOC) is displayed on the right panel of the post. If you want to turn it off globally, go to `_config.yml`{: .filepath} and set the value of variable `toc` to `false`. If you want to turn off TOC for a specific post, add the following to the post's [Front Matter](https://jekyllrb.com/docs/front-matter/):
+
+```yaml
+---
+toc: false
+---
+```
+
+## Comments
+
+The global switch of comments is defined by variable `comments.active` in the file `_config.yml`{: .filepath}. After selecting a comment system for this variable, comments will be turned on for all posts.
+
+If you want to close the comment for a specific post, add the following to the **Front Matter** of the post:
+
+```yaml
+---
+comments: false
+---
+```
+
+## Mathematics
+
+For website performance reasons, the mathematical feature won't be loaded by default. But it can be enabled by:
+
+```yaml
+---
+math: true
+---
+```
