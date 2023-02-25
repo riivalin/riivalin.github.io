@@ -107,7 +107,7 @@ math: true
 
 ## Mermaid
 
-[**Mermaid**] is a great diagrams generation tool. To enable it on your post, add the following to the YAML block:
+[**Mermaid**](https://github.com/mermaid-js/mermaid) is a great diagrams generation tool. To enable it on your post, add the following to the YAML block:
 
 ```yaml
 ---
