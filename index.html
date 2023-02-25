@@ -1,12 +1,6 @@
 --- 
-layout: home # Index page 
+layout: home # Index page
+limit: 10
+show_excerpts: true
+entries_layout: list
 --- 
-
-PUT_SOME_WELCOME_MESSAGE_HERE
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> 
-    </li>
-  {% endfor %}
-</ul>
