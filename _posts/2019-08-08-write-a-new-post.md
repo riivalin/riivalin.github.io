@@ -29,4 +29,3 @@ tags: [TAG]     # TAG names should always be lowercase
 
 > The posts' _layout_ has been set to `post` by default, so there is no need to add the variable _layout_ in the Front Matter block.
 {: .prompt-tip }
-
