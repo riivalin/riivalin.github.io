@@ -44,6 +44,23 @@ categories: [Animal, Insect]
 tags: [bee]
 ---
 ```
+<<<<<<< Updated upstream
+=======
+
+### Author Information
+
+The author information of the post usually does not need to be filled in the _Front Matter_ , they will be obtained from variables `social.name` and the first entry of `social.links` of the configuration file by default. But you can also override it as follows:
+
+Adding author information in `_data/authors.yml` (If your website doesn't have this file, don't hesitate to create one).
+
+```yaml
+<author_id>:
+  name: <full name>
+  twitter: <twitter_of_author>
+  url: <homepage_of_author>
+```
+{: file="_data/authors.yml" }
+>>>>>>> Stashed changes
 
 
 
