@@ -57,3 +57,18 @@ Adding author information in `_data/authors.yml` (If your website doesn't have t
   url: <homepage_of_author>
 ```
 {: file="_data/authors.yml" }
+
+And then use `author` to specify a single entry or `authors` to specify multiple entries:
+
+```yaml
+---
+author: <author_id>                     # for single entry
+# or
+authors: [<author1_id>, <author2_id>]   # for multiple entries
+---
+```
+
+Having said that, the key `author` can also identify multiple entries.
+
+> The benefit of reading the author information from the file `_data/authors.yml`{: .filepath } is that the page will have the meta tag `twitter:creator`, which enriches the [Twitter Cards](https://developer.twitter.com/en/docs/twitter-for-websites/cards/guides/getting-started#card-and-content-attribution) and is good for SEO.
+{: .prompt-info }
