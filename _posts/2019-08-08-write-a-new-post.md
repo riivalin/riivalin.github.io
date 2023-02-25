@@ -107,7 +107,7 @@ math: true
 
 ## Mermaid
 
-[**Mermaid**](https://github.com/mermaid-js/mermaid) is a great diagrams generation tool. To enable it on your post, add the following to the YAML block:
+[**Mermaid**] is a great diagrams generation tool. To enable it on your post, add the following to the YAML block:
 
 ```yaml
 ---
@@ -177,3 +177,94 @@ By default, the image is centered, but you can specify the position by using one
   ![Desktop View](/assets/img/sample/mockup.png){: .right }
   ```
   {: .nolineno}
+
+  ### Dark/Light mode
+
+You can make images follow theme preferences in dark/light mode. This requires you to prepare two images, one for dark mode and one for light mode, and then assign them a specific class (`dark` or `light`):
+
+```markdown
+![Light mode only](/path/to/light-mode.png){: .light }
+![Dark mode only](/path/to/dark-mode.png){: .dark }
+```
+
+### Shadow
+
+The screenshots of the program window can be considered to show the shadow effect:
+
+```markdown
+![Desktop View](/assets/img/sample/mockup.png){: .shadow }
+```
+{: .nolineno}
+
+### CDN URL
+
+If you host the images on the CDN, you can save the time of repeatedly writing the CDN URL by assigning the variable `img_cdn` of `_config.yml`{: .filepath} file:
+
+```yaml
+img_cdn: https://cdn.com
+```
+{: file='_config.yml' .nolineno}
+
+Once `img_cdn` is assigned, the CDN URL will be added to the path of all images (images of site avatar and posts) starting with `/`.
+
+For instance, when using images:
+
+```markdown
+![The flower](/path/to/flower.png)
+```
+{: .nolineno}
+
+The parsing result will automatically add the CDN prefix `https://cdn.com` before the image path:
+
+```html
+<img src="https://cdn.com/path/to/flower.png" alt="The flower">
+```
+{: .nolineno }
+
+### Image Path
+
+When a post contains many images, it will be a time-consuming task to repeatedly define the path of the images. To solve this, we can define this path in the YAML block of the post:
+
+```yml
+---
+img_path: /img/path/
+---
+```
+
+And then, the image source of Markdown can write the file name directly:
+
+```md
+![The flower](flower.png)
+```
+{: .nolineno }
+
+The output will be:
+
+```html
+<img src="/img/path/flower.png" alt="The flower">
+```
+{: .nolineno }
+
+### Preview Image
+
+If you want to add an image at the top of the post, please provide an image with a resolution of `1200 x 630`. Please note that if the image aspect ratio does not meet `1.91 : 1`, the image will be scaled and cropped.
+
+Knowing these prerequisites, you can start setting the image's attribute:
+
+```yaml
+---
+image:
+  path: /path/to/image
+  alt: image alternative text
+---
+```
+
+Note that the [`img_path`](#image-path) can also be passed to the preview image, that is, when it has been set, the  attribute `path` only needs the image file name.
+
+For simple use, you can also just use `image` to define the path.
+
+```yml
+---
+image: /path/to/image
+---
+```
