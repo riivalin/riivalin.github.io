@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 記錄常用的commands
-date: 2023-02-22 02:10:00 +0800
+date: 2023-02-20 02:10:00 +0800
 categories: [Notes, Commands]
 tags: [Notes, Commands]
 ---
