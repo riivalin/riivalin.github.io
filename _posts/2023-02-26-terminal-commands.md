@@ -58,3 +58,10 @@ rbenv shell --unset	 //revert to using default Ruby
 rbenv uninstall 2.6.3	//remove Ruby version 2.6.3
 rbenv versions	//show installed Rubies
 ```
+
+### VSCode
+在VS Code 終端機執行下面兩行指令，再執行 ruby -v 確認是否為最新版本：
+```shell
+eval "$(rbenv init -)" //Set default Ruby version in rbenv
+rbenv global  // 或是 PATH="$HOME/.rbenv/bin:$PATH"
+```
