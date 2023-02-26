@@ -6,21 +6,21 @@ categories: [Notes, Commands]
 tags: [Notes, Commands]
 ---
 
-```
+```shell
 rbenv uninstall 2.6.5  //移除Ruby 2.6.5版本
 ruby -v  //Ruby當前版本
 ```
 
 Run jekyll serve in VSCode (zsh shell)
-```
-bundle
-bundle exec jekyll s
+```shell
+bundle //安裝相關依賴
+bundle exec jekyll s //啟動jekyll服務
 ```
 
 ## Ruby rbenv commands
 [rebnv](https://devhints.io/rbenv)
 ### Managing versions
-```
+```shell
 rbenv install -l	//List all available versions
 rbenv install 2.2.1	  //Install Ruby 2.2.1
 rbenv uninstall 2.2.1	//Uninstall Ruby 2.2.1
@@ -32,12 +32,12 @@ rbenv rehash	//Re-write binstubs
 
 ### Using versions
 ### Locally
-```
+```shell
 rbenv local 2.2.2	//Use Ruby 2.2.2 in project
 rbenv local --unset	 //Undo above
 ```
 ### Globally
-```
+```shell
 rbenv global 2.2.2	//Use Ruby 2.2.2 globally
 rbenv global --unset	//Undo above
 ```
@@ -45,7 +45,7 @@ rbenv global --unset	//Undo above
 
 ### setup
 [ruby_rbenv.](https://samkennerly.github.io/tldrs/ruby_rbenv.html)
-```
+```shell
 brew install rbenv	//install rbenv with Homebrew
 brew uninstall rbenv	//uninstall rbenv with Homebrew
 brew upgrade rbenv ruby-build	//upgrade rbenv with Homebrew
