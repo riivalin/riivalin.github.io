@@ -20,12 +20,13 @@ The following line is displayed:
 ### [Issue Solved]
 
 For me, it works fine with configuring Source as Github Actions.
+
 ![img-description](/assets/img/github-actions.png)
 
 Change setting to deploy source = github actions.
+
 Path:
 Setting > Pages (Github Pages)> Build and deployment > Source > GitHub Actions.
-
 
 ref:
 - [https://github.com/cotes2020/jekyll-theme-chirpy/issues/628](https://github.com/cotes2020/jekyll-theme-chirpy/issues/628)
