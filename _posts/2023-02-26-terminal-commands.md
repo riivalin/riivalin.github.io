@@ -59,7 +59,16 @@ rbenv uninstall 2.6.3	//remove Ruby version 2.6.3
 rbenv versions	//show installed Rubies
 ```
 
-### VSCode
+## VSCode
+### Unable to run the Jekyll in VS code
+```shell
+echo 'export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.2.1/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+> line 1: 更新 shell 配置文件中的 PATH 路径 (3.2.1為當前安裝的Ruby新版本)  
+> line 2: 刷新 shell 配置文件，使其生效
+
+### Set default Ruby version in rbenv
 在VS Code 終端機執行下面兩行指令，再執行 ruby -v 確認是否為最新版本：
 ```shell
 eval "$(rbenv init -)" //Set default Ruby version in rbenv
