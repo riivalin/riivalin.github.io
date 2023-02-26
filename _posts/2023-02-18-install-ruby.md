@@ -3,12 +3,12 @@ layout: post
 title: "[MacOS] 使用rbenv安裝 Ruby"
 date: 2023-02-18 00:10:00 +0800
 categories: [Notes, Jekyll]
-tags: [Notes, Jekyll, Commands, rbenv, Ruby]
+tags: [Ruby, Jekyll, rbenv]
 ---
 
 - 安裝 Homebrew
-- 安裝 rbenv 
-- 安裝 Ruby
+- 安裝 rbenv (使用 Homebrew 安裝 rbenv)
+- 安裝 Ruby (使用 rbenv 安裝 Ruby)
 
 *****
 
@@ -26,7 +26,7 @@ tags: [Notes, Jekyll, Commands, rbenv, Ruby]
 brew -v
 ``` 
 
-## Step 2: 安裝 rbenv 
+## Step 2: 安裝 rbenv (使用 Homebrew 安裝 rbenv)
 1. 在終端機輸入 
 ```
 brew install rbenv
@@ -37,13 +37,13 @@ rbenv 安裝完成後，輸入 rbenv -v 查看版本。
 rbenv -v
 ```
 3. rbenv 初始化
-MacOS Catalina使用的是 zsh，在終端機輸入以下指令：
+MacOS Catalina 使用的是 zsh，在終端機輸入以下指令：
 ```shell
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 ```
 
-## Step 3: 安裝Ruby
+## Step 3: 安裝Ruby (使用 rbenv 安裝 Ruby)
 使用 rbenv 安裝 ruby 3.2.1
 1. 關閉重開終端機。(在安裝 ruby 之前需要關掉重開終端機)
 2. 在終端機輸入 
