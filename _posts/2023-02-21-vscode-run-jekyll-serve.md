@@ -2,7 +2,7 @@
 layout: post
 title: "[MacOS] 在VSCode 啟動Jekyll服務預覽網站"
 date: 2023-02-21 00:12:00 +0800
-categories: [Notes, MacOS, Jekyll]
+categories: [Notes, Jekyll]
 tags: [Notes, MacOS, VSCode, Jekyll Blog]
 ---
 
