@@ -1,6 +1,6 @@
 ---
 layout: post
-title: “[MacOS] 卸載刪除 Homebrew”
+title: "[MacOS] 卸載刪除 Homebrew"
 date: 2023-02-19 00:10:00 +0800
 categories: [Notes, Commands]
 tags: [Homebrew, Commands]
