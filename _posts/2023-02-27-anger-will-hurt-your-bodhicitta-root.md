@@ -29,5 +29,5 @@ tags: [淨界法師, 嗔心, 忍辱, 忍辱以積大德, 菩薩戒, 楞嚴經, �
 
 <!-- script pointing to busuanzi.js start-->
 <script async src="/assets/js/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span>views.</span>
+<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span> views.</span>
 <!-- script pointing to busuanzi.js end-->

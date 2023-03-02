@@ -16,5 +16,5 @@ bundle exec jekyll s //啟動本地網站
 
 <!-- script pointing to busuanzi.js start-->
 <script async src="/assets/js/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span>views.</span>
+<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span> views.</span>
 <!-- script pointing to busuanzi.js end-->
