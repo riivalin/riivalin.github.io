@@ -22,5 +22,8 @@ tags: [Blog, Counter]
 <!-- 不蒜子計數 -->
 
 
-[给文章加上了访问统计](http://blog.tangyuewei.com/posts/%E7%BB%99%E6%96%87%E7%AB%A0%E5%8A%A0%E4%B8%8A%E4%BA%86%E8%AE%BF%E9%97%AE%E7%BB%9F%E8%AE%A1/)
+Reference:
+- [不蒜子](http://ibruce.info/2015/04/04/busuanzi/)
+- [给文章加上了访问统计](http://blog.tangyuewei.com/posts/%E7%BB%99%E6%96%87%E7%AB%A0%E5%8A%A0%E4%B8%8A%E4%BA%86%E8%AE%BF%E9%97%AE%E7%BB%9F%E8%AE%A1/)
+- [使用不蒜子增加Jekyll博客访问量统计](https://jueee.github.io/2020/07/2020-07-09-使用不蒜子增加Jekyll博客访问量统计/)
 
