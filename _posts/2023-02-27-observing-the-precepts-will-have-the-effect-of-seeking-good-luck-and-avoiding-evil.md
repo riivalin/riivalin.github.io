@@ -18,7 +18,3 @@ tags: [淨界法師, 持戒, 不妄語戒, 五戒相經箋要, 趨吉避凶]
 
 也就是說，當我們一個聲音出來時，那個音聲的背後有一種不妄語的善業在加持。在律上說，一個經常不隨便說話的人，講話都是稱合真理、稱合真實的，他講話有威德力。你一天到晚講一些五四三二一的廢話，講多了，你講話沒有力量。所以要注意這個口業。
 
-<!-- script pointing to busuanzi.js start-->
-<script async src="/assets/js/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span> views.</span>
-<!-- script pointing to busuanzi.js end-->

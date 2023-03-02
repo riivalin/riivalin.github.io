@@ -26,8 +26,3 @@ tags: [淨界法師, 嗔心, 忍辱, 忍辱以積大德, 菩薩戒, 楞嚴經, �
 《楞嚴經》它是「念念迴光返照」這一念心，它不管外境怎麼樣的。所以嗔心是沒有任何理由的。從《楞嚴經》的角度─一旦正念真如，你的所觀境只有一個，就是：你的現前一念心性。
 
 所以菩薩道看不到別人，凡事迴光返照自己的念頭，即便是合理的嗔心也要化解，因為它的傷害太大了。
-
-<!-- script pointing to busuanzi.js start-->
-<script async src="/assets/js/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span> views.</span>
-<!-- script pointing to busuanzi.js end-->

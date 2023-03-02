@@ -29,9 +29,3 @@ Reference:
 - [给文章加上了访问统计](http://blog.tangyuewei.com/posts/%E7%BB%99%E6%96%87%E7%AB%A0%E5%8A%A0%E4%B8%8A%E4%BA%86%E8%AE%BF%E9%97%AE%E7%BB%9F%E8%AE%A1/)
 - [使用不蒜子增加Jekyll博客访问量统计](https://jueee.github.io/2020/07/2020-07-09-使用不蒜子增加Jekyll博客访问量统计/)
 
-
-
-  <!-- script pointing to busuanzi.js start-->
-  <script async src="/assets/js/busuanzi.pure.mini.js"></script>
-  <span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span> views.</span>
-  <!-- script pointing to busuanzi.js end-->

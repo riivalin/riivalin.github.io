@@ -12,7 +12,3 @@ tags: [佛學問答, 大安法師]
 
 現在你就是一個狹隘的一種東西，把著這種的因緣給他截斷了，他真的記恨你，要生生世世要追逐於你了，你結了一個大冤家了。可千萬不要做這個事，把他生下來。無論是殘障，還是不殘障。只要它是生命，我們要珍惜它。他遭受的苦難和卑視，現在你還不知道呢。也許他光宗耀祖了，即便他不光宗耀祖，它是一個生命，人身可以修道，他這種苦難，這種卑視，更是他超越這種苦難的一個跳板，今生就能夠到西方極樂世界去。所以你千萬不要採取那種魯莽的行為，人為地中斷他的這種生命。
 
-<!-- script pointing to busuanzi.js start-->
-<script async src="/assets/js/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span> views.</span>
-<!-- script pointing to busuanzi.js end-->

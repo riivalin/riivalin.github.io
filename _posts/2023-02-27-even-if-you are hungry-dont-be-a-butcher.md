@@ -23,8 +23,3 @@ tags: [夢參老和尚, 欲知世上刀兵劫，但聽半夜屠門聲]
 如果你選擇的職業是在廚房裡當廚師——廚師是一門職業，要是有客人點一道菜你不肯做，老闆買的海鮮你也不肯做，你這職業也做不下去，這飯碗就砸了。但是如果你能到素食館去做更好，一樣能維持生計。
 
 所以，職業要有所選擇，這就是「善用其心」，這一兩天我跟大家講的就是：一個是你要會修觀，一個是「善用其心」。就是把你的修行跟日常生活結合在一起，把你所學到的佛法一點一滴地運用到你的思想生活當中，你就能得到很多好處，你的心真正得到「靈」。
-
-<!-- script pointing to busuanzi.js start-->
-<script async src="/assets/js/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span> views.</span>
-<!-- script pointing to busuanzi.js end-->

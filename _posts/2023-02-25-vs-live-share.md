@@ -17,8 +17,3 @@ tags: [Visual Studio]
 
 
 [https://cloud.tencent.com/developer/article/1459753](https://cloud.tencent.com/developer/article/1459753)
-
-<!-- script pointing to busuanzi.js start-->
-<script async src="/assets/js/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span> views.</span>
-<!-- script pointing to busuanzi.js end-->

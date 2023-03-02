@@ -24,7 +24,3 @@ tags: [寬見法師, 動機決定施捨, 佛學問答]
 我們要對照學的知識觀察，是不是清淨的受施者。若不是，不能給他，這個很簡單。
 利用人的信仰做網絡詐騙，果報很大。就像剛才講，穿著僧衣去行騙，果報是很大的一樣。
 
-<!-- script pointing to busuanzi.js start-->
-<script async src="/assets/js/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span> views.</span>
-<!-- script pointing to busuanzi.js end-->

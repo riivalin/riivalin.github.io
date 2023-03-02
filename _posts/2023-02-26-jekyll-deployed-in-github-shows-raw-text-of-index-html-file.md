@@ -31,8 +31,3 @@ Setting > Pages (Github Pages)> Build and deployment > Source > GitHub Actions.
 ref:
 - [https://github.com/cotes2020/jekyll-theme-chirpy/issues/628](https://github.com/cotes2020/jekyll-theme-chirpy/issues/628)
 - [https://stackoverflow.com/questions/72079476/jekyll-deployed-in-github-shows-raw-text-of-index-html-file](https://stackoverflow.com/questions/72079476/jekyll-deployed-in-github-shows-raw-text-of-index-html-file)
-
-<!-- script pointing to busuanzi.js start-->
-<script async src="/assets/js/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span> views.</span>
-<!-- script pointing to busuanzi.js end-->

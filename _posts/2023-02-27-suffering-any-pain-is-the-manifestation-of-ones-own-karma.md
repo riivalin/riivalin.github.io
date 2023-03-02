@@ -23,8 +23,3 @@ tags: [淨界法師, 業力, 痛苦]
 比如說你看很多老和尚，他去打佛七，打完七以後回來就生病了，你怎麼解釋呢？你說：「唉，代眾生受苦！」這樣講也是有道理，其實都是自己業力的表現。<span style="color: red">鬼神障也好，外在的因緣只是增上緣，因為這個地方講識食體，就是你的果報體，永遠是你心中阿賴耶識的業力所釋放出來的。不可能有一個外在的業力，跑到你的身心來給你快樂、給你痛苦，不可能！如果有可能的話，這個唯識學的觀念就會全部被推翻掉了。所以我們一個人的菩提心，一定要依止正見，否則你的菩提心不能相續。</span>
 
 這個地方講「識食體」就是說，我們相信果報體任何的變化，外在的環境只是一個增上緣，你自己心中的業力才是親因緣。這樣子你不管遇到任何的逆境，你的菩提心不會退轉，這個正見非常重要！
-
-<!-- script pointing to busuanzi.js start-->
-<script async src="/assets/js/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span> views.</span>
-<!-- script pointing to busuanzi.js end-->
