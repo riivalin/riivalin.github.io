@@ -24,3 +24,8 @@ tags: [淨界法師, 戒除邪淫, 邪淫障道, 楞嚴經]
 但是，如果你一直造一直造，造到最後，你菩提的善根裡面那個出離心破壞了，變成貪戀娑婆了。那這個損失就很難去算了，它已經傷到你的骨頭了，傷到根了。
 
 所以這個地方要注意，這就是邪淫為什麼會障道。就是說，如果你這個是無慚無愧的話，那就傷到深層的善根；如果有慚有愧，它頂多也就是一個罪業，透過懺悔，這個罪業是可以不起現行的。
+
+<!-- script pointing to busuanzi.js start-->
+<script async src="/assets/js/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span>views.</span>
+<!-- script pointing to busuanzi.js end-->

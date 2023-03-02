@@ -18,3 +18,8 @@ Server address: [http://127.0.0.1:4000/](http://127.0.0.1:4000/)
 
 
 Reference: [Jekyll Docs](https://jekyllrb.com/docs/)
+
+<!-- script pointing to busuanzi.js start-->
+<script async src="/assets/js/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span>views.</span>
+<!-- script pointing to busuanzi.js end-->

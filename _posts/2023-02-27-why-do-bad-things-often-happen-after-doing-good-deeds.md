@@ -15,3 +15,8 @@ tags: [隆相法師, 因果報應]
 善惡業報最終要從心地上來衡量，比如做善事的，雖然做後有功德，但如果之後追悔了，那功德也就減損了。反之做惡事如果追悔，那罪業也會減輕。
 
 世間之小善，大多如螢燭之光，如何驅的走累劫之迷暗！真正的大善，主要是從發心處來衡量，若真是為大眾發心，哪怕一句話能利於大眾，那也是大眾與你結緣，所得善果不可計量。
+
+<!-- script pointing to busuanzi.js start-->
+<script async src="/assets/js/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_page_pv">Total <span id="busuanzi_value_page_pv"></span>views.</span>
+<!-- script pointing to busuanzi.js end-->
