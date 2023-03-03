@@ -2,7 +2,7 @@
 layout: post
 title: "[MacOS] 使用rbenv安裝 Ruby"
 date: 2023-02-18 00:10:00 +0800
-categories: [Notes, Jekyll]
+categories: [Notes, Blog]
 tags: [Ruby, Jekyll, rbenv]
 ---
 

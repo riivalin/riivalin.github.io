@@ -2,7 +2,7 @@
 layout: post
 title: "[MacOS] 使用Jekyll + Github Pages 建立免費Blog"
 date: 2023-02-21 00:10:00 +0800
-categories: [Notes, Jekyll]
+categories: [Notes, Blog]
 tags: [Jekyll Blog, Github Pages]
 ---
 
