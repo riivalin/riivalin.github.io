@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[C#] Serilog 結構化日誌-初識"
+title: "[C# 筆記] Serilog 結構化日誌-初識"
 date: 2023-02-28 10:00:00 +0800
-categories: [Notes, NET, C#]
+categories: [Notes, C#]
 tags: [C#, Log, Serilog]
 ---
 
