@@ -6,7 +6,7 @@ categories: [Notes, CSS]
 tags: [CSS, Div, CSS float]
 ---
 
-[Problem Description]
+### [Problem Description]
 
 I have some HTML:
 ```html
@@ -16,9 +16,10 @@ This is some text in a div element!
 ```
 HTML div align right not working?
 
-[Issue Solved]
+### [Issue Solved]
 
-`"float:right;"` worked great! 
+`"float:right;"` worked great!
+"sapn" also works.
 
 ```html
 <div style="float:right;">
@@ -27,4 +28,5 @@ This is some text in a div element!
 ```
 
 
-[https://stackoverflow.com/questions/73861223/right-align-div-css](https://stackoverflow.com/questions/73861223/right-align-div-css)
+[right-align-div-css](https://stackoverflow.com/questions/73861223/right-align-div-css)  
+[text-align-right-in-a-span](https://stackoverflow.com/questions/40427457/text-align-right-in-a-span)
