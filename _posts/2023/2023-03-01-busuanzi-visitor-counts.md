@@ -23,7 +23,7 @@ tags: [Blog, Counter]
 <!-- 不蒜子計數 -->
 ```
 
-筆記一下…我放置在這兩處： 
+記錄一下…我放置在這兩處： 
 ```text 
 _includes/footer.html  
 _layout/post.html
