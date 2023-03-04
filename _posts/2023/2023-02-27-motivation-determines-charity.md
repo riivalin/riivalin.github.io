@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 動機決定施捨
+title: 寬見法師：動機決定施捨
 date: 2023-02-27 00:19:00 +0800
 categories: [Amitabha, 佛學問答, 寬見法師]
 tags: [寬見法師, 動機決定施捨, 佛學問答]

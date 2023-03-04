@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 這四種行業的罪業無量無邊
+title: 夢參老和尚：這四種行業的罪業無量無邊
 date: 2023-02-17 00:39:00 +0800
 categories: [Amitabha, 夢參老和尚]
 tags: [夢參老和尚, 十輪經, 菩薩戒]

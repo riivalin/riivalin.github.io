@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 邪見造的業是最重的
+title: 淨界法師：邪見造的業是最重的
 date: 2023-03-02 00:09:00 +0800
 categories: [Amitabha, 淨界法師]
 tags: [淨界法師, 邪見, 因果]

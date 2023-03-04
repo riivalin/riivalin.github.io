@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 生意財源不順是何因
+title: 夢參老和尚：生意財源不順是何因
 date: 2020-12-13 00:09:00 +0800
 categories: [Amitabha, 夢參老和尚]
 tags: [夢參老和尚, 不與取, 偷盜]

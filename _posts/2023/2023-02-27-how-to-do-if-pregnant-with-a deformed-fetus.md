@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 懷的是畸形胎兒，要不要生下來呢
+title: 大安法師：懷的是畸形胎兒，要不要生下來呢
 date: 2023-02-27 00:06:00 +0800
 categories: [Amitabha, 佛學問答, 大安法師]
 tags: [佛學問答, 大安法師]

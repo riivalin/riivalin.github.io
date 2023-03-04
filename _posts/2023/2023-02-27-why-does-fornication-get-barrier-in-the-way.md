@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 邪淫為什麼會障道
+title: 淨界法師：邪淫為什麼會障道
 date: 2023-02-27 00:59:00 +0800
 categories: [Amitabha, 淨界法師]
 tags: [淨界法師, 戒除邪淫, 邪淫障道, 楞嚴經]

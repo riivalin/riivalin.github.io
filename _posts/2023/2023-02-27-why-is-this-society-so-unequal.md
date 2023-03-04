@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 為什麼這個社會這麼不平等
+title: 夢參老和尚：為什麼這個社會這麼不平等
 date: 2023-02-27 01:00:00 +0800
 categories: [Amitabha, 夢參老和尚]
 tags: [夢參老和尚, 因果]
