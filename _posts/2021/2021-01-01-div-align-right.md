@@ -18,7 +18,7 @@ HTML div align right not working?
 
 ### [Issue Solved]
 
-`"float:right;"` worked great!
+`"float:right;"` worked great!  
 "sapn" also works.
 
 ```html
