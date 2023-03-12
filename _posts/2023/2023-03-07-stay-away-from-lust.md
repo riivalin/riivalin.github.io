@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 遠離淫慾，千萬莫近
+title: 夢參老和尚：遠離淫慾，千萬莫近
 date: 2023-03-07 00:59:00 +0800
 categories: [Amitabha, 夢參老和尚]
 tags: [夢參老和尚,戒除邪淫,不淨行]
