@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 為何居士互稱師兄，而不稱師姐
-date: 2023-02-17 00:39:00 +0800
+date: 2023-03-12 23:39:00 +0800
 categories: [Amitabha,佛教知識]
 tags: [佛教知識]
 ---
