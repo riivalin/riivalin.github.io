@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] 觀察者設計模式-貓捉老鼠"
-date: 2018-07-02 00:01:10 +0800
+date: 2018-07-02 23:11:10 +0800
 categories: [Notes, C#]
 tags: [C#, Delegate, Event]
 ---
