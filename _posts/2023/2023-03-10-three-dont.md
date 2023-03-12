@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 印光大師：念佛之人的「三不可」
-date: 2023-03-11 00:09:00 +0800
+date: 2023-03-10 00:19:00 +0800
 categories: [Amitabha, 印光大師]
-tags: [印光大師]
+tags: [印光大師,阿彌陀佛]
 ---
 
 <span style="color: red;">不可求來生人天福報</span>
