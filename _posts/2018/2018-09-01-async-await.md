@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] 異步 async、await"
-date: 2022-09-01 00:09:00 +0800
+date: 2018-09-01 00:09:00 +0800
 categories: [Notes, C#]
 tags: [Notes, C#, async, await]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] 使用泛型和索引器來實現一個自己的集合類List"
-date: 2022-06-30 00:00:10 +0800
+date: 2018-06-30 00:00:10 +0800
 categories: [Notes, C#]
 tags: [C#, "泛型<T>", "索引器[index]"]
 ---

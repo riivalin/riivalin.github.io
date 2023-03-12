@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] 工具人下樓問題(Delegate+Event)"
-date: 2022-06-30 00:00:10 +0800
+date: 2018-06-30 00:00:10 +0800
 categories: [Notes, C#]
 tags: [C#, Delegate, Event]
 ---

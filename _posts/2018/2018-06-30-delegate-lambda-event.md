@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] Delegate(委託)、Lambda、Event(事件)"
-date: 2022-06-30 00:00:10 +0800
+date: 2018-06-30 00:00:10 +0800
 categories: [Notes, C#]
 tags: [C#, Delegate, Lambda, Event]
 ---
