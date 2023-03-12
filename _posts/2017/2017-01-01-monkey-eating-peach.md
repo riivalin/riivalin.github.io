@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] 猴子吃桃問題"
-date: 2017-01-01 01:51:00 +0800
+date: 2017-01-01 22:51:00 +0800
 categories: [Notes, C#]
 tags: [C#]
 ---

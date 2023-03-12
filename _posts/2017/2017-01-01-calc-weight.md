@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] 計算棋盤放芝麻的重量"
-date: 2017-01-01 02:01:00 +0800
+date: 2017-01-01 23:01:00 +0800
 categories: [Notes, C#]
 tags: [C#]
 ---
