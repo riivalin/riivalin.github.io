@@ -18,7 +18,7 @@ tags: [C#]
 
 ***
 
-### `break`
+## break
 - break 用於迴圈與switch語句當中。
 - break 只能夠結束當前所屬的語句範圍。(結束掉離它最近的迴圈)
 
@@ -96,7 +96,7 @@ Console.Read();
 - 在switch中的break，是用來終結掉switch語句的，因為它是在switch大括弧之間。
 - `if (quit) break;`，它當前所在的是`for迴圈`之間(是在for迴圈裡面)，所以它是用來終結掉for循環的。
 
-### `continue`
+## continue
 
 - continue 用於迴圈中，可以跳過當前迴圈程式碼，強制開始下一次迴圈的執行。
 - continue 通常用於「過濾」一些不需要執行的本次迴圈邏輯的情況；就是將異類鏟除掉
@@ -118,7 +118,7 @@ Console.Read();
 > continue 用於結束本次的迴圈內容，直開始下一次的迴圈。   
 > (直接終結掉這次的迴圈，不執行下面的程式碼(下面的語句就不會執行了)，跳到 i++，開始下一個迴圈)
 
-### 總結 break, continue
+## 總結 break, continue
 
 break與continue都代表什麼含義?
 - `break` 強制結束所在的迴圈語句(能夠結束離它最近的迴圈)，或是結束所在的switch語句。
