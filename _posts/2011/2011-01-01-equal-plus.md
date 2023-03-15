@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 賦值運算符=、+號、佔符位{0}"
+title: "[C# 筆記] 賦值運算符=、加號、佔符位{0}"
 date: 2011-01-01 06:17:00 +0800
 categories: [Notes, C#]
 tags: [C#]
