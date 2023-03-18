@@ -22,3 +22,20 @@ for (int i = 0; i < nums.Length; i++)
 }
 Console.WriteLine($"最大整數: {max} \r\n最小整數: {min}\r\n總和: {sum}\r\n平均值: {sum / nums.Length}");
 ```
+
+## 練習2：數組裡面都是人的名字，分割成：例如:小明|小王|小三|小四…
+
+解題思路：  
+通過一個循環，獲得字串陣列中的每一個元素。  
+然後，將每一個元素都累加到一個字串中，以|分隔。 
+```c#
+string[] names = { "小明", "小王", "小三", "小四", "小五" };
+string str = null;
+
+//通過for循環, 獲得字串陣列中的每一個元素
+for (int i = 0; i < names.Length - 1; i++)
+{
+    str += names[i] + "|"; //將每一個元素都累加到一個字串中，以|分隔
+}
+Console.WriteLine(str + names[names.Length - 1]); //最後一個名字，手動加上去
+```
