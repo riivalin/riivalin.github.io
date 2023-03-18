@@ -39,3 +39,73 @@ for (int i = 0; i < names.Length - 1; i++)
 }
 Console.WriteLine(str + names[names.Length - 1]); //最後一個名字，手動加上去
 ```
+## 練習：把一個整數陣列正數+1,負數-1, 0不改變
+把一個整數陣列的每一個元素進行如下的處理：
+如果元素是正數，則將這個位置的元素的值加1   
+如果元素是負數，則將這個位置的元素的值減1   
+如果元素是0，則不改變。 
+
+解題思路：  
+通過一個循環，獲得陣列中的每一個元素    
+對每個元素進行判斷  
+```c#
+int[] nums = { 1, -2, 3, -4, 5, 6 };
+
+for (int i = 0; i < nums.Length; i++)
+{
+    if (nums[i] > 0)
+    {
+        nums[i] += 1;
+    } else if (nums[i] < 0)
+    {
+        nums[i] -= 1;
+    } else
+    {
+        //nums[i] = 0;
+    }
+}
+
+for (int i = 0; i < nums.Length; i++)
+{
+    Console.WriteLine(nums[i]);
+}
+Console.ReadKey();
+```
+
+## 練習：將一個字串陣列的元素的順序進行反轉
+ { "我", "是", "好人" }  =>  { "好人", "是","我" }
+
+解題思路：  
+5個元素交換了2次    
+6個元素交換了3次    
+N個元素交換(N/2)次  
+
+a b c d e f     
+0 1 2 3 4 5     
+第一次交換：a跟f 交換 0 5 交換 	i=0 Length-1-0  
+第二次交換：b跟e 交換 1 4 交換	i=1 Length-1-1  
+第三次交換：c跟d 交換 2 3 交換	i=2 Length-1-2  
+
+
+[index]跟[index]交換       
+  i=0 	Length-1-0  
+  i=1 	Length-1-1  
+  i=2  	Length-1-2   
+> 它的規律 nums[i] 跟 nums[Length-1-i]
+
+```c#
+string[] names = { "我", "是", "好人" };
+
+//反轉字串陣列
+for (int i = 0; i < names.Length / 2; i++) //N個元素交換(N/2)次
+{
+    string temp = names[i]; //宣告一個暫存變數
+    names[i] = names[names.Length - 1 - i]; //i=0, names[0]跟 names[5]交換
+    names[names.Length - 1 - i] = temp; //names[0]暫存在temp, 賦值給 names[5]
+}
+
+//輸出看結果
+for (int i = 0; i < names.Length; i++) {
+    Console.WriteLine(names[i]);
+}
+```
