@@ -6,12 +6,12 @@ categories: [Notes, C#]
 tags: [C#]
 ---
 
-`return` 兩個作用：  
-- 立即結束本次方法  
-- 在方法中返回要返回的值    
+- `return` 兩個作用：  
+    - 立即結束退出方法  
+    - 在方法中返回要返回的值    
 
-`break`：跳出整個迴圈   
-`continue`：強制結束本次迴圈，開始下一次迴圈    
+- `break`：跳出整個迴圈   
+- `continue`：強制結束本次迴圈，開始下一次迴圈    
 
 ## break
 跳出離開while迴圈，再往下執行   
@@ -42,12 +42,12 @@ Hello, world
 Hello, world... (無限次)    
 
 ## return
- 結束跳出這個方法   
+ 結束退出這個方法   
 ```c#
 while (true)
 {
     Console.WriteLine("Hello, world");
-    return; //立即結束本次方法
+    return; //立即結束退出方法
 }
 Console.WriteLine("Hi,.Net");
 ```
@@ -56,5 +56,5 @@ Hello, world
 
 
 > return兩個作用：  
-1.立即結束本次方法      
+1.立即結束退出方法      
 2.在方法中返回要返回的值    
