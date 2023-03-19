@@ -6,9 +6,10 @@ categories: [Notes, C#]
 tags: [C#]
 ---
 
-`return`兩個作用：  
+`return` 兩個作用：  
 - 立即結束本次方法  
 - 在方法中返回要返回的值    
+
 `break`：跳出整個迴圈   
 `continue`：強制結束本次迴圈，開始下一次迴圈    
 
@@ -22,7 +23,7 @@ while (true)
 }
 Console.WriteLine("Hi,.Net");
 ```
-Output：    
+輸出：    
 Hello, world    
 Hi,.Net 
 
@@ -36,7 +37,7 @@ while (true)
 }
 Console.WriteLine("Hi,.Net"); //用continue不會執行這段
 ```
-Output：    
+輸出：      
 Hello, world    
 Hello, world... (無限次)    
 
@@ -50,7 +51,7 @@ while (true)
 }
 Console.WriteLine("Hi,.Net");
 ```
-Output：    
+輸出：      
 Hello, world    
 
 
