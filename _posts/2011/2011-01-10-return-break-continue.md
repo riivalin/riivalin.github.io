@@ -5,14 +5,15 @@ date: 2011-01-10 05:10:00 +0800
 categories: [Notes, C#]
 tags: [C#]
 ---
-- return：  
-    - 立即結束本次方法  
-    - 在方法中返回要返回的值    
+
+- return兩個作用：  
+1.立即結束本次方法  
+2.在方法中返回要返回的值    
 - break：跳出整個迴圈   
 - continue：強制結束本次迴圈，開始下一次迴圈    
 
 ## break
-跳出離開while迴圈，再往下執行
+跳出離開while迴圈，再往下執行   
 ```c#
 while (true)
 {
@@ -21,12 +22,12 @@ while (true)
 }
 Console.WriteLine("Hi,.Net");
 ```
-Output：
-Hello, world
-Hi,.Net
+Output：    
+Hello, world    
+Hi,.Net 
 
 ## continue
-強制結束這次迴圈，再回到while迴圈，開始下一個迴圈
+強制結束這次迴圈，再回到while迴圈，開始下一個迴圈   
 ```c#
 while (true)
 {
@@ -35,12 +36,12 @@ while (true)
 }
 Console.WriteLine("Hi,.Net"); //用continue不會執行這段
 ```
-Output：
-Hello, world
-Hello, world... (無限次)
+Output：    
+Hello, world    
+Hello, world... (無限次)    
 
 ## return
- 結束跳出這個方法
+ 結束跳出這個方法   
 ```c#
 while (true)
 {
@@ -49,5 +50,8 @@ while (true)
 }
 Console.WriteLine("Hi,.Net");
 ```
-Output：
-Hello, world
+Output：    
+Hello, world    
+> return兩個作用：
+1.立即結束本次方法      
+2.在方法中返回要返回的值    
