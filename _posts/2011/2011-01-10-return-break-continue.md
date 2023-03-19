@@ -5,6 +5,11 @@ date: 2011-01-10 05:10:00 +0800
 categories: [Notes, C#]
 tags: [C#]
 ---
+- return：  
+    - 立即結束本次方法  
+    - 在方法中返回要返回的值    
+- break：跳出整個迴圈   
+- continue：強制結束本次迴圈，開始下一次迴圈    
 
 ## break
 跳出離開while迴圈，再往下執行
