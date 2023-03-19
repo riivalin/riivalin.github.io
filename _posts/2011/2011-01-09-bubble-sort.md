@@ -69,13 +69,18 @@ Console.ReadKey();
 ## 一行搞定冒泡排序
 
 ### 升幕排序 Array.Sort()
+
 ```c#
 int[] nums = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
 Array.Sort(nums); //升幕排序
 ```
-### 降幕排序 Array.Reverse()
+### 反轉排序 Array.Reverse()
+
+Array.Reverse()不是降幕排序，它是反轉
 ```c#
-Array.Reverse(nums);//降幕排序
+int[] nums = { 9, 8, 7, 6, 5, 4, 3, 2, 1, 0 };
+Array.Sort(nums); //升幕排序
+Array.Reverse(nums);//反轉排序
 ```
 
 雖然在學得時候，都是學最難的，  
