@@ -52,7 +52,7 @@ for (int i = 0; i < nums.Length - 1; i++)
 }
 // 輸出看結果
 for (int i = 0; i < nums.Length; i++) {
-    Console.WriteLine(i);
+    Console.WriteLine(nums[i]);
 }
 Console.ReadKey();
 ```
