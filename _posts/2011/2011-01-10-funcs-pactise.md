@@ -75,9 +75,9 @@ public static int GetNumber(string s) //形參
 }
 ```
 ## 練習2：只允許用戶輸入y或n，改成方法
-這個方法做了什麼事？
-只能讓用戶輸入yes或no，只要不是就重新輸入
-輸入yes 看 輸入no 不能看
+這個方法做了什麼事？    
+只能讓用戶輸入yes或no，只要不是就重新輸入   
+輸入yes 看; 輸入no 不能看    
 
 ```c#
 Console.WriteLine("***請輸入yes或no");
@@ -125,8 +125,7 @@ Console.ReadKey()
 public static int GetSum(int[] nums)
 {
     int sum = 0;
-    for (int i = 0; i < nums.Length; i++)
-    {
+    for (int i = 0; i < nums.Length; i++) {
         sum += nums[i];
     }
     return sum;
