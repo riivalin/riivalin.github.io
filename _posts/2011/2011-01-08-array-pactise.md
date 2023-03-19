@@ -28,6 +28,7 @@ Console.WriteLine($"最大整數: {max} \r\n最小整數: {min}\r\n總和: {sum}
 解題思路：  
 通過一個循環，獲得字串陣列中的每一個元素。  
 然後，將每一個元素都累加到一個字串中，以`|`分隔。 
+
 ```c#
 string[] names = { "小明", "小王", "小三", "小四", "小五" };
 string str = null;
@@ -39,6 +40,7 @@ for (int i = 0; i < names.Length - 1; i++)
 }
 Console.WriteLine(str + names[names.Length - 1]); //最後一個名字，手動加上去
 ```
+
 ## 練習：把一個整數陣列正數+1,負數-1, 0不改變
 把一個整數陣列的每一個元素進行如下的處理：  
 如果元素是正數，則將這個位置的元素的值加1   
@@ -48,23 +50,26 @@ Console.WriteLine(str + names[names.Length - 1]); //最後一個名字，手動�
 解題思路：  
 通過一個循環，獲得陣列中的每一個元素    
 對每個元素進行判斷  
+
 ```c#
 int[] nums = { 1, -2, 3, -4, 5, 6 };
 
+//通過for循環，獲得陣列中的每一個元素 
 for (int i = 0; i < nums.Length; i++)
 {
     if (nums[i] > 0)
     {
-        nums[i] += 1;
+        nums[i] += 1; //如果元素是正數，則將這個位置的元素的值加1
     } else if (nums[i] < 0)
     {
-        nums[i] -= 1;
+        nums[i] -= 1; //如果元素是負數，則將這個位置的元素的值減1
     } else
     {
-        //nums[i] = 0;
+        //nums[i] = 0; //如果元素是0，則不改變。
     }
 }
 
+//輸出看結果
 for (int i = 0; i < nums.Length; i++)
 {
     Console.WriteLine(nums[i]);
@@ -91,13 +96,15 @@ N個元素交換(N/2)次
 |第三次交換：|c 跟 d 交換|2 3 交換| i=2 |Length-1-2 |  
 
 
-|[index]|跟 [index] 交換||
+|`nums[index]`|跟 `nums[index]` 交換||
 |:----|----------------:|       
 | i=0 |Length-1-0       |
 | i=1 |Length-1-1       |
 | i=2 |Length-1-2       |
 
-> 它的規律 `nums[i]` 跟 `nums[Length-1-i]` 交換
+> 仔細看，它有一個規律在，當Length-1-0 1 2，0 1 2 恰好是i值，
+所以可以規律出：
+ `nums[i]` 跟 `nums[Length-1-i]` 交換
 
 程式碼：
 ```c#
