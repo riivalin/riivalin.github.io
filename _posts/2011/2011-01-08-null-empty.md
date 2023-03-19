@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] null 和 empty "
+title: "[C# 筆記] null 和 empty"
 date: 2011-01-08 05:10:00 +0800
 categories: [Notes, C#]
 tags: [C#]
