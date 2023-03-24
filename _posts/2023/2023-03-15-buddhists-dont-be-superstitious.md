@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 宣化上人：佛教徒不要迷信
-date: 2023-03-14 00:09:00 +0800
+date: 2023-03-15 00:09:00 +0800
 categories: [Amitabha,宣化上人]
 tags: [宣化上人,迷信]
 ---
