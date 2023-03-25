@@ -37,7 +37,7 @@ SPY×FAMI...|7|遠藤達哉
   
 ```c#
 string path = @"C:\Users\rivalin\Desktop\1.txt";
-string[] contents = File.ReadAllLines(path); //
+string[] contents = File.ReadAllLines(path);
 
 for (int i = 0; i < contents.Length; i++)
 {
