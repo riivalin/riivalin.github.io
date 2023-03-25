@@ -54,3 +54,20 @@ for (int i = 0; i < contents.Length; i++) {
 }
 Console.ReadKey();
 ```
+
+用三元運算子寫：如果標題超過10，則截取長度8的子串並且最後添加"…"
+```c#
+ s[0] = (s[0].Length > 10) ? s[0].Substring(0, 8) + "..." : s[0]; //如果超過10，則截取長度8的子串並且最後添加"…"
+```
+
+```c#
+string path = @"C:\Users\rivalin\Desktop\1.txt";
+string[] contents = File.ReadAllLines(path);
+
+for (int i = 0; i < contents.Length; i++)
+{
+    string[] s = contents[i].Split(' ', StringSplitOptions.RemoveEmptyEntries); //空格分割，去掉空白
+    s[0] = (s[0].Length > 10) ? s[0].Substring(0, 8) + "..." : s[0]; //如果超過10，則截取長度8的子串並且最後添加"…"
+    contents[i] = string.Join('|', s); //加一個豎線後輸出作者的名字。(標題|作者)
+}
+```
