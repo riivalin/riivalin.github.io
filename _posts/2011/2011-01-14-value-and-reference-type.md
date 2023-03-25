@@ -29,4 +29,5 @@ string, 自定義類, 陣列
 - stack 用於靜態記憶體配置, 大陸翻譯為棧
 - heap 用於動態記憶體配置, 大陸翻譯為堆
 
+[值類型 Value Type, 引用類型 Reference Type](https://riivalin.github.io/posts/value-and-reference-type/)  
 [[探索 5 分鐘] stack 與 heap 的底層概念](https://nwpie.blogspot.com/2017/05/5-stack-heap.html)
