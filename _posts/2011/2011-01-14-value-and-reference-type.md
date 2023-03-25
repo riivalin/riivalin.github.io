@@ -26,7 +26,7 @@ string, 自定義類, 陣列
 
 ## R Note
 簡單來說, 從記憶體配置的角度, 用一個二分法
-- stack 用於靜態記憶體配置, 大陸翻譯為棧, 棧, 棧 (why ?)
+- stack 用於靜態記憶體配置, 大陸翻譯為棧
 - heap 用於動態記憶體配置, 大陸翻譯為堆
 
 [[探索 5 分鐘] stack 與 heap 的底層概念](https://nwpie.blogspot.com/2017/05/5-stack-heap.html)
