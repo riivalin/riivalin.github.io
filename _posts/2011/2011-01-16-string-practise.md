@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] string 練習(File.ReadAllLines + Split + Length + Substring + string.Join)"
+title: "[C# 筆記] string 練習 1"
 date: 2011-01-16 22:59:00 +0800
 categories: [Notes, C#]
 tags: [C#]
