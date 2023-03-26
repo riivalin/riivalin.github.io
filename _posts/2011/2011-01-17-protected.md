@@ -10,9 +10,9 @@ tags: [C#]
 子類也可以訪問
 
 ```text
-public 公開
-private 私有
-protected 受保護的
+public 公開：子類可以訪問
+private 私有：子類不可以訪問
+protected 受保護的：子類可以訪問
 ```
 
 ```c#
