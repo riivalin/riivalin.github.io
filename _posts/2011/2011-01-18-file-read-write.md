@@ -90,6 +90,17 @@ File.AppendAllText(@"C:\Users\rivalin\Desktop\new.txt", "Append All Text 看我�
 Console.WriteLine("done");
 ```
 
+## 絕對路徑 & 相對路徑
+### 絕對路徑
+通過給定的個路徑，能直接在我的電腦中找到這個文件。
+`C:\Users\rivalin\Desktop\1.txt`
+
+### 相對路徑
+文件相對於應用程式的路徑。
+`..\1.txt`
+
+我們在開發中應該儘量使用「相對路徑」
+
 ### R Note
 - `ReadAllBytes()` 除了可以讀txt檔，要讀讀影音檔、圖片…，就用它
  
