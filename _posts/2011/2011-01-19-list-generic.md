@@ -36,10 +36,10 @@ string[] arrStr = listStr.ToArray(); //轉成陣列
 char[] chs = new char[] { 'a', 'b', 'c' };
 chs.ToList<char>();
 ```
+
 ### ArrayList, Hashtable 很少在用，為什麼?
 除了取數據不方便外，花費時間較多、效率低外，  
 因為涉及到裝箱、拆箱的問題
-
 
 
 [Boxing & Unboxing 裝箱 & 拆箱](https://riivalin.github.io/posts/boxing-unboxing/)
