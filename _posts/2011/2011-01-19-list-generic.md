@@ -37,7 +37,7 @@ char[] chs = new char[] { 'a', 'b', 'c' };
 chs.ToList<char>();
 ```
 
-### ArrayList, Hashtable 很少在用，為什麼?
+## ArrayList, Hashtable 很少在用，為什麼?
 除了取數據不方便外，花費時間較多、效率低外，  
 因為涉及到裝箱、拆箱的問題
 
