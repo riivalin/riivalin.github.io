@@ -102,7 +102,7 @@ int n = 10;
 IComparable i = n; //裝箱，IComparable是介面(參考型別)，int繼承IComparable，有繼承關係
 ```
 上述程式碼發生了裝箱：
-首先int類型與IComparable類型是繼承關係，int繼承IComparable，有繼承關係，又是實值型別轉換成參考型別，所以發生了裝箱。    
+首先`int`類型與`IComparable`類型是繼承關係，`int`繼承`IComparable`，有繼承關係，又是實值型別轉換成參考型別，所以發生了裝箱。    
 
 查看`int`定義
 ```c#
