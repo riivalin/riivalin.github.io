@@ -7,6 +7,9 @@ tags: [C#]
 ---
 
 ## 使用FileStream 實現多媒體文件的複製
+- FileStream 操作位元組byte的
+- StreamReader & StreamWrite 操作字元/文本的  
+
 ### 思路
 先將要複製的多媒體文件讀取出來，然後寫入到你指定的位置  
 
