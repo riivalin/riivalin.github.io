@@ -6,11 +6,11 @@ categories: [Notes, C#]
 tags: [C#]
 ---
 
-### StreamReader、StreamWrite 和 FileStream
+## StreamReader、StreamWrite 和 FileStream 的區別
 
-- `FileStream`操作位元組byte的
+- `FileStream`操作位元組byte的  
 可以處理所有的檔案、可以處理大檔案。  
-- `StreamReader`&`StreamWrite`操作字元的
+- `StreamReader`&`StreamWrite`操作字元的  
 只能處理文本的。
 
 所以`FileStream`必須要掌握的。    
