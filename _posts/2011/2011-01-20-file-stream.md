@@ -7,16 +7,16 @@ tags: [C#]
 ---
 
 ## FileStream 和 File 區別
-- File 是一下子都讀過來
-- FileStream 是一點一點讀過來，對內存來說比較沒有壓力
+- `File` 是一下子都讀過來
+- `FileStream` 是一點一點讀過來，對內存來說比較沒有壓力
 
 ## FileStream、StreamWriter、StreamReader區別
 ### FileStream
-FileStream 操作位元組(byte)的  
+`FileStream` 操作位元組(byte)的  
 代表可以操作任何文件  
 
 ### StreamReader 和 StreamWrite
-StreamReader、StreamWrite 操作字元的  
+`StreamReader`、`StreamWrite` 操作字元的  
 只能操作文本文件  
 
 它們都適合處理大文件，要處理小文件用File就夠了  
@@ -85,7 +85,7 @@ byte[] buffer = Encoding.UTF8.GetBytes(s);
 靜態類：直接調方法
 非靜態類：建立物件 -> 調方法
 
-`FileStream` 讀寫文件，用`Default`會出現亂碼，可以改成`UTF8`  
+FileStream 讀寫文件，用 Default 會出現亂碼，可以改成 UTF8  
 
 字元 = 字符
 位元組(byte) = 字節
