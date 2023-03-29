@@ -7,8 +7,12 @@ tags: [C#]
 ---
 
 ## 使用FileStream 實現多媒體文件的複製
-- FileStream 操作位元組byte的
-- StreamReader & StreamWrite 操作字元/文本的  
+- `FileStream`操作位元組byte的
+可以處理所有的檔案、可以處理大檔案。  
+- `StreamReader`&`StreamWrite`操作字元的
+只能處理文本的。
+
+所以`FileStream`必須要掌握的。
 
 ### 思路
 先將要複製的多媒體文件讀取出來，然後寫入到你指定的位置  
