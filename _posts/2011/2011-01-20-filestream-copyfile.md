@@ -15,8 +15,8 @@ tags: [C#]
 
 ## 設定來源路徑、目標路徑和調用方法
 ```c#
-string source = @"C:\Users\rivalin\Downloads\GitHubDesktopSetup-x64.exe"; //要複製檔案的路徑
-string target = @"C:\Users\rivalin\Desktop\GitHubDesktopSetup-x64_test.exe"; //複製完後要放置的路徑
+string source = @"C:\Users\rivalin\Desktop\lucky.wav"; //要複製檔案的路徑
+string target = @"C:\Users\rivalin\Desktop\lucky.wav"; //複製完後要放置的路徑
 CopyFile(source, target);
 Console.WriteLine("Done");
 ```
