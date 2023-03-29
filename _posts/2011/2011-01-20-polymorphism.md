@@ -409,3 +409,7 @@ public class Programmer : Employee {
     }
 }
 ```
+
+
+
+[/object-oriented/polymorphism](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/object-oriented/polymorphism)
