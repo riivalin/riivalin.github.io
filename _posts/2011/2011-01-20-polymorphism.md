@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] virtual 多態-虛方法 (virtual,override)"
+title: "[C# 筆記] 多型-虛方法 Virtual (virtual,override)"
 date: 2011-01-20 22:39:00 +0800
 categories: [Notes, C#]
 tags: [C#]
@@ -409,6 +409,11 @@ public class Programmer : Employee {
     }
 }
 ```
+
+
+
+多型(Polymorphism) / 多態
+
 
 
 

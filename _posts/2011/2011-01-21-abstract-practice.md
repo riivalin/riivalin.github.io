@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 多態-抽象類 Abstract 練習"
+title: "[C# 筆記] 多型(Polymorphism)-抽象類 Abstract 練習"
 date: 2011-01-21 22:10:00 +0800
 categories: [Notes, C#]
 tags: [C#]
@@ -113,9 +113,16 @@ public class Squqre : Shape
 8. 如果父類的抽象方法中有參數，那麼，繼承這個抽象父類的子類在重寫父類的方法的時候，必須傳入對應的參數。    
 如果抽象父類的抽象方法中有返回值，那麼子類在重寫這個抽象方法的時候，也必須要傳入返回值。
 
-===
+   
+
+---
+    
 - 如果父類中的方法有默認的實現，並且父類需要被實體化，這時可以考慮將父類定義成一個普通類，用虛方法
 - 如果父類的方法沒有默認實現，父類也不需要被實體化，則可以將類別定義為抽象類    
 
+多型(Polymorphism) /多態  
+
+
 [csharp/language-reference/keywords/abstract](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/abstract)    
 [老趙老師-抽象類](https://www.bilibili.com/video/BV17G4y1b78i?p=142)
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 多態-抽象類 Abstract：模擬行動硬碟、隨身碟、MP3"
+title: "[C# 筆記] 多型-抽象類 Abstract：模擬行動硬碟、隨身碟、MP3"
 date: 2011-01-21 22:19:00 +0800
 categories: [Notes, C#]
 tags: [C#]
@@ -8,7 +8,7 @@ tags: [C#]
 
 ## 模擬行動硬碟、隨身碟、MP3
 
-用多態來實現 將 行動硬碟、隨身碟、MP3    
+用多型來實現 將 行動硬碟、隨身碟、MP3    
 插到電腦上進行讀寫資料    
 
 
@@ -148,3 +148,5 @@ public class Computer
     //}
 }
 ```
+
+多型(Polymorphism) / 多態
