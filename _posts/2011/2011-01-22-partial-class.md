@@ -21,11 +21,14 @@ public partial class Person { }
 
 好處是什麼？  
 兩邊寫的成員，都可以共用  
+但不能重複方法，方法重載可以    
 
 ## Partial 部分類別的成員都可以共用
 ```c#
 public partial class Person {
     private string name;  //private也可以共用
+    //public void Test() { } //但不能重複方法 
+    public void Test(string name) { }  //方法重載可以
 }
 public partial class Person {
     public void Test() {
