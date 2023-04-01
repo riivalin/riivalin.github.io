@@ -7,18 +7,20 @@ tags: [C#]
 ---
 
 ## 超市收銀系統-商品類
-
+- 商品
 ```text
-ProductFather   Price  Count  ID
+ProductFather  Price  Count  ID
 
 商品 價格 數量 編號
-
 Acer 價格 數量 編號(唯一的不重複)
 三星手機
 香蕉
 醬油
 ```
+- 倉庫 1. 儲存貨物 2. 提貨 3. 進貨
+- 收銀 超市
 
+## 程式碼
 ```c#
 //超市收銀系統
 
