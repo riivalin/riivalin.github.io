@@ -259,10 +259,14 @@ interface IKouLanable {
     void KouLan();
 }
 ```
+## R Note
+### 什麼情況會用到介面interface？  
+當你需要多繼承的時候，就要考慮介面interface了。  
 
+### 為什麼呀？我就不能用抽象類嗎？  
+因為類別是不允許多繼承的，只能繼承一個父類(一個基底類別)
 
-
-VS2022沒報錯: 加方法體、修飾符沒報錯
+### VS2022沒報錯: 加方法體、修飾符沒報錯
 ```c#
 public interface IFlyable
 {
