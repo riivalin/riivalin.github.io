@@ -8,17 +8,17 @@ tags: [C#]
 
 父類
 - CalFather 打折的父類 (抽象類)
- -  public abstract decimal GetTotalMoney(decimal realMoney);
+    -  public abstract decimal GetTotalMoney(decimal realMoney);
     
 子類
 - CalNormal : CalFather 不打折的子類
 - CalRate : CalFather 按折扣率打折的子類
- - public decimal Rate { get; set; } //折扣率
- - public CalRate(decimal rate){} //建立物件時，把折扣率傳進去，構造函數會幫我們賦值給屬性
+    - public decimal Rate { get; set; } //折扣率
+    - public CalRate(decimal rate){} //建立物件時，把折扣率傳進去，構造函數會幫我們賦值給屬性
 - CalMN : CalFather  買M元 送N元
- - public decimal M { get; set; } //買多少
- - public decimal N { get; set; } //送多少
- - public CalMN(decimal m, decimal n){} //建立物件時，把買多少，送多少傳進去，構造函數會幫我們把值給屬性
+    - public decimal M { get; set; } //買多少
+    - public decimal N { get; set; } //送多少
+    - public CalMN(decimal m, decimal n){} //建立物件時，把買多少，送多少傳進去，構造函數會幫我們把值給屬性
 
 
 ```c#
