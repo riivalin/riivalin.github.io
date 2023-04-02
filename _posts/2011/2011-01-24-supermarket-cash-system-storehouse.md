@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] draft 超商收銀系統-倉庫類"
-date: 2011-01-23 21:19:00 +0800
+date: 2011-01-24 21:19:00 +0800
 categories: [Notes, C#]
 tags: [C#]
 ---
