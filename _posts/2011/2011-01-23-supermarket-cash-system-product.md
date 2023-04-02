@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 超市收銀系統-商品類"
+title: "[C# 筆記] draft 超市收銀系統-商品類"
 date: 2011-01-23 23:39:00 +0800
 categories: [Notes, C#]
 tags: [C#]
@@ -38,57 +38,65 @@ Console.WriteLine(Guid.NewGuid());
 /// <summary>
 /// 商品的父類
 /// </summary>
-public class ProductFather
+internal class ProductFather
 {
-    public ProductFather(string id, double price, double count)
+    public string ID { get; set; } //Guid.NewGuid()
+    public string Name { get; set; }
+    public decimal Price { get; set; }
+    public int Count { get; set; }
+
+    public ProductFather(string id, string name, decimal price, int count)
     {
         this.ID = id;
+        this.Name = name;
         this.Price = price;
         this.Count = count;
     }
-    public string ID { get; set; } //Guid.NewGuid()
-    public double Price { get; set; }
-    public double Count { get; set; }
-}
 
-/// <summary>
-/// 三星
-/// </summary>
-public class SamSung : ProductFather
-{
-    public SamSung(string id, double price, double count)
-        : base(id, price, count)
+    public ProductFather(string id, string name, decimal price)
+        : this(id, name, price, count: 0) //調用自己的構造函數
     {
     }
 }
 /// <summary>
 /// Acer筆電
 /// </summary>
-public class Acer : ProductFather
+internal class Acer : ProductFather
 {
-    public Acer(string id, double price, double count)
-        : base(id, price, count)
+    public Acer(string id, string name, decimal price)
+        : base(id, name, price) //調用父類的構造函數
     {
     }
 }
 /// <summary>
-/// 香蕉
+/// 三星
 /// </summary>
-public class Banana : ProductFather
+internal class SamSung : ProductFather
 {
-    public Banana(string id, double price, double count)
-        : base(id, price, count)
+    public SamSung(string id, string name, decimal price)
+        : base(id, name, price)
     {
     }
 }
 /// <summary>
 /// 醬油
 /// </summary>
-public class 醬油 : ProductFather
+internal class Oil : ProductFather
 {
-    public 醬油(string id, double price, double count)
-        : base(id, price, count)
-    { }
+    public Oil(string id, string name, decimal price)
+        : base(id, name, price)
+    {
+    }
+}
+/// <summary>
+/// 香蕉
+/// </summary>
+internal class Banana : ProductFather
+{
+    public Banana(string id, string name, decimal price)
+        : base(id, name, price)
+    {
+    }
 }
 ```
 
