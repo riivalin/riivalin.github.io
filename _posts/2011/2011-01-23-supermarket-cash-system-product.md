@@ -32,8 +32,6 @@ Guid.NewGuid();
 //超市收銀系統
 
 //產生一個不會重複的編號
-using System.ComponentModel;
-Console.WriteLine(Guid.NewGuid());
 Console.WriteLine(Guid.NewGuid());
 
 
