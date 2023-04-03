@@ -54,5 +54,4 @@ private void timer1_Tick(object sender, EventArgs e)
     pictureBox5.Image = Image.FromFile(path[r.Next(0, path.Length)]);
     pictureBox6.Image = Image.FromFile(path[r.Next(0, path.Length)]);
 }
-}
 ```

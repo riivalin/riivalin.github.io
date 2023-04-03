@@ -46,5 +46,4 @@ private void btnPrevious_Click(object sender, EventArgs e)
     }
     pictureBox1.Image = Image.FromFile(path[i]);
 }
-}
 ```
