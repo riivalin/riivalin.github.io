@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記][WinForm] Do you love me"
-date: 2011-01-25 21:09:00 +0800
+date: 2011-01-25 21:19:00 +0800
 categories: [Notes, C#]
 tags: [C#,WinForm]
 ---
