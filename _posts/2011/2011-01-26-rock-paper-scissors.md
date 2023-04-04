@@ -35,7 +35,7 @@ Judge 裁判
     - 判斷結果(playerNumber,computerNumber) 相減
 
 ## 實作
-
+### Form1.cs
 ```c#
 private void btnRock_Click(object sender, EventArgs e)
 {
@@ -71,5 +71,90 @@ private void btnPaper_Click(object sender, EventArgs e)
 {
     string str = "布";
     PlayGame(str);
+}
+```
+
+### Player.cs
+
+```c#
+/// <summary>
+/// 玩家出拳
+/// </summary>
+/// <param name="fist">拳法：剪刀石頭布</param>
+/// <returns>返回一個出拳的數字</returns>
+public int ShowFist(string fist)
+{
+    int num = 0;
+    switch (fist)
+    {
+        case "石頭":
+            num = 1;
+            break;
+        case "剪刀":
+            num = 2;
+            break;
+        case "布":
+            num = 3;
+            break;
+    }
+    return num;
+}
+```
+
+### Computer.cs
+
+```c#
+internal class Computer
+{
+    /// <summary>
+    /// 儲存電腦出的拳頭
+    /// </summary>
+    public string Fist { get; set; } //自動屬性
+    public int ShowFist()
+    {
+        Random r = new Random(); //建立產生隨機數物件
+        int num = r.Next(1, 4); //1-3
+        switch (num)
+        {
+            case 1:
+                this.Fist = "石頭";
+                break;
+            case 2:
+                this.Fist = "剪刀";
+                break;
+            case 3:
+                this.Fist = "布";
+                break;
+        }
+        return num;
+    }
+}
+```
+
+### Judge.cs
+
+```c#
+public enum Result
+{
+    玩家贏, 電腦贏, 平手
+}
+/// <summary>
+/// 裁判
+/// </summary>
+internal class Judge
+{
+    public static Result JudgeResult(int playerNumber, int computerNumber)
+    {
+        if (playerNumber - computerNumber == -1 || playerNumber - computerNumber == 2)
+        {
+            return Result.玩家贏;
+        } else if (playerNumber - computerNumber == 0)
+        {
+            return Result.平手;
+        } else
+        {
+            return Result.電腦贏;
+        }
+    }
 }
 ```
