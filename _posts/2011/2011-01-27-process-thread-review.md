@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] Process & Thread"
+title: "[C# 筆記] Process & Thread review"
 date: 2011-01-27 21:39:00 +0800
 categories: [Notes, C#]
 tags: [C#]
