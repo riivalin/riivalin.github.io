@@ -260,7 +260,7 @@ namespace 求數組的最大值
 ```c#
 namespace 泛型委派
 {
-    public delegate int DelCompare<T>(T t1, T t2);
+    public delegate int DelCompare<T>(T t1, T t2); //T type
     //public delegate int DelCompare(object o1, object o2);
     internal class Program
     {
