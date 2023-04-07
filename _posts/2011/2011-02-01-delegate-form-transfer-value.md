@@ -15,7 +15,8 @@ tags: [C#,WinForm]
 在Form2的textbox填寫文字，按下button後  
 文字會顯示在Form1的label上
 
-- 實作思路：
+- 實作思路：  
+
 在Form1寫一個方法傳入參數可以顯示文字 => ShowMsg  
 但Form1有方法沒有值，Form2有值沒有方法，怎麼辦？  
 使用委派類型可以傳方法    
