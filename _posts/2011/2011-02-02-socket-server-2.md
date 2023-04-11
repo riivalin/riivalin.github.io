@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記][WinForm] Socket-服務器接收客戶端發送過來的消息"
+title: "[C# 筆記][WinForm] Server Socket-服務器接收客戶端發送過來的消息 -2"
 date: 2011-02-02 00:00:15 +0800
 categories: [Notes, C#]
 tags: [C#,WinForm]
