@@ -6,7 +6,7 @@ categories: [Notes, C#]
 tags: [C#,WinForm]
 ---
 
-前提情要:
+
 - [Server Socket-創建和客戶端通信的Socket -1](https://riivalin.github.io/posts/socket-server-1/)
 - [Server Socket-服務器接收客戶端發送過來的消息 -2](https://riivalin.github.io/posts/socket-server-2/)
 
