@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記][WinForm] Server Socket-創建和客戶端通信的Socket"
+title: "[C# 筆記][WinForm] Server Socket-創建和客戶端通信的Socket -1"
 date: 2011-02-02 00:00:05 +0800
 categories: [Notes, C#]
 tags: [C#,WinForm]
