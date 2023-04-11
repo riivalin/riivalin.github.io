@@ -6,7 +6,7 @@ categories: [Notes, C#]
 tags: [C#,WinForm]
 ---
 
-[前提情要-創建和客戶端通信的Socket](https://riivalin.github.io/posts/socket-2/)
+[創建和客戶端通信的Socket](https://riivalin.github.io/posts/socket-server-1/)
      
 TODO: Receive()、Send()    
     
