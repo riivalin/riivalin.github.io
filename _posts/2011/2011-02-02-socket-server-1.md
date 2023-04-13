@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記][WinForm] Socket-創建和客戶端通信的Socket-1"
+title: "[C# 筆記][Socket] 創建和客戶端通信的Socket-1"
 date: 2011-02-02 00:00:05 +0800
 categories: [Notes, C#]
-tags: [C#,WinForm]
+tags: [C#,Socket]
 ---
 
 ## Server端-監聽(draft)

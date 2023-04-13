@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記][WinForm] Socket-服務器給客戶端發送消息-3"
+title: "[C# 筆記][Socket] 服務器給客戶端發送消息-5"
 date: 2011-02-02 00:00:45 +0800
 categories: [Notes, C#]
-tags: [C#,WinForm]
+tags: [C#,Socket]
 ---
 
 

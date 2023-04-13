@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記][WinForm] Socket-Client Server 結束-5"
+title: "[C# 筆記][Socket] Client Server 結束-7"
 date: 2011-02-03 00:00:09 +0800
 categories: [Notes, C#]
-tags: [C#,WinForm]
+tags: [C#,Socket]
 ---
 
 我Client客戶端要怎麼區分對方Server端發過來的是"文本文字"消息還是"文件"、還是"震動"？傳過去的都是bytes陣列，怎區分？

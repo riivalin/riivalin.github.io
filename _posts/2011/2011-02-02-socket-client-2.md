@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記][WinForm] Socket-客戶端接收服務端發來的消息-2"
+title: "[C# 筆記][Socket] 客戶端接收服務端發來的消息-4"
 date: 2011-02-02 00:00:35 +0800
 categories: [Notes, C#]
-tags: [C#,WinForm]
+tags: [C#,Socket]
 ---
 
 [Client Socket-客戶端給服務器發送消息 -1](https://riivalin.github.io/posts/socket-4/)
