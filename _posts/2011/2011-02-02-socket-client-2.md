@@ -35,7 +35,7 @@ void Recieve()
     while (true)//要不停的去接收，所以要用死循環
     {
         byte[] buffer = new byte[1024 * 1024 * 3];//設置要接收到的byte陣列
-        int r = socketSend.Receive(buffer);//返回的是實真接收到的有效byte數
+        int r = socketSend.Receive(buffer);//返回的是實際接收到的有效byte數
         if (r == 0) break; //沒有接收到就跳出迴圈
         string s = Encoding.UTF8.GetString(buffer, 0, r); //將bytes轉成我們看得懂的字串
         ShowMsg(socketSend.RemoteEndPoint + ":" + s); //訊息顯示在畫面上
