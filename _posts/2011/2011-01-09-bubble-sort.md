@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] Bubble Sort"
+title: "[C# 筆記] Bubble Sort 冒泡排序"
 date: 2011-01-09 04:10:00 +0800
 categories: [Notes, C#]
 tags: [C#]
