@@ -7,16 +7,18 @@ tags: [Html]
 ---
 
 ##  a 標籤的使用
-`a`標籤：超連結 
-- `href`表示要連結到的地址 
-- `target`打開新網頁的方式
-- `_blank`表示打開一個新的網頁進行跳轉 
-- `_self`表示在當前頁面進行跳轉
+- `a`標籤：超連結 
+  - `href`表示要連結到的地址 
+  - `target`打開新網頁的方式
+  - `_blank`表示打開一個新的網頁進行跳轉 
+  - `_self`表示在當前頁面進行跳轉
+
 ```html
 <a href="http://google.com" target="_self">Google</a>
 ```
-  
+   
 - 實現頁面內部的跳轉`<a name="bottom" href="#top">`
+  
 href屬性寫法：`#`+`name的值`
 
 ```html
@@ -24,18 +26,21 @@ href屬性寫法：`#`+`name的值`
 <a name="bottom" href="#top">跳到最上面</a>
 ```
 - 實現頁面間的跳轉`<a name="a.html" href="b.html#bbb">`
+  
 href屬性寫法：路徑+`#`+`name的值`
 
 ```html
 <a name="a" href="b.html#b">a網頁 跳到 b網頁</a>
 <a name="b" href="a.html#a">a網頁 跳到 b網頁</a>
 ```
-- 發送Email
+
+- 發送Email 
 
 ```html
 <a href="mailto:rivalintw@gmail.com">發mail給Riva</a>
 ```
-- 連結到一張圖片
+- 連結到一張圖片 
+
 `href`屬性給圖片路徑
     
 一個圖片標籤，跳到另一個地方顯示圖片(連結指向另一個圖片地址)
@@ -44,7 +49,9 @@ href屬性寫法：路徑+`#`+`name的值`
 <a href="1.jpg">連到一張圖片</a>
 ```
 - 想要連結，但又不想連到任何地方
+   
 `href`屬性加`#`字號就可以了
+
 ```html
 <a href="#"></a>
 ```
