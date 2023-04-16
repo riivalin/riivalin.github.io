@@ -7,17 +7,18 @@ tags: [Html]
 ---
 
 ##  a 標籤的使用
-- `a`標籤：超連結 
+
+- `a`標籤：超連結
   - `href`表示要連結到的地址 
   - `target`打開新網頁的方式
   - `_blank`表示打開一個新的網頁進行跳轉 
   - `_self`表示在當前頁面進行跳轉
-
+  
 ```html
 <a href="http://google.com" target="_self">Google</a>
 ```
    
-- 實現頁面內部的跳轉`<a name="bottom" href="#top">`
+- 實現頁面內部的跳轉`<a name="bottom" href="#top">`  
   
 href屬性寫法：`#`+`name的值`
 
@@ -25,7 +26,7 @@ href屬性寫法：`#`+`name的值`
 <a name="top" href="#bottom">跳到最下面</a>
 <a name="bottom" href="#top">跳到最上面</a>
 ```
-- 實現頁面間的跳轉`<a name="a.html" href="b.html#bbb">`
+- 實現頁面間的跳轉`<a name="a.html" href="b.html#bbb">`  
   
 href屬性寫法：路徑+`#`+`name的值`
 
