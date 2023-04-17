@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[HTML]Div和Span簡介"
+title: "[HTML] Div和Span簡介"
 date: 2011-02-07 00:15:07 +0800
 categories: [Notes,HTML]
 tags: [HTML]
