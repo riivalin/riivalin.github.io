@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "CSS 中的選擇器 Selector"
+title: "[CSS] CSS中的選擇器(Selector)"
 date: 2011-02-07 00:24:17 +0800
 categories: [Notes,CSS]
 tags: [CSS]
