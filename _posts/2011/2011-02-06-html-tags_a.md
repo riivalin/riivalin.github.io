@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[Html] a 標籤的使用"
+title: "[HTML] a 標籤的使用"
 date: 2011-02-06 00:09:07 +0800
-categories: [Notes,Html]
-tags: [Html]
+categories: [Notes,HTML]
+tags: [HTML]
 ---
 
 ##  a 標籤的使用

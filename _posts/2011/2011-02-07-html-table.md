@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[Html] 跨行和跨列的表格"
+title: "[HTML] 跨行和跨列的表格"
 date: 2011-02-07 00:03:01 +0800
-categories: [Notes,Html]
-tags: [Html]
+categories: [Notes,HTML]
+tags: [HTML]
 ---
 
 ## HTML表格
