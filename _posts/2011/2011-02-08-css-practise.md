@@ -94,6 +94,61 @@ Steps:
 </html>
 ```
 ### CSS樣式檔
+
 Test.css
+
 ```css
+* { /* 星號代表所有的元素*/
+    margin: 0px; /*設置四周無間距*/
+    font-size: 12px;
+}
+
+div.divIndex { /* class選擇器*/
+    width: 290px;
+    height: 380px;
+    background-color: #F8F8F8;
+    /*float: right;*/ /*讓div飄到右邊*/
+    margin: 0px auto; /* 上邊下邊 | 左邊右邊 */
+}
+
+div.div1 {
+    width: 290px;
+    height: 35px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+div.div1 p {
+    padding: 8px; /*文字與周邊的間距*/
+    font-size: 18px;
+}
+
+#divTable { /*id選擇器*/
+    width: 280px;
+    border: 1px;
+}
+
+td.td1 {
+    font-weight: bolder; /*字體加粗*/
+}
+
+td.td2 {
+    color: #246DB2;
+    padding: 2px;
+    border-bottom: 1px dashed #cccccc; /*虛線*/
+}
+
+td.td3 {
+    font-weight: bolder;
+    color: red;
+    border-bottom: 1px dashed #cccccc;
+    text-align: right;
+}
+
+td.td4 {
+    font-weight: bolder;
+    border-bottom: 1px dashed #cccccc;
+    text-align: right;
+}
 ```
