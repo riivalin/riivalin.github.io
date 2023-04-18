@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C#] 簡單工廠和抽象類別複習"
+title: "[C# 筆記] 簡單工廠和抽象類別複習"
 date: 2011-02-08 00:09:21 +0800
 categories: [Notes,C#]
 tags: [C#]
