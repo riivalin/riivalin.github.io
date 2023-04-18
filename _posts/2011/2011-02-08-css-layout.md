@@ -46,9 +46,7 @@ tags: [CSS]
 </body>
 </html>
 ```
-> 
-CSS選擇器 = class選擇器 = 類選擇器 (用「.」點來表示)    
-
+> CSS選擇器 = class選擇器 = 類選擇器 (用「.」點來表示)    
 二種寫法：  
 1. 標籤.Class值 `div.p1` (最好加上標籤比較清楚)
 2. .Class值 `.p1` 
@@ -59,7 +57,7 @@ CSS選擇器 = class選擇器 = 類選擇器 (用「.」點來表示)
 先把框架拉好了，再填內容  
 
 - 盒子與盒子之間的距離用`margin`  
-- `margin: 0px auto;`margin寫2個值代表「上下/左右」`上下0|左右auto`  
+- `margin: 0px auto;`margin寫2個值代表「上下|左右」`上下0|左右auto`  
 - `float` 浮動，依據文檔流，兩個div左右放，並不會水平在一起，所以用飄浮float把他飄到左右邊去  
 
 ```html
