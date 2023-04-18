@@ -28,7 +28,7 @@ tags: [C#]
     - 變量名：按功能命名、按方法的返回值內容命名
         - `userName = GetUserName();`
 
-## 物件導向/面象對象
+## 物件導向/面向對象
 
 ### 進程 process
 ```c#
@@ -68,7 +68,7 @@ D:\
 public abstract void OpenFile(string extension, string fileName);
 ```
 
-public abstract void OpenFile(全路徑)  
+`public abstract void OpenFile(全路徑)` 
 方法1：傳參  
 方法2：寫屬性  
 
