@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[C# 筆記] C# Notes"
-date: 2011-02-08 00:12:21 +0800
+title: "[C# 筆記] 物件導向 -R "
+date: 2011-05-01 00:3:41 +0800
 categories: [Notes,C#]
 tags: [C#,R]
 ---
