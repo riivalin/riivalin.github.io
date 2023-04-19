@@ -3,7 +3,7 @@ layout: post
 title: "[CSS] Right Align Div CSS"
 date: 2016-01-01 23:00:00 +0800
 categories: [Notes, CSS]
-tags: [CSS, Div, CSS float]
+tags: [CSS]
 ---
 
 ### [Problem Description]
