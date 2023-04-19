@@ -2,7 +2,7 @@
 layout: post
 title: "[C# 筆記] 計算時間差距: 天換算周+天、秒換算天+時+分+秒"
 date: 2017-01-05 23:09:00 +0800
-categories: [Notes, C#]
+categories: [Notes,C#]
 tags: [C#]
 ---
 ## 練習：46天是幾周零幾天？

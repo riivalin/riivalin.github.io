@@ -2,8 +2,8 @@
 layout: post
 title: "[C# 筆記] 三位數拆分"
 date: 2017-01-02 00:51:00 +0800
-categories: [Notes, C#]
-tags: [C#]
+categories: [Notes,C#]
+tags: [C#,%]
 ---
 
 練習：

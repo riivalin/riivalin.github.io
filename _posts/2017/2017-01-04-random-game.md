@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 猜數字遊戲"
 date: 2017-01-04 23:59:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,Random]
 ---
 
 遊戲流程：
