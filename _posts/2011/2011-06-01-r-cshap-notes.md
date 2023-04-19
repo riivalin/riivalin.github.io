@@ -3,9 +3,12 @@ layout: post
 title: "[C# 筆記] .Net基礎-複習-R "
 date: 2011-06-01 00:03:41 +0800
 categories: [Notes,C#]
-tags: [C#,R]
+tags: [C#,R,new,this,base,return,as,is,get,set,LSP,多型,virtual,abstract,interface,里氏轉換,繼承]
 ---
 
+TODO: 單例模式，只能創建一個物件(對象)
+
+---
 
 ## 1.註解
 `//`、`/**/`、`///`

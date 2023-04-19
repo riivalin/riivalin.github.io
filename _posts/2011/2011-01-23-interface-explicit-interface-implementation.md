@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] Interface 明確介面實作"
+title: "[C# 筆記][多型] Interface 明確介面實作"
 date: 2011-01-23 21:59:00 +0800
 categories: [Notes, C#]
-tags: [C#,interface]
+tags: [C#,interface,多型]
 ---
 
 

@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 異步 async、await"
 date: 2018-09-01 00:09:00 +0800
 categories: [Notes, C#]
-tags: [Notes, C#, async, await]
+tags: [C#,async,await]
 ---
 
 ## 什麼是異步
