@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Multicast Delegate 多點傳送委派(多播委托)"
 date: 2011-02-01 01:29:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,Delegate]
 ---
 
 ## 多點傳送委派(多播委托)

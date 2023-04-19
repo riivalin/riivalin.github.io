@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Delegate 委派語法"
 date: 2011-02-01 00:09:07 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,Delegate,Thread]
 ---
 
 ## 委派概念

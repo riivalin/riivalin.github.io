@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記][WinForm] 剪刀石頭布"
 date: 2011-01-25 21:09:00 +0800
 categories: [Notes, C#]
-tags: [C#,WinForm]
+tags: [C#,WinForm,Random]
 ---
 
 ## 剪刀石頭布

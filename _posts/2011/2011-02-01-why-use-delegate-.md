@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 為什麼要用 Delegate 委派？"
 date: 2011-02-01 00:09:01 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,Delegate]
 ---
 
 ## 為什麼要使用委派？

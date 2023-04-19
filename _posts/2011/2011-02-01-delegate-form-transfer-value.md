@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記][WinForm] Delegate 委派表單傳值"
 date: 2011-02-01 01:19:00 +0800
 categories: [Notes, C#]
-tags: [C#,WinForm]
+tags: [C#,WinForm,Delegate]
 ---
 
 - 表單配置：  

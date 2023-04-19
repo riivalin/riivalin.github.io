@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Delegate 匿名函數"
 date: 2011-02-01 00:09:12 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,Delegate]
 ---
 
 ## delegate 委派

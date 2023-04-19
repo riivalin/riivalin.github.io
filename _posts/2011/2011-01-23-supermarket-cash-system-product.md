@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] draft 超市收銀系統-商品類"
 date: 2011-01-23 23:39:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,base,this]
 ---
 
 ## 超市收銀系統-商品類

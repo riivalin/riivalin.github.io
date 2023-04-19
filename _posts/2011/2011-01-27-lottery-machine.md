@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 搖獎機"
 date: 2011-01-27 22:09:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,Thread,Random]
 ---
 
 思路：

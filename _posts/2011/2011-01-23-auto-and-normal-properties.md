@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] get;set; 自動屬性&普通屬性"
+title: "[C# 筆記] get set 自動屬性 & 普通屬性"
 date: 2011-01-23 21:29:00 +0800
 categories: [Notes, C#]
 tags: [C#]

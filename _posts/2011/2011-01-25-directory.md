@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記][WinForm] Directory 類別"
 date: 2011-01-25 22:09:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,Directory]
 ---
 
 File Path FileStream StreamRead StreamWrite

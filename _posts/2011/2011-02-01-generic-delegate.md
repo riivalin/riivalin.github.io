@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Generic Delegates 泛型委派"
 date: 2011-02-01 00:39:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,Delegate]
 ---
 
 ## Generic Delegates 泛型委派

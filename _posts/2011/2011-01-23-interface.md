@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] 多型(Polymorphism)-介面 Interface 簡介"
+title: "[C# 筆記][多型] Interface 介面簡介"
 date: 2011-01-23 21:29:00 +0800
-categories: [Notes, C#]
-tags: [C#]
+categories: [Notes,C#]
+tags: [C#,interface,多型]
 ---
 
 ## 多型(Polymorphism)

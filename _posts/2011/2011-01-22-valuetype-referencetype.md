@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] ValueType & ReferenceType | 值傳遞 & 引用傳遞"
+title: "[C# 筆記] 值傳遞 & 引用傳遞"
 date: 2011-01-22 22:29:00 +0800
 categories: [Notes, C#]
 tags: [C#]
