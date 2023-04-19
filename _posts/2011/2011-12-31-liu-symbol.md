@@ -2,8 +2,8 @@
 layout: post
 title: "無蝦米符號"
 date: 2011-12-31 21:30:00 +0800
-categories: [Notes, 雜七雜八]
-tags: 
+categories: [Notes,雜七雜八]
+tags: [liu]
 ---
 
 ## 一般 科學
