@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] 簡單工廠設計模式"
+title: "[C# 筆記][多型] Abstract 簡單工廠設計模式"
 date: 2011-01-22 22:19:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,多型,abstract]
 ---
 
 ## 簡單工廠設計模式

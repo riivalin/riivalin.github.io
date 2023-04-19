@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] 多型-抽象類 Abstract：模擬行動硬碟、隨身碟、MP3"
+title: "[C# 筆記][多型] Abstract 抽象類：模擬行動硬碟、隨身碟、MP3"
 date: 2011-01-21 22:19:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,多型,abstract]
 ---
 
 ## 模擬行動硬碟、隨身碟、MP3

@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] this base new 關鍵字"
 date: 2011-01-17 22:29:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,this,base,new]
 ---
 
 ## this base new 關鍵字

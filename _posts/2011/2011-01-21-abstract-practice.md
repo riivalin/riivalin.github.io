@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] 多型(Polymorphism)-抽象類 Abstract 練習"
+title: "[C# 筆記][多型] Abstract 抽象類-練習"
 date: 2011-01-21 22:10:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,Polymorphism,Abstract]
 ---
 
 ## 什麼時候用虛方法、抽象類？
