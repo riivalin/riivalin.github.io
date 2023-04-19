@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 值傳遞 & 引用傳遞"
 date: 2011-01-22 22:29:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,stack,heap,ValueType,ReferenceType]
 ---
 
 ## 實值類型 & 參考類型

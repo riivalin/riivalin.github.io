@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Protected 受保護的"
 date: 2011-01-17 22:49:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,protected]
 ---
 
 ## protected 受保護的

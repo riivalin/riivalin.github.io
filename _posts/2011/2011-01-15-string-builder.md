@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] String Builder"
 date: 2011-01-15 22:23:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,string,StringBuilder]
 ---
 
 ## string 和 StringBuilder 運行時間比較

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] string 練習 2"
+title: "[C# 筆記] string 練習2"
 date: 2011-01-16 23:09:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,string]
 ---
 
 ## 練習1：將"abc" 反轉 "cba" 輸出

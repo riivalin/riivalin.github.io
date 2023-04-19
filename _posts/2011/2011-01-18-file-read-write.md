@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] File 讀寫文件"
 date: 2011-01-18 23:49:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,File]
 ---
 
 ### File 檔案讀寫

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] string 練習 1"
+title: "[C# 筆記] string 練習1"
 date: 2011-01-16 22:59:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,string]
 ---
 
 練習：

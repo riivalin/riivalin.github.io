@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記]  ArrayList 集合"
+title: "[C# 筆記] ArrayList 集合"
 date: 2011-01-17 22:59:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,arraylist]
 ---
 
 ## ArrayList 集合

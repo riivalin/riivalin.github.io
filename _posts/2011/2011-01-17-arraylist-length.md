@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] ArrayList 的長度問題"
 date: 2011-01-17 23:00:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,arraylist]
 ---
 
 ## ArrayList 的長度問題

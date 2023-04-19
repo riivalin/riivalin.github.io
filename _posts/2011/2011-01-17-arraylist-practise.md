@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] ArrayList 集合練習"
+title: "[C# 筆記] ArrayList 集合-練習"
 date: 2011-01-17 23:07:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,arraylist]
 ---
 
 ## 練習1：建立一個集合，裡面添加一些數字，求平均值與和
