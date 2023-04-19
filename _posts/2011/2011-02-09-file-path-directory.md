@@ -221,5 +221,3 @@ foreach (var item in s) {
 Console.WriteLine("done");
 Console.ReadKey();
 ```
-
-## 文件類-練習
