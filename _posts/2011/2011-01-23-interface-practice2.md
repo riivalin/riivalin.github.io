@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] Interface 介面 -練習2"
+title: "[C# 筆記][多型] Interface 介面 -練習2"
 date: 2011-01-23 23:19:00 +0800
 categories: [Notes, C#]
-tags: [C#,interface]
+tags: [C#,interface,多型]
 ---
 
 ## 練習：
