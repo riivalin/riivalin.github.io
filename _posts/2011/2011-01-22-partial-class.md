@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Partial 部分類別"
 date: 2011-01-22 22:49:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,partial]
 ---
 ## Partial 部分類
 
