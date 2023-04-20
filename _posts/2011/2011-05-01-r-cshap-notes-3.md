@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] .Net基礎-複習-R "
-date: 2011-06-01 00:03:41 +0800
+date: 2011-05-01 00:13:41 +0800
 categories: [Notes,C#]
 tags: [C#,R,new,this,base,return,as,is,get,set,LSP,多型,virtual,abstract,interface,里氏轉換,繼承]
 ---
