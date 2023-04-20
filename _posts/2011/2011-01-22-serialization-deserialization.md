@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 序列化 & 反序列化"
 date: 2011-01-22 22:39:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,Serializable]
 ---
 
 BinaryFormatter、Formatter 和IFormatter 上的序列化和還原序列化方法已過時。vs2022
