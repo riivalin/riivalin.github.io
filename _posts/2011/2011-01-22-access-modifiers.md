@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] C#中的訪問修飾符"
+title: "[C# 筆記] C#中的訪問修飾符(存取修飾詞)"
 date: 2011-01-22 22:09:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,存取修飾詞]
 ---
 
 ## C# 中的訪問修飾符
