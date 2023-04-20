@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] 使用 FileStream 來讀寫文件"
+title: "[C# 筆記][FileStream] 使用 FileStream 來讀寫文件"
 date: 2011-01-20 22:09:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,FileStream]
 ---
 
 ## FileStream 和 File 區別

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] 使用 FileStream 實現多媒體文件的複製"
+title: "[C# 筆記][FileStream] 使用 FileStream 實現多媒體文件的複製"
 date: 2011-01-20 22:19:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,FileStream]
 ---
 
 ## 使用FileStream 實現多媒體文件的複製
