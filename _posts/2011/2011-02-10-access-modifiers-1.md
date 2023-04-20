@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 訪問修飾符(存取修飾詞)-複習"
 date: 2011-02-10 00:05:31 +0800
 categories: [Notes,C#]
-tags: [C#,R,存取修飾詞]
+tags: [C#,R,Protected,存取修飾詞]
 ---
 
 ## 存取修飾詞
