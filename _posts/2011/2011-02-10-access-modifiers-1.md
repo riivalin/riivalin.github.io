@@ -42,11 +42,11 @@ internal class Person {
 //這下，你在別的專案裡面，就暴露這個父類的成員
 public class Teacher : Person { }
 ```
-程式說明：
+程式說明：  
 假如把父類加上internal，我的想法肯定是什麼呀？只能讓這個類別在當前的程序集(組件Assembly)(exe或dll)中進行訪問，出了這個專案還能訪問嗎？不能，但你個子類是什麼呀？Public，他意味著到別的專案，同樣可以訪問到這個子類。但是由於繼承關係，你是不是能拿到我這邊父類的成員呀？這下，你是不是在別的專案裡面，暴露這個父類的成員了，所以子類的權限不能高於父類。
 
 ## 承上，怎麼排除問題
-把子類改成跟父類一樣 internal 就可以了
+把子類改成跟父類一樣 `internal` 就可以了
 
 ```c#
 internal class Person {
@@ -59,11 +59,11 @@ internal class Teacher : Person {
 ```
 
 ## 舉例：protected 兩個權限
-protected 有兩個權限：
+`protected` 有兩個權限：
 1. 只有自身類別與子類別才能存取使用
-我在子類中可以訪問到父類的protected成員，但是在外面就拿不到了
+我在子類中可以訪問到父類的p`rotected`成員，但是在外面就拿不到了
 2. 只要是繼承關係，不管兩者是否在同一程序集中，子類都有訪問父類的權限
-跨專案，我可透過繼承關係，訪問到父類的protected成員
+跨專案，我可透過繼承關係，訪問到父類的`protected`成員
 
 
 ### 舉例：只有自身類別與子類別才能存取使用
@@ -102,7 +102,7 @@ internal class Teacher : Person
 ```
 
 ### 舉例：只要是繼承關係，不管兩者是否在同一程序集中，子類都有訪問父類的權限
-跨專案，我可透過繼承關係，訪問到父類的protected成員
+跨專案，我可透過繼承關係，訪問到父類的`protected`成員
 
 ```c#
 //專案A
@@ -143,7 +143,7 @@ protected兩個權限：
 - protected: 只有自身類別與子類別才能存取使用
 (只要是繼承關係，不管兩者是否在同一程序集中，子類都有訪問父類的權限)
 - internal: 只有同一個namespace的才能存取
-- protected internal: protected || internal的概念
+- protected internal: protected /|/| internal的概念
 
 ![](/assets/img/post/access-csharp.jpeg)
 
