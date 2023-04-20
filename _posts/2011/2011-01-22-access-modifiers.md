@@ -8,6 +8,8 @@ tags: [C#,存取修飾詞]
 
 ## C# 中的訪問修飾符
 
+![](/assets/img/post/access-csharp.jpeg)
+
 - public 公開公共的
 - private 私有的，只能在當前的類別內部訪問
 - protected 受保護的，子類也可以訪問。只能在當前類別的內部、子類中訪問。
@@ -72,15 +74,9 @@ Person p = new Person(); //不可訪問，因為它受保護級別的限制，�
 ```
 在同一個專案中，internal, public 的權限是一樣的。
 
+## internal、protected 誰的權限大？   
+- 在同一個專案裡，internal的權限比 protected 大，因為internal它在當前專案中哪都可以訪問，protected只能被繼承他的子類訪問。
+- 在不同的專案裡，protected權限大，internal它在當前專案中哪都可以訪問，但是，它出了這個專案就訪問不到internal的成員。 protected 雖然只能在當前的類別的內部，和繼承它的子類中訪問的到。但是我們出了這專案，在另一個專案裡面，internal這個成員絕對是訪問不到，但是我們卻可以通過繼承關係，訪問到 protected的成員， 
 
-## protected & internal
-internal、protected 誰的權限大？    
-當然是internal權限大，因為它在當前專案中哪都可以訪問。
-protected 只能在當前的類別的內部，和繼承它的子類中訪問。
-
-
-
-
-
-
+        
 [keywords/protected-internal](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/protected-internal)
