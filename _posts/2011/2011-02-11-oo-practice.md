@@ -196,3 +196,6 @@ computer.CpuWrite();
 
 Console.ReadKey();
 ```
+
+- [https://www.bilibili.com/video/BV1vG411A7my?p=47](https://www.bilibili.com/video/BV1vG411A7my?p=47)
+- [https://www.bilibili.com/video/BV1vG411A7my?p=48](https://www.bilibili.com/video/BV1vG411A7my?p=48)
