@@ -47,6 +47,6 @@ public class Teacher : Person
 - protected: 只有自身類別與子類別才能存取使用
 (只要是繼承關係，不管兩者是否在同一程序集中，子類都有訪問父類的權限)
 - internal: 只有同一個namespace的才能存取
-- protected internal: protected || internal的概念
+- protected internal: protected /|/| internal的概念
 
 ![](/assets/img/post/access-csharp.jpeg)
