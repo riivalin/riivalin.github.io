@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 物件導向 -R "
 date: 2011-05-01 00:03:41 +0800
 categories: [Notes,C#]
-tags: [C#,R,new,this,base,return,as,is,里氏轉換,繼承]
+tags: [C#,R,new,this,base,return,as,is,里氏轉換,繼承,OO,物件導向]
 ---
 
 TODO: 單例模式，只能創建一個物件(對象)
