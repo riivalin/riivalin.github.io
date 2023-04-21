@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 序列化 & 反序列化"
+title: "[C# 筆記][Serializable] 序列化 & 反序列化 1"
 date: 2011-01-22 22:39:00 +0800
 categories: [Notes, C#]
 tags: [C#,Serializable]
