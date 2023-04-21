@@ -22,6 +22,7 @@ tags: [C#,OO,物件導向,abstract,多型]
 - 因為每種設備讀寫數據的方式是各不相同的
 - 所以說，你應該將這個父類標記為 `abstract` 抽象的
 - 而父類的這兩個函數(讀/寫)也是 `abstract` 抽象的
+
 ```
 父類 抽象的
 - Read()
@@ -41,6 +42,7 @@ tags: [C#,OO,物件導向,abstract,多型]
   Write()
   PlayMusic()
 ```
+
 好，剩下的就寫我們的電腦。  
 在電腦裡面也應該提供兩個方法去讀寫  
 - 電腦這兩個函數：
@@ -74,8 +76,10 @@ tags: [C#,OO,物件導向,abstract,多型]
   public void CpuRead(MobileStorage ms) {  ms.Read(); }
 2.寫一個屬性來儲存 插到電腦上的行動設備。父類類型的屬性
   public MobileStorage MS { get; set; }
-```
+```     
+
 ### 開始實作
+#### 父類別
 承上，我們在寫的時候，應該先去寫誰呀？父類，行動儲存設備     
 
 ```c#
@@ -89,7 +93,9 @@ public abstract class MobileStorage
     public abstract void Write();
 }
 ```
+#### 子類別
 再寫 子類，子類繼承父類，並重寫父類的抽象方法
+
 ```c#
 public class MobileDisk : MobileStorage
 {
@@ -133,6 +139,7 @@ public class MP3 : MobileStorage
     }
 }
 ```
+#### 電腦類別
 最後寫電腦類別      
 想辦法在電腦類別拿到父類，為什麼要拿到父類，因為我不知道哪一個子類會插在電腦上，所以由父類處理。
 - 寫一個屬性來儲存 插到電腦上的行動設備。父類類型的屬性
@@ -170,6 +177,7 @@ public class Computer
     }
 }
 ```
+#### 開始模擬把行動裝置插到電腦上
 現在來看實體化這個物件
 
 ```c#
