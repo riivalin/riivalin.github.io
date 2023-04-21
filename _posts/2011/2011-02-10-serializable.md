@@ -12,7 +12,7 @@ tags: [C#,Serializable]
 為什麼要序列化？因為要傳輸數據。    
 
 ## 序列化
-1. 要將序列化對象(物件)的類，標記為可以被序列化的
+#### 1. 要將序列化對象(物件)的類，標記為可以被序列化的
 
 ```c#
 [Serializable]
@@ -20,8 +20,9 @@ public class Person {
 }
 ```
 
-2. 把這個對象(物件)序列化成二進制，用一個流來搞定這件事情
-3. 我們要把序列化後的二進制用 FileStream寫到桌面上
+#### 2. 把這個對象(物件)序列化成二進制，用一個流來搞定這件事情
+#### 3. 我們要把序列化後的二進制用 FileStream 寫到桌面上
+
 ```c#
 Person person = new Person();
 person.Name = "Ken";
@@ -47,7 +48,8 @@ public class Person
 }
 ```
 
-## 反序列化
+## 反序列化 
+
 ```c#
 Person p; //宣告Personm類型的變數，用來存放反序列化後的object對象
 using (FileStream fsRead = new FileStream(@"C:\Users\rivalin\Desktop\new.txt", FileMode.OpenOrCreate, FileAccess.Read))
@@ -61,7 +63,8 @@ Console.WriteLine(p.Gender);
 Console.ReadKey();
 ```
 
-## 完整程式碼
+## 完整程式碼   
+
 ```c#
 using System;
 using System.IO;
