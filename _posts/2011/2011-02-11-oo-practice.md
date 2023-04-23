@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記][Abstract] USB隨身碟 Mp3-抽象類練習"
+title: "[C# 筆記][多型] USB隨身碟 Mp3-抽象類練習"
 date: 2011-02-11 00:01:31 +0800
 categories: [Notes,C#]
 tags: [C#,OO,物件導向,abstract,多型]
