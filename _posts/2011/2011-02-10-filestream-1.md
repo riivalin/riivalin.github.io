@@ -20,7 +20,7 @@ tags: [C#,FileStream,StreamReader,StreamWrite]
 
 ## FileStream 讀取數據
 
-#### `FileStream` 和 `StreamReader` & `StreamWrite`兩個本質的區別
+#### FileStream 和 StreamReader & StreamWrite兩個本質的區別
 - `FileStream` 操作byte(字節/位元組)的
 - `StreamReader` & `StreamWrite` 操作char/字符/字元的
 
