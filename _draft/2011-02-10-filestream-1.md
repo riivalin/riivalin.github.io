@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記][FileStream] 文件流-複習"
-date: 2011-02-10 00:01:21 +0800
+date: 2011-02-10 00:01:22 +0800
 categories: [Notes,C#]
 tags: [C#,FileStream,StreamReader,StreamWrite]
 ---
@@ -21,10 +21,10 @@ tags: [C#,FileStream,StreamReader,StreamWrite]
 ## FileStream 讀取數據
 
 #### FileStream 和 StreamReader & StreamWrite兩個本質的區別
-- `FileStream` 操作byte(字節/位元組)的
-- `StreamReader` & `StreamWrite` 操作char/字符/字元的
+- `FileStream` 操作byte(字節/位元組)的  
+- `StreamReader` & `StreamWrite` 操作char/字符/字元的   
 
-所以說，我們必須要掌握的是`FileStream`。
+所以說，我們必須要掌握的是`FileStream`。    
 
 我們的 GC（Garbage Collection）垃圾回收器並不會幫我們去自動釋放這個文件流所佔的資源，所以說我們必須要手動的close和dispose，代碼一多就會忘了這兩行，所以我們乾脆就用 `using(){ ... }`包覆起來，讓他自動的去幫助我們釋放資源。    
 
@@ -43,17 +43,18 @@ using (FileStream fsRead = new FileStream(@"C:\Users\rivalin\Desktop\temp.txt", 
     Console.WriteLine(str);
 }
 Console.ReadKey();
+
 ```
-程式說明：
-- 第一個參數：填上你要操作的那個文件的路徑
-- 第二個參數：你要針對於這個文件做一個什麼樣的操作。`OpenOrCreate`是最保險的，有就打開，沒有就創建。如果用 `Open`沒有檔的話就會拋異常。
-- 第三個參數：我們要對裡面的數據`Read`讀取。
+程式說明：  
+- 第一個參數：填上你要操作的那個文件的路徑  
+- 第二個參數：你要針對於這個文件做一個什麼樣的操作。`OpenOrCreate`是最保險的，有就打開，沒有就創建。如果用 `Open`沒有檔的話就會拋異常。 
+- 第三個參數：我們要對裡面的數據`Read`讀取。    
 - 我們在讀取的時候，是先把數據放到一個給定的`byte[](字節數組/位元組陣列)` 當中。 
 - `new byte[1024 * 1024 * 5]` 這表示我每次讀取幾M的數據？5M     
-> 不建議這樣寫`new byte[fsRead.Length]`，如果是大檔案的話，就會跟 `File類`一樣，是一次全部讀進來，對內存負荷非常的大。
+> 不建議這樣寫`new byte[fsRead.Length]`，如果是大檔案的話，就會跟 `File類`一樣，是一次全部讀進來，對內存負荷非常的大。  
 
-- 讀到的數據放到 5M 當中，從0開始，因為全部讀，所以讀buffer.Length 的長度
-- 會返回一個 int類型，r 代表本實際讀取到的有效 bytes/字節數/位元組數。
+- 讀到的數據放到 5M 當中，從0開始，因為全部讀，所以讀buffer.Length 的長度   
+- 會返回一個 int類型，r 代表本實際讀取到的有效 bytes/字節數/位元組數。  
 
 為什麼一定要返回一個 r 呢？    
 因為假設我這個文件就300KB，那我每次讀到多少呀？5M，也就是說，只有300KB是有效 btyes(字節數)，剩下的四組裡面全是空的。
@@ -62,8 +63,8 @@ Console.ReadKey();
 
 
 ### FileStream 寫入數據
-- 在寫的時候，是以`byte[]`(字節數組/位元組陣列)的形式寫入，所以你要把寫的那個東西(要寫入的數據)轉換成`byte[]`
-- 寫入成功，但是會覆蓋掉原本的內容，怎麼辦？改`FileMode`的方式為 `Append` => `FileMode.Append`
+- 在寫的時候，是以`byte[]`(字節數組/位元組陣列)的形式寫入，所以你要把寫的那個東西(要寫入的數據)轉換成`byte[]`   
+- 寫入成功，但是會覆蓋掉原本的內容，怎麼辦？改`FileMode`的方式為 `Append` => `FileMode.Append`  
     - `FileMode.OpenOrCreate`會覆蓋原本的內容
     - `FileMode.Append`追加在後面，不會覆蓋原本的內容
 
@@ -78,6 +79,7 @@ using (FileStream fsWrite = new FileStream(@"C:\Users\rivalin\Desktop\temp.txt",
 }
 ```
 #### 使用 FileMode.Append 會將寫入的資料，寫在原本內容的最後面
+
 ```c#
 using (FileStream fsWrite = new FileStream(@"C:\Users\rivalin\Desktop\temp.txt", FileMode.Append, FileAccess.Write)) { ... }
 ```
@@ -95,10 +97,11 @@ using (StreamReader sr = new StreamReader(@"C:\Users\rivalin\Desktop\temp.txt"))
     Console.ReadKey();
 ```
 
-#### FileStream+StreamReader 以下範例，這樣寫沒有必要...
-- 第一個參數：可以給路徑，也可以給一個steam流，FileStream它是繼承Stream，所以我這裡的參數，完全可以給一個FileStream對象(物件)
+#### FileStream+StreamReader 以下範例，這樣寫沒有必要
+- 第一個參數：可以給路徑，也可以給一個steam流，FileStream它是繼承Stream，所以我這裡的參數，完全可以給一個FileStream對象(物件)   
 
-FileStream 去讀數據，StreamReader去讀FileStream，這樣寫沒有必要，直接把路徑丟下來就好啦
+FileStream 去讀數據，StreamReader去讀FileStream，這樣寫沒有必要，直接把路徑丟下來就好啦 
+
 ```c#
 //FileStream 去讀數據，StreamReader去讀FileStream
 using (FileStream fsRead = new FileStream(@"C:\Users\rivalin\Desktop\temp.txt", FileMode.OpenOrCreate, FileAccess.Read)) //沒必要這樣寫，把path丟下去就可以了
