@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "[C# 筆記] 使用泛型和索引器來實現一個自己的集合類List"
-date: 2018-06-30 00:00:10 +0800
+date: 2012-01-06 00:00:10 +0800
 categories: [Notes, C#]
 tags: [C#, "泛型<T>", "索引器[index]"]
 ---
 
 ## 創建構造函數和Capacity Count屬性
 定義一個泛型類別 public class MyList<T>
+
 ```c#
 public class MyList<T> //定義一個泛型類別
 {
@@ -40,6 +41,7 @@ public class MyList<T> //定義一個泛型類別
 }
 ```
 ## 添加Add方法
+
 ```c#
 //添加元素
 public void Add(T item) {
