@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] 物件導向 複習結束" 
-date: 2011-02-13 00:01:49 +0800
+date: 2011-02-14 00:03:49 +0800
 categories: [Notes,C#]
 tags: [C#,virtual,abstract,interface,多型,OO,物件導向]
 ---
@@ -9,7 +9,7 @@ tags: [C#,virtual,abstract,interface,多型,OO,物件導向]
 ## 練習1：物件導向
 定義父親類Father(姓lastName, 財產property, 血型bloodType)   
 兒子類Son(玩遊戲PlayGame方法)，女兒類Daughter(跳舞Dance方法)    
-調用父類構造函數(:base())給子類字段賦值     
+調用父類構造函數(`:base()`)給子類字段賦值     
 
 ```c#
 //定義父親類Father(姓lastName, 財產property, 血型bloodType)
