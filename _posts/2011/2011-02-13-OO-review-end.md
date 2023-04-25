@@ -59,9 +59,9 @@ public class Dauther : Father
         Console.WriteLine("女兒會玩跳舞");
     }
 }
-```
+``` 
 ## 練習2：物件導向
-定義汽車類Vehicle，屬性：brand(品牌)、color顏色)、方法run     
+定義汽車類Vehicle，屬性：brand(品牌)、color(顏色)、方法run     
 子類卡車(Truck)，屬性：weight載重、方法:拉貨  
 轎車(Car)：屬性：passenger載客數量、方法:載客量     
 
@@ -254,11 +254,9 @@ public class Bird
 
 public class Pengui : Bird
 {
-
 }
 public class Ostrich : Bird
 {
-
 }
 
 public class Sparrow : Bird, IFlyable
@@ -362,7 +360,8 @@ public interface IBark
 {
     void Bark();
 }
-```
+``` 
+
 ## 練習7：物件導向-多型(abstract)
 計算形狀shape的面積、周長   
 (圓circle、矩形square、正方形rectangle)
