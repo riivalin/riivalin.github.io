@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "C# Notes - Part Ⅱ"
-date: 2012-01-01 00:03:10 +0800
+date: 2012-01-01 23:03:10 +0800
 categories: [Notes, C#]
 tags: [C#]
 ---
