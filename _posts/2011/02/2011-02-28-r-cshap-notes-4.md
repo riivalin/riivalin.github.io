@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] 物件導向-複習-R"
-date: 2011-05-02 00:05:31 +0800
+date: 2011-02-28 00:05:31 +0800
 categories: [Notes,C#]
 tags: [C#,R,new,this,base,OO,物件導向]
 ---
