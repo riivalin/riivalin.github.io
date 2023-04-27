@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記][FileStream] 文件流-複習"
-date: 2011-02-10 00:01:22 +0800
+date: 2011-02-10 01:11:22 +0800
 categories: [Notes,C#]
 tags: [C#,FileStream,StreamReader,StreamWrite]
 ---
