@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] string 字串複習-End"
 date: 2011-03-01 23:23:00 +0800
 categories: [Notes, C#]
-tags: [C#,string,Split,StringComparison.OrdinalIgnoreCase,StringSplitOptions.RemoveEmptyEntries,Substring,new string()]
+tags: [C#,string,string.Join,Split,StringSplitOptions.RemoveEmptyEntries]
 ---
 
 ## 練習1: 123-456-789---123-2 把類似的字串中重複的符號去掉
