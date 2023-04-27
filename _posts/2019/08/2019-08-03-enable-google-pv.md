@@ -2,7 +2,7 @@
 layout: post
 title: Enable Google Page Views
 author: sille_bille
-date: 2019-08-03 18:32:00 -0500
+date: 2019-08-03 18:32:00 +0800
 categories: [Blogging, Tutorial]
 tags: [google analytics, pageviews]
 ---
