@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] string 字串複習-End"
-date: 2011-03-01 23:13:00 +0800
+date: 2011-03-01 23:23:00 +0800
 categories: [Notes, C#]
 tags: [C#,string,Split,StringComparison.OrdinalIgnoreCase,StringSplitOptions.RemoveEmptyEntries,Substring,new string()]
 ---
