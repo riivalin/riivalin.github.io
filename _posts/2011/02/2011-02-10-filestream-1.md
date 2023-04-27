@@ -59,7 +59,7 @@ Console.ReadKey();
 為什麼一定要返回一個 r 呢？    
 因為假設我這個文件就300KB，那我每次讀到多少呀？5M，也就是說，只有300KB是有效 btyes(字節數)，剩下的四組裡面全是空的。
 
-- 再將這個 byte[](字節數組/位元組陣列) 轉換成我們所認識的字串
+- 再將這個 byte[]/字節數組/位元組陣列 轉換成我們所認識的字串
 
 
 ### FileStream 寫入數據
@@ -85,6 +85,7 @@ using (FileStream fsWrite = new FileStream(@"C:\Users\rivalin\Desktop\temp.txt",
 ```
 ## StreamReader & StreamWrite
 ### StreamReader 
+
 ```c#
 using (StreamReader sr = new StreamReader(@"C:\Users\rivalin\Desktop\temp.txt"))
     {
@@ -98,6 +99,7 @@ using (StreamReader sr = new StreamReader(@"C:\Users\rivalin\Desktop\temp.txt"))
 ```
 
 #### FileStream+StreamReader 以下範例，這樣寫沒有必要
+
 - 第一個參數：可以給路徑，也可以給一個steam流，FileStream它是繼承Stream，所以我這裡的參數，完全可以給一個FileStream對象(物件)   
 
 FileStream 去讀數據，StreamReader去讀FileStream，這樣寫沒有必要，直接把路徑丟下來就好啦 
