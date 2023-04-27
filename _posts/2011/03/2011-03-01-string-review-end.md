@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "[C# 筆記] string 字串複習-End"
-date: 2011-03-01 23:23:00 +0800
-categories: [Notes, C#]
+date: 2011-03-01 23:53:00 +0800
+categories: [Notes,C#]
 tags: [C#,string,string.Join,Split,StringSplitOptions.RemoveEmptyEntries]
 ---
 
-## 練習1: 123-456-789---123-2 把類似的字串中重複的符號去掉
-123-456-789-123-2 .split()
+## 練習1: 把類似的字串中重複的符號去掉
+"123-456-789---123-2 " => "123-456-789-123-2" `.split()`
 
 思路
 - `split()`把所有的橫線全都幹掉
@@ -26,9 +26,9 @@ Console.ReadKey();
 
 ## 練習2:一txt文件，求員工中最高、最低、平均的工資
 
-- 要拿到每一行的的內容`File.ReadAllLines`
-- `int max = int.MinValue;` 宣告最大值，給一個假定值(假定值為最小值)
-- i`nt min = int.MaxValue;` 宣告最小值，給一個假定值(假定值為最大值)
+- 要拿到每一行的的內容`File.ReadAllLines`   
+- `int max = int.MinValue;` 宣告最大值，給一個假定值(假定值為最小值)    
+- i`nt min = int.MaxValue;` 宣告最小值，給一個假定值(假定值為最大值)    
 
 ```c#
 string[] str = File.ReadAllLines(@"C:\Users\rivalin\Desktop\工資.txt");
