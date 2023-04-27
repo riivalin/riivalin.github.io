@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] string 字串複習-End"
 date: 2011-03-01 23:53:00 +0800
 categories: [Notes,C#]
-tags: [C#,string,string.Join,Split]
+tags: [C#,string,string.Join,Split,StringSplitOptions.RemoveEmptyEntries]
 ---
 
 ## 練習1: 把類似的字串中重複的符號去掉
@@ -28,10 +28,11 @@ Console.ReadKey();
 
 - 要拿到每一行的的內容`File.ReadAllLines`   
 - `int max = int.MinValue;` 宣告最大值，給一個假定值(假定值為最小值)    
-- i`nt min = int.MaxValue;` 宣告最小值，給一個假定值(假定值為最大值)    
+- `int min = int.MaxValue;` 宣告最小值，給一個假定值(假定值為最大值)    
 
 ```c#
 string[] str = File.ReadAllLines(@"C:\Users\rivalin\Desktop\工資.txt");
+
 int max = int.MinValue; //最大值給一個假定值(假定值為最小值)
 int min = int.MaxValue; //最小值給一個假定值(假定值為最大值)
 int sum = 0;
