@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Boxing & Unboxing 裝箱&拆箱"
 date: 2011-01-19 22:19:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,Boxing Unboxing,裝箱 拆箱]
 ---
 
 `ArrayList`和`Hashtable` 很少在用，為什麼?  
@@ -111,8 +111,6 @@ public readonly struct Int32 : IComparable, IComparable<Int32>, IConvertible, IE
 { … }
 ```
 > `int`類型繼承了`IComparable`
-
-
 
 ---
 
