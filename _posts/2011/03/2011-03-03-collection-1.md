@@ -21,30 +21,30 @@ ArrayList和Hashtable 很少在用，為什麼?
 
 ## 集合類(增、刪、查、改、遍歷)
 - 集合常用操作：添加、遍歷、移除
-- 命名空間System.Collections
-- ArrayList可變度陣列，使用類似於陣列
+- 命名空間`System.Collections`
+- `ArrayList`可變度陣列，使用類似於陣列
     - 屬性
-        - Capacity：集合中可以容納元素的個數，翻倍增長；
-        - Count：集合中實際存放的元素的個數
+        - `Capacity`：集合中可以容納元素的個數，翻倍增長；
+        - `Count`：集合中實際存放的元素的個數
     - 方法
-        - Add()、AddRange(ICollection c)、Remove()、RemoveAt()、Clear()
-        - Contains()、ToArray()、Sort()排序、Reverse()反轉
-- Hashtable鍵值對的集合，類似於字典，Hashtable在查找元素的時候，速度很快。
-    - Add(object key, object value);
-    - hash["key"]
-    - hase["key"] = "修改" 
-    - .ContainsKey("Key");
-    - Remove("key")
+        - `Add()`、`AddRange(ICollection c)`、`Remove()`、`RemoveAt()`、`Clear()`
+        - `Contains()`、`ToArray()`、`Sort()`排序、`Reverse()`反轉
+- `Hashtable`鍵值對的集合，類似於字典，`Hashtable`在查找元素的時候，速度很快。
+    - `Add(object key, object value);`
+    - `hash["key"]`
+    - `hase["key"] = "修改" `
+    - `.ContainsKey("Key");`
+    - `Remove("key")`
     - 遍歷
-        - hash.Keys
-        - hash.Values/DecitionaryEntry
----
+        - `hash.Keys`
+        - `hash.Values/DecitionaryEntry`
+
 
 ## 集合
-- ArrayList（不常用了，用泛型）
-- Hashtable（不常用了，用泛型）
-- List<T>
-- Dictionary<TKey,TValue>
+- `ArrayList`（不常用了，用泛型）
+- `Hashtable`（不常用了，用泛型）
+- `List<T>`
+-` Dictionary<TKey,TValue>`
 
 ## Q：為什麼不再使用ArrayList和Hashtable？
 會發生裝箱和拆箱
@@ -58,11 +58,11 @@ ArrayList和Hashtable 很少在用，為什麼?
 比如：`string`轉成`int`，`int`轉成`string`，雖然他們是值類型和引用類型，但是他們之間轉換會發生拆裝箱嗎？**不會**
 
 ## 值類型 & 引用類型
-- 值類型：bool, int, double, char, struct, enum, decimal
-- 引用類型：string、陣列、集合、interface、object、自定義類
+- 值類型：`bool`, `int`, `double`, `char`, `struct`, `enum`, `decimal`
+- 引用類型：`string`、陣列、集合、`interface`、`object`、自定義類
 
-- 值類型的值，是分配在內存的stack(堆疊/棧)。
-- 引用類型的值，是皆配在內存的heap(堆積/堆)
+- 值類型的值，是分配在內存的`stack`(堆疊/棧)。
+- 引用類型的值，是皆配在內存的`heap`(堆積/堆)
 
 - 值類型在賦值的時候，傳遞的是「值的本身」
 - 引用類型在賦值的時候，傳遞的是「引用」
@@ -118,3 +118,5 @@ Console.ReadKey();
 
 dic.ContainsKey();//判斷是否包含這個key值
 ```
+
+[[C# 筆記] Boxing & Unboxing 裝箱&拆箱](https://riivalin.github.io/posts/2011/01/boxing-unboxing/)
