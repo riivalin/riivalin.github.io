@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 泛型集合複習 1"
 date: 2011-03-02 23:13:00 +0800
 categories: [Notes, C#]
-tags: [C#,heap,stack,ref,List<T>,Dictionary<TKey,TValue>,泛型集合,Boxing Unboxing,裝箱 拆箱]
+tags: [C#,heap,stack,ref,List<T>,Dictionary<TKey,TValue>,泛型,泛型集合,Boxing Unboxing,裝箱 拆箱]
 ---
 
 ArrayList & Hashtable 不常用了，用泛型
