@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] array 練習"
 date: 2011-01-08 10:00:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,array]
 ---
 
 ## 練習1：從一個整數數組中取出最大的整數、最小整數、總和，平均值
