@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Constructor 構造函式"
 date: 2011-01-14 23:00:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,構造函數,Constructor,new]
 ---
 
 ## 構造函式

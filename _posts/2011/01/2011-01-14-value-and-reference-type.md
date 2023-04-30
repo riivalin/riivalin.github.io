@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Value type, Reference type"
 date: 2011-01-14 23:33:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,stack,heap]
 ---
 
 ## 值類型和引用類型
@@ -20,7 +20,7 @@ int, double, bool, char, decimal, struct, enum
 string, 自定義類, 陣列
 
 ## 儲存
-棧內存(Stack) ＆ 堆內存(Heap)   
+棧內存(`Stack`) ＆ 堆內存(`Heap`)   
 - 值類型的值是儲存在內存的棧當中。棧內存(Stack)
 - 引用類型的值是儲存在內存的堆當中。堆內存(Heap)    
 

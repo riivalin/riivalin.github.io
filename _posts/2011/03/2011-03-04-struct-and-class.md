@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Struct & Class 結構和類別的區別"
 date: 2011-03-04 23:53:00 +0800
 categories: [Notes, C#]
-tags: [C#,struct,class,stack,heap]
+tags: [C#,struct,class,stack,heap,構造函數,Constructor]
 ---
 
 ## 從類型來看

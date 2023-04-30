@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] destructor 解構函式"
 date: 2011-01-14 23:10:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,destructor]
 ---
 ## 解構函式
 作用：幫助我們釋放資源
