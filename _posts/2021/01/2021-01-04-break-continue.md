@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] break、continue"
 date: 2021-01-04 00:18:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,break,continue]
 ---
 
 `break`
