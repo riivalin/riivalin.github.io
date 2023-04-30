@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記](int)、Convert.ToInt32、int.Parse、int.TryParse()"
+title: "[C# 筆記](int)、Convert.ToInt32、int.Parse、int.TryParse"
 date: 2011-02-10 00:02:29 +0800
 categories: [Notes,C#]
-tags: [C#,R,(int),Convert.ToInt32,int.Parse,int.TryParse()]
+tags: [C#,R,(int),Convert.ToInt32,int.Parse,int.TryParse]
 ---
 
 ## Convert.ToInt32、(int) 和 int.Parse 三者的區别：
