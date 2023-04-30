@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Stack (堆疊/棧) & Heap (堆積/堆)"
 date: 2011-01-15 22:01:50 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,stack,heap]
 ---
 
 ## 記憶體配置
