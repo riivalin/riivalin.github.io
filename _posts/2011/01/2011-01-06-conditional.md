@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 三元表達式 ? :"
 date: 2011-01-06 00:01:00 +0800
 categories: [Notes, C#]
-tags: [C#,"? :"]
+tags: [C#]
 ---
 
 三元表達式，就是 if-else 的簡化寫法 
