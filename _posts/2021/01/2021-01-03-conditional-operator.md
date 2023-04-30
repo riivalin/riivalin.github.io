@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 三元條件運算子？："
 date: 2021-01-03 00:12:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,"? :"]
 ---
 
 作用：從二者當中選擇其一，作為運算式的結果  
