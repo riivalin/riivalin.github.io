@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 泛型集合練習 2"
 date: 2011-03-02 23:23:00 +0800
 categories: [Notes,C#]
-tags: [C#,List<T>,Dictionary<TKey,TValue>,泛型,泛型集合,KeyValuePair,Split,StringSplitOptions.RemoveEmptyEntries]
+tags: [C#,List,Dictionary,泛型,泛型集合,KeyValuePair,Split,StringSplitOptions.RemoveEmptyEntries]
 ---
 
 ## 練習1：奇偶數的程用泛型實現，奇數在左，偶數在右
