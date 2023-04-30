@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] switch-case"
 date: 2011-01-03 10:10:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,switch-case]
 ---
 
 Switch Case 
