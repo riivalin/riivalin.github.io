@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] namespace 命名空間"
 date: 2011-01-14 23:39:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,namespace]
 ---
 
 ## namespace 命名空間

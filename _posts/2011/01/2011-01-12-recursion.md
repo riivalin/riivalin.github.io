@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Recursion 方法的遞迴"
 date: 2011-01-12 21:30:00 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,recursion,遞迴]
 ---
 
 ## 方法的遞迴
