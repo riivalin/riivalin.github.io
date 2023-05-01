@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Hashtable (key:value) 字典集合"
 date: 2011-01-17 23:19:00 +0800
 categories: [Notes, C#]
-tags: [C#,hashtable,]
+tags: [C#,hashtable]
 ---
 
 ## Hashtable (索引鍵/值組) 集合
