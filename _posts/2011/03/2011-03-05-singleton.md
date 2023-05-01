@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 單例模式"
 date: 2011-03-05 23:03:00 +0800
 categories: [Notes, C#]
-tags: [C#,singleton]
+tags: [C#,singleton,WinForm]
 ---
 
 ## 單例模式
