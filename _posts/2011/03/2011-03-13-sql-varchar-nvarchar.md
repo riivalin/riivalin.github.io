@@ -30,5 +30,5 @@ tags: [R,char,varchar,nvarchar]
 - `nvarchar` 資料沒有固定長度，且不確定是否皆為英文數字。
 
 
-[char 和 varchar ](https://learn.microsoft.com/zh-tw/sql/t-sql/data-types/char-and-varchar-transact-sql?view=sql-server-ver16)
+- [char 和 varchar ](https://learn.microsoft.com/zh-tw/sql/t-sql/data-types/char-and-varchar-transact-sql?view=sql-server-ver16)
 - [nchar 和 nvarchar](https://learn.microsoft.com/zh-tw/sql/t-sql/data-types/nchar-and-nvarchar-transact-sql?redirectedfrom=MSDN&view=sql-server-ver16)
