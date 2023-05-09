@@ -12,11 +12,12 @@ bit 可以代表0,1
 1 英數字 = 1 byte = 8 bits 
 1 中文字 = 1 word = 2 bytes = 16 bits 
 ```
-> bit 位元 0,1  
-> 8 bits(位元) = 1 byte(位元組) 
-> 英文字母、0~9數字、符號 = 1 byte(位元組) = 1字元(character)   
-> 1個中文字 = 2 bytes(2位元組) = 16 Bits(16位元) = 1字組(word)  
-
+```
+bit 位元 0,1  
+8 bits(位元) = 1 byte(位元組) 
+英文字母、0~9數字、符號 = 1 byte(位元組) = 1字元(character)   
+1個中文字 = 2 bytes(2位元組) = 16 Bits(16位元) = 1字組(word)  
+```
 
 - `char` 固定大小。 
 - `varchar` 變動大小。  
