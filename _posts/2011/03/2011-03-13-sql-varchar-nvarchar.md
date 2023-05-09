@@ -10,6 +10,7 @@ tags: [R,char,varchar,nvarchar]
 - `varchar` 變動大小。英數字。儲存單位：1 Byte  
 - `nchar` 固定大小。中英數字。儲存單位：2 Bytes(Unicode)    
 - `nvarchar` 變動大小。中英數字。儲存單位：2 Bytes(Unicode) 
+    
 > `char`、`varchar` ，前面加上`n`，儲存`unicode`字串，對中文友好。
 
 ## char(固定) 和 varchar(變動)
