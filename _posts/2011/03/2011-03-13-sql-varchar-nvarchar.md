@@ -22,8 +22,7 @@ bit 位元 0,1
 
 - `char` 固定大小。 
 - `varchar` 變動大小。  
-
-> `char`、`varchar` ，前面加上`n`，儲存`unicode`字串，對中文友好。
+- `char`、`varchar` ，前面加上`n`，儲存`unicode`字串，對中文友好。
 
 一般在進行中文字插入時，會在中文字串前面加上一個大寫字母`N`
 
@@ -47,7 +46,7 @@ insert into Student(StuName) values (N'張三')
 - char 固定大小，浪費空間，所需計算時間少。
 - varchar 不固定長度，必須要花費較多的CPU計算時間。
 
-> `char`、`varchar` 前面加上 `n`，儲存`unicode`字串，對中文友好。
+- `char`、`varchar` 前面加上 `n`，儲存`unicode`字串，對中文友好。
  
 
 ## nchar 和 nvarchar
