@@ -12,6 +12,7 @@ bit 可以代表0,1
 1 英數字 = 1 byte = 8 bits 
 1 中文字 = 1 word = 2 bytes = 16 bits 
 ```
+
 ```
 bit 位元 0,1  
 8 bits(位元) = 1 byte(位元組) 
