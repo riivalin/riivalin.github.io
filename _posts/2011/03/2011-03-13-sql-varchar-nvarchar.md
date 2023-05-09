@@ -10,14 +10,14 @@ tags: [R,char,varchar,nvarchar]
 - `varchar` 變動大小。英數字。儲存單位：1 Byte  
 - `nchar` 固定大小。中英數字。儲存單位：2 Bytes(Unicode)    
 - `nvarchar` 變動大小。中英數字。儲存單位：2 Bytes(Unicode) 
-    
+
 > `char`、`varchar` ，前面加上`n`，儲存`unicode`字串，對中文友好。
 
-## char(固定) 和 varchar(變動)
+## char 和 varchar
 儲存單位 : 1 Byte
 
-- 固定大小 char：一建立就占據了固定的字元長度。
-- 變動大小 varchar：只要在範圍內，存多占多少。
+- `char`固定大小：一建立就占據了固定的字元長度。
+- `varchar`變動大小：只要在範圍內，存多占多少。
 
 `char`、`varchar` 前面加上 `n`，儲存`unicode`字串，對中文友好。
 
