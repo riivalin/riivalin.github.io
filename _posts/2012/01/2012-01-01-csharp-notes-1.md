@@ -3,7 +3,7 @@ layout: post
 title: "C# Notes - Part I"
 date: 2012-01-01 23:01:10 +0800
 categories: [Notes, C#]
-tags: [C#]
+tags: [C#,99乘法表]
 ---
 
 ## 數學運算符-自加(++)自減(- -)
