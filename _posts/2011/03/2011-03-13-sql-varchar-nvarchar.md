@@ -3,7 +3,7 @@ layout: post
 title: "[SQL筆記] char, varchar, nchar, nvarchar"
 date: 2011-03-13 00:37:00 +0800
 categories: [Notes,SQL]
-tags: [R,char,varchar,nvarchar]
+tags: [R,sql char,sql varchar,sql nvarchar]
 ---
 
 

@@ -3,7 +3,7 @@ layout: post
 title: "[SQL筆記] Insert Into 新增數據"
 date: 2011-03-09 23:43:00 +0800
 categories: [Notes,SQL]
-tags: [T-SQL,sql script,insert into,insert into select]
+tags: [T-SQL,sql script,sql insert into,sql insert into select]
 ---
 
 ## INSERT INTO 敘述句 (SQL INSERT INTO Statement)
