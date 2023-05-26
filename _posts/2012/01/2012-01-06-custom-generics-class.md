@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 使用泛型和索引器來實現一個自己的集合類List"
 date: 2012-01-06 00:00:10 +0800
 categories: [Notes, C#]
-tags: [C#, "泛型<T>", "索引器[index]"]
+tags: [C#,"泛型<T>","索引器[index]"]
 ---
 
 ## 創建構造函數和Capacity Count屬性
@@ -137,6 +137,7 @@ public T this[int index] //T是索引器的類型，this代表當前的對象，
     }
 }
 ```
+
 ```c#
 MyList<int> myList = new MyList<int>();
 myList.Add(1);
@@ -151,6 +152,7 @@ for (int i = 0; i < myList.Count; i++) {
 }
 Console.ReadKey();
 ```
+
 完整Code
 ```c#
 public class MyList<T> //定義一個泛型類別
@@ -224,6 +226,7 @@ public class MyList<T> //定義一個泛型類別
     }
 }
 ```
+
 ## 插入元素Insert()方法
 
 ```c#
@@ -245,7 +248,9 @@ public void Insert(int index, T item) {
     }
 }
 ```
-myList.Insert(1, 99); //插入元素
+
+`myList.Insert(1, 99);` 插入元素
+
 ```c#
 MyList<int> myList = new MyList<int>();
 myList.Add(1);
@@ -261,6 +266,7 @@ for (int i = 0; i < myList.Count; i++) {
 }
 Console.ReadKey();
 ```
+
 完整Code
 ```c#
 public class MyList<T> //定義一個泛型類別
@@ -368,7 +374,8 @@ public void RemoveAt(int index)
     }
 }
 ```
-myList.RemoveAt(3);//移除元素
+
+`myList.RemoveAt(3);`移除元素
 ```c#
 MyList<int> myList = new MyList<int>();
 myList.Add(1);
@@ -385,6 +392,7 @@ for (int i = 0; i < myList.Count; i++) {
 }
 Console.ReadKey();
 ```
+
 完整Code
 ```c#
 public class MyList<T> //定義一個泛型類別
@@ -490,7 +498,7 @@ public class MyList<T> //定義一個泛型類別
 }
 ```                                         
 ## 創建IndexOf、LastIndexOf和Sort排序方法
-創建IndexOf、LastIndexOf
+創建`IndexOf`、`LastIndexOf`
 ```c#
 //搜尋元素的索引值
 public int IndexOf(T item) 
@@ -513,8 +521,10 @@ public int LastIndexOf(T item) {
     return -1; //沒有找到值
 }
 ```
-myList.IndexOf(33); //從前往後搜索
-myList.LastIndexOf(33); //從後往前搜索
+
+- `myList.IndexOf(33);` 從前往後搜索
+- `myList.LastIndexOf(33);` 從後往前搜索
+
 ```c#
 MyList<int> myList = new MyList<int>();
 myList.Add(1);
@@ -534,14 +544,17 @@ Console.WriteLine(myList.LastIndexOf(33)); //從後往前搜索
 Console.ReadKey();
 ```
 
-創建Sort排序方法
+## 創建Sort排序方法
 
-為Sort()方法加上where T: IComparable 就可以使用CompareTo來比較大小
+為`Sort()`方法加上`where T: IComparable` 就可以使用`CompareTo`來比較大小
 > 主要是要讓sort()方法可以調用CompareTo方法
+
 ```c#
 public class MyList<T> where T: IComparable
 ```
+
 > where T:表示對T加個約束，繼承IComparable接口，可以比較大小的接口
+
 
 ```c#
 //排序
@@ -559,7 +572,9 @@ public void Sort() {
     }
 }
 ```
-myList.Sort();//排序
+
+`myList.Sort();`排序
+
 ```c#
 MyList<int> myList = new MyList<int>();
 myList.Add(1);
@@ -584,6 +599,7 @@ for (int i = 0; i < myList.Count; i++) {
 }
 Console.ReadKey();
 ```
+
 完整Code
 ```c#
 //定義一個泛型類別
