@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 類別class和實體instance"
 date: 2010-01-05 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,R,dynamic]
+tags: [C#,R,dynamic,class]
 ---
 
 ## 實體instance
