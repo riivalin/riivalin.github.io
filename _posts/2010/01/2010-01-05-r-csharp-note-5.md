@@ -112,7 +112,7 @@ static void Main(string[] args)
     Console.Read();
 }
 
-public static void DrawPoint(dynamic point) =>
+public static void DrawPoint(Point point) =>
     Console.WriteLine($"左邊點為 x: {point.x}, y: {point.y}");
 
 public class Point {
