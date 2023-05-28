@@ -116,9 +116,10 @@ int result = GetMax(x, y);
 - 使用 `return` 則意味著方法徹底停止。
 - 特殊需要，你也可以使用`return` 來提前結束程式碼。
 
-## Lambda表達式(箭頭`=>`)
+## Lambda表達式(=>)
 
-- 使用「箭頭`=>`」來簡化程式碼，主體使用「箭頭`=>`」來代替大括號，
+- 使用「箭頭`=>`」來簡化程式碼，主體使用「箭頭`=>`」來代替大括號。
+
 ```c#
 public static int GetMa(int num1, int num2) => 
 num1>num2?num1:num2;
