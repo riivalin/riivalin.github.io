@@ -12,7 +12,7 @@ tags: [C#,R,Lambda]
 - 可以執行
 - 在C#中，所有的指令都必須在方法中才能執行
 
-```c#
+```
 <Access Specifier> <Modifier> <Return Type> <Method Name> (Parameter List) {
     Method Body
 }
@@ -70,6 +70,7 @@ static int GetMax(int num1, int num2) {
     return num1 > num2 ? num1 : num2;
 }
 ```
+
 ## 方法總結
 - Access Specifier：訪問修飾符，決定了方法是否可以外部訪問
 - Return Type：返回類型，方法的最終計算結果，如果方法不返回任何值，則返回類型為`void`
@@ -90,6 +91,7 @@ static int GetMax(int num1, int num2) {
     return num1 > num2 ? num1 : num2;
 }
 ```
+
 ### 實參 argument
 「實參」就是調用方法中，給方法傳遞的實際數據。      
 比方如下：1、99就是實參。
@@ -99,6 +101,7 @@ int result = GetMax(1, 99); //1、99就是實參
 ```
 
 實參可以使用數據，也可以使用變量：
+
 ```c#
 int x = 1;
 int y = 99;
@@ -117,7 +120,6 @@ int result = GetMax(x, y);
 - 特殊需要，你也可以使用`return` 來提前結束程式碼。
 
 ## Lambda表達式(=>)
-
 - 使用「箭頭`=>`」來簡化程式碼，主體使用「箭頭`=>`」來代替大括號。
 
 ```c#
@@ -241,3 +243,5 @@ static void Main(string[] args)
     } while (!isExit);
 }
 ```
+
+[https://www.bilibili.com/video/BV1Ss4y1B7zE?p=15](https://www.bilibili.com/video/BV1Ss4y1B7zE?p=15)
