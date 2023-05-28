@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 使用泛型和索引器來實現一個自己的集合類List"
 date: 2012-01-06 00:00:10 +0800
 categories: [Notes, C#]
-tags: [C#,"泛型<T>","索引器[index]"]
+tags: [C#,"泛型","索引器[index]"]
 ---
 
 ## 創建構造函數和Capacity Count屬性
