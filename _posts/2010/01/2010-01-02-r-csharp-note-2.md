@@ -22,7 +22,8 @@ tags: [C#,R,Lambda]
 ```
 
 ### 訪問修飾符 Access Specifier
-方法的訪問修飾符，
+方法的訪問修飾符
+
 ```
 1. Public 公有方法，可以被外部調用
 2. Private 表示私有，方法會被隱藏起來，其他的class不可以調用
@@ -33,6 +34,7 @@ tags: [C#,R,Lambda]
 ```
 
 ### 聲明修飾符 Modifier
+
 ```
 1. Static  表示靜態類型
 2. Abstract 表示抽象類型
@@ -62,6 +64,7 @@ tags: [C#,R,Lambda]
 
 ## 方法練習
 取得最大值
+
 ```c#
 static int GetMax(int num1, int num2) {
     return num1 > num2 ? num1 : num2;
@@ -94,6 +97,7 @@ static int GetMax(int num1, int num2) {
 ```c#
 int result = GetMax(1, 99); //1、99就是實參
 ```
+
 實參可以使用數據，也可以使用變量：
 ```c#
 int x = 1;
@@ -123,7 +127,8 @@ num1>num2?num1:num2;
 ## 練習：函數化用戶登入過程
 [尚未函數化的用戶登入](https://riivalin.github.io/posts/2010/01/r-csharp-note-1/)
 
-1. 逆向思維，把「正向檢查」變為「逆向檢查」
+1.逆向思維，把「正向檢查」變為「逆向檢查」
+
 ```c#
 if (username != "riva") {
     Console.WriteLine("查無此人");
@@ -131,7 +136,8 @@ if (username != "riva") {
 } else {
 }
 ```
-2. 把`else`分支去掉，通過`return`提前結束程式流程，這樣程式碼看起來會更乾淨一點。
+
+2.把`else`分支去掉，通過`return`提前結束程式流程，這樣程式碼看起來會更乾淨一點。
 
 ```c#
 if (username != "riva") {
@@ -140,7 +146,8 @@ if (username != "riva") {
 }
 ```
 
-3. 檢查密碼也是，流程比較清晰。
+3.檢查密碼也是，流程比較清晰。
+
 ```c#
 do {
     //檢查帳號
@@ -162,7 +169,8 @@ do {
 } while(!isExit)
 ```
 
-4. 把讀取用戶輸入寫成方法
+4.把讀取用戶輸入寫成方法
+
 ```c#
 static string CmdReader(string msg)
 {
@@ -171,7 +179,8 @@ static string CmdReader(string msg)
 }
 ```
 
-5. 完成：套用方法，整理一下Code
+5.完成：套用方法，整理一下Code
+
 ```c#
 static string CmdReader(string msg)
 {
