@@ -91,7 +91,6 @@ static void Main(string[] args)
 }
 ```
 
-
 如果我們在方法中的參數前加上`out`，在調用方法的時候，同時使用關鍵字`out`，那麼這個方法中的x值就會突破限制，直接向參數a進行輸出，a 的數據也會變成5，這個就是「輸出傳參」，就是可以把方法內部的變化，輸出反映在參數中，並且以return 以外的形式來輸出
 ```c#
 static void GetValue(out int x) {
