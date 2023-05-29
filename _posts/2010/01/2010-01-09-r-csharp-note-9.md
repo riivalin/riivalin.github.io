@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] 字段、屬性與對象(物件)封裝"
-date: 2010-01-08 23:59:00 +0800
+date: 2010-01-09 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,R,get-set]
 ---
