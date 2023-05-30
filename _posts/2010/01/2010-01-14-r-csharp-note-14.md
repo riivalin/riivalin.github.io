@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 虛方法(Virtual)與方法重寫(Override)"
+title: "[C# 筆記] 虛方法(Virtual) vs 方法重寫(Override)"
 date: 2010-01-14 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,R,class,override,virtual,多型]
