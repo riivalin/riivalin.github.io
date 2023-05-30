@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] 密封類 vs 密封成員"
+title: "[C# 筆記] Sealed 密封類 vs 密封成員"
 date: 2010-01-17 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,R,class]
+tags: [C#,R,class,sealed]
 ---
 
 ## 密封類 vs 密封成員
