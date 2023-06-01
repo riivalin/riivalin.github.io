@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記][IOC][介面導向] 用戶管理(重構+介面)"
 date: 2010-01-22 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,R,class,interface,多型,ioc,介面導向]
+tags: [C#,R,class,interface,多型,ioc,interface 介面導向]
 ---
 
 [[C# 筆記] 用戶管理(重構)](https://riivalin.github.io/posts/2010/01/r-csharp-note-10/#整合套用)
