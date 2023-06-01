@@ -46,9 +46,9 @@ public class User : IUser
     }
 }
 ```
-### 提取介面
+## 提取介面
 
-#### User
+### IUser
 
 - 點選 `User` 按右鍵 > 提取介面
 
@@ -63,7 +63,8 @@ public interface IUser
 ```
 同樣的，我們給 `CMSController` 以及 `Menu` 加上他們所對應的接口(介面).  (在加入接口(介面)前，先修正程式碼的錯誤)
 
-#### CMSController
+### ICMSController
+- 點選 `CMSController` 按右鍵 > 提取介面
 
 ```c#
 public interface ICMSController {
@@ -71,18 +72,19 @@ public interface ICMSController {
 }
 ```
 
-#### Menu
-
+### IMenu
+- 點選 `Menu` 按右鍵 > 提取介面
 ```c#
 public interface IMenu {
     void ShowMenu();
 }
 ```
 
-## CMSController
+## 把User,Menu服務註冊到 CMSController
 現在我們就得到了 `IUser`、`IMenu`、`ICMSController`這三個接口(介面)。       
 
 現在到 `CMSController`，我們把 `IUser`、`IMenu`這兩個服務註冊到 `CMSController`中：
+
 - 首先先創建這兩個私有服務所對應的成員變量  
 
 ```c#
@@ -137,16 +139,20 @@ public interface ICMSController {
 
 準備工作都完成了，現在可以創建「`IOC`反轉控制容器」了。
 
-- 初始化本地變量 `ServiceCollection collection = new ServiceCollection(); //IOC`
+- 初始化本地變量 `ServiceCollection`
+
+```c#
+ServiceCollection collection = new ServiceCollection(); //IOC
+```
 
 這個 `ServiceCollection`就是我們的`IOC`。       
 
 現在向這個 `IOC` 中分別注入：用戶User、菜單Menu、程序控制 這三個服務，
 使用` AddScoped`：
 
-- 第一個用戶：使用用戶服務介面 `IUser`，實現`User`這個類
-- 第二個菜單：使用菜單服務介面 `IMenu`，實現`Menu`這個類
-- 第三個程序控制：使用用程序控制介面 `ICMSController`，實現`CMSController`這個類
+- 第一個用戶：使用「用戶服務介面 `IUser`」，實現`User`這個類
+- 第二個菜單：使用「菜單服務介面 `IMenu`」，實現`Menu`這個類
+- 第三個程序控制：使用「程序控制介面 `ICMSController`」，實現`CMSController`這個類
 
 好了，服務全部註冊完了。        
 
@@ -189,7 +195,8 @@ var cmsController = serviceProvider.GetService<ICMSController>();//提取CMSCont
 
 現在重構就進入尾聲了。      
 
-我們最後一步就是通過這個 `cmsController`來啟動「整個CMS程序」
+## 啟動「整個CMS程序」
+我們最後一步就是：通過這個 `cmsController`來啟動「整個CMS程序」
 
 ```c#
 //啟動「整個CMS程序」
