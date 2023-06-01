@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 接口(介面) vs 多態(多型)"
 date: 2010-01-21 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,R,class,interface,多型,ocp,泛型,list]
+tags: [C#,R,class,interface,多型,ocp,泛型,List]
 ---
 
 一句話總結：「接口(介面) 」與繼承沒有關係。     
