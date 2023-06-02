@@ -84,15 +84,13 @@ ServiceCollection services = new ServiceCollection();
 
 ### 介面化服務
 
-<span style="color: red;">一般來說，添加「進入IOC容器」的程式碼，我們稱之為「服務」。 </span>    
+一般來說，添加「進入IOC容器」的程式碼，我們稱之為「服務」。     
 
 所以接下來，我就要把「訂單服務」和「價格計算服務」一起添加到「`IOC容器`」中了。     
 
-<span style="color: red;">原則上，「`IOC容器`」只會使用「介面」來對服務進行匹配和解耦   
+原則上，「`IOC容器`」只會使用「介面」來對服務進行匹配和解耦   
 
 - IOC容器通過介面來識別服務
-</span> 
-
 
 ### 「訂單處理」介面化處理
 
