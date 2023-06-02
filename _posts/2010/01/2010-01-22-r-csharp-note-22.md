@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記][IOC][介面導向] 用戶管理(重構+介面)"
+title: "[C# 筆記][IoC][介面導向] 用戶管理(重構+介面)"
 date: 2010-01-22 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,R,class,interface,多型,ioc,interface 介面導向]
+tags: [C#,R,class,interface,多型,IoC 控制反轉,DI 依賴注入,interface 介面導向]
 ---
 
 [[C# 筆記] 用戶管理(重構)](https://riivalin.github.io/posts/2010/01/r-csharp-note-10/#整合套用)
@@ -127,27 +127,27 @@ public interface ICMSController {
 }
 ```
 
-## 使用 IOC 反轉控制容器
-### 創建IOC+注入服務
+## 使用 IoC 反轉控制容器
+### 創建IoC+ DI注入服務
 
 回到`Main 方法`，可以添加反轉控制容器了。     
 
-在添加反轉控制容器之前，先刪除所有的程式碼，然後添加`IOC`容器框架：
+在添加反轉控制容器之前，先刪除所有的程式碼，然後添加`IoC`容器框架：
 
 - `NuGet` > `Microsoft.Extensions.DependencyInjection`
 -  `using Microsoft.Extensions.DependencyInjection;`
 
-準備工作都完成了，現在可以創建「`IOC`反轉控制容器」了。
+準備工作都完成了，現在可以創建「`IoC`反轉控制容器」了。
 
 - 初始化本地變量 `ServiceCollection`
 
 ```c#
-ServiceCollection collection = new ServiceCollection(); //IOC
+ServiceCollection collection = new ServiceCollection(); //IoC
 ```
 
-這個 `ServiceCollection`就是我們的`IOC`。       
+這個 `ServiceCollection`就是我們的`IoC`。       
 
-現在向這個 `IOC` 中分別注入：用戶User、菜單Menu、程序控制 這三個服務，
+現在向這個 `IoC` 中分別注入：用戶User、菜單Menu、程序控制 這三個服務，
 使用` AddScoped`：
 
 - 第一個用戶：使用「用戶服務介面 `IUser`」，實現`User`這個類
@@ -161,8 +161,8 @@ using Microsoft.Extensions.DependencyInjection;
 
 static void Main(string[] args)
 {
-    //創建「IOC反轉控制容器」
-    ServiceCollection collection = new ServiceCollection(); //IOC
+    //創建「IoC反轉控制容器」
+    ServiceCollection collection = new ServiceCollection(); //IoC
 
     //注入服務
     collection.AddScoped<IUser, User>(); //使用用戶服務介面 IUser，實現 User 這個類
@@ -174,7 +174,7 @@ static void Main(string[] args)
 }
 ```
 
-這就代表我們這三個服務的生命周期，全部都已經交給`IOC` 容器 `collection` 進行托管了。接下來我們只需要從`IOC`中，通過介面來撈取對應的服務就可以了，從此我們再也不需要手動創建和管理這三個服務了。     
+這就代表我們這三個服務的生命周期，全部都已經交給`IoC` 容器 `collection` 進行托管了。接下來我們只需要從`IoC`中，通過介面來撈取對應的服務就可以了，從此我們再也不需要手動創建和管理這三個服務了。     
 
 ### 創建 build service provider
 接下來創建 `build service provider`
@@ -204,13 +204,13 @@ cmsController.Start();
 ```
 而這個 `start()`我們不需要傳入 用戶`User`、菜單`Menu`，用戶`User`、菜單`Menu`這兩個系統也同樣已經托管給 `ICO`了。       
 
-`IOC` 會自動選擇合適的時機，在`cmsController`實體化的同時，在構造方法中完成這兩個服務的依賴注入。 
+`IoC` 會自動選擇合適的時機，在`cmsController`實體化的同時，在構造方法中完成這兩個服務的依賴注入。 
 
 ```c#
 static void Main(string[] args)
 {
-    //創建「IOC反轉控制容器」
-    ServiceCollection collection = new ServiceCollection(); //IOC
+    //創建「IoC反轉控制容器」
+    ServiceCollection collection = new ServiceCollection(); //IoC
     //注入服務
     collection.AddScoped<IUser, User>(); //使用用戶服務介面 IUser，實現 User 這個類
     collection.AddScoped<IMenu, Menu>(); //使用菜單服務介面 IMenu，實現 Menu 這個類
@@ -343,8 +343,8 @@ namespace CMS
         }
         static void Main(string[] args)
         {
-            //創建「IOC反轉控制容器」
-            ServiceCollection collection = new ServiceCollection(); //IOC
+            //創建「IoC反轉控制容器」
+            ServiceCollection collection = new ServiceCollection(); //IoC
             //注入服務
             collection.AddScoped<IUser, User>(); //使用用戶服務介面 IUser，實現 User 這個類
             collection.AddScoped<IMenu, Menu>(); //使用菜單服務介面 IMenu，實現 Menu 這個類
