@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記][IOC][DI][介面導向] 反轉控制 vs 依賴注入 -理論"
-date: 2010-01-22 23:59:00 +0800
+date: 2010-01-23 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,R,IOC 控制反轉,DI 依賴注入,interface 介面導向]
 ---
