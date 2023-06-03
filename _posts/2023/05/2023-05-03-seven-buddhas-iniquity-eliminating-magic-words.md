@@ -7,5 +7,5 @@ tags: [佛經,七佛滅罪真言]
 ---
 
 
-![七佛滅罪真言](/assets/img/post/amitabha-seven-buddhas-iniquity-eliminating-magic-words.png)        
+![七佛滅罪真言](/assets/img/post/amitabha-seven-buddhas-iniquity-eliminating-magic-words.jpg)        
 
