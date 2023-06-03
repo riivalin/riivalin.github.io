@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "聖嚴法師：談自殺潮-面對困境"
+title: "聖嚴法師：談自殺潮-天無絕人之路"
 date: 2023-05-15 00:09:00 +0800
 categories: [Amitabha,聖嚴法師]
 tags: [聖嚴法師,自殺]
