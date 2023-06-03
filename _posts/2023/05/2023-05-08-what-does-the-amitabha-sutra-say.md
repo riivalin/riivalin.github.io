@@ -2,7 +2,7 @@
 layout: post
 title: "聖嚴法師：「阿彌陀佛」的涵意（大法鼓 0559）"
 date: 2023-05-08 00:09:00 +0800
-categories: [Amitabha,佛教經文]
+categories: [Amitabha,聖嚴法師]
 tags: [聖嚴法師,阿彌陀佛]
 ---
 
