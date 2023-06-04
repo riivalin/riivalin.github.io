@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記][UnitTest] 介面與單元測試"
 date: 2010-01-25 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,R,interface,單元測試,MSTest,UnitTest,Assert,ExpectedException]
+tags: [C#,R,interface,單元測試,MSTest,UnitTest,Assert,ExpectedException,typeof,InvalidOperationException]
 ---
 
 單元測試是自動化測試的一個部分，基本原理就是我們寫程式碼來測試自己的程式碼。        
