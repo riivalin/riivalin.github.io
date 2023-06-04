@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記][IOC][DI][介面導向] 反轉控制 vs 依賴注入 -操作"
 date: 2010-01-24 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,R,IOC 控制反轉,DI 依賴注入,interface 介面導向,ServiceCollection,反轉控制容器 ServiceCollection,]
+tags: [C#,R,IOC 控制反轉,DI 依賴注入,interface 介面導向,ServiceCollection,反轉控制容器 ServiceCollection]
 ---
 
 ## 前言
