@@ -1,0 +1,10 @@
+---
+layout: post
+title: "[佛經] 地藏菩薩本願經"
+date: 2023-06-01 00:09:00 +0800
+categories: [Amitabha,佛教經文]
+tags: [佛經,地藏經,地藏菩薩本願經]
+---
+   
+<object data="../assets/post.file/ksitigarbha.pdf" width="1000" height="1000" type='application/pdf'></object>
+
