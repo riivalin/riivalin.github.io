@@ -6,4 +6,4 @@ categories: [Amitabha,佛教經文]
 tags: [佛經,地藏經,地藏菩薩本願經]
 ---
 
-<object data="{{ site.url }}{{ site.baseurl }}/assets/pdf/ksitigarbha.pdf" width="100%" height="100%" type="application/pdf"></object>
+<object data="{{ site.url }}{{ site.baseurl }}/assets/pdf/ksitigarbha.pdf" width="100%" height="700" type="application/pdf"></object>
