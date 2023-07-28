@@ -303,12 +303,14 @@ namespace EventTestFeedAnimals
         public string food = "";
     }
     //主人
-    class Master {
+    class Master 
+    {
         public event EventHandler<FeedArgs> OnFeed; //餵食事件
 
-        public void FeedAnimals(string food) {
-            if (OnFeed != null) {
-
+        public void FeedAnimals(string food) 
+        {
+            if (OnFeed != null) 
+            {
                 //發出事件所攜帶的參數包
                 FeedArgs args = new FeedArgs();
                 args.food = food;
@@ -356,7 +358,10 @@ namespace EventTestFeedAnimals
     {
         static void Main(string[] args)
         {
+            //事件發起者
+            
             Master master = new Master();
+            //事件的監聽者
             Dog dog = new Dog();
             Cat cat = new Cat();
             Panda panda = new Panda();
