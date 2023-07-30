@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 運算符重載(Operater Overload) 1"
 date: 2010-03-09 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#]
+tags: [C#,Operater Overload]
 ---
 
 # 運算符重載(Operater Overload)
@@ -259,4 +259,5 @@ internal class Program
     }
 }
 ```
+
 [https://www.bilibili.com/video/BV1FP411B7cV/](https://www.bilibili.com/video/BV1FP411B7cV/)
