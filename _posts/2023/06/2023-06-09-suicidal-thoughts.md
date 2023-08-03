@@ -2,7 +2,7 @@
 layout: post
 title: 夢參老和尚：朋友皈依三寶後，常有自殺念頭，怎樣處理？
 date: 2023-06-09 00:39:00 +0800
-categories: [Amitabha,佛學問答,夢參老和尚]
+categories: [Amitabha,自殺,夢參老和尚]
 tags: [夢參老和尚,自殺,業障,冤親債主,著魔]
 ---
 
