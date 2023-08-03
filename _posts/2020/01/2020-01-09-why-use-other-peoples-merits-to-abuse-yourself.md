@@ -2,7 +2,7 @@
 layout: post
 title: 道證法師：為何要用別人的福報優點，來虐待自己
 date: 2020-01-09 00:10:00 +0800
-categories: [Amitabha, 道證法師]
+categories: [Amitabha,法師開示,道證法師]
 tags: [道證法師, 嫉妒, 痛苦]
 ---
 

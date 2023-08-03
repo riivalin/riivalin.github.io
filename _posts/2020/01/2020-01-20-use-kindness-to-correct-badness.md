@@ -2,7 +2,7 @@
 layout: post
 title: 聖嚴法師：以善來對治糾正不善
 date: 2020-01-20 00:09:00 +0800
-categories: [Amitabha, 聖嚴法師]
+categories: [Amitabha,法師開示,聖嚴法師]
 tags: [聖嚴法師, 生氣]
 ---
 
