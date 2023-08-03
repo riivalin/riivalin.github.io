@@ -2,7 +2,7 @@
 layout: post
 title: "聖嚴法師：你可以不必自殺還有許多活路可走"
 date: 2023-05-09 00:09:00 +0800
-categories: [Amitabha,聖嚴法師]
+categories: [Amitabha,自殺,聖嚴法師]
 tags: [聖嚴法師,自殺]
 ---
 

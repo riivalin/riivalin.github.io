@@ -2,7 +2,7 @@
 layout: post
 title: "聖嚴法師：談自殺潮-如何克服失去、失落的感覺"
 date: 2023-05-16 00:09:00 +0800
-categories: [Amitabha,聖嚴法師]
+categories: [Amitabha,自殺,聖嚴法師]
 tags: [聖嚴法師,自殺]
 --- 
 
