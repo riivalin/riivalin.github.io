@@ -2,7 +2,7 @@
 layout: post
 title: 道證法師：您能認得出那是誰的肉？
 date: 2023-03-16 00:09:00 +0800
-categories: [Amitabha,戒殺放生]
+categories: [Amitabha,道證法師,戒殺放生]
 tags: [道證法師,吃素]
 ---
 
