@@ -2,7 +2,7 @@
 layout: post
 title: 宗性法師：別人給得起，但你的福報不一定能用得起
 date: 2020-01-04 01:09:00 +0800
-categories: [Amitabha,深信因果]
+categories: [Amitabha,深信因果,宗性法師]
 tags: [宗性法師,福報,業力,因果]
 ---
 
