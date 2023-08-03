@@ -2,7 +2,7 @@
 layout: post
 title: 淨界法師：人起顛倒的時候，福報也救不了你
 date: 2023-04-06 00:09:00 +0800
-categories: [Amitabha, 淨界法師]
+categories: [Amitabha,深信因果,淨界法師]
 tags: [淨界法師,因果,因果報應,業障,阿賴耶識,自性若迷，福何可救]
 ---
 
