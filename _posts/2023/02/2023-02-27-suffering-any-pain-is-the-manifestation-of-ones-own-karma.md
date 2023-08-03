@@ -2,7 +2,7 @@
 layout: post
 title: 淨界法師：遭受任何痛苦，都是自己業力的顯現
 date: 2023-02-27 00:49:00 +0800
-categories: [Amitabha, 淨界法師]
+categories: [Amitabha,深信因果,淨界法師]
 tags: [淨界法師, 業力, 痛苦]
 ---
 

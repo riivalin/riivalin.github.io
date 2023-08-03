@@ -2,7 +2,7 @@
 layout: post
 title: 隆相法師：行善後為何家裡常有不好的事情
 date: 2023-02-27 00:03:00 +0800
-categories: [Amitabha, 佛學問答]
+categories: [Amitabha,佛學問答,隆相法師]
 tags: [隆相法師, 因果報應]
 ---
 

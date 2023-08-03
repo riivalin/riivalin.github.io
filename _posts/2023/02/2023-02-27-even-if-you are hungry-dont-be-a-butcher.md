@@ -2,7 +2,7 @@
 layout: post
 title: 夢參老和尚：哪怕是餓著，也別去做屠宰的行業
 date: 2023-02-27 01:03:00 +0800
-categories: [Amitabha, 夢參老和尚]
+categories: [Amitabha,戒殺放生,夢參老和尚]
 tags: [夢參老和尚, 欲知世上刀兵劫，但聽半夜屠門聲]
 ---
 
