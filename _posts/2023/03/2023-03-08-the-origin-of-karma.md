@@ -2,7 +2,7 @@
 layout: post
 title: 界詮法師：業感緣起——業​果
 date: 2023-03-09 00:09:00 +0800
-categories: [Amitabha, 佛教知識, 界詮法師]
+categories: [Amitabha,佛教知識, 界詮法師]
 tags: [界詮法師,業果,正報,依報]
 ---
 

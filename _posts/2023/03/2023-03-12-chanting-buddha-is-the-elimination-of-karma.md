@@ -2,7 +2,7 @@
 layout: post
 title: 妙蓮老和尚：念佛就是消業障
 date: 2023-03-12 00:09:00 +0800
-categories: [Amitabha, 妙蓮老和尚]
+categories: [Amitabha,法師開示,妙蓮老和尚]
 tags: [妙蓮老和尚,阿彌陀佛,念佛就是消業障,消業障,業障,懺悔]
 ---
 

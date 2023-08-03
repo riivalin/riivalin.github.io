@@ -2,7 +2,7 @@
 layout: post
 title: 夢參老和尚：莫問前程不求回報，這是最好的
 date: 2023-03-14 00:09:00 +0800
-categories: [Amitabha,夢參老和尚]
+categories: [Amitabha,深信因果,夢參老和尚]
 tags: [夢參老和尚,因果]
 ---
 
