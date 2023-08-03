@@ -2,7 +2,7 @@
 layout: post
 title: 夢參老和尚：一天到晚起嗔心，你拜懺的功德一點都沒有
 date: 2022-07-12 00:09:00 +0800
-categories: [Amitabha, 夢參老和尚]
+categories: [Amitabha,嗔恨怨恨,夢參老和尚]
 tags: [夢參老和尚,嗔恨心,嗔心,吵架,一念嗔心起，百萬障門開,發脾氣]
 ---
 
