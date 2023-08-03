@@ -2,7 +2,7 @@
 layout: post
 title: 淨界法師：斷除淫慾心是修道的一個重要根本
 date: 2023-03-02 00:39:00 +0800
-categories: [Amitabha, 淨界法師]
+categories: [Amitabha,戒除邪淫,淨界法師]
 tags: [淨界法師, 戒除邪淫, 其心不淫]
 ---
 
