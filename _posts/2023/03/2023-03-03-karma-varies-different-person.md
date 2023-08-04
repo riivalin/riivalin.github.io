@@ -2,7 +2,7 @@
 layout: post
 title: 傳喜法師：業因有別所受各異
 date: 2023-03-03 00:09:00 +0800
-categories: [Amitabha,深信因果,傳喜法師]
+categories: [Amitabha,因果報應,傳喜法師]
 tags: [傳喜法師,業力,因果,懺悔]
 ---
 
