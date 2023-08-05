@@ -80,7 +80,7 @@ O: 受詞     C: 補語
 - 句型：S + V + O + O
 - 這種句型可以視為 S + V + O 的衍生
 
-# S + V (不及物動詞)
+# S + V
 ## 例句1
 
 <ins>The dog</ins> <ins>barked</ins> at the mailman.    
@@ -120,7 +120,7 @@ S  V
 ### 時間副詞片語 rather late this morning
 - 後面的 `rather late this morning`整備都是時間副詞片語，修飾`got up`的時候，是可有可無的修飾語。
 
-# S + V + O (及物動詞)
+# S + V + O
 
 <ins>The dog</ins> <ins>bit</ins> <ins>the mailman</ins>.   
     S    v      O   
@@ -150,7 +150,7 @@ Don't worry. <ins>It</ins> <ins>doesn't bite</ins>.
 - 不同的地方在於：這個動詞現在沒有受語了，也就是當不及物動詞使用。
 
 
-# S + V + O + O (授與動詞)
+# S + V + O + O
 有一種「及物動詞」可以有兩個受詞，這種「及物動詞」多半帶有「授與」的意思，所以又稱為「授與動詞(dative verb)」
 
 - 它後面第一個受詞是「授與的對象」
@@ -201,7 +201,7 @@ S   V       O    O
 S   V       O
 
 
-# 4. S + V + C (不完全動詞)(連綴動詞)
+# S + V + C
 
 - 「及物動詞」需要有受詞`O`
 - 「不完全動詞」則需要有補語`C`
@@ -265,7 +265,7 @@ S V C
 
 因為所有的連綴動詞，其實都是各種各樣的「是」，這種動詞和`be`動詞一樣，缺乏敘述能力，只能扮演「連綴」的角色，把主詞和補語串連起來，真正的敘述工作要靠後面的補語來做。
 
-# S + V + O + C (受詞補語)
+# S + V + O + C
 
 受詞與補語間存在有「等於是」的關係，就會是`S + V + O + C`句型。
 
