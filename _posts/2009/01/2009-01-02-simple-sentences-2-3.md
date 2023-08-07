@@ -99,7 +99,7 @@ brother-in-law 裡面是個「介系詞片語`in law`」 修飾「名詞`brother
 ## 沒有哪個位置是主要的名詞所在，s加在字尾
 ### 100 push-ups (動詞push +介副詞up)
 
-- The soldiers do `100 push-ups` every day. 
+- The soldiers do `100 push-ups` every day.     
 （這些兵每天要做`一百個伏地挺身`。）
 
 名詞片語100 push-ups 當中也有一個比較特別的複合名詞：       
