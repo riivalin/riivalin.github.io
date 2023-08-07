@@ -91,11 +91,11 @@ a sheet of paper 一張紙
 
 #### 例句3
 
-- `Several essential foods` have risen in price lately.
-(最近有`幾種重要食品`都漲價了。)
+- `Several essential foods` have risen in price lately. 
+(最近有`幾種重要食品`都漲價了。)    
 
 > - 一般的用法，food 是物質名詞，可以採用零冠詞。     
-> - 但是上句中的名詞片語several essential foods 前面加了表示「幾個」的`限定詞 several`、名詞foods 採複數形，這都是把a food 當「一種食品」解釋，所以它就是可數名詞。       
+> - 但是上句中的名詞片語several essential foods 前面加了表示「幾個」的`限定詞 several`、名詞foods 採複數形，這都是把a food 當「一種食品」解釋，所以它就是可數名詞。           
 
 許多不可數的物質名詞，如果當「種類」解釋時，都可以當可數名詞使用。
 
@@ -116,29 +116,29 @@ eternity 永恆
 - Your sister is` a real beauty`.
 （你妹妹是個大美人。）
 
-- 一般的用法，beauty 是抽象名詞、不可數
-- 上句中的`a real beauty` 意思是「`一個大美人`」，指的是個具體、有形的「人」，那就是可數名詞。
+> - 一般的用法，beauty 是抽象名詞、不可數。 
+> - 上句中的`a real beauty` 意思是「`一個大美人`」，指的是個具體、有形的「人」，那就是可數名詞。    
 
 
 ## 3. 動名詞
-大部分的`動名詞（Ving）`代表「動作」或「事情」，都是不可數名詞、可以採用零冠詞。
+大部分的`動名詞（Ving）`代表「動作」或「事情」，都是不可數名詞、可以採用零冠詞。        
 
-- `Smoking` is harmful to health.
-(`吸菸`有害健康。)
+- `Smoking` is harmful to health.   
+(`吸菸`有害健康。)  
 
-> 動名詞smoking 意思是「吸菸」這件事，屬於不可數名詞、採用零冠詞。
+> 動名詞smoking 意思是「吸菸」這件事，屬於不可數名詞、採用零冠詞。      
 
 
-- I love `swimming`.
+- I love `swimming`.    
 （我愛`游泳`。）
 
-> 動名詞`swimming` 意思是「`游泳`」這種運動，屬於不可數名詞、採用零冠詞。
+> 動名詞`swimming` 意思是「`游泳`」這種運動，屬於不可數名詞、採用零冠詞。       
 
 
-有少數的動名詞可以當可數名詞使用：
+有少數的動名詞可以當可數名詞使用：      
 
-- There were `three weddings` at this restaurant yesterday.
-（這家餐廳昨天辦了`三場婚禮`。）
+- There were `three weddings` at this restaurant yesterday. 
+（這家餐廳昨天辦了`三場婚禮`。）    
 
 > 句中的three weddings 雖然也是動名詞，但是`a wedding` 指的是「`一場婚禮`」，所以是
 可數名詞。
@@ -150,24 +150,24 @@ eternity 永恆
 專有名詞代表的對象既然只有一個，自然也就屬於不可數名詞。
 
 
-- `Neil Armstrong` was the first man that landed on the moon.
-（`阿姆斯壯`是頭一位登上月球的人。）
+- `Neil Armstrong` was the first man that landed on the moon.   
+（`阿姆斯壯`是頭一位登上月球的人。）        
 
 > - 人名Neil Armstrong 是專有名詞、不可數，所以沒有複數形。       
 > - 專有名詞因為只代表單一的一個對象，不須要限定範圍就已經很清楚了，所以前面不加限定詞
 
 
-- I used to live in `London`.
-（我從前在`倫敦`住過。）
+- I used to live in `London`.   
+（我從前在`倫敦`住過。）    
 
-> 地名London 是專有名詞、不可數，也不加限定詞。     
+> 地名London 是專有名詞、不可數，也不加限定詞。      
 
 
 如果有兩個人以上共用一個名字，  
 那麼這個名字就不再是專有名詞、變成可數名詞了。 
 
-- I’d like to invite `the Armstrongs` over for dinner.
-（我想請`阿姆斯壯一家人`過來吃晚餐。）
+- I’d like to invite `the Armstrongs` over for dinner.  
+（我想請`阿姆斯壯一家人`過來吃晚餐。）  
 
 > 人名Armstrong 雖然是專有名詞，但是這一家子都用這個名字，所以可以有複數、前面
 也可以加限定詞the。
