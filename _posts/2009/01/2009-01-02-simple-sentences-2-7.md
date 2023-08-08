@@ -239,7 +239,7 @@ The architecture of modern China is characterized by boldness.
 `The blue ones`, `the red ones`, `the yellow ones` 這三個名詞片語，都是用名詞前面的形容詞來指出是藍色「那種」、紅色「那種」等等。所以，名詞前面的形容詞也可以`有指示作用`、採用定冠詞。反之：
 
 - He picked up `a chip in that pile` and gave it to the waitress.
-（他在那堆籌碼裡面拿起一枚賞給了女侍。）        
+（他`在那堆籌碼裡面拿起一枚賞`給了女侍。）        
 
 名詞片語`a chip` 後面雖然有介系詞片語`in that pile` 修飾它，但是這時候`並無指示性`：「一堆籌碼裡面」並沒有指出是「哪一枚」，所以只能說`a chip`，代表`one chip`。        
 
@@ -247,7 +247,8 @@ The architecture of modern China is characterized by boldness.
 綜上所述，不定冠詞`a` 或`an` 與定冠詞`the` 的判斷，可以說牽涉到相當複雜的各種情況，不是靠背規則就可以涵蓋周延的。     
 
 與其去背規則，還不如回到原點：
-- 不定冠詞`a` 或`an` 來自於`one`、
-- 定冠詞`the` 來自於`that` 或`those`，
+- 不定冠詞`a` 或`an` 來自於`one`
+- 定冠詞`the` 來自於`that` 或`those`
+
 然後用句意來判斷，這樣在寫作時比較不會出錯。
 
