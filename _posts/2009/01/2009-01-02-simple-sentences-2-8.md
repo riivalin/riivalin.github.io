@@ -209,7 +209,7 @@ S V C
 
 主詞補語位置要注意該補語是否為專有名詞，受詞補語位置也是一樣。例如：
 
-- `Queen Elizabeth` `made` `Charles` `Prince of Wales`.
+- `Queen Elizabeth` `made` `Charles` `Prince of Wales`.     
 S V O C     
 （伊莉莎白女王封查爾斯為威爾斯親王。）      
 
@@ -272,4 +272,4 @@ Are you actually going around the lake on foot?  (on foot採徒步的方式)
 亦即：`foot` 用在這裡並不是當普通名詞使用，而是以`on foot` 這個片語來表示「`採徒步的方式`」，`foot` 已經由普通名詞抽象化、視同抽象名詞使用，因而可以採用零冠詞。        
 
 
-另外幾個例子的道理也是一樣，
+另外幾個例子的道理也是一樣
