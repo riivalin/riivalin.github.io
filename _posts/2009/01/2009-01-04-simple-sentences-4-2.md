@@ -154,11 +154,11 @@ S V C
 S V C   
 （她並不知道最新的發展。）      
 
-- T`he new student` `stayed` `aloof`.   
+- `The new student` `stayed` `aloof`.   
 S V C   
 （新來的學生和別人保持距離。）      
 
-- `The soldier` `remained` `alert` throughout the night.``
+- `The soldier` `remained` `alert` throughout the night.    
 S V C   
 （這名士兵整個晚上都保持警覺。）        
 
@@ -166,15 +166,15 @@ S V C
 ## 受詞補語：
 
 - `The coffee` `kept` `him` `awake`.    
-S V O C 
+S V O C     
 （咖啡維持他清醒。）        
 
 - `The drug` `kept` `the animals` `alive`.  
-S V O C 
+S V O C     
 （藥品維持這些動物不死。）      
 
 - `They` `found` `the man` `alone` in the office.   
-S V O C 
+S V O C     
 （他們發現這名男子單獨一人在辦公室。）      
 
 - `I` `consider` `the two options` `alike`. 
