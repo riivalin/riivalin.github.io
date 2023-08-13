@@ -83,3 +83,106 @@ If we are speaking theoretically, your proposal might work.
 
 上面那個句子，副詞子句的主詞是`we`、主要子句的主詞是`your proposal`，兩個子句的主詞並不相同。這種情況通常並不適合進行減化。但是，因為`theoretically speaking` 這樣的講法已經變成慣用的片語，所以仍然可以接受。
 
+# 介副詞（particles）
+
+`in`, `up`, `down`, `over`      
+
+所謂介副詞，就是一些看起來像介系詞、後面卻不加受詞，直接拿來當副詞使用的字。       
+
+動詞後面加個介副詞，常常可以構成一個片語動詞    
+
+## in
+
+```
+Were you in last night?
+(昨晚你在家嗎？)
+```
+`介副詞in` 當主詞補語使用，修飾主詞`you`。
+
+## up
+
+```
+Time is up.
+(時間到！)
+```
+`介副詞up` 當主詞補語使用，修飾主詞`time`。
+
+## down
+
+```
+Don’t look down.
+(別往下看！)
+```
+
+`介副詞down `修飾動詞`look`。
+
+## over
+
+```
+He came over to talk to you.
+(他過來要和你談談。)
+```
+`介副詞over` 修飾動詞`came`。
+
+
+# 可以修飾名詞的副詞
+
+除了以上整理的加強語氣的副詞、強調範圍的副詞、程度副詞、以及介副詞這四種副詞之外，還有時間副詞與地方副詞這兩種也是可以修飾名詞的副詞。
+
+## 時間副詞 tomorrow
+
+```
+The final game tomorrow is going to be exciting.
+(明天的決賽將很刺激。)
+```
+
+句中的`tomorrow` 是時間副詞，修飾前面的`名詞片語the final game`。
+
+
+## 地方副詞 here
+
+```
+All the people here are your friends.
+(這裡所有人都是你的朋􀨁。)
+```
+
+句中的`here` 是地方副詞，修飾前面的名詞片語`all the people`。       
+
+## 時間副詞&地方副詞
+
+時間副詞與地方副詞，這兩種副詞最常見的用法還是用來修飾動詞的。這時候，這兩種副詞通常放在句尾：`地方副詞在前、時間副詞在後`。例如：
+
+```
+He had an accident there yesterday.
+(他昨天在那裡出了意外。)
+```
+
+`地方副詞there` 與`時間副詞yesterday` 修飾`動詞had`，位置放在句尾。不過，時間副詞與地方副詞的位置也很有彈性，例如：
+
+```
+Yesterday, around this very corner, a bomb exploded.
+(昨天，就在這個街角，有枚炸彈爆炸。)
+```
+
+`時間副詞yesterday` 與`地方副詞around this very corner`（介系詞片語）修飾`動詞exploded`，位置可以放在句首。
+
+
+# 可以當補語的副詞
+
+補語（包括主詞補語和受詞補語）最常見的詞類是名詞和形容詞。但是時間副詞、地方副詞與介副詞也都可以當補語使用。
+
+## 時間副詞片語
+
+```
+The exam is only one week away. It’s next Friday.
+（考試只剩一週就到了，在下週五。）
+```
+時間副詞片語`only one week away` 和`next Friday` 分別在這兩個句子中擔任主詞補語角色。
+
+## 地方副詞here, 介副詞up
+```
+The police is here. Something’s up.
+（警察來了。一定有事。）
+```
+
+`地方副詞here` 和`介副詞up` 分別在這兩個句子中擔任主詞補語角色。
