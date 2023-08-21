@@ -3,7 +3,7 @@ layout: post
 title: "[筆記][English] 超實用!國外生活必備短語"
 date: 2009-02-01 05:15:00 +0800
 categories: [Notes,English]
-tags: [English,英文郵件]
+tags: [English,英文短句]
 ---
 
 - What should I do? 我該怎麼辦？
