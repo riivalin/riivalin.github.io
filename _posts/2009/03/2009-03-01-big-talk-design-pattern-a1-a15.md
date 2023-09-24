@@ -210,7 +210,7 @@ Cat cat = new Cat("Rii");
 cat.ShoutNum = 5; //給屬性賦值
 Console.WriteLine(cat.Shout()); //我的名字叫 Rii，喵喵喵喵喵喵喵喵喵喵!
 
-class Cat {
+public class Cat {
     private string name; //宣告Cat類別的私有變數name
 
     //叫聲屬性
@@ -258,7 +258,7 @@ Dog dog = new Dog("旺仔");
 dog.ShoutNum = 5;
 dog.Shout();
  
-public Dog {
+public class Dog {
     ...
 }
 ```
@@ -267,6 +267,12 @@ public Dog {
 
 
 # 6. 繼承
+
+由於貓和狗是哺乳動物，所以貓和狗與哺乳動物是繼承關係。      
+
+
+
+
 # 7. 多型
 # 8. 重構
 # 9. 抽象類別
