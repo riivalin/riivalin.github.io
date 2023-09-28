@@ -270,7 +270,77 @@ public class Dog {
 
 由於貓和狗是哺乳動物，所以貓和狗與哺乳動物是繼承關係。      
 
+物件的繼承代表了一種`is-a`的關係。繼承的工作方式是，定義父類別和子類別(或叫做：基礎類別和衍生類別)，其中子類別繼承父類別的所有特性。子類別不但繼承父類別的所有特性，還可以定義新的特性。        
 
+## 學習繼承要記住的三句話
+如果子類別繼承父類別：
+1. 子類別擁有父類別非`private`的屬性和功能
+2. 子類別具有自己的屬性和功能，即子類別可以擴展父類別沒有的屬性和功能
+3. 子類別還可以用自己的方式實現父類別的功能(方法重寫)
+
+
+> `protected`表示繼承時，子類別可以對基礎類別有完全存取權。 
+> 也就是說，用`protected`修飾的類別成員，對子類別公開，但不對其他類別公開
+
+
+## 把相同程式碼放到Animal動物類別中
+
+```c#
+class Animal {
+    protected string name = ""; //注意修飾符改為protected
+    public Animal() {
+        this.name = "無名";
+    }
+    public Animal(string name) {
+        this.name = name;
+    }
+
+    protected int shoutNum = 3; //注意修飾符改為protected
+    public int ShoutNum { get; set; }
+}
+```
+
+## Cat 和 Dog 繼承Animal
+重複的部分都不用再寫了，但對於建構函式，它不能被繼承，只能被調用。      
+
+對於調用父類別的建構函式可以用`base` 關鍵字。
+
+
+```c#
+public class Cat: Animal 
+{
+    //繼承建構函式
+    public Cat():base() {}
+
+	//繼承有參數的建構函式
+    public Cat(string name):base(name) {}
+	
+	public string Shout() {
+        string result = "";
+        for(int i = 0; i < shoutNum; i++) {
+            result += "喵";
+        }
+        return $"我的名字叫 {name}，{result}!";
+    }
+}
+
+public class Dog: Animal 
+{
+    //繼承建構函式
+    public Dog():base() {}
+
+	//繼承有參數的建構函式
+    public Dog(string name):base(name) {}
+	
+	public string Shout() {
+        string result = "";
+        for(int i = 0; i < shoutNum; i++) {
+            result += "汪";
+        }
+        return $"我的名字叫 {name}，{result}!";
+    }
+}
+```
 
 
 # 7. 多型
