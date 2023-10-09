@@ -349,6 +349,120 @@ public class Dog: Animal
 > - `has-a`代表某個角色具有某一項責任。
 
 # 7. 多型
+
+「多型」表示不同的物件，可以執行相同的動作，但要透過它們自己實現的程式碼來執行。        
+
+怎麼用呢？我們還需要瞭解一些概念：虛方法`virtual`、方法重寫`override`
+
+## 虛方法、方法重寫概念
+
+- 虛方法`virtual`：父類別的方法加上`virtual`，子類就可以重寫方法`override`
+
+為了使子類別的實體完全接替父類別的方法，父類別必須將該方法宣告為虛擬的。透過在該方法的返回類型之前加上`virtual`關鍵字來實現。       
+
+虛擬方法是有方法體的，可以實際做些事情，然後，子類別可以使用`overrid`關鍵字，將父類別實現替換為它自己的實現，這就是方法重寫`Override`，或者叫做方法覆寫。
+
+> 通常虛擬的是方法，除了欄位不能虛擬，屬性、事件和索引器都是可以虛擬的。
+  
+
+```c#
+//父類別
+class Animal {
+    //加上修飾符virtual，表示虛擬方法，可以被子類別重寫
+    public virtual string Shout() { return ""; }
+}
+
+//子類別
+class Cat: Animal {
+    //加上修飾符override，重寫方法
+    public override string Shout() { return "喵"; }
+}
+```
+
+## 範例：實現多型
+
+由於`Cat`和`Dog`都有「叫聲的方法`Shout()`」，只是叫的聲音不同，所以可以讓`Animal`父類別有一個虛方法`virtual`，然後讓`Cat`和`Dog`去重寫`Shout()`這個方法，就可以用貓或狗來代替`Animal`的叫聲，來達到「多型」的目的。  
+
+```c#
+public static void Main()
+{
+    //宣告一個動物陣列，這個陣列必須宣告成父類別Animal，而不是子類別
+    Animal[] arrAnimal = new Animal[2];
+    
+    //實體化的物件是子類別
+    arrAnimal[0]= new Cat("Rii"); //實體化貓類別
+    arrAnimal[1]= new Dog("Ki"); //實體化狗類別
+    
+    //遍歷動物陣列，讓牠們都Shout()
+    foreach(Animal item in arrAnimal) {
+        //由於有了「多型性」，所以叫的時候，程式會自動去找item是什麼物件，然後用那個重寫方法
+        Console.WriteLine(item.Shout());
+    }
+}
+
+class Animal {
+    protected string name = "";
+    public string Name { get; set;}
+
+    protected int shoutNum = 3;
+    public int ShoutNum { get; set;}
+
+    public Animal() {
+        this.name = "無名";
+    }
+
+    public Animal(string name) {
+        this.name = name;
+    }
+
+    public virtual string Shout() {
+        return $"我的名字叫{name}";
+    }
+}
+
+class Cat: Animal {
+    public Cat(): base() { }
+    public Cat(string name): base(name) { }
+
+    public override string Shout() {
+        string result = "";
+		for(int i = 0; i < shoutNum; i++) {
+			result += "喵";
+		}
+ 		return $"我的名字叫{name}，{result}";
+    }
+}
+class Dog: Animal {
+    public Dog(): base() { }
+    public Dog(string name): base(name) { }
+
+    public override string Shout() {
+        string result = "";
+		for(int i = 0; i < shoutNum; i++) {
+			result += "汪";
+		}
+ 		return $"我的名字叫{name}，{result}";
+    }
+}
+```
+
+## 多型原理
+
+### 怎樣才能實現多型？
+這個物件的宣告必須是父類別，不是子類別，而實體化的必須是子類別。      
+
+```c#
+//方法一
+Animal animal = new Cat();
+
+//方法二
+Cat cat = new Cat();
+Animal animal = cat;
+```
+
+多型的原理是：當方法被調用時，無論物件是否被轉換為其父類別，都只有位於物件繼承鏈最末端的方法實現會被調用。也就是說，虛擬方法是按照其執行時的類型，而非編譯時類別進行動態繫結調用的。
+
+
 # 8. 重構
 # 9. 抽象類別
 # 10. 介面
