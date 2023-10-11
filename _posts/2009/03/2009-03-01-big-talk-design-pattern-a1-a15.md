@@ -464,7 +464,104 @@ Animal animal = cat;
 
 
 # 8. 重構
+
+如果現在又來了小牛、小羊，該如何做？    
+
+有沒有發現：貓狗牛羊四個類別，除了叫聲不同，幾乎沒有任何差異，所以除了建構函式外，還有重複的地方，應該要改造它。        
+
+## 範例：重構
+
+1. 把`Shout()`拿掉`virtual`，改成普通的公共方法。   
+2. 增加一個「得到叫聲」的虛擬方法`GetShoutSound()`。    
+3. 「得到叫聲」的虛擬方法`GetShoutSound()`，讓子類別重寫，只需給繼承的子類別使用，所以用`protected`修飾符。 
+
+```c#
+//調用
+public static void Main()
+{
+    Animal[] arrAnimal = new Animal[4];
+    
+    arrAnimal[0]= new Cat("Rii");
+    arrAnimal[1]= new Dog("Ki");
+    arrAnimal[2]= new Cattle("ii");
+    arrAnimal[3]= new Sheep("Pipi");
+    foreach(Animal item in arrAnimal) {
+        Console.WriteLine(item.Shout());
+    }
+}
+
+//父類別：動物
+class Animal {
+    protected string name;
+    public string Name{ get;set; }
+    
+    protected int shoutNum = 3;
+    public int ShoutNum{ get; set; }
+
+    public Animal() {
+        this.name = "無名";
+    }
+    public Animal(string name) {
+        this.name = name;
+    }
+
+    //1.拿掉virtual，改成普通的公共方法。
+    public string Shout() {
+        string result = "";
+        for(int i = 0; i < shoutNum; i++) {
+            //3.改成調用「得到叫聲」的虛擬方法
+            result += GetShoutShound();
+        }
+        return $"我的名字叫{name}，{result}";
+    }
+
+    //2.增加一個「得到叫聲」的虛擬方法
+    protected virtual string GetShoutShound() {
+        return "";
+    }
+}
+
+//子類別：貓
+class Cat: Animal {
+    public Cat(): base() { }
+    public Cat(string name): base(name) { }
+
+    protected override string GetShoutShound() {
+ 		return "喵";
+    }
+}
+//子類別：狗
+class Dog: Animal {
+    public Dog(): base() { }
+    public Dog(string name): base(name) { }
+	
+    protected override string GetShoutShound() {
+ 		return "汪";
+    }
+}
+//子類別：牛
+class Cattle: Animal {
+    public Cattle(): base() { }
+    public Cattle(string name): base(name) { }
+	
+    protected override string GetShoutShound() {
+ 		return "哞";
+    }
+}
+//子類別：羊
+class Sheep: Animal {
+    public Sheep(): base() { }
+    public Sheep(string name): base(name) { }
+	
+    protected override string GetShoutShound() {
+ 		return "咩";
+    }
+}
+```
+
 # 9. 抽象類別
+
+
 # 10. 介面
 # 11. 集合
 # 12. 泛型
