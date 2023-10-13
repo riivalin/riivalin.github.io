@@ -587,6 +587,194 @@ abstract class Animal { //抽象類別
 
 # 10. 介面 Interface
 
+介面是把隱式公共方法和屬性組合起來，以封裝特定功能的一個集合。一旦類別實現了介面，類別就可以支援介面所指定的所有屬性和成員。        
+
+介面不能實體化，不能有建構函式和欄位，不能有修飾子，如：`private`、`public`等，不能宣告虛擬`virtual`或靜態`static`等。      
+
+實現介面的類別就必須要實現介面中的所有方法和屬性。      
+
+一個類別可以支援多個介面，多個類別可以支援相同的介面。
+
+## 介面的規範
+
+- 介面的命名，前面要加一個大寫的`I`, 這是規範。  
+- 介面用`interface`宣告。
+- 介面中的方法或屬性前面不能有修子、方法沒有方法體。
+
+
+## 範例
+
+如果動物裡，還有動物是有特異功能的，那怎麼辦？例如：小叮噹、孫悟空、蜘蛛人、蝙輻俠等。      
+
+我們先建立一個介面，它是用來「變東西」用的。
+
+### 建立介面
+```c#
+//宣告一個 IChange介面，此介面有一個方法ChangeThing，返回一字串，參數是一個字串參數
+interface IChange {
+    string ChangeThing(string thing);
+}
+```
+
+### 建立機器貓類別
+```c#
+//機器貓繼承貓，並實現IChange介面
+class MachineCat: Cat, IChange {
+    public MachineCat(): base() { }
+    public MachineCat(string name): base(name) { }
+
+    //實現介面方法，注意不能加override修飾符
+    public string ChangeThing(string thing) {
+        //base.Shout()表示調用父類別Cat的方法
+        return $"{base.Shout()} 我有萬能口袋，我可以變出{thing}";
+    }
+}
+```
+
+### 調用
+```c#
+//建立兩個類別的實體
+MachineCat machineCat = new MachineCat("小叮噹");
+StoneMoney stoneMoney = new StoneMoney("孫悟空");
+
+//宣告一個介面陣列，將兩個類別實體賦值陣列
+IChange[] arr = new IChange[2];
+arr[0] = machineCat;
+arr[1] = stoneMoney;
+
+//利用多型，實現不同的ChangeThing
+arr[0].ChangeThing("任意門")
+arr[1].ChangeThing("72變")
+
+//output:
+//我的名字叫小叮噹，喵喵喵 我有萬能口袋，我可以變出任意門
+//我的名字叫孫悟空，吱吱吱 我會72變
+```
+
+## 什麼時候用介面？
+
+要讓兩個不相干的物件，來做同樣的事情，就可以用「介面」。    
+
+由於我要讓兩個完全不相干的物件，小叮噹和孫悟空來做同樣的事情「變出東西」，我得讓他們不得不實現這件「變出東西」的介面，這樣的話，當我調用介面的「變出東西」的方法時，程式就會根據我實現介面的物件來做出反應，如果是小叮噹，就是萬能口袋，如是孫悟空，就是72變，利用「多型性」完成了兩個不同物本來不可以完成的任務。      
+
+例如：同樣是「飛」，鳥用翅膀飛，飛機用引擎加機翼飛，而超人呢？舉起雙手，握緊拳頭就能飛，他們是完全不同的物件，但是，如果硬要把他們放在一起的話，用一個飛行行為的介面，比如命名為「`IFly`」的介面來處理，就是非常好的辦法。
+
+## 抽象類別 vs 介面
+「抽象類別」是自「底而上」抽象出來的，而「介面」是由「頂而下」設計出來的。
+
+### 從形態上區分
+- 「抽象類別」可以給出一些成員的實現，「介面」卻不包含成員的實現。
+- 「抽象類別」的抽象成員可以被子類別部分實現，「介面」的成員需要實現類別完全實現。
+- 一個類別只能繼承一個「抽象類別」，但可繼承實現多個「介面」。  
+
+
+### 思維過程區分
+1. 「類別」是對物件的抽象，「抽象類別」是對類別的抽象，「介面」是對行為的抽象。  
+介面是對類別局部(行為)進行的抽象，而抽象類別是對類別整體(欄位、屬性、方法)的抽象。
+2. 如果行為跨越不同類別的物件，可使用「介面」；對於一些相似的類別物件，用繼承「抽象類別」。
+比如貓、狗其實都是動物，牠們之間有很多相似的地方，所以我們應該讓牠們去繼承動物這個「抽象類別」，而飛機、麻雀、超人是完全不相關的類別，小叮噹是動漫角色，孫悟空是古代神話人物，這也是不相關的類別，但他們又有共同點，前三個都會「飛」，而後兩個都會「變出東西」，所以此時讓他們去實現相同的介面來達到我們的設計目的就很合適了。
+> 可以讓超人繼承人類，再實現飛行介面
+3. 從設計角度講，「抽象類別」是從子類別中發現了公共的東西，泛化出父類別，然後子類別繼承父類別，而「介面」是根本不知子類別的存在，方法如何實現還不確認，預先定義。
+
+> 如果只有小貓的時候，你就去設計動物類別，這就極有可能成為過度設計了。所以說「抽象類別」往往都是透過「重構」得來的。    
+> 而「介面」就完全不是一回事，比如動物比賽大會，所有的比賽項目都有可能是完全不相同的動物在比，他們將如格去實現這些行為也不得而知，此時，能做的事就是事先定義這些比賽項目的「行為介面」。
+
+
+## 完整程式碼
+
+```c#
+public static void Main()
+{ 
+    //建立兩個類別的實體
+    MachineCat machineCat = new MachineCat("小叮噹");
+    StoneMoney stoneMoney = new StoneMoney("孫悟空");
+
+    //宣告一個介面陣列，將兩個類別實體賦值陣列
+    IChange[] arr = new IChange[2];
+    arr[0] = machineCat;
+    arr[1] = stoneMoney;
+
+    //利用多型，實現不同的ChangeThing
+    Console.WriteLine(arr[0].ChangeThing("任意門"));
+    Console.WriteLine(arr[1].ChangeThing("72變"));
+}
+
+//宣告一個 IChange介面，此介面有一個方法ChangeThing，返回一字串，參數是一個字串參數
+interface IChange {
+    string ChangeThing(string thing);
+}
+
+//機器貓繼承貓，並實現IChange介面
+class MachineCat: Cat, IChange {
+    public MachineCat(): base() { }
+    public MachineCat(string name): base(name) { }
+
+    //實現介面方法，注意不能加override修飾符
+    public string ChangeThing(string thing) {
+        return $"{base.Shout()} 我有萬能口袋，我可以變出{thing}";
+    }
+}
+//孫悟空繼承猴，並實現IChange介面
+class StoneMoney: Money, IChange {
+	public StoneMoney(): base() { }
+    public StoneMoney(string name): base(name) { }
+	//實現介面方法，注意不能加override修飾符
+    public string ChangeThing(string thing) {
+        return $"{base.Shout()} 我會{thing}";
+    }
+}
+
+//父類別：動物
+class Animal {
+    protected string name;
+    public string Name{ get;set; }
+    
+    protected int shoutNum = 3;
+    public int ShoutNum{ get; set; }
+
+    public Animal() {
+        this.name = "無名";
+    }
+    public Animal(string name) {
+        this.name = name;
+    }
+
+    //1.拿掉virtual，改成普通的公共方法。
+    public string Shout() {
+        string result = "";
+        for(int i = 0; i < shoutNum; i++) {
+            //3.改成調用「得到叫聲」的虛擬方法
+            result += GetShoutShound();
+        }
+        return $"我的名字叫{name}，{result}";
+    }
+
+    //2.增加一個「得到叫聲」的虛擬方法
+    protected virtual string GetShoutShound() {
+        return "";
+    }
+}
+
+//子類別：貓
+class Cat: Animal {
+    public Cat(): base() { }
+    public Cat(string name): base(name) { }
+
+    protected override string GetShoutShound() {
+ 		return "喵";
+    }
+}
+//子類別：猴
+class Money: Animal {
+    public Money(): base() { }
+    public Money(string name): base(name) { }
+
+    protected override string GetShoutShound() {
+ 		return "吱";
+    }
+}
+```
+
 
 # 11. 集合
 # 12. 泛型
