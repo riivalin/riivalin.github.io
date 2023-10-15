@@ -1026,6 +1026,56 @@ class Money: Animal {
 }
 ```
 
-# 12. 泛型
+# 12. 泛型 List
+通常情況下，都建議使用「泛型集合」，因為這樣可以獲得類型安全的直接優點，也不必對元素進行裝箱。      
+
+`List`和`ArrayList`在功能上是一樣的，不同就在於，`List`它在宣告和實體化時，都需要指定其內部項目的資料或物件類型，這就避免了剛才提到的類型安全問題和裝箱拆箱的效能問題了。
+
+而`List`類別是`ArrayList`類別的泛型等效類別，該類別使用大小可按需動態增加的陣列實現`IList`介面。
+
+> 泛型 `List`集「`ArrayList`集合」和「`Array`陣列」優點於一身
+
+## 用法
+- 首先「泛型集合」需要`using System.Collections.Generic;`命名空間。
+- 用法上關鍵就是在`IList`和`List`後面加`<T>`，這個`T`就是你需要指定的集合之資料或是物件類型。
+
+```c#
+IList<int> list1 = new List<int>();
+List<string> list2 = new List<string>();
+```
+
+## 範例
+
+```c#
+using System.Collections.Generic; //增加泛型集合的命名空間
+					
+public class Program
+{
+	public static void Main()
+	{	
+		
+		//宣告一個泛型集合變數，用介面 IList<Animal>表示此集合變數只能接受Animal類型，其他不可以
+		//也可以直接宣告 List<Animal> animalList;
+		IList<Animal> animalList;
+
+		//實體化 List物件，注意，此時也需要指定 List<T> 的 T 是Animal
+		animalList = new List<Animal>();
+
+        //調用集合的Add方法增加物件，其參數是object，所以new Cat和 new Dog都沒有問題
+		animalList.Add(new Cat("Rii"));
+		animalList.Add(new Cat("小黑"));
+		animalList.Add(new Dog("小白"));
+		animalList.Add(new Money("Dii"));
+		animalList.Add(new MachineCat("小叮噹"));
+		animalList.Add(new StoneMoney("孫悟空"));
+		
+		//集合的Count可以得到現在元素的個數
+		Console.WriteLine(animalList.Count.ToString()); //輸出：6
+    }
+}
+```
+
+此時，如果你再寫`animalList.Add(123);`，或者`animalList.Add("HelloWorld");`，結果就是：編譯就會出現錯誤，因為`Add`的參數類型必須是`Animal`或者是`Animal`的子類型才行。
+
 # 13. 委託與事件
 # 14. 客套
