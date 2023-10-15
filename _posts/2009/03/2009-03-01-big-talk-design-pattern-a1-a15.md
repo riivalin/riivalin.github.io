@@ -673,7 +673,7 @@ arr[1].ChangeThing("72變")
 > 介面是對類別局部(行為)進行的抽象，而抽象類別是對類別整體(欄位、屬性、方法)的抽象。
 2. 如果行為跨越不同類別的物件，可使用「介面」；對於一些相似的類別物件，用繼承「抽象類別」。
 > 比如貓、狗其實都是動物，牠們之間有很多相似的地方，所以我們應該讓牠們去繼承動物這個「抽象類別」，而飛機、麻雀、超人是完全不相關的類別，小叮噹是動漫角色，孫悟空是古代神話人物，這也是不相關的類別，但他們又有共同點，前三個都會「飛」，而後兩個都會「變出東西」，所以此時讓他們去實現相同的介面來達到我們的設計目的就很合適了。
-> 可以讓超人繼承人類，再實現飛行介面
+> 其實「實現介面」和繼承「抽象類別」並不衝突，可以讓超人繼承人類，再實現飛行介面。
 3. 從設計角度講，「抽象類別」是從子類別中發現了公共的東西，泛化出父類別，然後子類別繼承父類別，而「介面」是根本不知子類別的存在，方法如何實現還不確認，預先定義。
 
 > 如果只有小貓的時候，你就去設計動物類別，這就極有可能成為過度設計了。所以說「抽象類別」往往都是透過「重構」得來的。    
@@ -780,7 +780,252 @@ class Money: Animal {
 ```
 
 
-# 11. 集合
+# 11. 集合 ArrayList
+
+`.NetFramework`提供了用於資料儲存和檢索的專用類別，這些類別統稱「集合」。這些類別提供對堆疊、佇列、列表和雜湊表的支持。     
+
+大多數集合類別實現相同的介面，最常用的一種：`ArrayList`。
+
+集合`ArrayList`：它可以根據使用大小動態調整，不用事先設定其大小的限制。還可以隨意地增加、插入或移除某一個範圍的元素，比陣列要方便。
+
+> 但集合`ArrayList`也有不足，`ArrayList`不管你是什麼物件都是接受的，因為在它眼裡所有元素都是`Object`，所以不管是`animalList.Add(123);` 或者是`animalList.Add("HelloWorld");`，在編譯的時候都是沒有問題的，但在執行時，`foreach(Animal e in arrayAnimal)` 需要明確集合中的元性是`Animal`類型，而`123`是整數型，`HelloWorld`是字串型，這就會在執行到此處時發生錯誤，顯然，這是典型的「類型不相符」的錯誤。        
+>
+> 換句話說，`ArrayList`不是類型安全的。還有就是`ArrayList`對於存放值類型的資料，比如`int`、`string`型，或者`struct`結構的資料，用`ArrayList`就意味著都需要將值類型裝箱為 `Object`物件，使用集合元素時，還需要執行拆箱操作，這就帶來了很大的效能損耗。
+
+## 陣列優缺點
+
+陣列：建立時必須要指定陣列變數的大小，比如：「動物報名」用的是`Animal`類別的物件陣列，你設定了陣列的長度為5，也就是說最多只能有5個動物報名參加，多了就不行，這顯然是非常不合理的。  
+
+### 陣列優點
+陣列在記憶體中連續儲存，因此可以快速而容易地從頭到尾走遍元素，可以快速修改元素。
+
+### 陣列缺點
+建立時必須要指定陣列變數的大小，這可能使得陣列長度設定過大，造成記憶體空間浪費，長度設定過小造成溢出。還有在兩個元素之間加入元素也比較困難。
+
+```c#
+//建立時必須要指定陣列變數的大小
+//這可能使得陣列長度設定過大，造成記憶體空間浪費，長度設定過小造成溢出
+int[] array = new int[2];
+```
+## 集合 vs 陣列
+
+「陣列」的容量是固定的，而「集合`ArrayList`」的容量可根據需要自動擴充。     
+
+> `ArrayList`的容量是`ArrayList`可以保存的元素數。`ArrayList`的預定初始容量為`0`。隨著元素被加到`ArrayList`中，容量會根據需要，透過重新分配自動增加。使用整數索引可以存取此集合中的元素。此集合中的索引從`0`開始。      
+
+`ArrayList`是命名空間`System.Collections`下的一部分，它是使用大小可按需動態增加的陣列實現`IList`介面。      
+
+也就是說：`IList`介面定義了很多集合的方法，`ArrayList`對這些方法做了具體的實現。    
+
+> 由於實現了`IList`，所以`ArrayList`提供新增、插入或移除某一範圍元素的方法。
+
+## 範例
+
+### 動物報名-使用集合
+
+```c#
+using System.Collections; //增加此命名空間
+					
+public class Program
+{
+	public static void Main()
+	{
+        //宣告一個集合變數，可以用介面IList，也可以直接宣告 ArrayList animalList;
+        IList animalList;
+
+		//實體化ArrayList物件，注意，此時並沒有指定animalList的大小，這與陣列並不相同
+		animalList = new ArrayList();
+		
+		//調用集合的Add方法增加物件，其參數是object，所以new Cat和 new Dog都沒有問題
+		animalList.Add(new Cat("Rii"));
+		animalList.Add(new Cat("小黑"));
+		animalList.Add(new Dog("小白"));
+		animalList.Add(new Money("Dii"));
+		animalList.Add(new MachineCat("小叮噹"));
+		animalList.Add(new StoneMoney("孫悟空"));
+		
+		//集合的Count可以得到現在元素的個數
+		Console.WriteLine(animalList.Count.ToString()); //輸出：6
+	}
+}
+```
+
+### 動物叫聲比賽
+
+```c#
+//遍歷animalList集合
+foreach(Animal animal in animalList){
+    animal.Shout();
+}
+```
+
+### 將動物從名單中移除
+如果有動物報名完後，由於某種原因(比如：政治、宗教、服用禁藥、健康等等)放棄比賽，此時應該將其從名單中移除。      
+
+可以應用集合的`RemoveAt`方法，它的作用是移除指定索引處的集合項目。
+
+```c#
+//小黑、小白要退出比賽
+animalList.RemoveAt(1); //移除小黑
+animalList.RemoveAt(1); //移除小黑後，整個後序的物件都前移一位了，所以索引次序不是原來的2
+```
+
+> 集合的變化是影響全局的，它可以維持元素的連續性。所以當「小黑」被移除了集合，此時「小白」的索引次序不是原來的2，而是1，等於後序物件都向前移一位了。
+
+## 裝箱 vs 拆箱
+### 裝箱 Boxing
+
+裝箱：就是把值類型打包到`Object`參考類型中。比如：將整數變數`i`賦值給物件`o`。
+
+```c#
+//裝箱：就是把值類型打包到Object參考類型中。
+int i = 123;
+object o = i; //裝箱boxing，將整數變數i賦值給物件o
+```
+### 拆箱 Unboxing
+
+拆箱：就是指從物件中提取值類型。比如：物件`o`拆箱，並將其賦值給整數型變數`i`。
+
+```c#
+//拆箱：就是指從物件中提取值類型
+object o = 123;
+int i = (int)o; //拆箱 Unboxing，物件o拆箱，並將其賦值給整數型變數i
+```
+
+裝箱和拆箱過程需要進行大量的計算。對值類型進行裝箱時，必須分配並構造一個全新的物件。其次，拆箱所需的強制轉換，也需要進行大量的計算。        
+
+總之，裝箱和拆箱是耗資料和時間的。而`ArrayList`集合在使用「值類型」資料時，其實就是不斷地做裝箱和拆箱的工作，這顯然是非常糟糕的事情。       
+
+從這點上來看，它就不如陣列了，因為陣列事先就指定了資料類型，就不會有類型安全的問題，也不存在裝箱和裝的事情了，他們和有利弊。        
+
+所以`2.0`就推出了新的技術來解決這個問題，那就是「泛型」。
+
+## 完整程式碼
+
+```c#
+using System;
+using System.Collections; //增加此命名空間
+					
+public class Program
+{
+	public static void Main()
+	{	
+		//宣告一個集合變數，可以用介面IList，也可以直接宣告 ArrayList animalList;
+		IList animalList;
+		//實體化ArrayList物件，注意，此時並沒有指定animalList的大小，這與陣列並不相同
+		animalList = new ArrayList();
+		
+		//調用集合的Add方法增加物件，其參數是object，所以new Cat和 new Dog都沒有問題
+		animalList.Add(new Cat("Rii"));
+		animalList.Add(new Cat("小黑"));
+		animalList.Add(new Dog("小白"));
+		animalList.Add(new Money("Dii"));
+		animalList.Add(new MachineCat("小叮噹"));
+		animalList.Add(new StoneMoney("孫悟空"));
+		
+		//集合的Count可以得到現在元素的個數
+		Console.WriteLine(animalList.Count.ToString()); //輸出：6
+		
+		//動物叫聲比賽-遍歷animalList集合
+		foreach(Animal animal in animalList){
+			Console.WriteLine(animal.Shout());
+		}
+		
+		//小黑、小白要退出比賽
+		animalList.RemoveAt(1); //移除小黑
+		animalList.RemoveAt(1); //移除小黑後，整個後序的物件都前移一位了，所以索引次序不是原來的2
+		
+		//動物叫聲比賽-遍歷animalList集合
+		foreach(Animal animal in animalList){
+			Console.WriteLine(animal.Shout());
+		}
+	}
+}
+//宣告一個 IChange介面，此介面有一個方法ChangeThing，返回一字串，參數是一個字串參數
+interface IChange {
+    string ChangeThing(string thing);
+}
+
+//機器貓繼承貓，並實現IChange介面
+class MachineCat: Cat, IChange {
+    public MachineCat(): base() { }
+    public MachineCat(string name): base(name) { }
+
+    //實現介面方法，注意不能加override修飾符
+    public string ChangeThing(string thing) {
+        return $"{base.Shout()} 我有萬能口袋，我可以變出{thing}";
+    }
+}
+//孫悟空繼承猴，並實現IChange介面
+class StoneMoney: Money, IChange {
+	public StoneMoney(): base() { }
+    public StoneMoney(string name): base(name) { }
+	//實現介面方法，注意不能加override修飾符
+    public string ChangeThing(string thing) {
+        return $"{base.Shout()} 我會{thing}";
+    }
+}
+
+//父類別：動物
+class Animal {
+    protected string name;
+    public string Name{ get;set; }
+    
+    protected int shoutNum = 3;
+    public int ShoutNum{ get; set; }
+
+    public Animal() {
+        this.name = "無名";
+    }
+    public Animal(string name) {
+        this.name = name;
+    }
+
+    //1.拿掉virtual，改成普通的公共方法。
+    public string Shout() {
+        string result = "";
+        for(int i = 0; i < shoutNum; i++) {
+            //3.改成調用「得到叫聲」的虛擬方法
+            result += GetShoutShound();
+        }
+        return $"我的名字叫{name}，{result}";
+    }
+
+    //2.增加一個「得到叫聲」的虛擬方法
+    protected virtual string GetShoutShound() {
+        return "";
+    }
+}
+
+//子類別：貓
+class Cat: Animal {
+    public Cat(): base() { }
+    public Cat(string name): base(name) { }
+
+    protected override string GetShoutShound() {
+ 		return "喵";
+    }
+}
+//子類別：狗
+class Dog: Animal {
+    public Dog(): base() { }
+    public Dog(string name): base(name) { }
+	
+    protected override string GetShoutShound() {
+ 		return "汪";
+    }
+}
+//子類別：猴
+class Money: Animal {
+    public Money(): base() { }
+    public Money(string name): base(name) { }
+
+    protected override string GetShoutShound() {
+ 		return "吱";
+    }
+}
+```
+
 # 12. 泛型
 # 13. 委託與事件
 # 14. 客套
