@@ -1078,4 +1078,272 @@ public class Program
 此時，如果你再寫`animalList.Add(123);`，或者`animalList.Add("HelloWorld");`，結果就是：編譯就會出現錯誤，因為`Add`的參數類型必須是`Animal`或者是`Animal`的子類型才行。
 
 # 13. 委託與事件
+
+- 「委託」是對函數的封裝，可以當作給方法的特徵指定一個名稱。
+- 「事件」則是「委託」的一種特殊形式，當發生有意義的事情時，事件物件處理通知過程。
+
+> 「事件」其實就是設計模式中，觀察者模式在.NET中的一種實現方式。
+
+## 用法
+
+### 宣告
+- 委託物件用關鍵字`delegate`來宣告
+- 而事件是說：在發生其他類別或物件關注的事情時，類別或物件可透過事件通知它們。事件物件用`event`關鍵字宣告。
+
+```c#
+//宣告委託CatShoutEventHandler
+public delegate void CatShoutEventHandler();
+
+//宣告事件CatShout，它的事件類型是委託CatShoutEventHandler
+public event CatShoutEventHandler CatShout;
+```
+
+## 範例
+### 需求
+有一隻貓叫Tom，有兩隻老鼠叫Jerry和Jack，Tom只要一叫「喵，我是Tom」，兩隻老鼠就說「老貓來了，快跑」。     
+
+### 分析
+先分析一下，這裡應該有幾個類別，如何處理類別之間的關係？        
+
+應該有`Cat`和`Mouse`類別，當`Cat`的`Shout()`方法觸發時，`Mouse`就執行`Run()`方法。      
+
+不過這裡如何讓`Shout()`方法觸發時，通知兩隻老鼠呢？顯然老貓不會認識老鼠，也不會主動通知牠們「我來了，你們快跑。」。     
+
+所以在`Cat`類別當中，是不應該關聯`Mouse`類別的。此時用「委託事件」的方式就是好的處理辦法了。    
+
+> 注意，「委託」是一種參考方法的類型。一旦為委託分配了方法，委託將與該方法具有完全相同的行為。
+
+### Cat貓類別
+
+這裡就是宣告了一個委託，委託的名稱叫做：`CatShoutEventHandler`，而這個委託所能代表的方法是：無參數、無返回值的方法
+```c#
+public delegate void CatShoutEventHandler();
+```
+
+然後宣告了一個對外公開的`public`的事件`CatShout`，它的事件類型是委託`CatShoutEventHandler`。表明事件發生時，執行被委託的方法。
+
+```c#
+public event CatShoutEventHandler CatShout;
+```
+
+### 實際程式碼Cat
+
+```c#
+class Cat {
+	string name;
+	public Cat(string name) {
+		this.name = name;
+	}
+	
+	//宣告委託CatShoutEventHandler
+	public delegate void CatShoutEventHandler();
+	//宣告事件CatShout，它的事件類型是委託CatShoutEventHandler
+	public event CatShoutEventHandler CatShout;
+
+	public void Shout() {
+		Console.WriteLine($"喵，我是{name}");
+		if(CatShout != null) {
+			//表明當執行Shout()方法時，如果CatShout中有物件登記事件，就執行CatShout()
+			CatShout();
+		}
+	}
+}
+```
+
+> 為什麼`CatShout()`是無參數、無返回值的方法？      
+> 因為事件`CatShout()`的類型是委託`CatShoutEventHandler`，而`CatShoutEventHandler`就是無參數、無返回值的方法。
+
+### Mouns老鼠類別
+
+```c#
+class Mouse {
+	string name;
+	public Mouse(string name) {
+		this.name = name;
+	}
+	//用來逃跑的方法
+	public void Run() {
+		Console.WriteLine($"老貓來了，{name}快跑");
+	}
+}
+```
+
+### 關鍵是Main函數的寫法
+
+```c#
+public static void Main()
+{	
+    //實體化老貓Tom及小老鼠Jerry、Jack
+    Cat cat = new Cat("Tom");
+    Mouse mouse1 = new Mouse("Jerry");
+    Mouse mouse2 = new Mouse("Jack");
+    
+    //將Mouse的Run方法透過實體化委託Cat.CatShoutEventHandler登記到Cat事件CatShout當中
+    //其中 += 表示 add_CatShout的意思
+    cat.CatShout += new Cat.CatShoutEventHandler(mouse1.Run);
+    cat.CatShout += new Cat.CatShoutEventHandler(mouse2.Run);
+    
+    //貓叫了
+    cat.Shout();
+}
+
+/* 執行結果
+喵，我是Tom
+老貓來了，Jerry快跑
+老貓來了，Jack快跑
+*/
+```
+
+### 程式碼說明
+- `new Cat.CatShoutEventHandler(mouse1.Run)`的含義是實體化一個委託，而委託的實體就是`Mouse`的`Run()`方法。
+- `cat.CatShout +=`表示的就是`cat.add_CatShout(new new Cat.CatShoutEventHandler(mouse1.Run))`的意思。
+- `+=`就是增加委託實體物件的意思。
+
+
+## EventArgs
+常看到在`IDE`產生的事件參數，比如`private void button1_click(object sender, EventArgs e)`，這裡的`sender`和`e`有什麼做用呢？
+
+- `object sender`：就是傳遞發送通知的物件。
+- `EventArgs e`：是包含事件數據的類別 
+
+`EventArgs`是包含事件資料的類別的基礎類別。換句話說，這個類別的作用就是：用來在事件觸發時傳遞資料用的。     
+
+
+## 範例
+### 寫一個EventArgs子類別
+
+我現在寫一個它的子類別`CatShoutEventArgs`，當中有屬性`Name`表示的就是`CatShout`事件觸發時，需要傳遞`Cat`物件的名字。 
+
+```c#
+class CatShoutEventArgs: EventArgs {
+    public string Name { get;set; }
+}
+```
+
+### 改寫Cat類別，重新定義委託
+然後改寫`Cat`類別的程式碼，對委託`CatShoutEventHandler`進行重定義。     
+
+增加兩個參數：
+- 第一個參數`object`對象`sender`：是指向發送通知的對象。    
+- 第二個參數`CatShoutEventArgs`的`args`：包含了所有通知接受者需要附件的資訊。   
+在這裡顯然就是老貓的名字資訊。
+
+```c#
+class Cat {
+	string name;
+	public Cat(string name) {
+		this.name = name;
+	}
+	
+	//宣告委託CatShoutEventHandler，此時委託所代表的方法有兩個參數：object 和 CatShoutEventArgs
+	public delegate void CatShoutEventHandler(object sender, CatShoutEventArgs args);
+	//宣告事件CatShout，它的事件類型是委託CatShoutEventHandler
+	public event CatShoutEventHandler CatShout;
+
+	public void Shout() {
+		Console.WriteLine($"喵，我是{name}");
+
+		if(CatShout != null) {
+			//宣告並實體化一個CatShoutEventArgs，並給Name屬性賦值為貓的名字
+			CatShoutEventArgs e = new CatShoutEventArgs();
+			e.Name = this.name; //給Name屬性賦值為貓的名字
+			
+			//表明當執行Shout()方法時，如果CatShout中有物件登記事件，就執行CatShout()
+			CatShout(this, e); //當事件觸發時，通知所有登記過的物件，並將發送通知的自己(this)，以及需要的資料傳遞過去(e)
+		}
+	}
+}
+```
+> - `object sender`：就是傳遞發送通知的物件。
+> - `EventArgs e`：是包含事件數據的類別 
+
+### Mouse類別也發生變化
+
+由於有了傳遞過來的貓的名字，所以顯示的時候可以指是是老貓誰誰誰來了。
+
+```c#
+class Mouse {
+	string name;
+	public Mouse(string name) {
+		this.name = name;
+	}
+	
+	//逃跑的方法中，增加了兩個參數，並且可以在顯示時，說出老貓的名字args.Name
+	public void Run(object sender, CatShoutEventArgs args) {
+		Console.WriteLine($"老貓{args.Name}來了，{name}快跑");
+	}
+}
+```
+
+### Main函數的程式碼沒有變化，而結果顯示不一樣了
+```
+喵，我是Tom
+老貓Tom來了，Jerry快跑
+老貓Tom來了，Jack快跑
+```
+
+## 完整程式碼
+
+```c#
+public static void Main()
+{	
+    //實體化老貓Tom及小老鼠Jerry、Jack
+    Cat cat = new Cat("Tom");
+    Mouse mouse1 = new Mouse("Jerry");
+    Mouse mouse2 = new Mouse("Jack");
+    
+    //將Mouse的Run方法透過實體化委託Cat.CatShoutEventHandler登記到Cat事件CatShout當中
+    //其中 += 表示 add_CatShout的意思
+    cat.CatShout += new Cat.CatShoutEventHandler(mouse1.Run);
+    cat.CatShout += new Cat.CatShoutEventHandler(mouse2.Run);
+    
+    //貓叫了
+    cat.Shout();
+}
+
+//事件數據
+class CatShoutEventArgs:EventArgs{
+	public string Name { get;set;}
+}
+
+//老貓
+class Cat {
+	string name;
+	public Cat(string name) {
+		this.name = name;
+	}
+	
+	//宣告委託CatShoutEventHandler
+	public delegate void CatShoutEventHandler(object sender,CatShoutEventArgs args);
+	//宣告事件CatShout，它的事件類型是委託CatShoutEventHandler
+	public event CatShoutEventHandler CatShout;
+	
+	public void Shout() {
+		Console.WriteLine($"喵，我是{name}");
+		
+		if(CatShout != null) {
+			//宣告並實體化一個CatShoutEventArgs，並給Name屬性賦值為貓的名字
+			CatShoutEventArgs e = new CatShoutEventArgs();
+			e.Name = this.name; //給Name屬性賦值為貓的名字
+			
+			//表明當執行Shout()方法時，如果CatShout中有物件登記事件，就執行CatShout()
+			CatShout(this, e); //當事件觸發時，通知所有登記過的物件，並將發送通知的自己(this)，以及需要的資料傳遞過去(e)
+		}
+	}
+}
+
+//小老鼠
+class Mouse {
+	string name;
+	public Mouse(string name) {
+		this.name = name;
+	}
+	
+	//逃跑的方法中，增加了兩個參數，並且可以在顯示時，說出老貓的名字args.Name
+	public void Run(object sender, CatShoutEventArgs args) {
+		Console.WriteLine($"老貓{args.Name}來了，{name}快跑");
+	}
+}
+```
+
 # 14. 客套
