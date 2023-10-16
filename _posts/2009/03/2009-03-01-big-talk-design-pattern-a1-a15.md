@@ -908,38 +908,38 @@ using System.Collections; //增加此命名空間
 					
 public class Program
 {
-	public static void Main()
-	{	
-		//宣告一個集合變數，可以用介面IList，也可以直接宣告 ArrayList animalList;
-		IList animalList;
-		//實體化ArrayList物件，注意，此時並沒有指定animalList的大小，這與陣列並不相同
-		animalList = new ArrayList();
-		
-		//調用集合的Add方法增加物件，其參數是object，所以new Cat和 new Dog都沒有問題
-		animalList.Add(new Cat("Rii"));
-		animalList.Add(new Cat("小黑"));
-		animalList.Add(new Dog("小白"));
-		animalList.Add(new Money("Dii"));
-		animalList.Add(new MachineCat("小叮噹"));
-		animalList.Add(new StoneMoney("孫悟空"));
-		
-		//集合的Count可以得到現在元素的個數
-		Console.WriteLine(animalList.Count.ToString()); //輸出：6
-		
-		//動物叫聲比賽-遍歷animalList集合
-		foreach(Animal animal in animalList){
-			Console.WriteLine(animal.Shout());
-		}
-		
-		//小黑、小白要退出比賽
-		animalList.RemoveAt(1); //移除小黑
-		animalList.RemoveAt(1); //移除小黑後，整個後序的物件都前移一位了，所以索引次序不是原來的2
-		
-		//動物叫聲比賽-遍歷animalList集合
-		foreach(Animal animal in animalList){
-			Console.WriteLine(animal.Shout());
-		}
-	}
+    public static void Main()
+    {	
+        //宣告一個集合變數，可以用介面IList，也可以直接宣告 ArrayList animalList;
+        IList animalList;
+        //實體化ArrayList物件，注意，此時並沒有指定animalList的大小，這與陣列並不相同
+        animalList = new ArrayList();
+
+        //調用集合的Add方法增加物件，其參數是object，所以new Cat和 new Dog都沒有問題
+        animalList.Add(new Cat("Rii"));
+        animalList.Add(new Cat("小黑"));
+        animalList.Add(new Dog("小白"));
+        animalList.Add(new Money("Dii"));
+        animalList.Add(new MachineCat("小叮噹"));
+        animalList.Add(new StoneMoney("孫悟空"));
+
+        //集合的Count可以得到現在元素的個數
+        Console.WriteLine(animalList.Count.ToString()); //輸出：6
+        
+        //動物叫聲比賽-遍歷animalList集合
+        foreach(Animal animal in animalList){
+            Console.WriteLine(animal.Shout());
+        }
+        
+        //小黑、小白要退出比賽
+        animalList.RemoveAt(1); //移除小黑
+        animalList.RemoveAt(1); //移除小黑後，整個後序的物件都前移一位了，所以索引次序不是原來的2
+        
+        //動物叫聲比賽-遍歷animalList集合
+        foreach(Animal animal in animalList){
+            Console.WriteLine(animal.Shout());
+        }
+    }
 }
 //宣告一個 IChange介面，此介面有一個方法ChangeThing，返回一字串，參數是一個字串參數
 interface IChange {
@@ -1051,26 +1051,25 @@ using System.Collections.Generic; //增加泛型集合的命名空間
 					
 public class Program
 {
-	public static void Main()
-	{	
-		
-		//宣告一個泛型集合變數，用介面 IList<Animal>表示此集合變數只能接受Animal類型，其他不可以
-		//也可以直接宣告 List<Animal> animalList;
-		IList<Animal> animalList;
+    public static void Main()
+    {	
+        //宣告一個泛型集合變數，用介面 IList<Animal>表示此集合變數只能接受Animal類型，其他不可以
+        //也可以直接宣告 List<Animal> animalList;
+        IList<Animal> animalList;
 
-		//實體化 List物件，注意，此時也需要指定 List<T> 的 T 是Animal
-		animalList = new List<Animal>();
+        //實體化 List物件，注意，此時也需要指定 List<T> 的 T 是Animal
+        animalList = new List<Animal>();
 
         //調用集合的Add方法增加物件，其參數是object，所以new Cat和 new Dog都沒有問題
-		animalList.Add(new Cat("Rii"));
-		animalList.Add(new Cat("小黑"));
-		animalList.Add(new Dog("小白"));
-		animalList.Add(new Money("Dii"));
-		animalList.Add(new MachineCat("小叮噹"));
-		animalList.Add(new StoneMoney("孫悟空"));
-		
-		//集合的Count可以得到現在元素的個數
-		Console.WriteLine(animalList.Count.ToString()); //輸出：6
+        animalList.Add(new Cat("Rii"));
+        animalList.Add(new Cat("小黑"));
+        animalList.Add(new Dog("小白"));
+        animalList.Add(new Money("Dii"));
+        animalList.Add(new MachineCat("小叮噹"));
+        animalList.Add(new StoneMoney("孫悟空"));
+
+        //集合的Count可以得到現在元素的個數
+        Console.WriteLine(animalList.Count.ToString()); //輸出：6
     }
 }
 ```
@@ -1130,23 +1129,25 @@ public event CatShoutEventHandler CatShout;
 
 ```c#
 class Cat {
-	string name;
-	public Cat(string name) {
-		this.name = name;
-	}
-	
-	//宣告委託CatShoutEventHandler
-	public delegate void CatShoutEventHandler();
-	//宣告事件CatShout，它的事件類型是委託CatShoutEventHandler
-	public event CatShoutEventHandler CatShout;
+    string name;
+    public Cat(string name) {
+        this.name = name;
+    }
 
-	public void Shout() {
-		Console.WriteLine($"喵，我是{name}");
-		if(CatShout != null) {
-			//表明當執行Shout()方法時，如果CatShout中有物件登記事件，就執行CatShout()
-			CatShout();
-		}
-	}
+    //宣告委託CatShoutEventHandler
+    public delegate void CatShoutEventHandler();
+
+    //宣告事件CatShout，它的事件類型是委託CatShoutEventHandler
+    public event CatShoutEventHandler CatShout;
+
+    public void Shout() {
+        Console.WriteLine($"喵，我是{name}");
+
+        if(CatShout != null) {
+            //表明當執行Shout()方法時，如果CatShout中有物件登記事件，就執行CatShout()
+            CatShout();
+        }
+    }
 }
 ```
 
@@ -1157,14 +1158,15 @@ class Cat {
 
 ```c#
 class Mouse {
-	string name;
-	public Mouse(string name) {
-		this.name = name;
-	}
-	//用來逃跑的方法
-	public void Run() {
-		Console.WriteLine($"老貓來了，{name}快跑");
-	}
+    string name;
+    public Mouse(string name) {
+        this.name = name;
+    }
+
+    //用來逃跑的方法
+    public void Run() {
+        Console.WriteLine($"老貓來了，{name}快跑");
+    }
 }
 ```
 
@@ -1230,28 +1232,29 @@ class CatShoutEventArgs: EventArgs {
 
 ```c#
 class Cat {
-	string name;
-	public Cat(string name) {
-		this.name = name;
-	}
-	
-	//宣告委託CatShoutEventHandler，此時委託所代表的方法有兩個參數：object 和 CatShoutEventArgs
-	public delegate void CatShoutEventHandler(object sender, CatShoutEventArgs args);
-	//宣告事件CatShout，它的事件類型是委託CatShoutEventHandler
-	public event CatShoutEventHandler CatShout;
+    string name;
+    public Cat(string name) {
+        this.name = name;
+    }
 
-	public void Shout() {
-		Console.WriteLine($"喵，我是{name}");
+    //宣告委託CatShoutEventHandler，此時委託所代表的方法有兩個參數：object 和 CatShoutEventArgs
+    public delegate void CatShoutEventHandler(object sender, CatShoutEventArgs args);
 
-		if(CatShout != null) {
-			//宣告並實體化一個CatShoutEventArgs，並給Name屬性賦值為貓的名字
-			CatShoutEventArgs e = new CatShoutEventArgs();
-			e.Name = this.name; //給Name屬性賦值為貓的名字
-			
-			//表明當執行Shout()方法時，如果CatShout中有物件登記事件，就執行CatShout()
-			CatShout(this, e); //當事件觸發時，通知所有登記過的物件，並將發送通知的自己(this)，以及需要的資料傳遞過去(e)
-		}
-	}
+    //宣告事件CatShout，它的事件類型是委託CatShoutEventHandler
+    public event CatShoutEventHandler CatShout;
+
+    public void Shout() {
+        Console.WriteLine($"喵，我是{name}");
+
+        if(CatShout != null) {
+            //宣告並實體化一個CatShoutEventArgs，並給Name屬性賦值為貓的名字
+            CatShoutEventArgs e = new CatShoutEventArgs();
+            e.Name = this.name; //給Name屬性賦值為貓的名字
+
+            //表明當執行Shout()方法時，如果CatShout中有物件登記事件，就執行CatShout()
+            CatShout(this, e); //當事件觸發時，通知所有登記過的物件，並將發送通知的自己(this)，以及需要的資料傳遞過去(e)
+        }
+    }
 }
 ```
 > - `object sender`：就是傳遞發送通知的物件。
@@ -1263,15 +1266,15 @@ class Cat {
 
 ```c#
 class Mouse {
-	string name;
-	public Mouse(string name) {
-		this.name = name;
-	}
-	
-	//逃跑的方法中，增加了兩個參數，並且可以在顯示時，說出老貓的名字args.Name
-	public void Run(object sender, CatShoutEventArgs args) {
-		Console.WriteLine($"老貓{args.Name}來了，{name}快跑");
-	}
+    string name;
+    public Mouse(string name) {
+        this.name = name;
+    }
+
+    //逃跑的方法中，增加了兩個參數，並且可以在顯示時，說出老貓的名字args.Name
+    public void Run(object sender, CatShoutEventArgs args) {
+        Console.WriteLine($"老貓{args.Name}來了，{name}快跑");
+    }
 }
 ```
 
@@ -1303,45 +1306,46 @@ public static void Main()
 
 //事件數據
 class CatShoutEventArgs:EventArgs{
-	public string Name { get;set;}
+    public string Name { get;set;}
 }
 
 //老貓
 class Cat {
-	string name;
-	public Cat(string name) {
-		this.name = name;
-	}
-	
-	//宣告委託CatShoutEventHandler
-	public delegate void CatShoutEventHandler(object sender,CatShoutEventArgs args);
-	//宣告事件CatShout，它的事件類型是委託CatShoutEventHandler
-	public event CatShoutEventHandler CatShout;
-	
-	public void Shout() {
-		Console.WriteLine($"喵，我是{name}");
-		
-		if(CatShout != null) {
-			//宣告並實體化一個CatShoutEventArgs，並給Name屬性賦值為貓的名字
-			CatShoutEventArgs e = new CatShoutEventArgs();
-			e.Name = this.name; //給Name屬性賦值為貓的名字
-			
-			//表明當執行Shout()方法時，如果CatShout中有物件登記事件，就執行CatShout()
-			CatShout(this, e); //當事件觸發時，通知所有登記過的物件，並將發送通知的自己(this)，以及需要的資料傳遞過去(e)
-		}
-	}
+    string name;
+    public Cat(string name) {
+        this.name = name;
+    }
+
+    //宣告委託CatShoutEventHandler
+    public delegate void CatShoutEventHandler(object sender,CatShoutEventArgs args);
+
+    //宣告事件CatShout，它的事件類型是委託CatShoutEventHandler
+    public event CatShoutEventHandler CatShout;
+
+    public void Shout() {
+        Console.WriteLine($"喵，我是{name}");
+
+        if(CatShout != null) {
+            //宣告並實體化一個CatShoutEventArgs，並給Name屬性賦值為貓的名字
+            CatShoutEventArgs e = new CatShoutEventArgs();
+            e.Name = this.name; //給Name屬性賦值為貓的名字
+
+            //表明當執行Shout()方法時，如果CatShout中有物件登記事件，就執行CatShout()
+            CatShout(this, e); //當事件觸發時，通知所有登記過的物件，並將發送通知的自己(this)，以及需要的資料傳遞過去(e)
+        }
+    }
 }
 
 //小老鼠
 class Mouse {
-	string name;
-	public Mouse(string name) {
-		this.name = name;
-	}
-	
-	//逃跑的方法中，增加了兩個參數，並且可以在顯示時，說出老貓的名字args.Name
-	public void Run(object sender, CatShoutEventArgs args) {
-		Console.WriteLine($"老貓{args.Name}來了，{name}快跑");
-	}
+    string name;
+    public Mouse(string name) {
+        this.name = name;
+    }
+
+    //逃跑的方法中，增加了兩個參數，並且可以在顯示時，說出老貓的名字args.Name
+    public void Run(object sender, CatShoutEventArgs args) {
+        Console.WriteLine($"老貓{args.Name}來了，{name}快跑");
+    }
 }
 ```
