@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[閱讀筆記][Design Pattern] Ch1. 簡單工廠模式"
-date: 2009-03-01 05:01:00 +0800
+date: 2009-03-02 05:01:00 +0800
 categories: [Notes,Design Pattern]
 tags: [大話設計模式,Design Pattern]
 ---
