@@ -11,7 +11,7 @@ tags: [大話設計模式,Design Pattern]
 
 > 即面對需求，對程式的改動是透過增加新程式碼進行的，而不是更改現有的程式碼。這就是「開放-封閉原則」的精神所在。
 
-![計算機程式範例](https://riivalin.github.io/posts/2009/03/ch1-simple-factory-pattern/#簡單工廠模式)
+[計算機程式範例](https://riivalin.github.io/posts/2009/03/ch1-simple-factory-pattern/#簡單工廠模式)
 
 ```
 Operation 運算類別
