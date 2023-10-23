@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[閱讀筆記][Design Pattern] Ch9.原型模式 Prototype (深淺複製 MemberwiseClone())"
-date: 2009-03-10 06:01:00 +0800
+date: 2009-03-09 06:01:00 +0800
 categories: [Notes,Design Pattern]
 tags: [大話設計模式,Design Pattern]
 ---
