@@ -284,7 +284,7 @@ class FinanceDepartment: Company {
     } 
     //履行職責
     public override void LineOfDuty() {
-        Console.WriteLine($"公司財務收支管理 {name}");
+        Console.WriteLine($"{name} 公司財務收支管理");
     } 
 }
 
@@ -326,11 +326,11 @@ public static void Main()
 
 職責:
 總公司-人資部 員工招聘教育訓練
-公司財務收支管理 總公司-財務部
+總公司-財務部 公司財務收支管理 
 台中分公司-人資部 員工招聘教育訓練
-公司財務收支管理 台中分公司-財務部
+台中分公司-財務部 公司財務收支管理 
 高雄分公司-人資部 員工招聘教育訓練
-公司財務收支管理 高雄分公司-財務部
+高雄分公司-財務部 公司財務收支管理 
 
 */
 ```
