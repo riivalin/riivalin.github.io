@@ -204,5 +204,5 @@ sealed class Singleton {
 
 
 
-- [[MSDN] lock 陳述式-確保共用資源的獨佔存取權](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/statements/lock)
-- [[C# 筆記][WinForm] 單例模式](https://riivalin.github.io/posts/2011/03/singleton/)
+[[MSDN] lock 陳述式-確保共用資源的獨佔存取權](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/statements/lock)       
+[[C# 筆記][WinForm] 單例模式](https://riivalin.github.io/posts/2011/03/singleton/)
