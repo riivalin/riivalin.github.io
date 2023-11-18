@@ -200,14 +200,14 @@ abstract class Expression {
         // 例如 O 3 G 0.5 A 0.5 E 3
         // 則 playKey 為 O, playValue 為 3
         string playKey = context.PlayText.Substring(0,1);
-		context.PlayText = context.PlayText.Substring(2);
-		double playValue = Convert.ToDouble(context.PlayText.Substring(0, context.PlayText.IndexOf(" ")));
-		
-		//獲得playKey和playValue，將其從演奏文字中移除
+        context.PlayText = context.PlayText.Substring(2);
+        double playValue = Convert.ToDouble(context.PlayText.Substring(0, context.PlayText.IndexOf(" ")));
+
+        //獲得playKey和playValue，將其從演奏文字中移除
         //例如：O 3 E 0.5 G 0.5 A 3
         //變成：E 0.5 G 0.5 A 3
-		context.PlayText = context.PlayText.Substring(context.PlayText.IndexOf(" ")+1);
-		Excute(playKey, playValue);
+        context.PlayText = context.PlayText.Substring(context.PlayText.IndexOf(" ")+1);
+        Excute(playKey, playValue);
     }
 
     //抽象方法「執行」，不同的文法子類別，有不同的執行處理
