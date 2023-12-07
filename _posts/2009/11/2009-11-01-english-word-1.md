@@ -21,7 +21,7 @@ tags: [英文口語]
 A: Thank you very much! 真的很謝謝你!   
 B: Hey, anytime. Forget it. 不客氣啦，不用放在心上。    
 
-## 延伸學習
+
 ## 還可以這麼說：      
 
 - No sweat. 小意思。
