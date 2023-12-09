@@ -10,3 +10,9 @@ tags: [英文口語]
 1. Anytime. 不客氣。
 2. Cheers. 乾杯。(在英國`cheers`也有「謝謝」的意思)
 3. Positively. 當然；肯定是的。
+
+---
+
+4. All done. 全都完成了。
+5. Another time. 改天吧。
+6. Chill out. 放輕鬆。
