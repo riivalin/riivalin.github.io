@@ -2,7 +2,7 @@
 layout: post
 title: "[筆記][初級句型-單句] 第二章 名詞片語 6"
 date: 2009-01-02 23:01:00 +0800
-categories: [Notes,English]
+categories: [English,英文文法]
 tags: [English,英文文法]
 ---
 

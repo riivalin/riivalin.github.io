@@ -2,7 +2,7 @@
 layout: post
 title: "[筆記][初級句型-單句] 第四章 形容詞 1"
 date: 2009-01-04 05:15:00 +0800
-categories: [Notes,English]
+categories: [English,英文文法]
 tags: [English,英文文法]
 ---
 
