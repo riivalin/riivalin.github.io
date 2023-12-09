@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[筆記][English] 超實用!國外生活必備短語"
+title: "[英文短句] 超實用!國外生活必備短語"
 date: 2009-02-01 05:15:00 +0800
-categories: [Notes,English]
+categories: [English,英文短句]
 tags: [English,英文短句]
 ---
 
