@@ -2,7 +2,7 @@
 layout: post
 title: "[英文口語] Anytime. Cheers. Positively."
 date: 2009-11-01 21:30:00 +0800
-categories: [Notes,English,英文口語]
+categories: [English,英文口語]
 tags: [英文口語]
 ---
 
@@ -21,8 +21,8 @@ tags: [英文口語]
 A: Thank you very much! 真的很謝謝你!   
 B: Hey, anytime. Forget it. 不客氣啦，不用放在心上。    
 
-
-## 還可以這麼說：      
+## 延申學習
+### 還可以這麼說：
 
 - No sweat. 小意思。
 - Don't mention it. 不足掛齒。
@@ -38,7 +38,7 @@ B: Hey, anytime. Forget it. 不客氣啦，不用放在心上。
 > 附帶一提，`sure`和`you bet`原來的意思都指「當然」，也可用來回應他人的道謝，這時可解作「不謝；不敢當」。       
 
 
-## 也可以這麼說，語氣上較為正式!
+### 也可以這麼說，語氣上較為正式!
 
 - You're welcome. 不客氣。
 - My pleasure. 我的榮幸。
@@ -50,7 +50,7 @@ B: My pleasure. 我的榮幸。
 
 A: Here, let me give you a hand. 來吧，我來幫你忙。
 B: Thanks. 謝謝。
-A: Anytime. 不客氣。
+A: `Anytime`. 不客氣。
 
 ## 主動提供協助，也可以這麼說
 
@@ -94,14 +94,15 @@ A: Anytime. 不客氣。
 A: I want to toast the new bride and groom. 我想向新郎新娘敬酒。        
 B: Cheers! 乾杯
 
-
-## 還可以這麼說
+## 延申學習
+### 還可以這麼說：
 
 - Bottomps up. 乾了
 - Chug! Chugalug! 喝!喝光! (`chug-a-lug` 【俚】一飲而盡；咕嘟咕嘟地喝)
 - Down the hatch! 乾杯! 乎乾啦!
 
 - Drink up. 乾杯! 
+
 A: What time is it? 現在幾點？      
 B: It's time to go. `Drink up`. 是該走了，乾杯吧!
 
@@ -115,7 +116,8 @@ B: It's time to go. `Drink up`. 是該走了，乾杯吧!
 A: Are you ready for the yogo seminar this weekends. 您準備好參加本週末的瑜珈研習了嗎？     
 B: `Positively`. I've heard there will be some great theachers there. 當然。聽說有很多優秀的老師會來。
 
-## 還可以這麼說
+## 延申學習
+### 還可以這麼說：
 
 - Without a doubt. 不用懷疑。
 - Totally. 絕對是。
