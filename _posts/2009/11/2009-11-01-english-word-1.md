@@ -21,7 +21,7 @@ tags: [英文口語]
 A: Thank you very much! 真的很謝謝你!   
 B: Hey, anytime. Forget it. 不客氣啦，不用放在心上。    
 
-## 延申學習
+## 延伸學習
 ### 還可以這麼說：
 
 - No sweat. 小意思。
@@ -94,7 +94,7 @@ A: `Anytime`. 不客氣。
 A: I want to toast the new bride and groom. 我想向新郎新娘敬酒。        
 B: Cheers! 乾杯
 
-## 延申學習
+## 延伸學習
 ### 還可以這麼說：
 
 - Bottomps up. 乾了
@@ -116,7 +116,7 @@ B: It's time to go. `Drink up`. 是該走了，乾杯吧!
 A: Are you ready for the yogo seminar this weekends. 您準備好參加本週末的瑜珈研習了嗎？     
 B: `Positively`. I've heard there will be some great theachers there. 當然。聽說有很多優秀的老師會來。
 
-## 延申學習
+## 延伸學習
 ### 還可以這麼說：
 
 - Without a doubt. 不用懷疑。
