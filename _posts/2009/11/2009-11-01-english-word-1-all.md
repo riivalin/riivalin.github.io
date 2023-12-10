@@ -16,3 +16,7 @@ tags: [英文口語]
 4. All done. 全都完成了。
 5. Another time. 改天吧。
 6. Chill out. 放輕鬆。
+7. Come on. 又來了；得了吧；一起來吧。
+8. Don't fret. 別著急。
+9. Forget it. 算了；別放在心上。
+10. Get out. 出去；別鬧了。
