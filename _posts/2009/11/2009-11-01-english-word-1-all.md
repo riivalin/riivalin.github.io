@@ -20,3 +20,10 @@ tags: [英文口語]
 8. Don't fret. 別著急。
 9. Forget it. 算了；別放在心上。
 10. Get out. 出去；別鬧了。
+11. Get serious. 認真點。
+12. Go ahead. 你去啊；說吧；你先請。
+13. Good luck. 祝你好運。
+14. Got it. 懂了；了解。
+15. Got you. 逮到你了；整到你了；了解。
+16. Help yourself. 自己來。
+17. Hold on. 等等。
