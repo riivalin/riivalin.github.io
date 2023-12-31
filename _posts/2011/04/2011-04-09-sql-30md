@@ -1,49 +1,38 @@
 ---
 layout: post
-title: "[SQL] 集合運算子 Except (差集)"
-date: 2011-04-09 06:02:00 +0800
+title: "[SQL] 集合運算子 Intersect (交集)"
+date: 2011-04-09 06:22:00 +0800
 categories: [Notes,SQL]
-tags: [except,order by 1]
+tags: [intersect,order by 1]
 ---
 
-`Minus`會取得兩個`Select`語法間的差，只有`Oracle`才能使用。     
+`Intersect`會取得兩個`Select`語法間的交集。
 
-Sql Server 可以使用 `Except`。
-
-# 範例
-
-取得存在於負責人清單的負責人id、姓名，但是不存在於分站負責人清單的分店負責人的負責人列表
+## 範例
 
 ```sql
---取得存在於負責人清單的負責人id、姓名，但是不存在於分站負責人清單的分店負責人的負責人列表
---差集概念, 可以用Except
+--取得存在於負責人清單的負責人id、姓名，也存在於分站負責人清單的分店負責人的負責人列表
+--交集概念, 可以用Intersect
 
 select [負責人ID], [負責人姓名] from [負責人清單]
-except --差集
+intersect --取交集
 select [分店負責人ID], [分店負責人姓名] from [分店負責人清單]
-order by 1 --按第一個欄位排序
+order by 1
 ```
 
 > `order by 1`：數字1表示按select的第一個欄位排序。     
 > `order by 1,2,3`：ORDER BY後面的數字 1,2,3 分別代表select後面的第1、第2、第3個欄位。      
 > 使用集合運算子時，當各`select`語法中的欄位名有所不同時，就要在`order by`語法中指定「欄位編號」。      
 
-
 ### 執行結果
 
 ```
 負責人ID	負責人姓名
-1	鈴木
-2	小野
-3	齋藤
-5	小林
-6	伊藤
-7	佐瀨
-8	宇賀神
+4	藤本
+9	岡田
 ```
 
-
-# Except
+## Except
 
 比較兩個查詢的結果來傳回相異的資料列。
 
@@ -57,3 +46,4 @@ order by 1 --按第一個欄位排序
 
 [[MSDN] 設定運算子 - EXCEPT 和 INTERSECT (Transact-SQL)](https://learn.microsoft.com/zh-tw/sql/t-sql/language-elements/set-operators-except-and-intersect-transact-sql?view=sql-server-ver16)       
 [[SQL] Order By 1 什麼意思？](https://riivalin.github.io/posts/2011/04/sql-27/)
+[[SQL] 集合運算子 Except (差集)](https://riivalin.github.io/posts/2011/04/sql-29/)
