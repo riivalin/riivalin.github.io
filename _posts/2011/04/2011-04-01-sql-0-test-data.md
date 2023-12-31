@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[SQL] 測試用Script"
-date: 2011-04-01 05:53:00 +0800
+date: 2011-04-01 04:53:00 +0800
 categories: [Notes,SQL]
 tags: [sql script]
 ---
