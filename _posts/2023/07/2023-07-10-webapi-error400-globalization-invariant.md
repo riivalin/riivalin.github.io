@@ -17,7 +17,7 @@ en-us is an invalid culture identifier.
 
 `project.csproj`中的`<InvariantGlobalization>`改成`false`
 
-```xml
+```c#
 <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>

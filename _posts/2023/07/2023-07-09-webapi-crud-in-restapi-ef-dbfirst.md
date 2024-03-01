@@ -119,7 +119,7 @@ public class TestDbContext : DbContext
 
 檢視 > 伺服器總管 > 連線到資料庫 > 加入連接 > 選擇：伺服器名稱、SQL Sever驗証、ID&PW、加密True、勾選信任伺服器憑証、選擇資料庫 > 測試連線       
 
-確定連線成功後，在「進階屬性」 > Copy `model Source`
+確定連線成功後，在「進階屬性」 > Copy `Data Source`
 
 > 每種資料庫的連線字串都不一樣，可以參考 [The Connection Strings Reference](https://www.connectionstrings.com) 這個網站查詢連線字串的寫法。
 
