@@ -1,31 +1,38 @@
 ---
 layout: post
-title: "[C# 筆記] 在ASP.Net Core Web API 使用 EF Core DB First 存取 DB (CRUD)"
+title: "[C# 筆記] ASP.Net Core Web API 使用 EF Core DB First 存取 DB (CRUD)"
 date: 2023-07-09 23:59:00 +0800
 categories: [Notes,Web API]
-tags: [C#,Web API,.Net Core,CRUD,REST API,EF Core,DB First]
+tags: [C#,Web API,.Net Core,CRUD,EF Core,DB First]
 ---
 
+Take notes...
+
+- `appsettings.json` 加入db連接字串
+- `Product.cs` 建立與資料表結構相同的類別(建立對應至資料表結構的資料模型)
+- `DbContext.cs` 建立資料存取類別(建立資料庫模型)
+- `Program.cs` 註冊db連線字串
+- `ProductController.cs` API Controller (CRUD操作)
+
+---
 
 1. 新增WebAPI專案：Add New Project > ASP.Net Core Web API   
 2. NuGet安裝套件：NuGet > Microsoft.EntityFrameworkCore.SqlServer
-
-
-
 3. 設定db連接字串：在`appsettings.json`設定資料庫連接字串
 4. 建立Model：以產品為例`Product.cs` 
-5. 建立`DbContext.cs`資料存取類別：`DbContext` 是`EF Core` 跟資料庫溝通的主要類別，透過繼承 `DbContext` 可以定義跟資料庫溝通的行為。 首先我們先建立一個類別繼承 `DbContext` ，同時建立`DbSet`。
+5. 建立`DbContext.cs`資料存取類別
+> `DbContext` 是`EF Core` 跟資料庫溝通的主要類別，透過繼承 `DbContext` 可以定義跟資料庫溝通的行為。     
+> (首先我們先建立一個類別繼承 `DbContext`，同時建立`DbSet`。)
 6. 註冊資料庫連接：在`Program.cs`
 7. 建立 API Controller，以產品為例`ProductController`
-8. ProductController 建構子
 ---
 
+# 建立資料庫模型(DbContext、DbSet)
+建立一個應用程式層級的資料庫模型，這個資料庫模型會對應到實體資料庫，其中包含資料表、資料欄位設定。      
 
-# 建立資料庫模型
-這裡會在我們的應用程式中建立一個應用程式層級的資料庫模型，這個資料庫模型會對應到實體資料庫，其中包含資料表、資料欄位設定。      
+再往下繼續前，須先了解兩個關鍵類別 `DbContext` 和 `DbSet`。     
 
-再往下繼續前，須先了解兩個關鍵類別 `DbContext` 和 `DbSet`。
-
+首先我們先建立一個類別繼承 `DbContext` ，同時建立`DbSet`。 
 
 
 ## DbContext
@@ -97,7 +104,7 @@ public class TestDbContext : DbContext
 
 
 # 設定連線字串 & 註冊服務
-## 設定連線字串
+## 設定連線字串 (appsettings.json)
 建立完資料庫模型後，要和實體資料庫建立連線，在 `appsettings.json` 中增加資料庫連線字串。
 
 ```json
@@ -116,11 +123,11 @@ public class TestDbContext : DbContext
 
 > 每種資料庫的連線字串都不一樣，可以參考 [The Connection Strings Reference](https://www.connectionstrings.com) 這個網站查詢連線字串的寫法。
 
-## 註冊服務
+## 註冊服務 (Program.cs)
 接者在 `Program.cs` 中註冊 `TestDbContext` 服務，並將 `DefaultConnection` 連線字串設定給資料庫模型。
 
 ```c#
-//設定讀取db連線字串
+//註冊服務-設定讀取db連線字串
 builder.Services.AddDbContext<TestDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 ```
@@ -158,9 +165,9 @@ app.Run();
 ```
 
 # 實作 CRUD 的 API
-完成了 Entity Framework Core 的主要建置，接下來實作透過 WebAPI 來對資料庫進行 CRUD 動作。
+完成了 `Entity Framework Core` 的主要建置，接下來實作透過 `WebAPI` 來對資料庫進行 `CRUD` 動作。
 
-## Controller 設定 DbContext
+## Controller 中設定 DbContext
 
 上一步驟中，已將 `TestDbContext` 註冊到我們的應用程式中，因此可以直接在建構式中傳入 `TestDbContext` 服務，進行資料庫讀寫動作。
 
@@ -180,8 +187,9 @@ namespace WebAPIDemo.Controllers
 }
 ```
 
-## 讀取
+## 讀取 (HttpGet)
 
+### 讀取全部資料
 ```c#
 //取得所有資料
 [HttpGet]
@@ -209,7 +217,31 @@ public IActionResult Get()
 }
 ```
 
-## 新增
+### 以 id 讀取資料
+```c#
+[HttpGet("id")]
+public IActionResult Get(int id)
+{
+    try
+    {
+        //以id搜尋資料
+        var product = db.Product.Find(id);
+
+        //如果資料為空，就返回自定義訊息
+        if (product == null)
+        {
+            return NotFound($"無產品ID:{id}的資料。");
+        }
+        return Ok(product);
+    } catch (Exception ex)
+    {
+        //返回錯誤訊息
+        return BadRequest(ex.Message);
+    }
+}
+```
+
+## 新增 (HttpPost)
 ```c#
 [HttpPost]
 public IActionResult Post(Product model)
@@ -232,20 +264,19 @@ public IActionResult Post(Product model)
 }
 ```
 
-## 修改
+## 修改 (HttpPut)
 
 ```c#
 [HttpPut]
-public IActionResult Put(Product model) {
-
-    if (model == null)
-    {
+public IActionResult Put(Product model) 
+{
+    if (model == null) {
         return BadRequest("請輸入資料");
     }
-    if (model.Id == 0)
-    {
+    if (model.Id == 0) {
         return BadRequest("Id不可為空");
     }
+
     try
     {
         //搜尋該id的產品資料
@@ -271,7 +302,8 @@ public IActionResult Put(Product model) {
 }
 ```
 
-## 刪除
+## 刪除 (HttpDelete)
+
 ```c#
 [HttpDelete]
 public IActionResult Delete(int id) 
@@ -317,9 +349,20 @@ response status is 500 https://localhost:44314/swagger/v1/swagger.json
 因為有兩個同名的`Get()`方法。
 
 ## 解決方法：
-將以id取得資料的方法，`[HttpGet]` 加上id參數 `[HttpGet("id")]`。
+
+將以id取得資料的方法，`[HttpGet]` 加上id參數 `[HttpGet("id")]`。        
+
+```c#
+[HttpGet]
+public IActionResult Get() { }
+
+[HttpGet("id")]
+public IActionResult Get(int id) { }
+```
+
+
 [Asp.Net Core Web API - CRUD operations in REST API using Entity Framework Core DB first & SQL Server](https://www.youtube.com/watch?v=nSHi9fwrue8)     
-[MSDN - DbContext 的存留期、設定與初始化](https://learn.microsoft.com/zh-tw/ef/core/dbcontext-configuration/)
+[MSDN - DbContext 的存留期、設定與初始化](https://learn.microsoft.com/zh-tw/ef/core/dbcontext-configuration/)       
 [MSDN - Tutorial: Get started with EF Core in an ASP.NET MVC web app](https://learn.microsoft.com/en-us/aspnet/core/model/ef-mvc/intro?view=aspnetcore-8.0)       
 [EF Core 筆記 1 - 概論](https://blog.darkthread.net/blog/efcore-notes-1/)       
 [在 ASP.NET Core WebAPI 使用 Entity Framework Core 存取資料庫](https://github.com/poychang/DemoEFCore)
