@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Error：Only the invariant culture is supported in globalization-invariant mode"
 date: 2023-07-10 23:59:00 +0800
 categories: [Notes,Web API]
-tags: [C#,Web API,.Net Core,Error]
+tags: [C#,Web API,.Net Core,error,issue]
 ---
 
 ## 錯誤訊息
