@@ -15,7 +15,7 @@ en-us is an invalid culture identifier.
 
 ## 解決方法
 
-`project.csproj`檔的`<InvariantGlobalization>`改成`false`
+`project.csproj`中的`<InvariantGlobalization>`改成`false`
 
 ```xml
 <PropertyGroup>
