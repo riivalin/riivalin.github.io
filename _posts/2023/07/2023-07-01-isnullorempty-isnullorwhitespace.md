@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] IsNullOrEmpty、IsNullOrWhiteSpace"
-date: 2023-06-01 23:59:00 +0800
+date: 2023-07-01 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,"null"]
 ---
