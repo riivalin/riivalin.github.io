@@ -363,6 +363,6 @@ public IActionResult Get(int id) { }
 
 [Asp.Net Core Web API - CRUD operations in REST API using Entity Framework Core DB first & SQL Server](https://www.youtube.com/watch?v=nSHi9fwrue8)     
 [MSDN - DbContext 的存留期、設定與初始化](https://learn.microsoft.com/zh-tw/ef/core/dbcontext-configuration/)       
-[MSDN - Tutorial: Get started with EF Core in an ASP.NET MVC web app](https://learn.microsoft.com/en-us/aspnet/core/model/ef-mvc/intro?view=aspnetcore-8.0)       
+[MSDN - Tutorial: Get started with EF Core in an ASP.NET MVC web app](https://learn.microsoft.com/en-us/aspnet/core/data/ef-mvc/intro?view=aspnetcore-8.0)       
 [EF Core 筆記 1 - 概論](https://blog.darkthread.net/blog/efcore-notes-1/)       
 [在 ASP.NET Core WebAPI 使用 Entity Framework Core 存取資料庫](https://github.com/poychang/DemoEFCore)
