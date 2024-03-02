@@ -186,7 +186,7 @@ public async Task<IActionResult> DeleteProduct(int id)
         if (conn.State != ConnectionState.Open) conn.Open();
 
         //sql語句
-        string sql = "delete Product where Id=@Id";
+        string sql = "delete from Product where Id=@Id";
 
         //定義參數及相關屬性和要傳入的值
         using (SqlCommand cmd = new SqlCommand(sql, conn))
