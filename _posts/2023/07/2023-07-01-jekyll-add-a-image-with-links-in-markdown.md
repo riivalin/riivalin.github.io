@@ -23,10 +23,10 @@ internally linking to xxxxx, which does not exist...
 ```
 
 ### 方法二：
-以文字link方式中，放入Image連結的方式 `[![Alt text](https://image.jpg)](https://image.jpg)`
+以文字link方式中，放入Image連結的方式
 
 ```markdown
-[![Alt text for broken image link](https://example.com/image.png)](https://example.com)
+[![Alt text](https://example.com/image.png)](https://example.com)
 ```
 
 ---
