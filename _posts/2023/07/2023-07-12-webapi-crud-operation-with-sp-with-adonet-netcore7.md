@@ -101,7 +101,8 @@ public async Task<IActionResult> Product(ProductModel obj)
 }
 ```
 
-## 
+## Code
+### ProductModel.cs
 
 ```c#
 public class ProductModel
@@ -114,7 +115,8 @@ public class ProductModel
 }
 ```
 
-## 
+### ProductController.cs
+
 ```c#
 //[Route("api/[controller]")] //mark起來，使用自己的Route
 [ApiController]
@@ -316,7 +318,9 @@ public class ProductController : ControllerBase
 
 ---
 ## 前置準備sp
+
 新增資料
+
 ```sql
 create proc uspInsertProduct
 	@ProductName nvarchar(50),
