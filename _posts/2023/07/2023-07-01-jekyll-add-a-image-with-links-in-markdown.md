@@ -15,14 +15,6 @@ internally linking to xxxxx, which does not exist...
 
 ## 解決方法
 
-### 方法一：
-增加 `{:target="_blank"}`
-
-```markdown
-![Alt text](https://example.com){:target="_blank"}
-```
-
-### 方法二：
 以文字link方式中，放入Image連結的方式
 
 ```markdown
@@ -41,6 +33,12 @@ Link:
 
 ```markdown
 [Alt text for broken link](httsp://example.com)
+```
+
+Image with link:
+
+```markdown
+[![Alt text for broken image link](assets/logo.png)](https://example.com)
 ```
 
 <https://talk.jekyllrb.com/t/how-to-add-a-image-with-links-in-markdown/5915/3>
