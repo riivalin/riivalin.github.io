@@ -19,9 +19,9 @@ Take notes...
 搜尋 [.net core hosting bundle 6](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)，下載 Windows `Hosting Bundle`並安裝。
 
 ## 開啟 IIS 功能
-Path: 控制台 > 程式集 > 程式和功能 > 開啟或關閉Windows功能 > 勾選 IIS > 勾選 WWW服務        
+Path: 控制台 > 程式集 > 程式和功能 > 開啟或關閉Windows功能 > 勾選 `IIS` > 勾選 `WWW 服務`        
 
-把「Internet Information Services」打開，然後直接到該功能底下的「World Wide Web服務」，「應用程式開發功能」中開啟相關的功能(.NET擴充性、ASP、ASP.NET、ISAPI...)
+把「`Internet Information Services`」打開，然後直接到該功能底下的「`World Wide Web服務`」，「應用程式開發功能」中開啟相關的功能(.NET擴充性、ASP、ASP.NET、ISAPI...)
 
 # 3. 在 IIS 新增網站
 
@@ -32,8 +32,8 @@ Path: 控制台 > 程式集 > 程式和功能 > 開啟或關閉Windows功能 > �
 
 # 4. 確認網站運行
 
-確認是否正常運行：點擊站台`PublishCoreApiTest`> 右鍵:管理站台 > 瀏覽。      
-按下「瀏覽」後，會開啟一個網頁，URL為<`http://localhost:8081/`>
+確認是否正常運行：點擊站台`PublishCoreApiTest` > 右鍵:管理站台 > 瀏覽。      
+按下「瀏覽」後，會開啟一個網頁，URL為 <http://localhost:8081/>
 
 # 5. 設定VS發佈(Publish)
 返回vs進行發佈：專案 > 右鍵點擊「發佈(Publish)」 > `IIS` > `Web Deploy`
@@ -62,7 +62,7 @@ Path: 控制台 > 程式集 > 程式和功能 > 開啟或關閉Windows功能 > �
 
 回到 `IIS` > 站台 > 管理網站 > 瀏覽     
 會出現 `HTTP ERROR 404`，那是因為沒有默認訪問到 web api。      
-將 <http://localhost:8081> 加上 API的 Controller名weatherforecast： <http://localhost:8081/weatherforecast>就可以看到天氣的json資料了。
+將 <http://localhost:8081> 加上 API Controller 的名稱 weatherforecast： <http://localhost:8081/weatherforecast> 就可以看到天氣的json資料了。        
 
 
 [How To Publish ASP.NET Core Web API to IIS](https://www.youtube.com/watch?v=Lt3wve_nb0g)
