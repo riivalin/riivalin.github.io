@@ -2,7 +2,7 @@
 layout: post
 title: "[C# 筆記] ASP.Net Core Web API 使用 EF Core DB First 存取 DB (CRUD)"
 date: 2023-07-09 23:59:00 +0800
-categories: [Notes,Web API]
+categories: [Notes,C#,.NET Core,Web API]
 tags: [C#,Web API,.Net Core,CRUD,EF Core,DB First]
 ---
 

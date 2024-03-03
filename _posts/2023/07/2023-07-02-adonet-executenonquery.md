@@ -2,7 +2,7 @@
 layout: post
 title: "[C# 筆記][ADO.Net] ExecuteNonQuery的回傳值"
 date: 2023-07-02 23:59:00 +0800
-categories: [Notes,C#]
+categories: [Notes,C#,ADO.Net]
 tags: [C#,ADO.NET,ExecuteNonQuery]
 ---
 

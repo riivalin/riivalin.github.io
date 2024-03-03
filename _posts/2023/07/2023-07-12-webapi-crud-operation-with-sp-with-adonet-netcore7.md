@@ -2,7 +2,7 @@
 layout: post
 title: "[C# 筆記] .NET Core 使用 ADO.NET 預存程序(Stored Procedure) 實作 CRUD"
 date: 2023-07-12 23:59:00 +0800
-categories: [Notes,Web API]
+categories: [Notes,C#,.NET Core,Web API]
 tags: [C#,Web API,.Net Core,CRUD,ADO.NET,sp]
 ---
 

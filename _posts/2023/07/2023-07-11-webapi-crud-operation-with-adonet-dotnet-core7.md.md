@@ -2,7 +2,7 @@
 layout: post
 title: "[C# 筆記] .NET Core 7.0 使用 ADO.NET 實作 CRUD 操作"
 date: 2023-07-11 23:59:00 +0800
-categories: [Notes,Web API]
+categories: [Notes,C#,.NET Core,Web API]
 tags: [C#,Web API,.Net Core,CRUD,ADO.NET]
 ---
 
