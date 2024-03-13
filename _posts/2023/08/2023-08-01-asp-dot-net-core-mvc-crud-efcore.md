@@ -1043,5 +1043,6 @@ public async Task<IActionResult> Delete(UpdateEmployeeViewModel model)
 [MSDN - 安裝 Entity Framework Core](https://learn.microsoft.com/zh-tw/ef/core/get-started/overview/install)     
 [MSDN - 使用 ASP.NET Core 應用程式中的資料](https://learn.microsoft.com/zh-tw/dotnet/architecture/modern-web-apps-azure/work-with-data-in-asp-net-core-apps)        
 [MSDN - DbContext 的存留期、設定與初始化](https://learn.microsoft.com/zh-tw/ef/core/dbcontext-configuration/)   
-[MSDN - DbSet<TEntity> 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.entity.dbset-1?view=entity-framework-6.2.0)
+
+DbSet<TEntity> 類別 <https://learn.microsoft.com/zh-tw/dotnet/api/system.data.entity.dbset-1?view=entity-framework-6.2.0>
 
