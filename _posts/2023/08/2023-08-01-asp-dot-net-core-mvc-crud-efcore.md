@@ -1117,7 +1117,12 @@ app.Run();
 
 ## Model
 
-`Employee.cs` 對資料表中所有的欄位
+`Employee.cs` 對資料表中所有的欄位      
+
+可做為與db溝通的實體        
+可做為RazorView頁面使用的model，        
+例如：想要顯示所有員工資料的列表，使用`@model`導入model     
+`@model List<ASPNETMVCCRUD.Models.Domain.Employee>`
 
 ```c#
 namespace ASPNETMVCCRUD.Models.Domain
