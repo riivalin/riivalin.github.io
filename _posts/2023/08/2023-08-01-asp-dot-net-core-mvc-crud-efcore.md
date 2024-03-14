@@ -944,6 +944,7 @@ public async Task<IActionResult> View(Guid id) {
 
 ![](/assets/img/post/mvc-employee-view-to-edit.png)
 
+
 ## Edit Employee Page
 
 使用剛剛的形式來更新View Model資料 (員工列表 > View 按鈕 > 預覽頁面(可編輯))
@@ -1021,7 +1022,7 @@ public async Task<IActionResult> Delete(UpdateEmployeeViewModel model)
 }
 ```
 
-## 回到View.cshtml
+## 回到View.cshtml加上 `asp-action`、`asp-controller`
 回到View.cshtml 填寫：與controller 溝通 `Employees`，調用`Delete`方法
 
 - action 加上方法名 `Delete`
@@ -1036,6 +1037,469 @@ public async Task<IActionResult> Delete(UpdateEmployeeViewModel model)
 執行
 ![](/assets/img/post/mvc-view-to-delete.png)
 
+# 完整程式碼
+## appsettings.json
+
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "MvcDemoConnectionString": "Data Source=RIVAWIN10\\MSSQLSERVER_2019;Initial Catalog=MvcDemoDb;User ID=riva;Password=1234;Trust Server Certificate=True"
+  }
+}
+```
+
+## DbContext.cs
+
+MVCDemoDbContext.cs
+
+```c#
+using ASPNETMVCCRUD.Models.Domain;
+using Microsoft.EntityFrameworkCore;
+
+namespace ASPNETMVCCRUD.Data
+{
+    //1.繼承DbContext
+    public class MVCDemoDbContext : DbContext
+    {
+        //2.調用父類的建構函式，並把options傳入
+        public MVCDemoDbContext(DbContextOptions options) : base(options) { }
+        //3.員工實體集合的屬性(Employee型別的DbSet)
+        public DbSet<Employee> Employees { get; set; }
+    }
+}
+```
+
+## Program.cs
+
+```c#
+using ASPNETMVCCRUD.Data;
+using Microsoft.EntityFrameworkCore;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+//加入DbContext服務(db連線)
+builder.Services.AddDbContext<MVCDemoDbContext>(options => 
+    options.UseSqlServer(builder.Configuration
+    .GetConnectionString("MvcDemoConnectionString")));
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+app.UseAuthorization();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();
+```
+
+
+## Model
+
+`Employee.cs` 對資料表中所有的欄位
+
+```c#
+namespace ASPNETMVCCRUD.Models.Domain
+{
+    public class Employee
+    {
+        public Guid Id { get; set; }
+        public string? Name { get; set; }
+        public string? Email { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public int Salary { get; set; }
+        public string? Department { get; set; }
+    }
+}
+```
+
+## View Model
+### AddEmployee View Model
+
+`AddEmployeeViewModel.cs`用以提供「新增員工資料」的Razor頁面使用，資料會來自用戶在瀏覽器輸入的值。
+
+```c#
+namespace ASPNETMVCCRUD.Models
+{
+    //希望這些值來自瀏覽器
+    public class AddEmployeeViewModel
+    {
+        public string? Name { get; set; }
+        public string? Email { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public int Salary { get; set; }
+        public string? Department { get; set; }
+    }
+}
+```
+
+> RazorView可以使用`@model`將 ViewModel導入     
+> 例如：`@model ASPNETMVCCRUD.Models.AddEmployeeViewModel`
+
+### UpdateEmployee View Model
+
+`UpdateEmployeeViewModel.cs`用以提供「預覽員工」、「修改員工」資料的頁面Razor頁面使用。
+
+```c#
+namespace ASPNETMVCCRUD.Models
+{
+    public class UpdateEmployeeViewModel
+    {
+        public Guid Id { get; set; }
+        public string? Name { get; set; }
+        public string? Email { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public int Salary { get; set; }
+        public string? Department { get; set; }
+    }
+}
+```
+
+> RazorView可以使用`@model`將 ViewModel導入     
+> 例如：`@model ASPNETMVCCRUD.Models.UpdateEmployeeViewModel`
+
+
+## Controller.cs
+
+EmployeesController.cs
+
+```c#
+namespace ASPNETMVCCRUD.Controllers
+{
+    public class EmployeesController : Controller
+    {
+        //與資料庫溝通的DbContext
+        private readonly MVCDemoDbContext db;
+        public EmployeesController(MVCDemoDbContext dbContext)
+        {
+            db = dbContext;
+        }
+
+        //列表
+        [HttpGet]
+        public async Task<IActionResult> Index()
+        {
+            var employees = await db.Employees.ToListAsync();
+            return View(employees);
+        }
+
+        //用戶輸入
+        [HttpGet]
+        public IActionResult Add()
+        {
+            return View();
+        }
+
+        //用戶提交
+        [HttpPost]
+        public async Task<IActionResult> Add(AddEmployeeViewModel data)
+        {
+            //先將用戶輸入的值轉為employee
+            var employee = new Employee {
+                Id = Guid.NewGuid(),
+                Name = data.Name,
+                Email = data.Email,
+                DateOfBirth = data.DateOfBirth,
+                Salary = data.Salary,
+                Department = data.Department
+            };
+
+            //儲存到db
+            await db.Employees.AddAsync(employee); //資料加入到Employees
+            await db.SaveChangesAsync(); //確認保存到db
+
+            //回到員工列表頁面
+            return RedirectToAction("Index");
+        }
+
+        //預覽員工資料
+        [HttpGet]
+        public async Task<IActionResult> View(Guid id)
+        {
+            //從db搜尋該員工
+            var employee = await db.Employees.FirstOrDefaultAsync(e => e.Id == id);
+
+            //檢查是否有值，FirstOrDefaultAsync 有可能是null
+            if (employee != null)
+            {
+                //取得的員工資料，轉為View Model
+                var viewModel = new UpdateEmployeeViewModel {
+                    Id = employee.Id,
+                    Name = employee.Name,
+                    Email = employee.Email,
+                    DateOfBirth = employee.DateOfBirth,
+                    Salary = employee.Salary,
+                    Department = employee.Department
+                };
+                //將資料傳入View
+                return await Task.Run(()=> View("View",viewModel));
+            }
+
+            //重新導向員工列表頁面
+            return RedirectToAction("Index");
+        }
+
+        //更新員工資料
+        [HttpPost]
+        public async Task<IActionResult> View(UpdateEmployeeViewModel model)
+        {
+            //搜尋該員工是否存在
+            var employee = await db.Employees.FindAsync(model.Id);
+
+            //有該員工
+            if (employee != null)
+            {
+                //更新資料
+                employee.Name = model.Name;
+                employee.Email = model.Email;
+                employee.DateOfBirth = model.DateOfBirth;
+                employee.Salary = model.Salary;
+                employee.Department = model.Department;
+
+                //確認保存資料
+                await db.SaveChangesAsync();
+
+                //返回員工列表頁面
+                return RedirectToAction("Index");
+            }
+            //TODO:導向員工不存在的錯誤頁面
+            return RedirectToAction("Error");
+        }
+
+
+        //刪除員工資料
+        [HttpPost]
+        public async Task<IActionResult> Delete(UpdateEmployeeViewModel model) 
+        {
+            //搜尋該員工
+            var employee = await db.Employees.FindAsync(model.Id);
+
+            //員工存在
+            if (employee != null) 
+            {
+                //刪除該員工
+                db.Employees.Remove(employee);
+                //確認保存db
+                await db.SaveChangesAsync();
+
+                //重新導向員工列表頁面
+                return RedirectToAction("Index");
+            }
+            
+            //重新導向員工列表頁面，或是員工不存在錯誤頁面
+            return RedirectToAction("Index");
+        }
+
+    }
+}
+```
+
+## View
+### Index.cshtml (員工列表)
+
+```html
+<!--因為是取得所有員工列表資料，所以可以用Employee Model，因為是列表，所以加上List<>-->
+@model List<ASPNETMVCCRUD.Models.Domain.Employee>
+@{
+}
+
+<h1>Employee List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Date Of Birth</th>
+            <th>Salary</th>
+            <th>Department</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--跑迴圈將資料顯示出來-->
+        @foreach(var employee in Model)
+        {
+            <tr>
+                <td>@employee.Id</td>
+                <td>@employee.Name</td>
+                <td>@employee.Email</td>
+                <td>@employee.DateOfBirth.ToString("yyyy-MM-dd")</td>
+                <td>@employee.Salary</td>
+                <td>@employee.Department</td>
+                <td><a href="Employees/View/@employee.Id">View</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+```
+
+### Add.cshtml (新增員工)
+
+```html
+@model ASPNETMVCCRUD.Models.AddEmployeeViewModel
+@{
+}
+
+<h1>Add Employee</h1>
+
+<!--form方法為post，action為對應controller的Add方法-->
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name"> <!--Name對應到View Model的屬性-->
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email"> <!--Email對應到View Model的屬性-->
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Birthday</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Salary</label>
+        <input type="number" class="form-control" asp-for="Salary">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Department</label>
+        <input type="text" class="form-control" asp-for="Department">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+```
+
+### View.cshtml (預覽員工-可更新、刪除)
+
+```html
+@model ASPNETMVCCRUD.Models.UpdateEmployeeViewModel
+
+@{
+}
+
+<h1>Edit Employee</h1>
+
+<!--form方法為post，action為對應controller的Viwe方法-->
+<form method="post" action="View" class="mt-5">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly> <!--Id對應到View Model的屬性，欄位設唯讀readonly-->
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" asp-for="Name"> <!--Name對應到View Model的屬性-->
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email"> <!--Email對應到View Model的屬性-->
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Birthday</label>
+        <input type="date" class="form-control" asp-for="DateOfBirth">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Salary</label>
+        <input type="number" class="form-control" asp-for="Salary">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Department</label>
+        <input type="text" class="form-control" asp-for="Department">
+    </div>
+    <!--更新按鈕-->
+    <button type="submit" class="btn btn-primary" asp-action="">Submit</button>
+
+    <!--刪除按鈕: 加上asp-action和asp-controller，其為按上後，會執行Employees的Controller之Delete方法-->
+    <button type="submit" class="btn btn-danger" 
+        asp-action="Delete"
+        asp-controller="Employees">Delete</button>
+</form>
+```
+
+
+### _Layout.cshtml
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ASPNETMVCCRUD</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ASPNETMVCCRUD.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ASPNETMVCCRUD</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                        <!--員工列表連結-->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employees" asp-action="Index">Employees</a>
+                        </li>
+                        <!--新增員工連結-->
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employees" asp-action="Add">Add Employees</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - ASPNETMVCCRUD - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+```
+
 
 [ASP.NET Core MVC CRUD - .NET 6 MVC CRUD Operations Using Entity Framework Core and SQL Server](https://www.youtube.com/watch?v=2Cp8Ti_f9Gk)      
 [MSDN - Entity Framework Core](https://learn.microsoft.com/zh-tw/ef/core/)      
@@ -1043,6 +1507,6 @@ public async Task<IActionResult> Delete(UpdateEmployeeViewModel model)
 [MSDN - 安裝 Entity Framework Core](https://learn.microsoft.com/zh-tw/ef/core/get-started/overview/install)     
 [MSDN - 使用 ASP.NET Core 應用程式中的資料](https://learn.microsoft.com/zh-tw/dotnet/architecture/modern-web-apps-azure/work-with-data-in-asp-net-core-apps)        
 [MSDN - DbContext 的存留期、設定與初始化](https://learn.microsoft.com/zh-tw/ef/core/dbcontext-configuration/)   
+[MSDN - DbSet<TEntity> 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.entity.dbset-1?view=entity-framework-6.2.0)      
 
-DbSet<TEntity> 類別 <https://learn.microsoft.com/zh-tw/dotnet/api/system.data.entity.dbset-1?view=entity-framework-6.2.0>
 
