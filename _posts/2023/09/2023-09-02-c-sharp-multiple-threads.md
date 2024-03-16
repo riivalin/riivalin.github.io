@@ -6,6 +6,8 @@ categories: [Notes,C#]
 tags: [C#,thread]
 ---
 
+再把[程式修改一下](https://riivalin.github.io/posts/2023/09/c-sharp-hello-world-thread/)
+
 # C# Multiple Threads
 ## thread.Start()
 
