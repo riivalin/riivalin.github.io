@@ -2,7 +2,7 @@
 layout: post
 title: "聖嚴法師：在家學佛有什麼禁忌？"
 date: 2024-01-07 23:23:00 +0800
-categories: [Amitabha,聖嚴法師]
+categories: [Amitabha,法師開示,聖嚴法師]
 tags: [聖嚴法師]
 ---
 

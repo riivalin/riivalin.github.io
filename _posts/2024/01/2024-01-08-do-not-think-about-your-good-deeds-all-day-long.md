@@ -2,7 +2,7 @@
 layout: post
 title: "淨界法師：你不要一天到晚想著你的善業"
 date: 2024-01-08 23:23:00 +0800
-categories: [Amitabha,淨界法師]
+categories: [Amitabha,法師開示,淨界法師]
 tags: [淨界法師,阿賴耶識,因果,業力]
 ---
 
