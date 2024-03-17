@@ -11,7 +11,9 @@ tags: [C#,thread]
 # C# Multiple Threads
 ## thread.Start()
 
-按下 `F5`執行，可以看到 Console控制台內容是交叉的顯示`Hello from Main()`和`Hello from DifferentMethod()`。
+按下 `F5`執行，可以看到 Console控制台輸出是：
+兩個同時執行的線程混合交叉的顯示    
+`Hello from Main()`和`Hello from DifferentMethod()`。
 
 ```c#
 internal class Program
@@ -36,7 +38,7 @@ internal class Program
 }
 ```
 
-執行結果：
+執行結果：(按`Ctrl+C`結束)
 
 ```console
 Hello from Main()
@@ -52,7 +54,10 @@ Hello from DifferentMethod()
 
 ## 參數化線程 thread.Start(object? parameter)
 
-按下 `F5`執行，可以看到 Console控制台內容數字在變化，這些線程同時在執行。
+讓輸出變得更有趣，使用參數化線程...        
+
+按下 `F5`執行，可以看到 Console控制台內容：     
+輸出的數字在變化，事實上，這些線程是同時在執行的，只是它們在爭奪控制台視窗以將其輸出印出。
 
 ```c#
 internal class Program
@@ -101,8 +106,9 @@ Hello from different method: 2
 ```
 
 ## 結論
+
 所以`Thread`執行緒(線程)主要的優點是：      
-如果你可以將工作分解成邏輯塊，在其後發送一堆線程，你會發現可以更快得完成更多的工作。
+如果你可以將工作分解成邏輯塊，在其後立即發送一堆線程，你會發現可以更快得完成更多的工作。
 
 
 [C# Multiple Threads](https://youtu.be/_HO86JjtB2c)     
