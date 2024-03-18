@@ -68,9 +68,6 @@ Total value is: 2250066839
 想知道它實際上花了多少時間來做加總      
 使用`Stopwatch`取得效能數值
 
-> `TotalMilliseconds` 是總共用了幾毫秒      
-> `TotalMilliseconds / 1000` 是 = 幾秒
-
 ```c#
 internal class Program
 {
@@ -97,20 +94,19 @@ internal class Program
         }
         watch.Stop(); //結束計時
         Console.WriteLine($"Total value is: {total}");
-        Console.WriteLine($"Time to sum: {watch.ElapsedMilliseconds/1000} 秒");
-        //Console.WriteLine($"Time to sum. {watch.Elapsed}");
+        Console.WriteLine($"Time to sum. {watch.Elapsed}");
     }
 }
 ```
 
 執行結果：      
 
-花了將近17秒
+花了將近10.92秒
 
 ```
 Summing...
-Total value is: 2250013690
-Time to sum: 17 秒
+Total value is: 2249935218
+Time to sum: 00:00:10.9200492  ==> 10.92秒
 ```
 
 ##
