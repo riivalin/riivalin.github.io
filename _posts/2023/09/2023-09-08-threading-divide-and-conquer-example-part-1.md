@@ -6,9 +6,8 @@ categories: [Notes,C#]
 tags: [C#,thread]
 ---
 
-##
-
-先寫一個可以產生很多整數的方法
+## 模擬:單執行緒處理很多數字的運算
+### 先寫一個可以產生很多整數的方法
 
 ```c#
 internal class Program
@@ -27,7 +26,7 @@ internal class Program
 }
 ```
 
-對這些值進行相加(求和)
+### 對這些值進行相加(求和)
 
 ```c#
 internal class Program
@@ -56,7 +55,9 @@ internal class Program
 } 
 ```
 
-執行結果：(執行需要一點時間...)
+### 執行結果：
+
+(執行需要一點時間...)
 
 ```
 Summing...
@@ -99,7 +100,7 @@ internal class Program
 }
 ```
 
-執行結果：      
+### 執行結果：      
 
 花了將近10.92秒
 
