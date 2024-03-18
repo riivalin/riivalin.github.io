@@ -135,7 +135,8 @@ internal class Program
 
 ## 求和方法：所有執行緒都執行這方法
 
-加一個方法`SumYourPortion()`，使用[之前所提到的-參數化線程啟動 thread.Start(object? parameter)](https://riivalin.github.io/posts/2023/09/c-sharp-multiple-threads/)
+加一個方法`SumYourPortion()`，      
+使用[之前所提到的-參數化線程啟動 thread.Start(object? parameter)](https://riivalin.github.io/posts/2023/09/c-sharp-multiple-threads/)
 
 ```c#
 //參數化執行緒啟動
