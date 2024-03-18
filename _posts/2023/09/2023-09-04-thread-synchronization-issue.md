@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] Threading - C# Thread Synchronization Issue"
 date: 2023-09-04 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,thread,background-thread,foreground-thread]
+tags: [C#,thread]
 ---
 
 
