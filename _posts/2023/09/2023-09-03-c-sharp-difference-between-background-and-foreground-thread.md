@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] Threading - C# Difference Between Background and Foreground Thread"
-date: 2023-09-02 23:59:00 +0800
+date: 2023-09-03 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,thread,background-thread,foreground-thread]
 ---
