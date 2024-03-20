@@ -41,6 +41,8 @@ internal class Program
 
 ## 錯誤示範的寫法：數值相加
 
+以下示範會花費很多時間
+
 ```c#
 //數值相加
 static void SumNumbers(object NumThreads)
@@ -48,10 +50,13 @@ static void SumNumbers(object NumThreads)
     //錯誤示範：以下會存在很多的問題
     DateTime startTime = DateTime.Now;
     int sum = 0;
+
+    //效率差1:這裡會花費很多的等待時間
     while ((DateTime.Now - startTime).Seconds < 10) //讓它攪動10秒
     {
+        //效率差2:這裡會一直花費時間檢查
         //從陣列中取出數字
-        if(numbers.Count != 0)) {
+        if(numbers.Count != 0) {
             sum += numbers.Dequeue(); //dqqueue取出數字
         }
     }
