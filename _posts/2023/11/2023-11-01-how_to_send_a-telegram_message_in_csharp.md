@@ -6,6 +6,7 @@ categories: [Notes,C#]
 tags: [C#,tg,telegram bot]
 ---
 
+建立 Telegram Bot，並以 C# 透過 Private Channel 來發送訊息
 
 ## Preparation
 
@@ -85,7 +86,7 @@ Hello, World! I am user 6460822229 and my name is rivademo.
 
 ## Send Message From Bot with C#
 
-建立一個 ConsoleApplication 專案，並從 `Nuget` 將 `Telegram.Bot` 加入至專案。之後我們便可以透過這方便的 SDK 來利用 Bot 發送訊息，程式碼如下：
+建立一個 ConsoleApplication 專案，並從 `Nuget` 將 `Telegram.Bot` 加入至專案。利用 Bot 發送訊息，程式碼如下：
 
 ```c#
 namespace ConsoleApplication1
