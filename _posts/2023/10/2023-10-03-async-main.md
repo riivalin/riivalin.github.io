@@ -6,8 +6,6 @@ categories: [Notes,C#]
 tags: [async,main]
 ---
 
-將主程式的進入點 Main() 方法改成宣告為非同步(async)的版本
-
 ## 預設的 Console 應用程式
 
 通常剛建立好一個 Console 應用程式專案，其主程式 Program.cs 的內容如下：
