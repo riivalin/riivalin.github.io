@@ -81,7 +81,7 @@ internal class Program
 執行結果輸出：
 
 ```console
-Hello, World! I am user 6460822229 and my name is rivademo.
+Hello, World! I am user 9999999 and my name is csharpdemo.
 ```
 
 ## Send Message From Bot with C#
@@ -114,9 +114,9 @@ internal class Program
 {
     static async Task Main(string[] args)
     {
-        var botClient = new Telegram.Bot.TelegramBotClient("6460822229:AAEqPs3--n5jAk2qhjg2YnPH0MflxbkWsoo");
+        var botClient = new Telegram.Bot.TelegramBotClient("99999999:RREqPs3--n5jAk2qhjg2YnPH0MflxbkWsoo");
         Message message = await botClient.SendTextMessageAsync(
-            chatId: "-1002101862034",
+            chatId: "-123456789",
             text: "C# Test message");
 
 
