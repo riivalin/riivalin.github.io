@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 練習串接 API - 以 URL 取得 JSON 資料並反序列化 Deserialize 為物件"
+title: "[C# 筆記] 練習串接 API - 以 URL 取得 JSON 資料並反序列化(Deserialize) 為物件"
 date: 2023-11-02 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,json,HttpClient,GetStringAsync,Deserialize]
@@ -48,7 +48,7 @@ static async Task Main(string[] args)
 
 用一個偷懶的方式去建立類別，可以使用「編輯 > 選擇性貼上 > 貼上 JSON 做為類別」的方式來建立。        
 
-1. 複製 JSON 字串裡的一個物件的資料，如下:
+1.複製 JSON 字串裡的一個物件的資料，如下:
 
 ```json
 {
@@ -63,8 +63,8 @@ static async Task Main(string[] args)
 }
 ```
 
-2. 新增一個類別 `Vocabulary.cs` 的檔案
-3. 將游標移至你要產生類別的位置上，使用「編輯 > 選擇性貼上 > 貼上 JSON 做為類別」的方式來建立。  
+2.新增一個類別 `Vocabulary.cs` 的檔案
+3.將游標移至你要產生類別的位置上，使用「編輯 > 選擇性貼上 > 貼上 JSON 做為類別」的方式來建立。  
 
 再稍微修改一下：把 Rootobject 改成 Vocabulary
 
@@ -131,34 +131,34 @@ static async Task Main(string[] args)
 # 英文單字的 JSON
 ## 國中1200 英文單字的 JSON
 - 國一 JSON
-https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/國一.json
+<https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/國一.json>
 
 - 國二 JSON
-https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/國二.json
+<https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/國二.json>
 
 - 國三 JSON
-https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/國三.json
+<https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/國三.json>
 
 ## 高中7000 英文單字的 JSON
 - 高中 1 級
-https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/1級.json
+<https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/1級.json>
 
 - 高中 2 級
-https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/2級.json
+<https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/2級.json>
 
 - 高中 3 級
-https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/3級.json
+<https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/3級.json>
 
 - 高中 4 級
-https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/4級.json
+<https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/4級.json>
 
 - 高中 5 級
-https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/5級.json
+<https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/5級.json>
 
 - 高中 6 級
-https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/6級.json
+<https://raw.githubusercontent.com/AppPeterPan/TaiwanSchoolEnglishVocabulary/main/6級.json>
 
-
+    
 [MSDN - HttpClient 類別 (System.Net.Http)](https://learn.microsoft.com/zh-tw/dotnet/api/system.net.http.httpclient?view=net-8.0&WT.mc_id=DT-MVP-4015686)    
 [MSDN - HttpClient.GetStringAsync 方法 (String) (System.Net.Http)](https://learn.microsoft.com/zh-tw/dotnet/api/system.net.http.httpclient.getstringasync?view=net-8.0&redirectedfrom=MSDN)   
 [MSDN - JsonSerializer.Deserialize 方法(System.Text.Json): 如何將 JSON 讀取為 .NET 物件 (還原序列化)](https://learn.microsoft.com/zh-tw/dotnet/standard/serialization/system-text-json/deserialization)   
