@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[C# 筆記] "
-date: 2023-11-03 23:59:00 +0800
+title: "[C# 筆記] 多執行緒(Thread)與非同步(async/await)"
+date: 2023-11-04 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,task,thread,ThreadPool,async/await]
 ---
