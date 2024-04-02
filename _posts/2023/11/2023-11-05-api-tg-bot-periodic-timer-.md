@@ -145,10 +145,9 @@ static async Task Main(string[] args)
     var data = JsonSerializer.Deserialize<List<Vocabulary>>(content)!;
 
     //定時發送TG訊息
-    using PeriodicTimer timer = new(TimeSpan.FromSeconds(2)); //每小時
+    using PeriodicTimer timer = new(TimeSpan.FromHours(1)); //每小時
     while (await timer.WaitForNextTickAsync())
     {
-        
         //使用隨機數取得某一單字
         Random random = new Random(); //建立隨機數物件
         int rndNum = random.Next(data.Count); //產生0~單字量之間的數字
@@ -171,7 +170,7 @@ using System.Text.Json;
 using Telegram.Bot;
 using Telegram.Bot.Types;
 
-namespace _0402
+namespace TestDemo
 {
     internal class Program
     {
@@ -179,6 +178,7 @@ namespace _0402
         {
             Console.WriteLine(s);
         }
+
         static async Task Main(string[] args)
         {
             Log($"{DateTime.Now} - 開始取得api資料.");
@@ -193,9 +193,7 @@ namespace _0402
             //將JSON 資料反序列化(Deserialize)為物件(自定義的類別Class)
             var data = JsonSerializer.Deserialize<List<Vocabulary>>(content)!;
 
-
             Log($"{DateTime.Now} - JSON 為 Object，並開始組字串(單字).");
-
 
             //定時發送TG訊息
             using PeriodicTimer timer = new(TimeSpan.FromSeconds(2)); //每小時
@@ -214,7 +212,6 @@ namespace _0402
                 await SendMessage(s); //發送TG訊息
 
                 Log($"{DateTime.Now} - 完成發送TG訊息.");
-
             }                
             //Console.ReadKey();//可以使窗口停留一下，直到點擊鍵盤任一鍵為止
         }
