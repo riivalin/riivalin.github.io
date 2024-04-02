@@ -3,8 +3,28 @@ layout: post
 title: "[C# 筆記] 每隔一段時間自動執行某個方法(使用執行緒)"
 date: 2023-11-03 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,thread,timer]
+tags: [C#,thread,timer,PeriodicTimer]
 ---
+
+## 方法：.Net6 新定时器PeriodicTimer
+
+在.NET 6中引入了新`Timer`：`System.Threading.PeriodicTimer`，它和之前的`Timer`相比，最大的區別就是新的`PeriodicTimer`事件處理可以方便地使用異步，消除使用`callback`機制減少使用複雜度。
+
+```c#
+using PeriodicTimer timer = new(TimeSpan.FromSeconds(1));
+while (await timer.WaitForNextTickAsync())
+{
+    Console.WriteLine(DateTime.UtcNow);
+}
+```
+
+#### 與Timer的區別
+
+1. 消除了回呼,不再需要綁定事件
+
+2. 不會發生重入，只允許有一個消費者，不允許同一個 `PeriodicTimer` 在不同的地方同時 `WaitForNextTickAsync` ，不需要自己做排他鎖來實現不能重入
+
+3. 非同步化，之前的幾個 `timer` 的 `callback` 都是同步的，使用新的 `timer` 我們可以更好的使用非同步方法，避免寫 `Sync over Async` 之類的程式碼
 
 
 ## 方法一：使用 Timer (System.Threading.Timer)
@@ -112,4 +132,6 @@ static void Main(string[] args)
 [C# 學習筆記：多執行緒 (2) - 分道揚鑣](https://www.huanlintalk.com/2013/05/csharp-notes-multithreading-2.html)      
 [新時代 .NET ThreadPool 程式寫法以及為什麼你該用力 async/await](https://blog.darkthread.net/blog/tpl-threadpool-usage/)     
 [C#中 System.Threading.Timer 的回收问题](https://www.cnblogs.com/Jeffrey-Chou/p/12366185.html)
-[c# 线程定时器 System.Threading.Timer](https://blog.csdn.net/qq_27461747/article/details/105505420)
+[c# 线程定时器 System.Threading.Timer](https://blog.csdn.net/qq_27461747/article/details/105505420)     
+[.Net6 新特性 - PeriodicTimer - 异步化的定时器](https://blog.hwj.im/index.php/archives/17/)     
+[[C#] .Net6新定时器PeriodicTimer](https://cloud.tencent.com/developer/article/2182393)
