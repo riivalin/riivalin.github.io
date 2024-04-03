@@ -23,7 +23,7 @@ tags: [C#,api,Telegram Bot,tg,timer,PeriodicTimer,async/await,random]
 - 利用網站 [JSON Editor Online](https://jsoneditoronline.org/#left=local.xiboba) 顯示查看了 `JSON` 資料樹狀圖。
 ![](/assets/img/post/json-editor-online.png)
 
-- 建立對應的類別(class)
+### 建立對應的類別(class)
 
 1. 用一個偷懶的方式去建立類別，複製 JSON 字串裡的一個物件的資料        
 使用「編輯 > 選擇性貼上 > 貼上 JSON 做為類別」的方式來建立。        
@@ -115,7 +115,7 @@ var s = $"{data[rndNum].word}\r\n{data[rndNum].definitions[0].text}\r\n{data[rnd
 
 [[C# 筆記].Net6 新定时器 PeriodicTimer (異步化的定時器)](https://riivalin.github.io/posts/2023/11/timer-dot6-periodic-timer/) 
 
-### 什麼是 PeriodicTimer 異步化定時器
+## 什麼是 PeriodicTimer 異步化定時器
 
 在.NET 6中引入了新`Timer`：`System.Threading.PeriodicTimer`，它和之前的`Timer`相比，最大的區別就是新的`PeriodicTimer`事件處理可以方便地使用異步，消除使用`callback`機制減少使用複雜度。
 
@@ -127,7 +127,7 @@ while (await timer.WaitForNextTickAsync())
 }
 ```
 
-### 與Timer的區別
+## 與Timer的區別
 
 1. 消除了回呼,不再需要綁定事件
 
