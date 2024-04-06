@@ -2,8 +2,8 @@
 layout: post
 title: "[C# 筆記] 字串中 null、""、string.Empty 的區別"
 date: 2017-02-01 23:01:00 +0800
-categories: [Notes, C#]
-tags: [C#,基礎語法]
+categories: [Notes,C#]
+tags: [C#,基礎語法,"null"]
 ---
 
 在C#中，字串中 `string s = null`、`string s = ""`、`string s = string.Empty` 是用來表示字串「空值(`null`)」或「空字串(`""`、`string.Empty`)」的不同方式。       
@@ -98,7 +98,9 @@ public static bool IsNullOrEmpty(string value) {
 ``` 
 
 而`string str=null`則是表示`str`未指向任何物件。        
-將字串變數初始化為空字串。 若要測試字串的值是否為 `null` 或`String.Empty` ，請使用`IsNullOrEmpty` 方法
+將字串變數初始化為空字串。 若要測試字串的值是否為 `null` 或`String.Empty` ，請使用`IsNullOrEmpty` 方法。        
+
+
 
 [MSDN - String.IsNullOrEmpty(String) 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.string.isnullorempty?view=net-8.0)       
 [C# .NET面试系列一：基础语法](https://blog.51cto.com/goodtimeggb/9869105?articleABtest=0)       
