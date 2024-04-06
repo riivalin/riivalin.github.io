@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 字串中 null、""、string.Empty 的區別"
+title: "[C# 筆記] 字串中 null、\"\"、string.Empty 的區別"
 date: 2017-02-01 23:01:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,"null"]
