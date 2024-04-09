@@ -43,5 +43,5 @@ string 和 StringBuilder 的區別，兩者表現的比較
 - `string` 字串是不變的且不需要頻繁修改
 - `StringBuilder` 需要頻繁進行字串的拼接或修改
 
-
+        
 [C# .NET面试系列一：基础语法](https://cloud.tencent.com/developer/article/2394466)
