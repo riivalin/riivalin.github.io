@@ -38,4 +38,7 @@ checked
 }
 ```
 
-透過使用`checked`，如果發生溢出，就會拋出異常，允許你在程式碼中明確處理這種情況。
+透過使用`checked`，如果發生溢出，就會拋出異常，允許你在程式碼中明確處理這種情況。       
+
+
+[C# .NET面试系列一：基础语法](https://cloud.tencent.com/developer/article/2394466)
