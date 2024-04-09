@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] string 和 StringBuilder 的區別，兩者表現的比較"
-date: 2017-02-02 23:01:00 +0800
+date: 2017-02-03 23:01:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,string,StringBuilder]
 ---
