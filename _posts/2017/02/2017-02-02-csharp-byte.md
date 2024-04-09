@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] byte b = 'a'; byte c = 1; byte d = 'ab'; byte e = '好'; byte g = 256; 這些變數錯在哪？"
 date: 2017-02-02 23:01:00 +0800
 categories: [Notes,C#]
-tags: [C#,基礎語法]
+tags: [C#,基礎語法,byte]
 ---
 
 
