@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "邪淫的六種情況"
+title: "淺談戒除邪淫的意義與方法"
 date: 2024-01-10 23:23:00 +0800
 categories: [Amitabha,戒除邪淫,居士文章]
 tags: [邪淫,梵行,因果,阿賴耶識,楞嚴咒]
