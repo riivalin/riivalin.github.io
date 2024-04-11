@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 下面這段程式碼求值"
 date: 2017-02-25 23:29:00 +0800
 categories: [Notes,C#]
-tags: [C#,基礎語法,Equals]
+tags: [C#,基礎語法,Constructor,構造函數,靜態建構函數]
 ---
 
 ## 下面這段程式碼求值
