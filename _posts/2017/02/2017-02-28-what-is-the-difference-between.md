@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] i++ 和 ++i 有什麼差別？"
-date: 2017-02-29 23:29:00 +0800
+date: 2017-02-28 23:49:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] as 和 is 的差別？"
-date: 2017-02-30 23:29:00 +0800
+date: 2017-02-28 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,as,is]
 ---
