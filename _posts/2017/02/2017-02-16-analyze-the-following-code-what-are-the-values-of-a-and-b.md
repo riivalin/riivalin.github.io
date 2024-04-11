@@ -18,3 +18,5 @@ int b = strTmp.Length;
 分析：在`UTF-8`編碼下，每個中文字元通常佔用3個位元組，而每個英文字元和數字佔用1個位元組。
 
 > `UTF-8`編碼一個中文字佔`3 bytes`，而`BIG5`編碼一個中文字佔`2 bytes`
+
+[C# .NET面试系列一：基础语法](https://bbs.huaweicloud.com/blogs/423092)
