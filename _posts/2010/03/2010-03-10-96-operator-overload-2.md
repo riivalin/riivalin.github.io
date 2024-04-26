@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] 運算符重載(Operater Overload) 2"
+title: "[C# 筆記] 運算符重載(Operator Overloading) 2"
 date: 2010-03-10 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,Operater Overload,operator,implicit operator,explicit operator]
+tags: [C#,Operator Overloadint,operator,implicit operator,explicit operator]
 ---
 
 # 隱式轉換 & 顯示轉換(強制轉換)

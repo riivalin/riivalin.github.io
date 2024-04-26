@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] 運算符重載(Operater Overload) 1"
+title: "[C# 筆記] 運算符重載(Operator Overloading) 1"
 date: 2010-03-09 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,Operater Overload,operator]
+tags: [C#,Operator Overloading, operator]
 ---
 
 # 運算符重載(Operater Overload)
