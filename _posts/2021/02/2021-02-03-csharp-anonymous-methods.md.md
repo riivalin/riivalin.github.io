@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 匿名方法(Anonymous methods)"
 date: 2021-02-03 23:01:00 +0800
 categories: [Notes,C#]
-tags: [C#,匿名方法,委派,Delegate,委託]
+tags: [C#,基礎語法,匿名方法,委派,Delegate,委託]
 ---
 
 

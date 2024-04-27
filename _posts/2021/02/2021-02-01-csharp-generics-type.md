@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 泛型 (Generics)"
 date: 2021-02-01 23:01:00 +0800
 categories: [Notes,C#]
-tags: [C#,泛型,generic,T]
+tags: [C#,基礎語法,泛型,generic,T]
 ---
 
 以功能來說，泛型 (Generics) 的出現是為了 **「解決程式在執行時期(`Run time`)中，型別間互相轉換換所耗費的成本問題」**。       

@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 疊代器 (Iterators) - yield return 語法糖"
 date: 2021-02-02 23:01:00 +0800
 categories: [Notes,C#]
-tags: [C#,疊代器,iterators,yield return]
+tags: [C#,基礎語法,疊代器,iterators,yield return]
 ---
 
 疊代器 (Iterators) 的出現是為了「讓`foreach` 語法更加靈活與簡單」。     
