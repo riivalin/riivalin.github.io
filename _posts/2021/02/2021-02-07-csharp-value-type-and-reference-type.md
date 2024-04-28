@@ -55,12 +55,13 @@ Console.WriteLine(y);//10
 // p1, p2 都指向同一個記憶體位置、同一個空間、同一個物件
 // 所以不管操作p1、p2，他們兩個都會改變
 Person p1 = new Person();
-p1.Name = "Rii";
+p1.Name = "R";
 
 Person p2 = p1; //將p1指定給p2，此時都存放相同記憶體參考位址(指向同一個物件)
-p2.Name = "Riva";
+p2.Name = "Rii";
 
-Console.WriteLine(p1.Name); //Riva
+Console.WriteLine(p1.Name); //Rii, p1的值也隨之改變
+Console.WriteLine(p2.Name); //Rii
 
 
 class Person {
