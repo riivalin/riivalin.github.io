@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 裝箱(Boxing) vs 拆箱(Unboxing)"
 date: 2010-01-13 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,R,ValueType,ReferenceType,stack,heap,Boxing Unboxing,裝箱 拆箱]
+tags: [C#,R,Value Type,Reference Type,stack,heap,Boxing Unboxing,裝箱 拆箱]
 ---
 
 ```

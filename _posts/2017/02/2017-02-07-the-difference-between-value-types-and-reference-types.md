@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 值類型和引用類型的區別?"
 date: 2017-02-07 23:29:00 +0800
 categories: [Notes,C#]
-tags: [C#,基礎語法,stack,heap,ValueType,ReferenceType]
+tags: [C#,基礎語法,stack,heap,Value Type,Reference Type]
 ---
 
 值類型的例子包括整數型別（如 `int`、`float`、`double`）、字元型別(c`har`)、列舉型別(`enum`)和結構體(`struct`)等。       

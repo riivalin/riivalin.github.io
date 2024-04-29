@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 實值型別與參考型別(Value Type, Reference Type)"
+title: "[C# 筆記] 實值型別與參考型別(Value Type & Reference Type)"
 date: 2021-02-07 23:01:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,資料型別,Value Type,Reference Type]
