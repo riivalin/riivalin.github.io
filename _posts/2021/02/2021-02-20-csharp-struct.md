@@ -69,19 +69,19 @@ internal class Program
 }
 ```
 
-## C#中的結構體(`struct`)要使用`new`來實體化嗎?
+## C#中的結構體(struct)要使用new來實體化嗎?
 
 `struct`屬於值類型，可以不用`new`，如果不`new`，結構體內的值就都是未賦值狀態，需要在使用之前賦值，不然編譯器會報錯。若`new`了，結構體會呼叫無參構造函數，會初始化內部的值，例如`int`就會初始化為`0`，現在使用編譯器就不會報錯了。       
 
 
-### 結構無需進行 new，就可以直接使用(可new，也可不new)
+### 結構無需進行 new，就可以直接使用 (可new，也可不new)
 比如:
 
 ```c#
 MyStruct myStruct;
 myStruct.Method();
 ```
-對於類別(class)的話，這是錯誤的。
+對於類別(`class`)的話，這是錯誤的。
 
 原因如下：      
 結構(`stuct`)為值類型，而`new`用於為引用類型（類別、物件、介面等）分配參考（記憶體位址），值類型儲存於`Stack`(堆疊)中，無需使用`new`。      
@@ -92,9 +92,9 @@ myStruct.Method();
 這的`x`、`myStruct`都是值型的       
 
 
-最後結構可以用`new` 也可以不用`new`
+最後結構(`stuct`)可以用`new` 也可以不用`new`
 
-
+        
 [C#中的结构体要使用new来实例化吗?](https://www.cnblogs.com/fps2tao/p/14692302.html)     
 [C#中的结构体要使用new来实例化吗？还是直接声明后直接使用？](https://zhidao.baidu.com/question/62698662.html)
 
