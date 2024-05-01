@@ -33,6 +33,8 @@ double i = 9.9;
 int j = (int)i; //cast轉換
 ```
 
+`(int)`適合「簡單數據類型」之間的轉換，有小數時會直接捨去。
+
 # 常犯的錯誤
 
 在使用指定轉換(`Cast`)最常犯的錯誤就是 **「轉換的內容是字串型態」**。       
@@ -53,7 +55,7 @@ int number = (int)s; //報錯，Cannot convert type 'string' to 'int'
 int x = (int)99.5; //結果為 99
 int x = (int)99.1; //結果為 99
 ```
-        
+
 
 
 [[C# 筆記](int)、Convert.ToInt32、int.Parse、int.TryParse by R](https://riivalin.github.io/posts/2011/02/convert-parse/)
