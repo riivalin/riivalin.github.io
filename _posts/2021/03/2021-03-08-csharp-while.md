@@ -18,9 +18,7 @@ tags: [C#,基礎語法,重複結構,while,Progress Bar (進度條)]
 - 先進行條件檢查，只有當條件滿足(`true`)的時候才進入循環
 
 
-+ `while`主要運作方式會根據是否符合條式(condition)來離開迴圈。
-+ 若條件式(condition)符合為真(`true`)，則會離開迴圈。
-+ `while` 與 `for`最大的不同在於：`while` 不需要確定迴圈所需執行次數，只要知道結束條件即可。
+`while`主要運作方式會根據是否符合條式(condition)來離開迴圈。若條件式(condition)符合為真(`true`)，則會離開迴圈。`while` 與 `for`最大的不同在於：`while` 不需要確定迴圈所需執行次數，只要知道結束條件即可。
 
 > `while`：先判斷，再執行。有可能一遍迴圈都不執行。
 
@@ -33,9 +31,19 @@ while(條件式 condition) //true:結束迴圈, false:續繼迴圈
     [continue/break;]
 }
 ```
+
 - 條件式condition：`true`結束迴圈，`false`續繼迴圈。
 - `break`：可以在迴圈中使用break終止循環。(徹底終止)。
 - `continue`：可以在迴圈中使用continue，只跳過本次循環，同時進行下一次循環。
+
+
+## while vs do-while
+
+`while`     
+先判斷，再執行。有可能一遍迴圈都不執行。
+
+`do while`      
+先執行，再判斷。最少執行一遍迴圈。
 
 
 ## 範例
@@ -65,14 +73,6 @@ static void Main(string[] args)
     Console.SetCursorPosition(0, 3);
 }
 ```
-
-# while vs do-while
-
-`while`     
-先判斷，再執行。有可能一遍迴圈都不執行。
-
-`do while`      
-先執行，再判斷。最少執行一遍迴圈。
 
 
 ## C#實作控制台顯示動態進度條
