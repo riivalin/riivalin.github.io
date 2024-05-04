@@ -18,6 +18,8 @@ tags: [C#,基礎語法,重複結構,while,Progress Bar (進度條)]
 - 若條件式(condition)符合為真(`true`)，則會離開迴圈。
 - `while` 與 `for`最大的不同在於：`while` 不需要確定迴圈所需執行次數，只要知道結束條件即可。
 
+> `while`：先判斷，再執行。有可能一遍迴圈都不執行。
+
 ## 語法
 
 ```c#
@@ -55,6 +57,14 @@ static void Main(string[] args)
     Console.SetCursorPosition(0, 3);
 }
 ```
+
+# while vs do-while
+
+`while`     
+先判斷，再執行。有可能一遍迴圈都不執行。
+
+`do while`      
+先執行，再判斷。最少執行一遍迴圈。
 
 
 ## C#實作控制台顯示動態進度條

@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 變數、決策、迴圈"
 date: 2010-01-01 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,R,break,continue,for,do-while,while,switch-case]
+tags: [C#,R,break,continue,for,do while,while,switch-case]
 ---
 
 ## 【理論】變量與數據類型
