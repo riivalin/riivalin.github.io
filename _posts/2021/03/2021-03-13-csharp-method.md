@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 陣列常用的方法(Method)"
 date: 2021-03-13 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,基礎語法,array,]
+tags: [C#,基礎語法,array]
 ---
 
 
