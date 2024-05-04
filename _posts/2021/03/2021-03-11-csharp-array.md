@@ -239,5 +239,5 @@ static void Main(string[] args)
 ```
 
 
-[MSDN - 陣列 ](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/builtin-types/arrays#multidimensional-arrays)
+[MSDN - 陣列 ](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/builtin-types/arrays#multidimensional-arrays)     
 [[C# 筆記] array 陣列 by R](https://riivalin.github.io/posts/2011/01/array/)
