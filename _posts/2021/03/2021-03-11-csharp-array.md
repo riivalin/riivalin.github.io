@@ -131,8 +131,11 @@ lottery = new int[] { 03, 17, 20, 23, 24, 33, 7};
 ## 不給初始值 
 ### 語法
 ```c#
-//多維陣列，宣告並初始化給定個數(宣告的同時，就確定了類型、長度)
+//二維陣列，宣告並初始化給定個數(宣告的同時，就確定了類型、長度)
 資料類型[,] 陣列名稱 = new 資料型別[元素個數,元素個數]; 
+
+//三維陣列
+資料類型[,,] 陣列名稱 = new 資料型別[元素個數,元素個數,元素個數]; 
 ```
 
 ### 範例
@@ -236,5 +239,5 @@ static void Main(string[] args)
 ```
 
 
-
+[MSDN - 陣列 ](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/builtin-types/arrays#multidimensional-arrays)
 [[C# 筆記] array 陣列 by R](https://riivalin.github.io/posts/2011/01/array/)
