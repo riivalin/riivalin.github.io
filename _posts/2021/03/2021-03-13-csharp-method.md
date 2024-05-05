@@ -6,6 +6,17 @@ categories: [Notes,C#]
 tags: [C#,基礎語法,array]
 ---
 
+# 常用方法
+
+- `Clear`：清空陣列中的元素並設定成元素的預設值
+- `Exist`：判定陣列中是否有滿足指定條件的元素
+- `Find`：找尋陣列中滿足指定條件的元素
+- `FindIndex`：返回陣列中滿足指定條件的元素索引值
+- `GetLength`：返回指定維度的長度
+- `GetValue`：範圍指定索引位置的值
+- `Copy`：從一個陣列複製到另一個陣列
+
+--- 
 - `CopyTo()`: 複製陣列元素的內容。
 - `GetLength()`: 取得陣列的長度。       
 > `Length`是取所有的元素個數，`GetLength()`是取行數和列數。     

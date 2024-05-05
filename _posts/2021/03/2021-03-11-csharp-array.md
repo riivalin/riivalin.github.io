@@ -6,6 +6,45 @@ categories: [Notes,C#]
 tags: [C#,基礎語法,array,一維陣列,多維陣列,不規則陣列]
 ---
 
+在語法上, 陣列使用中括號`[ ]` 來代表，C#提供了三種陣列 (1)一維陣列 (2)多維陣列 (3)不規則陣列
+
+## 一維陣列
+
+```c#
+int[] array1 = new int[5]; 
+int[] array2 = new int[] { 1, 3, 5, 7, 9 }; //用第三種就好
+int[] array3 =  { 1, 3, 5, 7, 9 }; //快速宣告給值
+```
+
+顧名思義, 「一維陣列」就是一個維度的連續數據集合, 初始化的時候可以使用兩種方式,         
+第一種是指定大小(將長度寫在中括號裏頭),         
+第二種是直接指定值
+
+## 多維陣列
+
+```c#
+int[,] array2D1 = new int[2, 3]; //二維
+int[,] array2D2 = { { 1, 2, 3 }, { 4, 5, 6 } };
+int[,,] array3D = new int[2, 3, 4]; //三維
+```
+
+「多維陣列」是用「逗點(`,`)」做分割, 初始化的方法跟一維陣列一樣有兩種方式。 需要注意的是多維陣列的長度必須一致, 如果有長度不一致的需要, 請使用不規則陣列(Jagged Array)
+
+## 不規則陣列(Jagged Array)
+
+```c#
+int[][] jaggedArray = new int[6][];
+int[][] jaggedArray = { new int[]{ 1, 2, 3 }, new int[]{ 1, 2 } }
+```
+
+「不規則陣列」是由多個一維陣列組合而成, 每個一維陣列的長度可以不同, 標示是由分開的中括號集合而成。在初始化的時候需要先指定第一層陣列的長度。        
+
+
+[MSDN - 陣列 ](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/builtin-types/arrays#multidimensional-arrays)  
+
+---
+
+
 陣列(Array)是資料結構的一種，它存放在連續記憶體中的包含多個資料型別相同的變數之集合。
 並且使用數字稱為「索引(Index)」或「註標(Subscript)」來加以區分陣列中的元素。        
 

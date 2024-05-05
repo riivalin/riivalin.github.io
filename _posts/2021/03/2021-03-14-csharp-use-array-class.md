@@ -6,12 +6,25 @@ categories: [Notes,C#]
 tags: [C#,基礎語法,array]
 ---
 
+# 常用的一些陣列操作
 
 - `BinarySearch()`：用來搜尋陣列元素是否符合傳入的參數值。
 - `Clear()`：用來清除指定索引範圍的陣列的元素內容。
 - `Resize()`：用來變更目前陣列的大小。
 - `Reverse()`：用來反轉陣列元素。
 - `Sort()`：用來排序陣列元素。
+
+---
+
+# LINQ (Language-Integrated Query)
+
+陣列在C#裡繼承自不同的介面(Interface)，命名空間 `System.Linq`，最原始的出發點是為了更有效率地從資料庫拿回指定的陣列集合, 也可以使用在Array陣列的操作上。如下：
+
+- `Sum`：加總
+- `Average`：平均
+- `Contain`：判定是否包含滿足條件的元素
+- `Max`：最大值
+- `Min`：最小值
 
 
 # BinarySearch()
