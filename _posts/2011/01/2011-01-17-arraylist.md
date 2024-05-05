@@ -12,9 +12,11 @@ tags: [C#,arraylist]
 ```c#
 ArrayList list = new ArrayList(); //創建集合物件
 ```
-而`array`：長度不可變，類型單一   
 
-集合的好處：長度可以任意改變，類型隨便  
+而`array`：長度不可變，類型單一     
+(若要改長度，可用 `Array.Resize()`方法來變更其陣列大小 )  
+
+`ArrayList`集合的好處：長度可以任意改變，類型隨便  
 
 ## 範例：ArrayList集合加入不同的類型的元素、集合，並輸出
 ```c#
