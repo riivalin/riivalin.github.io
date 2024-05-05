@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] ArrayList 常用屬性"
 date: 2021-03-17 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,基礎語法,array,arraylist]
+tags: [C#,基礎語法,arraylist]
 ---
 
 
