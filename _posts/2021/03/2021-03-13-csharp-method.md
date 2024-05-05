@@ -6,6 +6,15 @@ categories: [Notes,C#]
 tags: [C#,基礎語法,array]
 ---
 
+- `CopyTo()`: 複製陣列元素的內容。
+- `GetLength()`: 取得陣列的長度。       
+> `Length`是取所有的元素個數，`GetLength()`是取行數和列數。     
+
+- `GetLowerBound()`: 取得陣列維度的下限索引值。(獲得下限，即最小)
+- `GetUpperBound()`: 取得陣列維度的上限索引值。(獲得上限，即最大)
+- `GetValue()`: 取得陣列元素值。
+- `SetValue()`: 設定陣列元素值。
+
 
 # CopyTo()
 將目前一維陣列的所有項目複製到指定的一維陣列。      
@@ -58,12 +67,12 @@ Console.WriteLine(author.GetLength(0)); //一維陣列就是0
 //執行結果：2
 ```
 
-# Length和GetLength()的區別?
+# Length 和 GetLength() 的區別?
 
 ## 程式碼格式
-首先`Length`直接，`GetLength()`需要用括號       
+首先`Length`直接用，`GetLength()`需要用括號       
 
-`Length``是取所有的元素個數，GetLength()`是取行數和列數     
+`Length`是取所有的元素個數，`GetLength()`是取行數和列數     
 
 ## 說明
 
