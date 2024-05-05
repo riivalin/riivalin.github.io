@@ -6,6 +6,8 @@ categories: [Notes,C#]
 tags: [C#,基礎語法,array,arraylist]
 ---
 
+# ArrayList 類別
+
 可以將 `ArrayList` 視為`Array`的功能強化版。        
 
 `Array`陣列裡面的元素的資料型態都必須一樣，     
@@ -15,7 +17,7 @@ tags: [C#,基礎語法,array,arraylist]
 - `ArrayList`集合的好處：長度可以任意改變，類型隨便。
 
 
-# Array 和 ArrayList 比較表
+## Array 和 ArrayList 比較表
 
 |               | Array          | ArrayList |
 |:--------------|:-----------------|:--------|
@@ -29,14 +31,14 @@ tags: [C#,基礎語法,array,arraylist]
 | 使用時機          | 明確知道要存放的資料個數，並且資料型別相同   | 需存放各種不同資料型別元素，且元素存放個數不確定 |
 
 
-# 宣告方式
+## 宣告方式
 
 ```c#
 ArrayList 陣列名稱 = new ArrayList();
 ArrayList arrList = new ArrayList();
 ```
 
-# ArrayList vs List 有何差異？
+## ArrayList 和 List 有何差異？
 
 - 命名空間不同：
     - `ArrayList` 命名空間為 `System.Collections`
@@ -54,7 +56,7 @@ ArrayList arrList = new ArrayList();
 [C#中 数组、ArrayList、List＜T＞的区别](https://blog.csdn.net/Dust_Evc/article/details/114984023)
 
 
-# 範例
+## 範例
 
 有學生資料：學號、姓名、年齡、就學狀態，將這些資料存放在 ArrayList 中
 
@@ -93,7 +95,7 @@ System.Int32
 System.Boolean
 ```
 
-# ArrayList 的 Trade-Off(衡權)?
+## ArrayList 的 Trade-Off(衡權)?
 
 `ArrayList`可以很便利地用來儲存任何「實值型別」或「參考型別」，但是這種便利會付出相當的代價。       
 
