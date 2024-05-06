@@ -20,7 +20,8 @@ public int CompareTo (string? strB);
 ```
 參數
 - strB
-    - String: 要和這個執行個體比較的字串。
+    - String: 要和這個執行個體比較的字串。      
+
 傳回
 - Int32: 32 位元帶正負號的整數，指出這個執行個體在排序次序中，位於 strB 參數之前、之後或相同位置。
 
@@ -29,7 +30,9 @@ public int CompareTo (string? strB);
 |:----------|:-----------------|
 | `小於 0`|這個執行個體位於 strB 之前。|
 | `0`   |這個執行個體在排序次序中的位置與 strB 相同。|
-| `大於 0`|這個執行個體位於 strB 之後。\r\n-或-\r\n strB 為 null。|
+| `大於 0`|這個執行個體位於 strB 之後。
+|| -或-|
+||strB 為 null。|
 
 
 ## 用法
