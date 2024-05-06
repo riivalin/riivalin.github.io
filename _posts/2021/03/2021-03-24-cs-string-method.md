@@ -132,7 +132,7 @@ Console.WriteLine(s); //a-b-c-23-xx-yz
 
 例如：`s.Substring(3,1); `從第index為3開始截取字串，只取1個字元
 
-## 範例
+### 範例
 
 ```c#
 string s = "abcdefg";
