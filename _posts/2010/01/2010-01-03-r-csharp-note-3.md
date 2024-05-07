@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "[C# 筆記] 值傳參 vs 引用傳參ref vs 輸出傳參out"
+title: "[C# 筆記] 值傳參 & 引用傳參(ref) & 輸出傳參(out)"
 date: 2010-01-03 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,R,ref,out]
+tags: [C#,R,ref,out,Call by Value,Call by Reference,]
 ---
 
 C# 中有三種傳遞參數的方法：

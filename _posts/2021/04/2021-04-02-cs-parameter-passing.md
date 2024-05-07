@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 參數傳遞 (Call by Value & Call by Reference)"
 date: 2021-04-02 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,基礎語法,方法與參數,stack,heap,Value Type,Reference Type,ref]
+tags: [C#,基礎語法,方法與參數,Call by Value,Call by Reference,stack,heap,Value Type,Reference Type,ref]
 ---
 
 參數傳遞(Parameter Passing)方式有兩種：        
