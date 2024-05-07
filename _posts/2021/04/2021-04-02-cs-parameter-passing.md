@@ -8,15 +8,15 @@ tags: [C#,基礎語法,方法與參數,stack,heap,Value Type,Reference Type,ref]
 
 參數傳遞(Parameter Passing)方式有兩種：        
 
-1. 傳值呼叫(Call by value)
-2. 傳參考呼叫(Call by reference)
+1. 傳值呼叫(`Call by Value`)
+2. 傳參考呼叫(`Call by Reference`)
 
 
 # 傳值呼叫(Call by value)
 
 「傳值呼叫(Call by value)」就是主程式將參數值傳給方法，執行方法後，所傳入的參數值為無論怎麼修改它，都不會因此而更動到主程式裡的參數值。        
 
-故在傳遞參數時，其實是**重新複製***一個參數，再將此「複製參數」傳遞給方法。       
+故在傳遞參數時，其實是**重新複製**一個參數，再將此「複製參數」傳遞給方法。       
 
 此「複製參數」稱為「虛擬參數」，方法內的「虛擬參數」與主程式中的「實際參數」位於**不同**的記憶體位址。      
 
@@ -73,7 +73,7 @@ void Add(ref int number) { //參數加上ref
 原本 number、n 是兩塊不同的空間(不同記憶體位址)，      
 執行後，number、n 指向相同位址。        
 
-(number、n 他們本來不是同一塊空間，加了`ref`，他們在`Stack`(堆疊/棧)地址是一樣的，變成同一塊空間。)
+> number、n 他們本來不是同一塊空間，加了`ref`，他們在`Stack`(堆疊/棧)地址是一樣的，變成同一塊空間。
 
 
 ### 為什麼 number = 20？
