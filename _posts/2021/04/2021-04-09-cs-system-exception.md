@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] 運用 System.Exception 類別"
-date: 2021-04-08 23:59:00 +0800
+date: 2021-04-09 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,例外處理(Exception Handling),System.Exception]
 ---
