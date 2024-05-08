@@ -184,4 +184,4 @@ try
 `try-catch`語句區塊是C#中用於異常處理的關鍵機制，可讓您在程式碼中捕獲並處理執行時間可能發生的例外狀況。透過正確使用`try-catch`語句區塊，您可以增強程式的穩定性和健壯性，從而避免程式在遇到錯誤時崩潰或產生不受控制的行為。在使用`try-catch`語句區塊時，應考慮使用特定的異常類型、避免過多的異常處理、使用`finally`區塊進行資源清理、記錄異常資訊以及建立自訂異常類別等最佳實踐，以確保您的程式碼具有良好的可讀性、可維護性和可靠性。
 
 
-[CSDN - 【C# 基础精讲】try-catch语句块](https://blog.csdn.net/qq_21484461/article/details/132316349?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522171518155616800184163052%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=171518155616800184163052&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-2-132316349-null-null.142^v100^pc_search_result_base5&utm_term=c%23%20try%20catch&spm=1018.2226.3001.4187)
+[CSDN - 【C# 基础精讲】try-catch语句块](https://blog.csdn.net/qq_21484461/article/details/132316349)
