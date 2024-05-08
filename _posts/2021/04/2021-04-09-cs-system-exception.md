@@ -28,4 +28,5 @@ SystemException 繼承自 Exception，代表「系統層級」的例外，像是
 ApplicationException 也是繼承自 Exception，但是它沒有增加任何功能，只是單純用來「分類」，作為應用程式自訂例外的基礎類別。換言之，應用程式如果需要定義自己的例外型別，便可以優先考慮繼承自 ApplicationException。不過，由於 Exception 即代表所有執行時期發生的錯誤，所以實務上在設計自訂例外類別的時候，許多人也會直接繼承自 Exception。
 
 
+[MSDN - Exception 類別和屬性](https://learn.microsoft.com/zh-tw/dotnet/standard/exceptions/exception-class-and-properties?redirectedfrom=MSDN)      
 [C# 例外處理（Exception Handling） by huanlintalk](https://www.huanlintalk.com/2022/09/csharp-exception-handling.html)     
