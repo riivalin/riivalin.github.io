@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 例外處理（Exception Handling）"
+title: "[C# 筆記] 例外處理 try catch finally "
 date: 2021-04-06 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,例外處理(Exception Handling),try catch finally,throw]
@@ -43,6 +43,7 @@ finally
 
 > 在 C# 中，用來處理例外的關鍵字主要有四個：`try`、`catch`、`finally`、和 `throw`。     
 > 還有例外篩選器（`exception filters`）、釋放資源的標準寫法（`using` 陳述句）、基礎類別 `System.Exception` 與其家族成員。
+
 
 ## 範例
 
