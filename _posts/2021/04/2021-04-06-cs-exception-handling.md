@@ -44,6 +44,32 @@ finally
 > 在 C# 中，用來處理例外的關鍵字主要有四個：`try`、`catch`、`finally`、和 `throw`。     
 > 還有例外篩選器（`exception filters`）、釋放資源的標準寫法（`using` 陳述句）、基礎類別 `System.Exception` 與其家族成員。
 
+## 範例
+
+```c#
+Test(1, 2);
+
+void Test(int x, int y)
+{
+    try
+    {
+        Console.WriteLine(x + y);
+    } catch (Exception ex)
+    {
+        Console.WriteLine(ex.ToString());
+    } finally
+    {
+        Console.WriteLine("finally區域最後一定會被執行");
+    }
+}
+```
+
+執行結果：
+
+```
+3
+finally區域最後一定會被執行
+```
 
 
 # try 區塊之後可以有多個 catch 區塊
