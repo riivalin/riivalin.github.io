@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 方法參數的使用(ref & out & params)"
+title: "[C# 筆記] 方法參數的使用(ref、out、params)"
 date: 2021-04-03 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,方法與參數,ref,out,params,Call by Reference]
@@ -60,15 +60,13 @@ void Test(out int number) {
 
 ```c#
 // ref 的範例
-static void Main(string[] args)
-{
-    int x = 10; //要初始化給值
-    Test(ref x); //必須在呼叫前為 x 賦值
-    Console.WriteLine(x);  // x=20
-}
+
+int x = 10; //要初始化給值
+Test(ref x); //必須在呼叫前為 x 賦值
+Console.WriteLine(x);  // x=20
 
 // ref參數方法
-static void Test(ref int number) {
+void Test(ref int number) {
     number += 10;
 }
 ```
@@ -80,15 +78,13 @@ static void Test(ref int number) {
 
 ```c#
 // out 的範例
-static void Main(string[] args)
-{
-    int x; //不用初始化
-    Test(out x); // 不需要在呼叫前為 x 賦值
-    Console.WriteLine(x); // x=10
-}
+
+int x; //不用初始化
+Test(out x); // 不需要在呼叫前為 x 賦值
+Console.WriteLine(x); // x=10
 
 // out參數方法
-static void Test(out int number) {
+void Test(out int number) {
     number = 10; // 必須在方法內部為 number 賦值
 }
 ```
@@ -126,19 +122,21 @@ void Add(ref int n) { }
 void Add(out int n) { }
 ```
 
-A：**不能**。「`ref`引數」與「`out`引數」只能存在一個，不能只以 `ref` 或 `out` 區分多載方法。
+A：**不能**。不能以 `ref` 或 `out` 區分多載方法。     
 
 ```c#
-void Add(ref int n) { }
 //不能只以 ref 或 out 區分多載方法，只能存在一個
+void Add(ref int n) { }
 //void Add(out int n) { }
 ```
+
+> 「`ref`引數」與「`out`引數」只能存在一個。
 
 # params
 
 `params`以陣列方式來傳遞方法引數。
 
-- `params`關鍵字後面資料型態，一定要是「一維陣列」型態(`int[]`, `striing[]`)。如：`params int[]`      
+- `params`關鍵字後面資料型態，一定要是「一維陣列」型態(`int[]`, `striing[]`)。宣告如：`params int[]`      
 - `params`它是唯一性，所以在方法宣告中，只能有一個 `params` 關鍵字
 
 此意即你不能宣告成：    
@@ -155,8 +153,20 @@ void Test(params int[] nums, params string[] names) { }
 void Test(string name, params int[] score) { }
 ```
 
-為什麼要最後一個，因為它區分不出來，所以要放最後一個。
+為什麼要最後一個，因為它區分不出來，所以要放最後一個。  
 
+為什麼它區分不出來？        
+因為它可以不用宣告陣列，直接把元素放進去。   
+如果`params 參數`不放在最後一個，它無法區分有多少陣列元素       
+
+```c#
+//不放在最後一個，它無法區分有多少陣列元素   
+
+Test(1,2,3,4,5,6,7);
+// params 參數一定要在最後一個
+void Test(params int[] nums, int x, int y) { }
+```
+     
 
 ### 能不能不要宣告一個陣列，方法中直接給陣列進去呢？        
 能，在參數前面加上 `params`
