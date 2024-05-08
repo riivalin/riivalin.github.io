@@ -87,4 +87,4 @@ System.DivideByZeroException: Attempted to divide by zero.
 
 
 [MSDN - 在 .NET 中處理和擲回例外狀況](https://learn.microsoft.com/zh-tw/dotnet/standard/exceptions/)        
-[免費電子書：C# 程式設計 - C# 的例外處理範例](http://cs0.wikidot.com/exception1)      
+[免費電子書：C# 程式設計 - C# 的例外處理範例 by 陳鍾誠](http://cs0.wikidot.com/exception1)      
