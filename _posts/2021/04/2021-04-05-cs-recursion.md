@@ -81,9 +81,16 @@ static int NTier(int n)
     // 執行遞迴：n! = n * (n-1)!
     return n * NTier(n - 1);
 }
+```
 
+使用三元運算子`?:`簡寫成一行
+
+```c#
 //簡寫成一行
-//return (n <= 1) ? 1 : n * NTier(n - 1);
+int NTier(int n) 
+{
+    return (n <= 1) ? 1 : n * NTier(n - 1);
+}
 ```
 
 > 在數學中，正整數的階乘（英語：factorial）是所有小於等於該數的正整數的積，記為 `n!`，例如5的階乘表示為 `5!`，其值為`120`：      
