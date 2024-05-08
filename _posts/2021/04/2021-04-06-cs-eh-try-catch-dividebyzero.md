@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[C# 筆記] 例外處理（Exception Handling）"
-date: 2021-04-06 23:59:00 +0800
+title: "[C# 筆記] try catch 例外處理（Exception Handling）"
+date: 2021-04-06 23:58:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,例外處理(Exception Handling),try catch,DivideByZeroException]
 ---
