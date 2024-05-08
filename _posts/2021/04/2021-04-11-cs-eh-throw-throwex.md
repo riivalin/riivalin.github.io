@@ -55,7 +55,7 @@ catch (Exception ex)
 ## throw 的用法
 
 `throw` 的用法主要有以下四種：
-1. `throw ex;` (會吃掉原始異常點)
+1. `throw ex;` (會吃掉原始異常點，會重置堆疊追蹤)
 2. `throw;` (會保留原始的異常堆疊 StackTrace 資訊)
 3. 不帶異常參數的 `catch { throw; }`
 4.  經過對異常重新包裝 `throw new Exception("經過進一步包裝的異常", ex);`
