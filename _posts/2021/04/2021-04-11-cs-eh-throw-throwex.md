@@ -58,7 +58,7 @@ catch (Exception ex)
 1. `throw ex;` (會吃掉原始異常點，會重置堆疊追蹤)
 2. `throw;` (會保留原始的異常堆疊 StackTrace 資訊)
 3. 不帶參數的 catch `catch { throw; }`
-4. 包裝一個異常 `throw new Exception();`
+4. 抛出一個新的異常。 `throw new Exception();`
 
 ### 1. throw ex (會吃掉原始異常點，會重置堆疊追蹤)
 
@@ -112,10 +112,9 @@ catch
 // catch { } 和 catch (Exception ex)和 catch (Exception ) 是一樣的, 直接 throw就可以了
 ```
 
-
 ~~其實第二種和第三種用法，書上也是不建議使用的，一般要從小粒度的異常捕獲開始，採用多個catch語句，大家就見仁見智吧。 。 。~~
 
-### 4. throw new Exception() (包裝一個異常)
+### 4. throw new Exception() (抛出一個新的異常)
 
 第四種：經過對異常重新包裝，但會保留原始異常點資訊。推薦使用。
 
@@ -128,10 +127,13 @@ catch (Exception ex)
     throw new Exception("經過進一步包裝的異常", ex);
 }
 ```
-throw new Exception()包裝一個異常，把內部異常Exception也拋出，這樣拋出的異常是最全面詳細的異常。
+
+`throw new Exception()`包裝一個異常，把內部異常Exception也拋出，這樣拋出的異常是最全面詳細的異常。
 
 
-
+[MSDN - 建立和擲回例外狀況](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/exceptions/creating-and-throwing-exceptions)       
+[MSDN - Exception 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.exception?view=net-8.0&redirectedfrom=MSDN)     
+[MSDN - 例外狀況和例外狀況處理](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/exceptions/)        
 [[Tips][C#] 正確重拋例外 (Exception) 的方式](https://www.dotblogs.com.tw/wasichris/2015/06/07/151505#google_vignette)       
 [CSDN - C#: throw和throw ex的区别](https://blog.csdn.net/lidandan2016/article/details/78864798)     
 [C# 使用throw; throw ex; 和 throw new Exception();抛异常区别与建议](https://www.cnblogs.com/ZhengHengWU/p/13418539.html)
