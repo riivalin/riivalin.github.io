@@ -44,24 +44,24 @@ public class CustomException: Exception
 
 這樣一個自訂例外狀況就建立好了。
 
-- `throw new CustomException();`會呼叫第一個建構子
-- `throw new CustomException("測試...");`會呼叫第二個建構子
+- `throw new CustomException();`會執行第一個建構子
+- `throw new CustomException("測試...");`會執行第二個建構子
 
 ## 使用自訂例外狀況
 
 使用自定義例外處理與使用內建例外處理類別相同。只需要在程式中拋出異常物件，並使用try-catch塊捕獲異常即可。程式碼如下：
 
 ```c#
+
 try
 {
-    int x = 10, y = 0;
-    int z = y / x; // 0/10
+    //int x = 0, y = 1;
+    //int z = x / y;
+    //如果是 除0問題 會報系統異常
 
-    //如果是 除0問題(10/0) 會報 系統異常
-    //int z = x / y; // error輸出: 系統異常：Attempted to divide by zero.
-
-    throw new CustomException(); // 0/10，error輸出: 自定義異常：預設的錯誤訊息
-    throw new CustomException("發生了自定義異常"); // 0/10 error輸出: 系統異常：發生了自定義異常
+    // 某些操作 下面會報自定義異常
+    throw new CustomException();
+    throw new CustomException("發生了自定義異常");
 
 } catch (CustomException ex)
 {

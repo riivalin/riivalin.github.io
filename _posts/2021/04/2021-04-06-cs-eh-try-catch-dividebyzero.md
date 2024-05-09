@@ -45,9 +45,9 @@ Unhandled exception. System.DivideByZeroException: Attempted to divide by zero.
 ```c#
 static void Main(string[] args)
 {
+    int x = 10, y = 0;
     try
     {
-        int x = 10, y = 0;
         Console.WriteLine($"x/y= {x / y}");
 
     } catch (DivideByZeroException ex)
@@ -88,4 +88,5 @@ System.DivideByZeroException: Attempted to divide by zero.
 
 
 [MSDN - 在 .NET 中處理和擲回例外狀況](https://learn.microsoft.com/zh-tw/dotnet/standard/exceptions/)        
+[MSDN - -DivideByZeroException Class](https://learn.microsoft.com/zh-tw/dotnet/api/system.dividebyzeroexception?view=net-8.0&redirectedfrom=MSDN)       
 [免費電子書：C# 程式設計 - C# 的例外處理範例 by 陳鍾誠](http://cs0.wikidot.com/exception1)      
