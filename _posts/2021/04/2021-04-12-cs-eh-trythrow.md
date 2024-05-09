@@ -40,7 +40,7 @@ catch (Exception ex)
 	throw;
 }
 
-//第三種: throw (沒有寫異常變數)
+//第三種: throw (不寫異常參數)
 try
 {
 	int z = a / b;
