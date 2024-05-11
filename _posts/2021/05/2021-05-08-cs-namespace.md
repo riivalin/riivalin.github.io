@@ -51,12 +51,13 @@ namespace 命名空間名稱
 System.Console.WriteLine("Hi");
 ```
 
-使用`using`引入命名空間，就不需要寫完整名稱：
+使用`using`引入命名空間，就不需要寫完整全名：
 
 ```c#
 using System; //使用using引入命名空間
 Console.WriteLine("Hi");
 ```
+
 
 > `using`作用：
 > 1. `using` 指令：引入命名空間
@@ -64,33 +65,27 @@ Console.WriteLine("Hi");
 > 3. `using` 建立别名
 > 4. `using` 語句：將實體與程式碼綁定，結束後自動Dispose，釋放實體資源。 【與資料庫互動時常用到】
 
+
 ## 控制類別的範圍
 
 - 當類別太多時，可以用命名空間加以分類      
 - 當類別名稱相同或類似時，可以用命名空間加以分類        
 
 ```c#
-namespace 命名空間1     // 命名空間1
-{
-    class 類別1         // 命名空間1.類別1
-    {
-        class 類別      // 命名空間1.類別1.類別
-        {
-        }
+namespace 命名空間1 {   // 命名空間1
+    class 類別1 {       // 命名空間1.類別1
+        class 類別 { }  // 命名空間1.類別1.類別
     }
 
-    namespace 命名空間2 // 命名空間1.命名空間2
-    {
-        class 類別      // 命名空間1.命名空間2.類別
-        {
-        }
+    namespace 命名空間2 { // 命名空間1.命名空間2
+        class 類別 { }   // 命名空間1.命名空間2.類別
     }
 }
 ```
 
 ## 功能擴充
 
-已存在的命名空間或是其它廠商開發的程式，可以宣告同名的命名空間以擴充其功能
+已存在的命名空間或是其它廠商開發的程式，可以宣告同名的命名空間以擴充其功能。
 
 ```c#
 namespace System  //擴充.Net Framework提供的System命名空間的功能
@@ -101,21 +96,19 @@ namespace System  //擴充.Net Framework提供的System命名空間的功能
 
 ## 巢狀命名空間
 
-下面兩個方式定義的其實是一模一樣的。 NAMESPACE是可以巢狀定義的。
+`namespace`是可以巢狀定義的。       
+下面兩個方式定義的其實是一模一樣的。 
 
 ```c#
 // 寫法一：
-namespace N1.N2 
-{
+namespace N1.N2  {
     class A { }
     class B { }
 }
 
 // 寫法二：
-namespace N1
-{
-    namespace N2
-    {
+namespace N1 {
+    namespace N2 {
         class A { }
         class B { }
     }
@@ -133,7 +126,25 @@ using N1.N2;
 A test = new();
 ```
 
+為巢狀命名空間 建立別名
 
+```c#
+// 寫法一：
+using Test = N1.N2 //為巢狀命名空間 起別名
+Test.C1 c = new(); //使用別名宣告物件
+
+// 寫法一：
+using Test = N1.N2.C1 //為巢狀命名空間.類別 起別名
+Test t = new(); //使用別名宣告物件
+
+//巢狀命名空間
+namespace N1 {
+    namespace N2 {
+        class C1 { }
+    }
+}
+```
+        
 ## 使用命名空間的原因
 
 C# 程式設計大量使用命名空間的原因有兩個。 
@@ -141,7 +152,6 @@ C# 程式設計大量使用命名空間的原因有兩個。
 2. 宣告您自己的命名空間，將有助於在較大型的程式設計專案中控制類別和方法名稱的範圍。
 
 ### 1. 使用命名空間組織其多種類別
-#### 範例
 
 .NET 會使用命名空間組織其多種類別，能有效管控專案中的類別和方法的範圍。如下所示：
 
@@ -158,7 +168,6 @@ Console.WriteLine("Hi");
 ```
 
 ### 2. 宣告自己的命名空間
-#### 範例
 
 宣告您自己的命名空間，將有助於在較大型的程式設計專案中控制類別和方法名稱的範圍。
 
@@ -205,8 +214,10 @@ class 類別1
 }
 ```
 
+        
 [MSDN - 宣告命名空間，組織型別](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/types/namespaces)      
 [MSDN - 命名空間 ](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/namespace)   
 [[C#] 命名空間(Namespace) by yehyeh](http://notepad.yehyeh.net/Content/CSharp/CH01/04Namespace/2NameSpace/index.php)          
 [CSDN -  C#【中级篇】C# 命名空间（Namespa](https://blog.csdn.net/sinat_40003796/article/details/125214814)
-[[C# 筆記] namespace 命名空間  by R](https://riivalin.github.io/posts/2011/01/namespace/)       
+[[C# 筆記] namespace 命名空間  by R](https://riivalin.github.io/posts/2011/01/namespace/)   
+[[C# 筆記] Using 作用](https://riivalin.github.io/posts/2021/05/cs-using/)     
