@@ -60,7 +60,7 @@ Console.WriteLine("Hi");
 
 > `using`作用：
 > 1. `using` 指令：引入命名空間
-> 2. `using` static 指令：無需指定類型名稱即可存取其靜態成員
+> 2. `using static` 指令：無需指定類型名稱即可存取其靜態成員
 > 3. `using` 建立别名
 > 4. `using` 語句：將實體與程式碼綁定，結束後自動Dispose，釋放實體資源。 【與資料庫互動時常用到】
 
