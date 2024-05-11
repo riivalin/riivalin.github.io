@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 為属性(get/set)設定初始值"
+title: "[C# 筆記] 為屬性(get/set)設定初始值"
 date: 2021-05-07 24:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,物件導向,OO,屬性,get-set]
@@ -22,9 +22,12 @@ public class Person
 }
 ```
 
+使用建構函數，因為「當建構函數完成時，構造應該完成」。      
+屬性就像你的類別所持有的狀態，如果你必須初始化一個預設狀態，你會在你的建構函式中這樣做。      
+
 ## 使用普通屬性(帶有初始值)
 
-屬性背後的實際欄位（backing field）設定。
+在 屬性背後的實際欄位（backing field）直接設定。
 
 ```c#
 public class Person
@@ -77,7 +80,8 @@ public class Person
 }
 ```
 
-
+        
+[MSDN - 使用屬性 (C# 程式設計手冊)](https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/using-properties)     
 [MSDN - 自動實作的屬性 (C# 程式設計手冊)](https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)        
 [C# 的唯讀自動屬性是怎樣煉成的  by huanlintalk](https://www.huanlintalk.com/2018/02/c-readonly-auto-property-from-beginning.html)       
 [CSDN - 为 C# 自动属性赋予初始值的最佳方法是什么？](https://blog.csdn.net/kalman2019/article/details/128624090)     

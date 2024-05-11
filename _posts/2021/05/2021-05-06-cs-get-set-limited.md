@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 属性(get/set)對非法值進行限定的三種方法"
+title: "[C# 筆記] 屬性(get/set)對非法值進行限定的三種方法"
 date: 2021-05-06 24:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,物件導向,OO,屬性,get-set]
@@ -12,9 +12,9 @@ tags: [C#,基礎語法,物件導向,OO,屬性,get-set]
 為了防止使用者輸入或傳入非法值，我們往往需要對類別中的屬性進行限定。例如在登入系統中，限定密碼為數字則必須輸入數字，年齡的限定必須為0~120，對於性別的設定必須為男或女，現在介紹三種限定方法。        
 
 屬性是用來保護和限定欄位的，屬性的限定一般是`set`和`get`方法，其中`set`方法是在給屬性賦值的時候執行的，而`get`則是在屬性輸出呼叫的時候使用的。   
-1. 在類別中，對属性中的get方法進行限定
-2. 在類別中，對属性中的set方法進行限定
-3. 在類別中，在建構函式中進行限定
+1. 在類別中，對属性中的`get`方法進行限定
+2. 在類別中，對属性中的`set`方法進行限定
+3. 在類別中，在建構函式`ctor`中進行限定
 
 #### 先建立 Person 類別
 
@@ -102,7 +102,7 @@ public class Person
 }
 ```
 
-
+[MSDN - 使用屬性 (C# 程式設計手冊)](https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/using-properties)     
 [MSDN - 自動實作的屬性 (C# 程式設計手冊)](https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)        
 [[C# 筆記] get set 自動屬性 & 普通屬性  by R](https://riivalin.github.io/posts/2011/01/auto-and-normal-properties/)     
 [CSDN - C#在类的属性对非法值的进行限定的三种方法](https://blog.csdn.net/weixin_46096032/article/details/121537152)
