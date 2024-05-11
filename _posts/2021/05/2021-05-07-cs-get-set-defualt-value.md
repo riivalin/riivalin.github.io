@@ -7,7 +7,6 @@ tags: [C#,基礎語法,物件導向,OO,屬性,get-set]
 ---
 
 
-
 ## 使用建構函式
 
 透過建構子來設定
@@ -15,7 +14,7 @@ tags: [C#,基礎語法,物件導向,OO,屬性,get-set]
 ```c#
 public class Person
 {
-    public Person() //建構子
+    public Person() //建構子 ctor
     {
         this.Name = "Initial Name";
     }
@@ -51,8 +50,36 @@ public class Person
 }
 ```
 
+## 唯讀的自動屬性 C# 6
+
+唯讀的自動屬性可以使用 Lambda 運算子`=>`設定初始值。
+
+```c#
+public class Person
+{
+    public string Name => "Initial Name";
+}
+```
+
+## C# (7.0)
+
+Lambda 運算子`=>` + 屬性背後的實際欄位(backing field)
+
+```c#
+public class Person
+{
+    private string _name = "Default Value";
+    public string Name
+    {
+        get => _name;
+        set => _name = value;
+    }
+}
+```
+
 
 [MSDN - 自動實作的屬性 (C# 程式設計手冊)](https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/auto-implemented-properties)        
 [C# 的唯讀自動屬性是怎樣煉成的  by huanlintalk](https://www.huanlintalk.com/2018/02/c-readonly-auto-property-from-beginning.html)       
 [CSDN - 为 C# 自动属性赋予初始值的最佳方法是什么？](https://blog.csdn.net/kalman2019/article/details/128624090)     
+[HuntsBot - 为 C# 自动属性赋予初始值的最佳方法是什么？](https://www.huntsbot.com/qa/Zv4Y/what-is-the-best-way-to-give-a-c-sharp-auto-property-an-initial-value?lang=zh_CN&from=csdn)        
 [[C# 筆記] get set 自動屬性 & 普通屬性  by R](https://riivalin.github.io/posts/2011/01/auto-and-normal-properties/)    
