@@ -21,6 +21,135 @@ tags: [C#,基礎語法,物件導向,OO,namespace,using]
 > 用於解決類別重名問題，可以看做「類別的文件夾」        
 > 一個資料夾(目錄)中可以包含多個資料夾，每個資料夾中不能有相同的檔案名，但不同資料夾中的檔案可以相同的檔名。
 
+## 範例
+
+設計一個簡單的命名空間宣告範例：    
+
+- 程式包含**巢狀式***的命名空間
+- 包含了`enum`列舉宣告、`struct`結構宣告
+- 可以瞭解：交通工具(Vehicle)汽車(Car)底下有跑車(SportCar)、敞篷車(Convertible)、休旅車(SUVs)類別
+
+### 巢狀式命名空間
+
+```c#
+namespace Vehicle { //宣告交通工具命名空間
+	namespace Car { //宣告汽車命名空間
+        public class SportCar { } //跑車
+		public class Convertible { } //敞篷車
+		public class SUVs { } //休旅車
+	}
+	namespace Train { //宣告火車命名空間
+		class MagLev { } //磁浮火車
+	}
+	namespace Airplane { //宣告飛機命名空間
+		class Airsuperiority { } //戰鬥機
+	}
+}
+```
+
+### 加上 enum 列舉宣告、 struct 結構宣告
+
+```c#
+namespace Vehicle //宣告交通工具命名空間
+{ 
+	namespace Car  //宣告汽車命名空間
+    { 
+        //宣告汽車輪胎尺寸的列舉
+        enum CarWheel //enum 列舉宣告
+        {
+            Eighteen = 18, Seventeen = 17, Sixteen = 16, Fifteen = 15
+        }
+
+        //宣告汽車特性的結構
+        struct CarProfile //struct 結構宣告
+        {
+            public string CarTechnology; //引擎技術
+        }
+
+        public class SportCar { } //跑車
+		public class Convertible { } //敞篷車
+		public class SUVs { } //休旅車
+	}
+	namespace Train { //宣告火車命名空間
+		class MagLev { } //磁浮火車
+	}
+	namespace Airplane { //宣告飛機命名空間
+		class Airsuperiority { } //戰鬥機
+	}
+}
+```
+
+### 加上屬性、方法
+
+```c#
+namespace Vehicle //宣告交通工具命名空間
+{
+    namespace Car  //宣告汽車命名空間
+    {
+        //宣告汽車輪胎尺寸的列舉
+        enum CarWheel //enum 列舉宣告
+        {
+            Eighteen = 18, Seventeen = 17, Sixteen = 16, Fifteen = 15
+        }
+
+        //宣告汽車特性的結構
+        struct CarProfile //struct 結構宣告
+        {
+            public string CarTechnology; //引擎技術
+        }
+
+        //跑車類別
+        public class SportCar
+        {
+            //設定輪胎尺寸為18吋
+            public static int wheel = (int)CarWheel.Eighteen;
+
+            //汽車屬性
+            private static string carName;
+            public static string CarName
+            {
+                get 
+                {
+                    //若設定跑車屬性內容值為"Audi R8"，則回傳值會增加"奧迪當家跑車"字串
+                    return (carName == "Audi R8") ? $"奧迪當家跑車：{carName}" : carName;
+                }
+                set { carName = value; }
+            }
+
+            //方法
+            public static string Turbo(bool isTurbo) 
+            {
+                CarProfile cp;
+                cp.CarTechnology = (isTurbo) ? "渦輪增壓" : "自然進氣";
+                return cp.CarTechnology;
+            }
+        }
+        public class Convertible { } //敞篷車
+        public class SUVs { } //休旅車
+    }
+    namespace Train
+    { //宣告火車命名空間
+        class MagLev { } //磁浮火車
+    }
+    namespace Airplane
+    { //宣告飛機命名空間
+        class Airsuperiority { } //戰鬥機
+    }
+}
+```
+
+### 調用執行
+
+```c#
+//叫用Vehicle命名空間，設定跑車名稱
+Vehicle.Car.SportCar.CarName = "Audi R8";
+
+//顯示取得跑車名稱的屬性
+Console.WriteLine(Vehicle.Car.SportCar.CarName);
+
+// 執行結果：
+// 奧迪當家跑車：Audi R8
+```
 
 ## 定義命名空間
 
