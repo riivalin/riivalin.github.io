@@ -79,7 +79,7 @@ namespace Vehicle //宣告交通工具命名空間
 }
 ```
 
-### 加上屬性、方法
+### 加上靜態屬性、靜態方法
 
 ```c#
 namespace Vehicle //宣告交通工具命名空間
