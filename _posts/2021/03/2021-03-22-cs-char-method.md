@@ -22,3 +22,9 @@ tags: [C#,基礎語法,char]
 | `IsPunctuation()` | 判斷是否為標點符號。如：`-`,`\`,`/`,`@`,`#`,`%`,`&`,大小括弧等。|
 | `IsSeparator()`   | 判斷是否為分隔符號字元，「空白字元」是分隔符號。|
 | `IsSymbol()`   | 判斷是否為符號字元。如：`~`,`+`,`$`,`^`,`\|`,`=`|
+
+
+
+
+[[C# 筆記] 特殊字元處理：反斜線/、@符號](https://riivalin.github.io/posts/2021/03/cs-char-escape-sequences/)       
+Book: Visual C# 2005 建構資訊系統實戰經典教本

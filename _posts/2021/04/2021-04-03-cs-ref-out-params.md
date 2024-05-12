@@ -226,4 +226,5 @@ static int Sum(params int[] nums)
 [[C# 筆記] 值傳參 & 引用傳參(ref) & 輸出傳參(out)  by R](https://riivalin.github.io/posts/2010/01/r-csharp-note-3/)     
 [[C# 筆記] ref 和 out 有什麼區別？  by R](https://riivalin.github.io/posts/2017/02/what-is-the-difference-between-ref-and-out/)     
 [[C# 筆記] params 可變參數  by R](https://riivalin.github.io/posts/2011/01/params_s/)     
-[[C# 筆記] params   by R](https://riivalin.github.io/posts/2021/01/params/)
+[[C# 筆記] params   by R](https://riivalin.github.io/posts/2021/01/params/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

@@ -40,4 +40,5 @@ public static void Main()
 
 [[C# 筆記] ArrayList 集合 by R](https://riivalin.github.io/posts/2011/01/arraylist/)        
 [C#中 数组、ArrayList、List＜T＞的区别](https://blog.csdn.net/Dust_Evc/article/details/114984023)       
-[C#集合 ArrayList 的常用方法和属性](https://blog.csdn.net/qq_42007357/article/details/104278427)
+[C#集合 ArrayList 的常用方法和属性](https://blog.csdn.net/qq_42007357/article/details/104278427)       
+Book: Visual C# 2005 建構資訊系統實戰經典教本

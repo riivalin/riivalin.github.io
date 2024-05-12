@@ -85,4 +85,5 @@ A：在.Net Framework 底下許多程式語言如：C#、VB.Net 所宣告的資�
 
 
 [[C# 筆記] CTS、CLS、CLR 分別作何解釋？ by R](https://riivalin.github.io/posts/2017/02/what-are-the-explanations-for-cts-cls-and-clr/)      
-[[C# 筆記] 一切的祖宗object類 by R](https://riivalin.github.io/posts/2010/03/88-object/)
+[[C# 筆記] 一切的祖宗object類 by R](https://riivalin.github.io/posts/2010/03/88-object/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

@@ -50,3 +50,5 @@ bool a = true;
 bool b = false;
 bool c = a && b; // true
 ```
+
+Book: Visual C# 2005 建構資訊系統實戰經典教本 

@@ -38,4 +38,7 @@ tags: [C#,基礎語法,流程控制]
 - 選擇結構(Selection Structure)
 - 重覆結構(Loop/ Iteration/ Repetition Structure)
 
-> 物件導向程式設計(OOP) 的誕生就是為了要解決結構化程式的缺點，如：資料與方法不能分離的問題。
+> 物件導向程式設計(OOP) 的誕生就是為了要解決結構化程式的缺點，如：資料與方法不能分離的問題。        
+
+      
+Book: Visual C# 2005 建構資訊系統實戰經典教本

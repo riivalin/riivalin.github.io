@@ -58,3 +58,8 @@ for (int i = 1; i <= 9; i++)
 
 > 巢狀迴圈：當遇到某個事情要做一遍，而另一個事情要做N遍的時候。     
 > (一個迴圈內，使用另一個或多個迴圈。)
+
+
+[[C# 筆記] array 陣列  by R](https://riivalin.github.io/posts/2011/01/array/)       
+[[C# 筆記] 陣列(Array)的宣告   by R](https://riivalin.github.io/posts/2021/03/csharp-array/)           
+Book: Visual C# 2005 建構資訊系統實戰經典教本

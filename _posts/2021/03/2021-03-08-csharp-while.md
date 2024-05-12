@@ -149,5 +149,7 @@ static void Main(string[] args)
 - `do while`：迴圈內至少要執行一次時。
 
 
-[[C# 筆記] while by R](https://riivalin.github.io/posts/2011/01/while/)     
-[[C# 筆記] 變數、決策、迴圈 by R](https://riivalin.github.io/posts/2010/01/r-csharp-note-1/)        
+[[C# 筆記] while   by R](https://riivalin.github.io/posts/2011/01/while/)     
+[[C# 筆記] 變數、決策、迴圈   by R](https://riivalin.github.io/posts/2010/01/r-csharp-note-1/)       
+[[C# 筆記] 陣列(Array)的宣告   by R](https://riivalin.github.io/posts/2021/03/csharp-array/)           
+Book: Visual C# 2005 建構資訊系統實戰經典教本 

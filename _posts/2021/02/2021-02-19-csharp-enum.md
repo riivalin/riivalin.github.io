@@ -83,4 +83,5 @@ static void Main(string[] args)
 ```
 
 [[C# 筆記] enum 列舉 by R](https://riivalin.github.io/posts/2011/01/enum/)      
-[[C# 筆記] 枚舉(列舉) Enum by R](https://riivalin.github.io/posts/2010/02/048/)
+[[C# 筆記] 枚舉(列舉) Enum by R](https://riivalin.github.io/posts/2010/02/048/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本 

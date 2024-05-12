@@ -192,4 +192,7 @@ Console.WriteLine(author[1]); //YYY
 [MSDN - Array.GetLowerBound(Int32) Method](https://learn.microsoft.com/en-us/dotnet/api/system.array.getlowerbound?view=net-8.0)    
 [MSDN - Array.GetValue 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.array.getvalue?view=net-7.0)       
 [MSDN - Array.SetValue 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.array.setvalue?view=net-8.0)     
-[c#中的Length和GetLength()的区别](https://blog.csdn.net/weixin_41529093/article/details/105346526)
+[c#中的Length和GetLength()的区别](https://blog.csdn.net/weixin_41529093/article/details/105346526)      
+[[C# 筆記] array 陣列  by R](https://riivalin.github.io/posts/2011/01/array/)       
+[[C# 筆記] 陣列(Array)的宣告   by R](https://riivalin.github.io/posts/2021/03/csharp-array/)           
+Book: Visual C# 2005 建構資訊系統實戰經典教本

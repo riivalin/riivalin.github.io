@@ -71,4 +71,5 @@ GenericMethod<Bool>();
             
 
 [MSDN -  泛型型別和方法](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/types/generics)
-[[C# 筆記] 泛型 by R](https://riivalin.github.io/posts/2010/03/89-generic/)
+[[C# 筆記] 泛型 by R](https://riivalin.github.io/posts/2010/03/89-generic/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

@@ -49,4 +49,5 @@ Console.WriteLine($"C:\\ {i}*{j}={i*j}"); //只加上$，\符號必須再加一�
 
 [MSDN - Escape Sequences(逸出序列)](https://learn.microsoft.com/en-us/cpp/c-language/escape-sequences?view=msvc-170&redirectedfrom=MSDN)        
 [MSDN - 使用 $ 的字串內插補點](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/tokens/interpolated)      
-[[C# 筆記] 轉義符(反斜線)、@符號 by R](https://riivalin.github.io/posts/2011/01/escapes/)
+[[C# 筆記] 轉義符(反斜線)、@符號 by R](https://riivalin.github.io/posts/2011/01/escapes/)       
+Book: Visual C# 2005 建構資訊系統實戰經典教本

@@ -54,4 +54,5 @@ if(s1.CompareTo(s2)==1)
 
 
 [MSDN - String.CompareTo 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.string.compareto?view=net-8.0)       
-[C#中CompareTo（）语法的用法](https://blog.csdn.net/weixin_42006872/article/details/88541160)
+[C#中CompareTo（）语法的用法](https://blog.csdn.net/weixin_42006872/article/details/88541160)       
+Book: Visual C# 2005 建構資訊系統實戰經典教本 

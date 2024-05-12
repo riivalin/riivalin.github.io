@@ -111,4 +111,5 @@ System.Boolean
         
 
 [[C# 筆記] ArrayList 集合 by R](https://riivalin.github.io/posts/2011/01/arraylist/)        
-[C#中 数组、ArrayList、List＜T＞的区别](https://blog.csdn.net/Dust_Evc/article/details/114984023)
+[C# 中 数组、ArrayList、List＜T＞的区别](https://blog.csdn.net/Dust_Evc/article/details/114984023)       
+Book: Visual C# 2005 建構資訊系統實戰經典教本

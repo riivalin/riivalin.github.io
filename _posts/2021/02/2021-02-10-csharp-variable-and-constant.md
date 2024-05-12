@@ -75,4 +75,5 @@ circle = ratius * 2 * CircleRatio; //計算圓周長
 
 [MSDN - C# 識別碼命名規則和慣例](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/coding-style/identifier-names)        
 [MSDN - const (C# 參考)](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/const)     
-[MSDN - C# 關鍵字](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/)
+[MSDN - C# 關鍵字](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

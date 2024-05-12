@@ -204,4 +204,5 @@ static void Main(string[] args)
 
 
 [[C# 筆記] break、continue by R](https://riivalin.github.io/posts/2021/01/break-continue/)      
-[[C# 筆記] break by R](https://riivalin.github.io/posts/2011/01/break/)
+[[C# 筆記] break by R](https://riivalin.github.io/posts/2011/01/break/)          
+Book: Visual C# 2005 建構資訊系統實戰經典教本

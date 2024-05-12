@@ -105,3 +105,6 @@ else
     Console.WriteLine("搶$$$哦!!!");
 }
 ```
+
+      
+Book: Visual C# 2005 建構資訊系統實戰經典教本

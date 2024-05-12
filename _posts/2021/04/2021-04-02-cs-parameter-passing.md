@@ -124,4 +124,5 @@ static void SalaryIncrease(ref int salary)
 ```
 
 [[C# 筆記] 值傳遞 & 引用傳遞  by R](https://riivalin.github.io/posts/2011/01/valuetype-referencetype/)      
-[[C# 筆記] ref 參數  by R](https://riivalin.github.io/posts/2011/01/ref/)
+[[C# 筆記] ref 參數  by R](https://riivalin.github.io/posts/2011/01/ref/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

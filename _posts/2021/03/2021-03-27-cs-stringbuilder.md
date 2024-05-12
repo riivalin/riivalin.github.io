@@ -205,3 +205,4 @@ Console.WriteLine(sb.ToString());
 [[C# 筆記] 高效的 StringBuilder by R](https://riivalin.github.io/posts/2011/03/stringbuilder/)      
 [[C# 筆記] string 和 StringBuilder 運行時間比較 by R](https://riivalin.github.io/posts/2011/01/string-builder/)     
 [[C# 筆記] string 和 StringBuilder 的區別，兩者表現的比較](https://riivalin.github.io/posts/2017/02/csharp-string-stringbuilder/)       
+Book: Visual C# 2005 建構資訊系統實戰經典教本 

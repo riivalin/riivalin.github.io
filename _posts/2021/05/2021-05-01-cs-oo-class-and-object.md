@@ -176,4 +176,5 @@ static void Main(string[] args)
 
 [[C# 筆記] Overload 方法的重載  by R](https://riivalin.github.io/posts/2011/01/overload/)       
 [[C# 筆記] 虛方法(Virtual) vs 方法重寫(Override)  by R](https://riivalin.github.io/posts/2010/01/r-csharp-note-14/)     
-[[C# 筆記] Override 重寫父類的ToString()  by R](https://riivalin.github.io/posts/2011/01/override-tostring/)
+[[C# 筆記] Override 重寫父類的ToString()  by R](https://riivalin.github.io/posts/2011/01/override-tostring/)        
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

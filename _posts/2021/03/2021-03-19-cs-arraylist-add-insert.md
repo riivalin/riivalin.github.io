@@ -15,3 +15,6 @@ tags: [C#,基礎語法,arraylist]
 
 - `Insert()`新增物件到指定的 `ArrayList` 的索引位置。
 - `Add()`將物件加入 `ArrayList`的末端(最後)。
+
+       
+Book: Visual C# 2005 建構資訊系統實戰經典教本

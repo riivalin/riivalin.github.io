@@ -767,4 +767,5 @@ Trim後，集合的count是：5，容量Capacity是：5
 [MSDN - ArrayList.Contains(Object) 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.collections.arraylist.contains?view=net-8.0)      
 [MSDN - ArrayList.CopyTo 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.collections.arraylist.copyto?view=net-8.0)       
 [MSDN - ArrayList.IndexOf 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.collections.arraylist.indexof?view=net-8.0)     
-[MSDN - ArrayList.InsertRange(Int32, ICollection) 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.collections.arraylist.insertrange?view=net-8.0)     
+[MSDN - ArrayList.InsertRange(Int32, ICollection) 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.collections.arraylist.insertrange?view=net-8.0)         
+Book: Visual C# 2005 建構資訊系統實戰經典教本   

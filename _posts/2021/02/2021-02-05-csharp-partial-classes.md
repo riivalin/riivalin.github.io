@@ -69,4 +69,5 @@ namespace ConsoleApp1
         
 
 [[C# 筆記] Partial 部分類別 by R](https://riivalin.github.io/posts/2011/01/partial-class/)      
-[[C# 筆記] 常用關鍵字 by R](https://riivalin.github.io/posts/2011/02/keyword-1/)
+[[C# 筆記] 常用關鍵字 by R](https://riivalin.github.io/posts/2011/02/keyword-1/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

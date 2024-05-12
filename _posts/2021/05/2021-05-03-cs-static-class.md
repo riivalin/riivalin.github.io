@@ -23,6 +23,14 @@ tags: [C#,基礎語法,物件導向,OO,class,static]
 Person.MethodA();
 ```
 
+只有在完全完全確定一個方法不會有結構調整，與系統中其他部分幾乎沒有關聯時，才可以考慮把它寫成靜態方法。
+
+否則，不要用靜態方法！
+
+> - `static`方法是類別中的一個成員方法，屬於整個類別，不用創建任何物件也可以直接呼叫!         
+> - 靜態方法效率上要比實體化高，但是靜態方法的缺點是：不自動進行銷毀，而實體化的則可以做銷毀。        
+> - 靜態方法和靜態變數創建後始終使用同一塊記憶體空間，而使用實體的方式會創建多個憶體空間。  
+
 ## 特色
 
 靜態類別特色：      
@@ -116,8 +124,11 @@ public static class Car
 }
 ```
 
-
+[MSDN - static (C# 參考)](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/static)      
 [MSDN - 靜態類別和靜態類別成員 (C# 程式設計手冊)](https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members)
 [[C# 筆記] static 靜態與非靜態  by R](https://riivalin.github.io/posts/2011/01/static/)     
 [[C# 筆記] 靜態成員 vs 非靜態成員 的區別  by R](https://riivalin.github.io/posts/2017/02/the-difference-between-static-members-and-non-static-members/)     
-[[C# 筆記] class property method field review](https://riivalin.github.io/posts/2011/01/review3/)       
+[[C# 筆記] class property method field review](https://riivalin.github.io/posts/2011/01/review3/)   
+[CSDN - 为什么应该少用静态（static）方法：静态方法的三大问题](https://blog.csdn.net/VoisSurTonChemin/article/details/125729755)         
+[Imooc(慕课) - tatic 静态方法 有什么优缺点?](https://www.imooc.com/wenda/detail/515705)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本     

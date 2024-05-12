@@ -126,4 +126,5 @@ public class Milk
 
 [MSDN - 運算子多載：預先定義的一元、算術、相等和比較運算子](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/operators/operator-overloading)      
 [[C# 筆記] 運算符重載(Operator Overloading) 1 by R](https://riivalin.github.io/posts/2010/03/95-operator-overload-1/)       
-[[C# 筆記] 運算符重載(Operator Overloading) 2 by R](https://riivalin.github.io/posts/2010/03/95-operator-overload-2/)
+[[C# 筆記] 運算符重載(Operator Overloading) 2 by R](https://riivalin.github.io/posts/2010/03/95-operator-overload-2/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

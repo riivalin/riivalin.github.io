@@ -147,4 +147,5 @@ A：An instance of a class is an object. (一個`object`就是某個`class`的`i
 
 [物件導向基礎：何謂類別(Class)？何謂物件(Object)？  by The Will Will Web](https://blog.miniasp.com/post/2009/08/27/OOP-Basis-What-is-class-and-object)    
 [什麼是物件導向（2）：Object, Class, Instance](https://teddy-chen-tw.blogspot.com/2012/01/2object-class-instance.html)  
-[[C# 筆記] new 關鍵字的作用?](https://riivalin.github.io/posts/2017/02/what-does-the-new-keyword-do/)
+[[C# 筆記] new 關鍵字的作用?](https://riivalin.github.io/posts/2017/02/what-does-the-new-keyword-do/)       
+Book: Visual C# 2005 建構資訊系統實戰經典教本 

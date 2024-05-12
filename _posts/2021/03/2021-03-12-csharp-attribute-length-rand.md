@@ -49,3 +49,7 @@ static void Main(string[] args)
 //執行結果：
 //這是 3 維陣列
 ```
+
+[[C# 筆記] array 陣列  by R](https://riivalin.github.io/posts/2011/01/array/)       
+[[C# 筆記] 陣列(Array)的宣告   by R](https://riivalin.github.io/posts/2021/03/csharp-array/)           
+Book: Visual C# 2005 建構資訊系統實戰經典教本

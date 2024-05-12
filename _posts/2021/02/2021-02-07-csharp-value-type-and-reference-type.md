@@ -83,4 +83,5 @@ p1、p2 都存放相同記憶體參考位址，只要變更Person任何屬性，
 | 例如      | Int32, Double            | Object, Class   |
 
 
-[值傳遞 & 引用傳遞 by R](https://riivalin.github.io/posts/2011/01/valuetype-referencetype/)
+[值傳遞 & 引用傳遞 by R](https://riivalin.github.io/posts/2011/01/valuetype-referencetype/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

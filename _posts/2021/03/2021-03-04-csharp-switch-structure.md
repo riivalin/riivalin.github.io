@@ -67,3 +67,6 @@ switch (score)
         break;
 }
 ```
+
+      
+Book: Visual C# 2005 建構資訊系統實戰經典教本

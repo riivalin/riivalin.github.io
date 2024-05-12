@@ -176,4 +176,5 @@ int GCD(int x, int y)
 [Wiki - 階乘 ](https://zh.wikipedia.org/zh-tw/階乘)     
 [Wiki -最大公因數](https://zh.wikipedia.org/zh-tw/最大公因數)       
 [[C# 筆記] Recursion 方法的遞迴  by R](https://riivalin.github.io/posts/2011/01/recursion/)   
-[字符串的最大公因子 by R](https://riivalin.github.io/posts/2000/01/leetcode-1071/)  
+[字符串的最大公因子 by R](https://riivalin.github.io/posts/2000/01/leetcode-1071/)      
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

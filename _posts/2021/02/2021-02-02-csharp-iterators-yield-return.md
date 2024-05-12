@@ -131,4 +131,5 @@ static IEnumerable<int> GetAllEvenNumber()
 
 [MSDN - Yield 陳述式 - 提供下一個元素](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/statements/yield)     
 [善用 yield return 省時省 CPU 省 RAM，打造高效率程式](https://blog.darkthread.net/blog/yield-return/)      
-[由C# yield return引发的思考](https://www.cnblogs.com/wucy/p/17443749.html)
+[由C# yield return引发的思考](https://www.cnblogs.com/wucy/p/17443749.html)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

@@ -110,4 +110,5 @@ car = new Car(); //有開空間，有佔內存
 
 
 [MSDN -  類別 (C# 參考)](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/class)
-[[C# 筆記] Class 類別  by R](https://riivalin.github.io/posts/2011/01/class/)
+[[C# 筆記] Class 類別  by R](https://riivalin.github.io/posts/2011/01/class/)       
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

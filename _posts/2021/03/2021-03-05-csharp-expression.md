@@ -26,3 +26,6 @@ tags: [C#,基礎語法,流程控制,"?:"]
 ```c#
 string result = (score >= 60) ? "及格" : "被當";
 ```
+
+[[C# 筆記] ?: 運算子   by R](https://riivalin.github.io/posts/2021/03/csharp-expression/)      
+Book: Visual C# 2005 建構資訊系統實戰經典教本

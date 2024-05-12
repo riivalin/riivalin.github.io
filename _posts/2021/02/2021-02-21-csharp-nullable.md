@@ -77,3 +77,7 @@ internal class Program
 
 因為在實務上我們常用`null`來表示「未知的值」。      
 例如：學生也許因為有事缺考，所以成績分數需要用`null`來代表，而暫時不存入任何成績分數。
+
+
+[[C# 筆記] ?: 運算子  by R](https://riivalin.github.io/posts/2021/03/csharp-expression/)            
+Book: Visual C# 2005 建構資訊系統實戰經典教本 

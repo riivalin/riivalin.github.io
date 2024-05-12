@@ -58,4 +58,5 @@ int x = (int)99.1; //結果為 99
 
 
 
-[[C# 筆記](int)、Convert.ToInt32、int.Parse、int.TryParse by R](https://riivalin.github.io/posts/2011/02/convert-parse/)
+[[C# 筆記](int)、Convert.ToInt32、int.Parse、int.TryParse   by R](https://riivalin.github.io/posts/2011/02/convert-parse/)      
+Book: Visual C# 2005 建構資訊系統實戰經典教本

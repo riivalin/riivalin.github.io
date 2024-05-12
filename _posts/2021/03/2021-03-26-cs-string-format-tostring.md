@@ -208,4 +208,5 @@ Console.WriteLine(DateTime.Now.ToString("yyyy/MM/dd tt hh:mm:ss")); //2024/05/06
 ```
 
 [MSDN -  標準數值格式字串](https://learn.microsoft.com/zh-tw/dotnet/standard/base-types/standard-numeric-format-strings)        
-[[C#] string.Format 格式整理](https://marcus116.blogspot.com/2018/10/c-stringformat.html)
+[[C#] string.Format 格式整理](https://marcus116.blogspot.com/2018/10/c-stringformat.html)       
+Book: Visual C# 2005 建構資訊系統實戰經典教本 

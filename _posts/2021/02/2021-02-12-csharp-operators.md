@@ -49,4 +49,5 @@ a = 3 * 6 + 2
 
 
 [MSDN -  優先順序和評估順序](https://learn.microsoft.com/zh-tw/cpp/c-language/precedence-and-order-of-evaluation?view=msvc-170)     
-[MSDN - C# 運算子與運算式](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/operators/)
+[MSDN - C# 運算子與運算式](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/operators/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

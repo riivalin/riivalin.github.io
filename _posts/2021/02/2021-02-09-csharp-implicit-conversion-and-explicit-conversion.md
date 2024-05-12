@@ -66,4 +66,5 @@ Console.WriteLine(k); //100
 
 
 [[C# 筆記] 明確轉換(顯式轉換) by R](https://riivalin.github.io/posts/2021/01/explicit-cast/)      
-[[C# 筆記] 隱含轉換(隱式轉換) by R](https://riivalin.github.io/posts/2021/01/implicit-cast/)
+[[C# 筆記] 隱含轉換(隱式轉換) by R](https://riivalin.github.io/posts/2021/01/implicit-cast/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

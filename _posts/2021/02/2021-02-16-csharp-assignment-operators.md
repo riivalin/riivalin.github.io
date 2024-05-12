@@ -41,3 +41,6 @@ int? a = null;
 int b = 10;
 int c = a ?? b; //10
 ```
+
+[[C# 筆記] ?: 運算子  by R](https://riivalin.github.io/posts/2021/03/csharp-expression/)          
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

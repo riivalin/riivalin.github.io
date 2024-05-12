@@ -50,4 +50,5 @@ int i = (int)o; //折箱Unboxing發生在這裡, 就是把基本數據類型，�
 
 
 [[C# 筆記] 裝箱(Boxing) vs 拆箱(Unboxing) by R](https://riivalin.github.io/posts/2010/01/r-csharp-note-13/)     
-[[C# 筆記] 什麼是装箱和拆箱？ by R](https://riivalin.github.io/posts/2017/02/what-is-boxing-and-unboxing/)
+[[C# 筆記] 什麼是装箱和拆箱？ by R](https://riivalin.github.io/posts/2017/02/what-is-boxing-and-unboxing/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

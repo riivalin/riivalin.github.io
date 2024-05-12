@@ -119,4 +119,5 @@ static void Display(string s)
 ```
 
 [MSDN - 使用具名和匿名方法委派的比較 (C# 程式設計手冊)](https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/delegates/delegates-with-named-vs-anonymous-methods)       
-[[C# 筆記] Delegate 匿名函數 by R](https://riivalin.github.io/posts/2011/01/delegate-anonymous-function/)
+[[C# 筆記] Delegate 匿名函數 by R](https://riivalin.github.io/posts/2011/01/delegate-anonymous-function/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

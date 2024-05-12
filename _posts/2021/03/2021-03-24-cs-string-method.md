@@ -172,3 +172,6 @@ Console.WriteLine(s.Trim());
 [[C# 筆記] string 字串提供的各種方法 2 by R](https://riivalin.github.io/posts/2011/01/string4/)     
 [C# String 类在开发中常用到的方法汇总【详细版】](https://www.cnblogs.com/qingheshiguang/p/17965543)     
 [.split() + string.Join()   by R](https://riivalin.github.io/posts/2011/03/string-review-end/)
+[[C# 筆記] 特殊字元處理：反斜線/、@符號](https://riivalin.github.io/posts/2021/03/cs-char-escape-sequences/)        
+[[C# 筆記] 字元(Char)常用方法](https://riivalin.github.io/posts/2021/03/cs-char-method/)       
+Book: Visual C# 2005 建構資訊系統實戰經典教本

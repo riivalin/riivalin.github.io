@@ -87,3 +87,4 @@ public class Person
 [CSDN - 为 C# 自动属性赋予初始值的最佳方法是什么？](https://blog.csdn.net/kalman2019/article/details/128624090)     
 [HuntsBot - 为 C# 自动属性赋予初始值的最佳方法是什么？](https://www.huntsbot.com/qa/Zv4Y/what-is-the-best-way-to-give-a-c-sharp-auto-property-an-initial-value?lang=zh_CN&from=csdn)        
 [[C# 筆記] get set 自動屬性 & 普通屬性  by R](https://riivalin.github.io/posts/2011/01/auto-and-normal-properties/)    
+Book: Visual C# 2005 建構資訊系統實戰經典教本 

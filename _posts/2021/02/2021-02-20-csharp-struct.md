@@ -96,5 +96,6 @@ myStruct.Method();
 
         
 [C#中的结构体要使用new来实例化吗?](https://www.cnblogs.com/fps2tao/p/14692302.html)     
-[C#中的结构体要使用new来实例化吗？还是直接声明后直接使用？](https://zhidao.baidu.com/question/62698662.html)
+[C#中的结构体要使用new来实例化吗？还是直接声明后直接使用？](https://zhidao.baidu.com/question/62698662.html)        
+Book: Visual C# 2005 建構資訊系統實戰經典教本 
 

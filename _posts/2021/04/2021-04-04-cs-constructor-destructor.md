@@ -126,4 +126,5 @@ class Student
 [MSDN - 靜態建構函式 (C# 程式設計手冊)](https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/static-constructors)      
 [MSDN -  完成項 (舊稱為解構函式) ](https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/finalizers)        
 [[C# 筆記] Constructor 構造函式  by R](https://riivalin.github.io/posts/2011/01/constructor/)       
-[[C# 筆記] destructor 解構函式  by R](https://riivalin.github.io/posts/2011/01/destructor/)
+[[C# 筆記] destructor 解構函式  by R](https://riivalin.github.io/posts/2011/01/destructor/)     
+Book: Visual C# 2005 建構資訊系統實戰經典教本    

@@ -19,3 +19,6 @@ oilPrice = litre * 28.6; //計算所需支付的金額
 
 Console.WriteLine($"共需 ${oilPrice}元"); //輸出結果
 ```
+
+      
+Book: Visual C# 2005 建構資訊系統實戰經典教本
