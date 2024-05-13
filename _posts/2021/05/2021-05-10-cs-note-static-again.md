@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] static靜態成員 & 實體成員"
-date: 2021-05-10 24:59:00 +0800
+date: 2021-05-10 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,static]
 ---

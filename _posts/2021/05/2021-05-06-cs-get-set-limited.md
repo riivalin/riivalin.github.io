@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C# 筆記] 屬性(get/set)對非法值進行限定的三種方法"
-date: 2021-05-06 24:59:00 +0800
+date: 2021-05-06 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,基礎語法,物件導向,OO,屬性,get-set]
 ---
