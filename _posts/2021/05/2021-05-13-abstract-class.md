@@ -201,7 +201,5 @@ class SportCar : Car
 [[C# 筆記] Abstract 抽象類與抽象成員](https://riivalin.github.io/posts/2010/01/r-csharp-note-16/)   
 [[C# 筆記] 里氏轉換(LSP)  by R](https://riivalin.github.io/posts/2011/01/lsp/)    
 [實現多態(多型)的三個方法 ([C# 筆記] .Net基礎-複習-R)  by R](https://riivalin.github.io/posts/2011/02/r-cshap-notes-3/#6多態多型)       
-    
-
-
+[[C# 筆記] 抽象類別(Abstract Class)和介面(Interface)有何不同?   by R](https://riivalin.github.io/posts/2021/05/interface-and-abstract-class/)    
 Book: Visual C# 2005 建構資訊系統實戰經典教本    
