@@ -32,15 +32,160 @@ tags: [C#,基礎語法,物件導向,OO,abstract,多型]
 
 介面可以被多重實現，抽象類別只能被單一繼承
 
+|             | 抽象類別(abstract class) | 介面(interface) |
+|:------------|:-----------------|------------------:|
+
+TODO
+
+## 語法
+
+### 宣告抽象類別
+```c#
+abstract class 抽象類別名稱
+{
+    //抽象屬性、方法，不實作程式碼宣告
+    public abstract 資料型別 屬性名稱 { get; set; }
+    public abstract [資料型別|void] 方法名稱([參數群]);
+
+    //在抽象類別裡，可以定義普通方法(實作程式碼)
+    public [資料型別|void] 方法名稱([參數群]) { ... }
+}
+```
+
+```c#
+abstract class Person {
+    public abstract string Name { get; set;}
+    public abstract string SayHi(string name, int age);
+}
+```
+
+#### 範例
+
+抽象方法不能有任何方法實現      
+抽象成員必須在抽象類別中，但是抽象類別當中可以有非抽象成員      
+
+```c#
+//抽象類別
+public abstract class Person 
+{
+    //抽象類別當中可以有非抽象成員，同樣可以寫構造函數、字段、屬性、函數
+    //但，這些成員是給自己用的，純粹是給子類用的(給繼承用)
+    
+    public Person(string name) { //有參的建構函式
+        this.Name = _name;
+    }
+    //會報錯 是因為沒有無參的構造函數，再加上去就可以了
+    public Person() {
+    }
+    
+    public string Name {get; set;}
+     
+    //抽象方法: 加上abstract，沒有方法體
+    public abstract int Test(string name);
+
+    public virtual void SayHello() { }
+}
+```
+
+### 繼承與實作抽象類別
+
+```c#
+class 類別名稱 : 抽象類別名稱
+{
+    //實作抽象類別的屬性和方法, abstract改成override
+    public override 資料型別 屬性名稱 { get; set; }
+    public override [資料型別|void] 方法名稱([參數群])
+    {
+        //實作程式碼
+    }
+}
+```
+
+#### 範例
+由於抽象成員沒有任何實現，所以子類必須將抽象成員重寫。
+
+```c#
+//抽象成員只允許在抽象類別當中，不能在普通類別中有抽象成員
+public abstract class Person {
+    //抽象方法不能有任何方法實現(沒有方法體)
+    public abstract int Test(string name);
+}
+
+//子類在重寫的時候，必須跟父類的這個抽象方法具有相同的簽名(返回值和參數一樣)
+public class Student : Person {
+    public override int Test(string name) {
+        return 123;
+    }
+}
+```
+
+## 範例
+
+宣告一個抽象類別，並透過繼承抽象類別的子類別來實作抽象類別內所定義的抽象屬性和抽象方法。
+
+```c#
+//使用調用
+SportCar sportCar = new SportCar();
+Console.WriteLine($"車名：{sportCar.Name}\r\n車門數：{sportCar.Door}\r\n引擎技術：{sportCar.EngineTechnology(true)}\r\n馬力：{sportCar.HP}\r\n供油方式：{sportCar.FuelSystem}");
+
+/* 執行結果:
+車名：Audi R8
+車門數：2
+引擎技術：渦輪增壓
+馬力：205
+供油方式：多點噴射
+
+*/
+
+//抽象類別
+abstract class Car
+{
+	public abstract string Name { get; set; } //車名
+	public abstract int Door { get; set; } //車門
+	public abstract int HP { get; set; } //馬力
+	
+	//引擎技術(抽象方法)
+	public abstract string EngineTechnology(bool isTurbo); 
+	
+	//供油方式(普通方法)
+	public string FuelSystem()
+	{
+		return "多點噴射";
+	}
+}
+
+//宣告跑車類別，並繼承抽象類別Car
+class SportCar : Car
+{
+    //用override來實作抽象屬性
+    public override string Name { get; set; } = "Audi R8"; //車名
+    public override int Door { get; set; } = 2; //車門
+    public override int HP { get; set; } = 140;//馬力
+    
+    //用override來實作抽象方法
+    public override string EngineTechnology(bool isTurbo)
+    {
+        if (!isTurbo)
+        {
+            this.HP = 140;
+            return "自然進氣";
+        }
+
+        this.HP = 205;
+        return "渦輪增壓";
+    }
+}
+```
+
 ---
 
 什麼情況會用到介面interface？       
 當你需要多繼承的時候，就要考慮介面interface了。
 
 為什麼呀？我就不能用抽象類嗎？      
-因為類別只能繼承一個，是不允許多繼承的，只能繼承一個父類(一個基底類別)    
-(抽象類別 只能繼承一個類別)
+因為一個類別只能繼承一個抽象類別，是不允許多繼承的，只能繼承一個父類(一個基底類別)    
 
+> 一個類別只能繼承一個抽象類別，一個類別可以實現多個介面。
 
 
 ## 實現多型的三種手段
@@ -54,8 +199,12 @@ tags: [C#,基礎語法,物件導向,OO,abstract,多型]
 - 父類的函式有實現、有意義的時候，就用虛方法(virtual)
 - 父類的函式不知道怎麼去實現，就用抽象類(abstract)
 
+
+
 [MSDN - abstract (C# 參考)](https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/keywords/abstract)       
+[MSDN - 如何定義抽象屬性 (C# 程式設計手冊)](https://learn.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/how-to-define-abstract-properties)     
 [c#中抽象类(abstract)和接口(interface)的相同点跟区别](https://blog.csdn.net/lidandan2016/article/details/78831865)   
+[【总结】abstract class抽象类与interface之间的区别](https://blog.csdn.net/u012556994/article/details/81563255)      
 [[C# 筆記][多型] Abstract 抽象類](https://riivalin.github.io/posts/2011/01/abstract/)      
 [[C# 筆記] Abstract 抽象類與抽象成員](https://riivalin.github.io/posts/2010/01/r-csharp-note-16/)   
 [[C# 筆記] 里氏轉換(LSP)  by R](https://riivalin.github.io/posts/2011/01/lsp/)    
