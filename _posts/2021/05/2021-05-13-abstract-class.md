@@ -115,19 +115,6 @@ public class Student : Person {
 宣告一個抽象類別，並透過繼承抽象類別的子類別來實作抽象類別內所定義的抽象屬性和抽象方法。
 
 ```c#
-//使用調用
-SportCar sportCar = new SportCar();
-Console.WriteLine($"車名：{sportCar.Name}\r\n車門數：{sportCar.Door}\r\n引擎技術：{sportCar.EngineTechnology(true)}\r\n馬力：{sportCar.HP}\r\n供油方式：{sportCar.FuelSystem}");
-
-/* 執行結果:
-車名：Audi R8
-車門數：2
-引擎技術：渦輪增壓
-馬力：205
-供油方式：多點噴射
-
-*/
-
 //抽象類別
 abstract class Car
 {
@@ -166,14 +153,28 @@ class SportCar : Car
         return "渦輪增壓";
     }
 }
+
+//使用調用
+SportCar sportCar = new SportCar();
+Console.WriteLine($"車名：{sportCar.Name}\r\n車門數：{sportCar.Door}\r\n引擎技術：{sportCar.EngineTechnology(true)}\r\n馬力：{sportCar.HP}\r\n供油方式：{sportCar.FuelSystem}");
+
+/* 執行結果:
+車名：Audi R8
+車門數：2
+引擎技術：渦輪增壓
+馬力：205
+供油方式：多點噴射
+
+*/
+
 ```
 
 ---
 
-什麼情況會用到介面interface？       
+#### 什麼情況會用到介面interface？       
 當你需要多繼承的時候，就要考慮介面interface了。
 
-為什麼呀？我就不能用抽象類嗎？      
+#### 為什麼呀？我就不能用抽象類嗎？      
 因為一個類別只能繼承一個抽象類別，是不允許多繼承的，只能繼承一個父類(一個基底類別)    
 
 > 介面可以被多重實現，抽象類別只能被單一繼承        
