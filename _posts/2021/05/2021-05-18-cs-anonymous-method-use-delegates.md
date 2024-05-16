@@ -109,6 +109,4 @@ int Add(int x, int y) => x + y;  //同等於: int Add(int x, int y) { x + y; }
 
 [[C# 筆記] Lambda 表達式  by R](https://riivalin.github.io/posts/2011/01/lamda/)        
 [[C# 筆記] 方法 Lambda表達式(=>)  by R](https://riivalin.github.io/posts/2010/01/r-csharp-note-2/#lambda表達式)     
-[[C# 筆記] Delegate(委託)、Lambda、Event(事件)
-
-](https://riivalin.github.io/posts/2012/01/delegate-lambda-event/#lambda表達式)
+[[C# 筆記] Delegate(委託)、Lambda、Event(事件)  by R](https://riivalin.github.io/posts/2012/01/delegate-lambda-event/#lambda表達式)
