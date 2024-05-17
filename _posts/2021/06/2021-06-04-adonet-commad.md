@@ -19,6 +19,8 @@ tags: [C#,ADO.NET,command,ExecuteReader,ExecuteNonQuery]
 > 所以`SELECT`這裡的回傳值是`-1`。
 
 
+- 從資料庫取得單一值：使用 `ExecuteScalar` 物件的 `Command` 方法，從資料庫查詢傳回單一值。
+
 
 ## 1. ExecuteReader()
 
@@ -106,6 +108,19 @@ using (SqlConnection conn = new SqlConnection(connString))
 所以`SELECT`這裡的回傳值是`-1`。
 
 
+## ExecuteScalar (取得單一值)
+
+從資料庫取得單一值        
+使用 `ExecuteScalar` 物件的 `Command` 方法，從資料庫查詢傳回單一值。      
+
+或許您需要以單一數值傳回資料庫資訊，而非以資料表或資料流的形式。 
+
+- 例如，您或許要傳回彙總函式 (例如 COUNT(*)、SUM(Price) 或 AVG(Quantity)) 的結果。       
+- Command 物件可讓您以 ExecuteScalar 方法傳回單一數值。       
+- ExecuteScalar 方法會將結果集第一個資料列之第一個資料行的值當做純量值傳回。
+
 
 [MSDN - SqlDataReader 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqldatareader?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-8.0)       
-[MSDN - 執行命令](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/executing-a-command)
+[MSDN - 執行命令](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/executing-a-command)    
+[MSDN - 從資料庫取得單一值](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/obtaining-a-single-value-from-a-database)   
+[[ADO.NET] ExecuteNonQuery 的回傳值](https://riivalin.github.io/posts/2023/07/adonet-executenonquery/)
