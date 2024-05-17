@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[ADO.NET] 連線到 SQL Server (Connection 物件)"
+title: "[ADO.NET] Connection 物件 (連線到 SQL Server)"
 date: 2021-06-03 23:49:00 +0800
 categories: [Notes,ADO.NET,C#]
 tags: [C#,ADO.NET,connection,連線字串]
