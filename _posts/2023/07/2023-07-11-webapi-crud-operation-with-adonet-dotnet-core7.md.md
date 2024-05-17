@@ -22,9 +22,14 @@ Take notes...
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Data Source=RIVAWIN10\\MSSQLSERVER_2019;Initial Catalog=CRUDWithWebAPI;User ID=riva;Password=1234;Trust Server Certificate=True"
+  "DefaultConnection": "Data Source=192.168.0.1;Initial Catalog=TestDb;User ID=riva;Password=1234;Encrypt=true;TrustServerCertificate=True;"
 }
 ```
+
+SQL 連線加密 & 加密憑證
+- `Encrypt=true;`：加密連線
+- `TrustServerCertificate=True;`：信任伺服器憑證
+
 
 ## 建立 Model：
 建立一個Model來取得資料 (對應資料表所有的欄位，寫成屬性)        
@@ -229,4 +234,5 @@ If use ExecuteNonQuery to INSERT, UPDATE, DELETE, this method returns the Number
 [ASP.NET Core 的設定](https://learn.microsoft.com/zh-tw/aspnet/core/fundamentals/configuration/?view=aspnetcore-8.0)        
 [MSDN - SqlConnection 類別: 當程式碼結束 using 區塊時，會自動關閉連線](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlconnection?view=dotnet-plat-ext-8.0)       
 [MSDN - SqlCommand.ExecuteNonQuery 方法](https://learn.microsoft.com/zh-tw/dotnet/api/microsoft.data.sqlclient.sqlcommand.executenonquery?view=sqlclient-dotnet-standard-5.1)       
-[[C#] ASP.NET ExecuteNonQuery 的回傳值 ](https://charleslin74.pixnet.net/blog/post/445312541-%5Bc%23%5D-asp.net-executenonquery-的回傳值)
+[[C#] ASP.NET ExecuteNonQuery 的回傳值   by R](https://charleslin74.pixnet.net/blog/post/445312541-%5Bc%23%5D-asp.net-executenonquery-的回傳值)     
+[[ADO.NET] 連線到 SQL Server (Connection 物件)    by R](https://riivalin.github.io/posts/2021/06/adonet-connect/)       
