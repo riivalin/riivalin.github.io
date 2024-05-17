@@ -77,7 +77,21 @@ static void HasRows(SqlConnection connection)
 
 ## DataSet
 
-代表資料的記憶體內部快取。
+代表資料的記憶體內部快取。      
+
+DataSet 物件對於支援 ADO.NET 的中斷連接、分散式的資料案例非常重要。         
+
+DataSet 是常駐記憶體的資料表示，可提供與資料來源無關的一致性關聯式程式設計模型。        
+
+它可與多個不同的資料來源一起使用、與 XML 資料一起使用，或管理應用程式的本機資料。       
+
+DataSet 表示一組完整的資料，包括相關資料表、條件約束及資料表間的關聯性。 下圖顯示 DataSet 物件模型。        
+
+[![](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/media/ado-1-bpuedev11.png)](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/media/ado-1-bpuedev11.png)
+
+DataSet 物件模型        
+DataSet 中的方法及物件與關聯式資料庫模型中的方法及物件一致。        
+DataSet 還能以 XML 保存及重新載入其內容，以 XML 結構描述定義語言 (XSD) 結構描述保存及重新載入其結構描述。       
 
 ### 範例
 
@@ -175,4 +189,5 @@ namespace Microsoft.AdoNet.DataSetDemo
 [MSDN - ADO.NET 架構 (選擇 DataReader 或 DataSet)](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/ado-net-architecture)     
 [MSDN - 使用 DataReader 擷取資料](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/retrieving-data-using-a-datareader)        
 [MSDN - DataSet 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.dataset?view=net-8.0)        
+[MSDN - ADO.NET 資料集](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/ado-net-datasets)
 [MSDN - SqlCommand.ExecuteNonQuery 方法](https://learn.microsoft.com/zh-tw/dotnet/api/microsoft.data.sqlclient.sqlcommand.executenonquery?view=sqlclient-dotnet-standard-5.1)  
