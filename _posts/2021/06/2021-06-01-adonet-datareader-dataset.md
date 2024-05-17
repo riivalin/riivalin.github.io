@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] DataReader 和 DataSet 的使用時機？"
+title: "[ADO.NET] DataReader 和 DataSet 的使用時機？"
 date: 2021-06-01 23:49:00 +0800
 categories: [Notes,ADO.NET,C#]
 tags: [C#,ADO.NET,DataReader,DataSet]
@@ -175,3 +175,4 @@ namespace Microsoft.AdoNet.DataSetDemo
 [MSDN - ADO.NET 架構 (選擇 DataReader 或 DataSet)](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/ado-net-architecture)     
 [MSDN - 使用 DataReader 擷取資料](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/retrieving-data-using-a-datareader)        
 [MSDN - DataSet 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.dataset?view=net-8.0)        
+[MSDN - SqlCommand.ExecuteNonQuery 方法](https://learn.microsoft.com/zh-tw/dotnet/api/microsoft.data.sqlclient.sqlcommand.executenonquery?view=sqlclient-dotnet-standard-5.1)  
