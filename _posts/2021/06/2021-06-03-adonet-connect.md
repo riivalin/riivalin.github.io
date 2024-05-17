@@ -8,7 +8,7 @@ tags: [C#,ADO.NET,connection,連線字串]
 
 `Connection`物件是用來與特定的資料來源建立連接。
 
-## 導​​入相關的資源
+## 引​入相關的資源
 
 因為新建的項目並沒有各個資料庫的連線類別(資料庫驅動)，需手動的安裝。   
 
@@ -19,6 +19,7 @@ tags: [C#,ADO.NET,connection,連線字串]
 在專案右鍵`NuGet`套件管理       
 (需要什麼包就去上面Down就行了)
 
+
 > [MSDN](https://learn.microsoft.com/zh-tw/azure/azure-sql/database/azure-sql-dotnet-quickstart?view=azuresql&tabs=visual-studio%2Cpasswordless%2Cservice-connector%2Cportal)
 > - 請務必安裝 `Microsoft.Data.SqlClient` 而非 System.Data.SqlClient。        
 > - `Microsoft.Data.SqlClient` 是較新版本的 SQL 用戶端程式庫，可提供額外的功能。
@@ -27,7 +28,7 @@ tags: [C#,ADO.NET,connection,連線字串]
 
 在專案右鍵`NuGet`套件管理
 
-1. 在 [方案總管] 視窗中，以滑鼠右鍵按一下專案的 [相依性] 節點，然後選取 [管理 `` 套件]。
+1. 在 [方案總管] 視窗中，以滑鼠右鍵按一下專案的 [相依性] 節點，然後選取 [管理`NuGet`套件]。
 2. 在產生的視窗中，搜尋 `SqlClient`。 找出 `Microsoft.Data.SqlClient` 結果，然後選取 [安裝]。
 
 
@@ -52,7 +53,8 @@ string connString = "Data Source=192.168.0.1;Initial catalog=DBTEST;User id=riva
     - SQL Server 2019
         - `192.168.0.1` (IP)
 
-SQL 連線加密 & 加密憑證：
+
+#### SQL 連線加密 & 加密憑證：
 
 - `Encrypt`：加密連線
     - SQL Server Management Studio(SSMS) > 登入頁面 > [選項] > 勾選 [加密連線]
@@ -63,13 +65,15 @@ SQL 連線加密 & 加密憑證：
     - 連線字串加上 `TrustServerCertificate=True;` 
 
 
-SSMS 在登入時有兩個額外選項「`Encrypt connection`」 及「`Trust server certificate`」，勾選後便可使用 TLS 加密連線：
+`SSMS` 在登入時有兩個額外選項「`Encrypt connection`」 及「`Trust server certificate`」，勾選後便可使用 `TLS` 加密連線：
 
 [![](https://blog.darkthread.net/Posts/files/Fig1_637645049129082748.png)](https://blog.darkthread.net/Posts/files/Fig1_637645049129082748.png)     
 
-SQL Server 安裝時已預設支援加密連線，不需額外設定，但預設用的 TLS 憑證是自我簽署憑證(Self-Signed Certificate)，故要勾選 Trust server certificate，否則會因無法驗證憑證有效性出現錯誤：      
 
-[!(https://blog.darkthread.net/Posts/files/Fig2_637645049129757546.png)](https://blog.darkthread.net/Posts/files/Fig2_637645049129757546.png)
+SQL Server 安裝時已預設支援加密連線，不需額外設定，但預設用的 TLS 憑證是自我簽署憑證(Self-Signed Certificate)，故要勾選 `Trust server certificate`，否則會因無法驗證憑證有效性出現錯誤：      
+
+
+[![](https://blog.darkthread.net/Posts/files/Fig2_637645049129757546.png)](https://blog.darkthread.net/Posts/files/Fig2_637645049129757546.png)
 
 
 ## 連線到 SQL Server
@@ -107,6 +111,8 @@ using (SqlConnection conn = new SqlConnection(connString))
 
 - 開始 > 找到安裝的SQL Server版本 > 展開之後選擇 `Configuration Tools`(設定管理員) > `Sql Server Configuration Manager` > `Sql Server服務` > 確認狀態是`Running`。
 
+
+        
 
 [MSDN - 連接字串語法](https://learn.microsoft.com/zh-tw/sql/connect/ado-net/connection-string-syntax?view=sql-server-ver16)     
 [MSDN - 連線至資料庫並使用 .NET 和 Microsoft.Data.SqlClient 程式庫查詢 Azure SQL 資料庫](https://learn.microsoft.com/zh-tw/azure/azure-sql/database/azure-sql-dotnet-quickstart?view=azuresql&tabs=visual-studio%2Cpasswordless%2Cservice-connector%2Cportal)     
