@@ -3,11 +3,12 @@ layout: post
 title: "[ADO.NET] 連線到 SQL Server (Connection 物件)"
 date: 2021-06-03 23:49:00 +0800
 categories: [Notes,ADO.NET,C#]
-tags: [C#,ADO.NET,connection]
+tags: [C#,ADO.NET,connection,連線字串]
 ---
 
+`Connection`物件是用來與特定的資料來源建立連接。
 
-## 1.導​​入相關的資源
+## 導​​入相關的資源
 
 因為新建的項目並沒有各個資料庫的連線類別(資料庫驅動)，需手動的安裝。   
 
@@ -22,7 +23,7 @@ tags: [C#,ADO.NET,connection]
 > - 請務必安裝 `Microsoft.Data.SqlClient` 而非 System.Data.SqlClient。        
 > - `Microsoft.Data.SqlClient` 是較新版本的 SQL 用戶端程式庫，可提供額外的功能。
 
-### NuGet 安裝套件
+## NuGet 安裝套件
 
 在專案右鍵`NuGet`套件管理
 
