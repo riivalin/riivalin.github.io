@@ -3,7 +3,7 @@ layout: post
 title: "[咒語] 七佛滅罪真言"
 date: 2023-05-03 00:09:00 +0800
 categories: [Amitabha,佛教經文]
-tags: [佛經,七佛滅罪真言]
+tags: [佛教,佛經,七佛滅罪真言]
 ---
 
 
