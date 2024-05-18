@@ -6,6 +6,7 @@ categories: [Notes,ADO.NET,C#]
 tags: [C#,ADO.NET,command,,DataReader,ExecuteReader,ExecuteNonQuery]
 ---
 
+
 表示要對 SQL Server 資料庫執行的 Transact-SQL 陳述式或預存程序。        
 
 `Command` 物件是用來對資料來源執行`SQL`命令：選取`Select`、新增`Insert`、修改`Update`、刪除`Delete`。       
@@ -16,6 +17,7 @@ tags: [C#,ADO.NET,command,,DataReader,ExecuteReader,ExecuteNonQuery]
 2. `ExecuteNonQuery()`方法：適合新刪修語句，回傳受影響的資料筆數
 
 (`ExecuteScalar`從資料庫取得單一值，通常用在要傳回彙總函式的結果(`conut(*)`,`sum(price)`))
+
 
 #### `ExecuteNonQuery()` 回傳的結果是什麼？     
 
