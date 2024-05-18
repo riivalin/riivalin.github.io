@@ -76,7 +76,7 @@ SQL Server 安裝時已預設支援加密連線，不需額外設定，但預設
 [![](https://blog.darkthread.net/Posts/files/Fig2_637645049129757546.png)](https://blog.darkthread.net/Posts/files/Fig2_637645049129757546.png)
 
 
-## 連線到 SQL Server
+## 建立連線 (連線到 SQL Server)
 
 如何建立及開啟與 SQL Server 資料庫的連接
 

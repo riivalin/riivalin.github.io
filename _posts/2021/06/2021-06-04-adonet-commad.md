@@ -95,7 +95,7 @@ using (SqlConnection conn = new SqlConnection(connString))
     SqlCommand cmd = new SqlCommand("select * from Employee", conn);
 
     //執行SQL語句(如果只是想執行SQL，不關心回傳內容的話，可以呼叫以下方法)
-    int result = cmd.ExecuteNonQuery(); //回傳值是-1
+    int result = cmd.ExecuteNonQuery(); //回傳值是-1, insert,update,delete是回傳異動的資料筆數
 }
 ```
 
