@@ -8,32 +8,21 @@ tags: [C#,ADO.NET,command,,DataReader,ExecuteReader,ExecuteNonQuery]
 
 
 表示要對 SQL Server 資料庫執行的 Transact-SQL 陳述式或預存程序。        
-
 `Command` 物件是用來對資料來源執行`SQL`命令：選取`Select`、新增`Insert`、修改`Update`、刪除`Delete`。       
 
 `Command` 物件主要透過二種方式來執行`SQL`語法： 
 
-1. `ExecuteReader()`方法：適合`Select`查詢語句，通過Reader取得對應的值
-2. `ExecuteNonQuery()`方法：適合新刪修語句，回傳受影響的資料筆數
+1. `ExecuteReader()`方法：適合`select`查詢語句，通過`Reader`取得對應的值
+2. `ExecuteNonQuery()`方法：適合新刪修`update`、`insert`、`delete`語句，回傳受影響的資料筆數
 
-(`ExecuteScalar`從資料庫取得單一值，通常用在要傳回彙總函式的結果(`conut(*)`,`sum(price)`))
-
-
-#### `ExecuteNonQuery()` 回傳的結果是什麼？     
-
-- 第一種情況：用於`update`、`insert`、`delete`語句中傳回該受影響的行數
-- 第二種情況：用於`select`語句傳回值為`-1`
-
-
-> 對於 `ExcuteNonQuery`的回傳值，微軟在官方文件中給出了這樣的描述：[MSDN](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlcommand.executenonquery?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)     
-> 對於 `UPDATE`、`INSERT` 和 `DELETE` 語句，傳回值為該指令**所影響的行數**。對於所有其他類型的語句，傳回值是 -1。       
-> 所以`SELECT`這裡的回傳值是`-1`。
+> `ExecuteScalar`從資料庫取得單一值，通常用在要傳回彙總函式的結果(`conut(*)`,`sum(price)`)
 
 
 ## 1. ExecuteReader()
 
 與`DataReader`搭配使用，將SQL語法執行結果 傳給`ExecuteReader()`物件。       
 此法專注於`Select 命令`「查詢結果」。
+
 
 ### 範例
 
@@ -69,9 +58,9 @@ using (SqlConnection conn = new SqlConnection(connString))
 }
 ```
 
-- `HasRows`：表示目前行SqlDataReader是否包含一行或多行，用來判斷是否有讀到資料 (`HasRows`=有資料行)     
-- `Read()`：使得目前SqlDataReader前進到下一筆記錄，即向前讀取。(Read會讀取一行的資料)       å
-- `While(dr.Reader()) //遍歷所有記錄` (使用while讀到不能讀為止)
+- `HasRows`：表示目前行SqlDataReader是否包含一行或多行，用來判斷是否有讀到資料 (HasRows=有資料行)     
+- `Read()`：使得目前SqlDataReader 前進到下一筆記錄，即向前讀取。(Read 會讀取一行的資料)       
+- `While(dr.Reader()) //遍歷所有記錄` (使用while 讀到不能讀為止)
 
 
 執行結果：
@@ -115,7 +104,7 @@ using (SqlConnection conn = new SqlConnection(connString))
 - 第二種情況：用於`select`語句傳回值為`-1`。
        
 
-對於 `ExcuteNonQuery`的回傳值，微軟在官方文件中給出了這樣的描述：
+對於 `ExcuteNonQuery`的回傳值，微軟在官方文件中給出了這樣的描述：[MSDN](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlcommand.executenonquery?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)  
 
 對於 `UPDATE`、`INSERT` 和 `DELETE` 語句，傳回值為該指令**所影響的行數**。對於所有其他類型的語句，傳回值是 -1。
 
@@ -172,9 +161,9 @@ using (SqlConnection conn = new SqlConnection(connString))
 }
 ```
 
-[MSDN - SqlCommand.ExecuteNonQuery 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlcommand.executenonquery?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)
-[MSDN - SqlCommand 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlcommand?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-8.0)
+[MSDN - SqlCommand.ExecuteNonQuery 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlcommand.executenonquery?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)    
+[MSDN - SqlCommand 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlcommand?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-8.0)        
 [MSDN - SqlDataReader 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqldatareader?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-8.0)       
-[MSDN - 執行命令](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/executing-a-command)    
+[MSDN - 執行命令](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/executing-a-command)       
 [MSDN - 從資料庫取得單一值](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/obtaining-a-single-value-from-a-database)   
 [[ADO.NET] ExecuteNonQuery 的回傳值](https://riivalin.github.io/posts/2023/07/adonet-executenonquery/)
