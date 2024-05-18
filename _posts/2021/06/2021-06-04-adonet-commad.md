@@ -3,7 +3,7 @@ layout: post
 title: "[ADO.NET] Command 物件 (執行SQL命令)"
 date: 2021-06-04 23:49:00 +0800
 categories: [Notes,ADO.NET,C#]
-tags: [C#,ADO.NET,command,ExecuteReader,ExecuteNonQuery]
+tags: [C#,ADO.NET,command,,DataReader,ExecuteReader,ExecuteNonQuery]
 ---
 
 表示要對 SQL Server 資料庫執行的 Transact-SQL 陳述式或預存程序。        
