@@ -104,7 +104,7 @@ using (SqlConnection conn = new SqlConnection(connString))
 - 異動的資料筆數(`Insert`、`Update`、`Delete`)。    
 - `Select`返回`-1`。 
 
-        
+
 對於 `ExcuteNonQuery`的回傳值，微軟在官方文件中給出了這樣的描述：
 
 對於 `UPDATE`、`INSERT` 和 `DELETE` 語句，傳回值為該指令**所影響的行數**。對於所有其他類型的語句，傳回值是 -1。
@@ -119,17 +119,10 @@ using (SqlConnection conn = new SqlConnection(connString))
 
 或許您需要以單一數值傳回資料庫資訊，而非以資料表或資料流的形式。 
 
-- 例如，您或許要傳回彙總函式 (例如 COUNT(*)、SUM(Price) 或 AVG(Quantity)) 的結果。       
-- Command 物件可讓您以 ExecuteScalar 方法傳回單一數值。       
-- ExecuteScalar 方法會將結果集第一個資料列之第一個資料行的值當做純量值傳回。
+- 例如，您或許要傳回彙總函式 (例如 `COUNT(*)`、`SUM(Price)` 或 `AVG(Quantity)`) 的結果。       
+- `Command` 物件可讓您以 `ExecuteScalar` 方法傳回單一數值。       
+- `ExecuteScalar` 方法會將結果集第一個資料列之第一個資料行的值當做純量值傳回。
 
-
-## 範例
-
-```c#
-
-
-```
 
 [MSDN - SqlDataReader 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqldatareader?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-8.0)       
 [MSDN - 執行命令](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/executing-a-command)    
