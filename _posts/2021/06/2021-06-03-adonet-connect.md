@@ -6,7 +6,7 @@ categories: [Notes,ADO.NET,C#]
 tags: [C#,ADO.NET,connection,連線字串]
 ---
 
-`Connection`物件是用來與特定的資料來源建立連接。
+`Connection`物件是用來與特定的資料來源建立連接。負責與DB連接，開啟資料庫 (`Open`) 及關閉資料庫 (`Close`)。
 
 ## 引​入相關的資源
 
@@ -35,18 +35,18 @@ tags: [C#,ADO.NET,connection,連線字串]
 ## 連線字串
 
 ```c#
-string connString = "Data Source=192.168.0.1;Initial catalog=DBTEST;User id=riva;Password=1234;Encrypt=true;TrustServerCertificate=True;"
+string connString = "Data Source=192.168.0.1;Initial catalog=DBTEST;User id=riva;Password=1234;Encrypt=true;Trust Server Certificate=True;"
 ```
 
 ```json
 "ConnectionStrings": {
-  "DefaultConnection": "Data Source=192.168.0.1;Initial Catalog=TestDb;User ID=riva;Password=1234;Encrypt=true;TrustServerCertificate=True;"
+  "DefaultConnection": "Data Source=192.168.0.1;Initial Catalog=TestDb;User ID=riva;Password=1234;Encrypt=true;Trust Server Certificate=True;"
 }
 ```
 
 - `Data Source`：資料來源
     - 本機
-        - `.` 或 `127.0.0.1`
+        - `.`、`http://localhost`或 `127.0.0.1`
     - SQL Server Express
         - `.\SQLEXPRESS` (本機\SQLEXPRESS)
         - `Win11\SQLEXPRESS` (電腦名稱\SQLEXPRESS)

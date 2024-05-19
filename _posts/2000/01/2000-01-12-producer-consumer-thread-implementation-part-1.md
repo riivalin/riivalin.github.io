@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "[C# 筆記] Threading - C# Producer Consumer Thread Implementation Part 1"
-date: 2023-09-12 23:59:00 +0800
+title: "[C# 筆記] Threading Part 1 (Draft)"
+date: 2000-01-12 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,thread,Queue<int>]
 ---
-
-
 
 #
 有一個產生隨機數的box，隨意吐出任意數，每個線程會都抓取吐出來的數字各自做相加，再把每個線程單獨所相加的值做加總，但不能讓這些線程抓到同一個數字，不然會發生最後加總結果是錯誤的。       

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "[C# 筆記] Threading - C# Producer Consumer Thread Implementation Part 2"
-date: 2023-09-13 23:59:00 +0800
+title: "[C# 筆記] Threading Part 2 (Draft)"
+date: 2000-01-13 23:59:00 +0800
 categories: [Notes,C#]
 tags: [C#,thread,Queue<int>]
 ---
