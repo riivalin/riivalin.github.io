@@ -67,6 +67,7 @@ using (SqlConnection conn = new SqlConnection(connString))
     if (conn.State != ConnectionState.Open) conn.Open();
 
     //準備sql語句
+    //SQL語句(正確寫法是要 配合使用參數寫法，避免 SQL Injection 攻擊 --  @參數名稱+SqlParameter 的方式放入)
     string sql = "update Emp set EmpName = 'OOO' where EmpId = 1";
 
     //告訴SqlCommand要 執行的sql 和 連線的db

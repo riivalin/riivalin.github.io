@@ -62,23 +62,30 @@ using (SqlConnection conn = new SqlConnection(connString))
             while (dr.Read()) //使用while讀到不能讀為止
             {
                 //讀取數據，並將其寫入主控台
+                Console.WriteLine($"{dr[0]}, {dr[1]}, {Convert.ToDateTime(dr[2]).ToString("yyyy-MM-dd")}");
+
+                //或是這樣寫
                 //以資料行的原生資料類型 (GetDateTime、GetDouble、GetGuid、GetInt32 等等) 存取資料行的值
                 Console.WriteLine($"ID:{dr.GetInt32(0)}, Name:{dr.GetString(1)}");
 
-                //或是這樣寫
-                Console.WriteLine($"{dr[0]}, {dr[1]}, {Convert.ToDateTime(dr[2]).ToString("yyyy-MM-dd")}");
-
-                /* 執行結果:
-                    1, 張三, 1999-09-09
-                    2, 李四, 1989-12-09
-                    3, 王五, 1979-08-09
-                */
             }
         }
     }
 }
 ```
-            
+
+- HasRows：表示目前行SqlDataReader是否包含一行或多行，用來判斷是否有讀到資料 (HasRows=有資料行)
+- Read()：使得目前SqlDataReader 前進到下一筆記錄，即向前讀取。(Read 會讀取一行的資料)
+- While(dr.Reader()) //遍歷所有記錄 (使用while 讀到不能讀為止)     
+
+執行結果：
+
+```
+1, 張三, 1999-09-09
+2, 李四, 1989-12-09
+3, 王五, 1979-08-09
+```
+
 
 [MSDN - SqlCommand 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlcommand?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-8.0)        
 [MSDN - SqlDataReader 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqldatareader?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-8.0)       

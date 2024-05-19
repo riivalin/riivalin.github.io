@@ -79,7 +79,7 @@ using (SqlConnection conn = new SqlConnection(connString))
 專注於：資料的新增`Insert`、修改`Update`、刪除`Delete`。       
 
 
-### 範例
+### 範例1 (select)
 
 ```c#
 string connString = "Data Source=.;Initial catalog=DBTEST;User id=riva;Password=1234;Encrypt=true;Trust Server Certificate=True";
@@ -93,37 +93,12 @@ using (SqlConnection conn = new SqlConnection(connString))
     //準備SQL語句(select)
     SqlCommand cmd = new SqlCommand("select * from Employee", conn);
 
-    //執行SQL語句(如果只是想執行SQL，不關心回傳內容的話，可以呼叫以下方法)
+    //執行SQL語句(如果只是想執行SQL，不關心回傳內容的話，可以呼叫ExecuteNonQuery方法)
     int result = cmd.ExecuteNonQuery(); //回傳值是-1, insert,update,delete是回傳異動的資料筆數
 }
 ```
 
-## ExcuteNonQuery()回傳的結果是什麼？
-
-- 第一種情況：用於`update`、`insert`、`delete`語句中傳回該受影響的行數 (異動的資料筆數)。
-- 第二種情況：用於`select`語句傳回值為`-1`。
-       
-
-對於 `ExcuteNonQuery`的回傳值，微軟在官方文件中給出了這樣的描述：[MSDN](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlcommand.executenonquery?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)  
-
-對於 `UPDATE`、`INSERT` 和 `DELETE` 語句，傳回值為該指令**所影響的行數**。對於所有其他類型的語句，傳回值是 -1。
-
-所以`SELECT`這裡的回傳值是`-1`。
-
-
-## ExecuteScalar (取得單一值)
-
-從資料庫取得單一值        
-使用 `ExecuteScalar` 物件的 `Command` 方法，從資料庫查詢傳回單一值。      
-
-或許您需要以單一數值傳回資料庫資訊，而非以資料表或資料流的形式。 
-
-- 例如，您或許要傳回彙總函式 (例如 `COUNT(*)`、`SUM(Price)` 或 `AVG(Quantity)`) 的結果。       
-- `Command` 物件可讓您以 `ExecuteScalar` 方法傳回單一數值。       
-- `ExecuteScalar` 方法會將結果集第一個資料列之第一個資料行的值當做純量值傳回。
-
-
-## 範例
+### 範例2: (update)
 
 - 使用`SqlCommand`執行更新資料動作
 - 所以會使用`ExecuteNoQuery()`方法(會返回異動筆數)
@@ -160,6 +135,33 @@ using (SqlConnection conn = new SqlConnection(connString))
     }
 }
 ```
+
+## ExcuteNonQuery()回傳的結果是什麼？
+
+- 第一種情況：用於`update`、`insert`、`delete`語句中傳回該受影響的行數 (異動的資料筆數)。
+- 第二種情況：用於`select`語句傳回值為`-1`。
+       
+
+對於 `ExcuteNonQuery`的回傳值，微軟在官方文件中給出了這樣的描述：[MSDN](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlcommand.executenonquery?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)  
+
+對於 `UPDATE`、`INSERT` 和 `DELETE` 語句，傳回值為該指令**所影響的行數**。對於所有其他類型的語句，傳回值是 -1。
+
+所以`SELECT`這裡的回傳值是`-1`。
+
+
+## ExecuteScalar (取得單一值)
+
+從資料庫取得單一值        
+使用 `ExecuteScalar` 物件的 `Command` 方法，從資料庫查詢傳回單一值。      
+
+或許您需要以單一數值傳回資料庫資訊，而非以資料表或資料流的形式。 
+
+- 例如，您或許要傳回彙總函式 (例如 `COUNT(*)`、`SUM(Price)` 或 `AVG(Quantity)`) 的結果。       
+- `Command` 物件可讓您以 `ExecuteScalar` 方法傳回單一數值。       
+- `ExecuteScalar` 方法會將結果集第一個資料列之第一個資料行的值當做純量值傳回。
+
+
+
 
 [MSDN - SqlCommand.ExecuteNonQuery 方法](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlcommand.executenonquery?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)    
 [MSDN - SqlCommand 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqlcommand?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-8.0)        
