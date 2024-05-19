@@ -6,10 +6,11 @@ categories: [Notes,ADO.NET,C#]
 tags: [C#,ADO.NET,command,SqlParameter,AddWithValue]
 ---
 
-SqlParameter可以防止sql注入問題
-表示SqlCommand物件的參數，或與DataSet中列的對應。
+SqlParameter可以防止sql注入問題     
+表示SqlCommand物件的參數，或與DataSet中列的對應。       
 
-> SQL語句正確寫法是要 配合使用參數寫法，避免 `SQL Injection`攻擊 (@參數名稱 + SqlParameter的方式放入)
+> SQL語句正確寫法是要 配合使用參數寫法，避免 `SQL Injection`攻擊        
+> (@參數名稱 + SqlParameter的方式放入)
 
 
 常用屬性：
@@ -69,7 +70,7 @@ cmd.Parameters["@id"].Value = id;
 cmd.Parameters.Add(new SqlParameter("@id", id));
 ```
 
-### 寫法四：Parameters.AddRange
+### 寫法四：Parameters.AddRange 方法放入 SQLParameters陣列
 
 ```c#
  //定義參數和要傳入的值
@@ -82,6 +83,14 @@ cmd.Parameters.Add(new SqlParameter("@id", id));
 
 
 ## 範例
+
+- 更新 員工編號=1 的名字，改成 "張三"
+- 使用參數的方式 (4種寫法)：
+    - Parameters.AddWithValue
+    - Parameters.Add
+    - Add方法中 加SqlParameter類別
+    - AddRange方法 放入SqlParameter陣列
+
 
 ```c#
 string connString = "Data Source=.;Initial catalog=DBTEST;User id=riva;Password=1234;Encrypt=true;Trust Server Certificate=True";
@@ -115,7 +124,7 @@ using (SqlConnection conn = new SqlConnection(connString))
         cmd.Parameters.Add(new SqlParameter("@EmpId", 1));
         cmd.Parameters.Add(new SqlParameter("@EmpName", "張三"));
 
-        //寫法4：AddRange
+        //寫法4：AddRange方法放入SqlParameter陣列
         //定義參數和要傳入的值
         SqlParameter[] parameters = { //參數陣列
             new SqlParameter("@EmpId", 1),
@@ -144,6 +153,6 @@ using (SqlConnection conn = new SqlConnection(connString))
 [CSDN - Ado.Net学习——基础知识记录](https://blog.csdn.net/SQWH_SSGS/article/details/109303103)       
 [[ADO.NET] 為何 / 如何 使用 SQLParameter 物件 by 余小章](https://dotblogs.com.tw/yc421206/2009/06/14/8819)  
 [[ADO.NET] Command 物件 -- Draft  by R](https://riivalin.github.io/posts/2021/06/adonet-commad-draft/)    
-[[ADO.NET] Command 物件 (執行SQL命令) by R](https://riivalin.github.io/posts/2021/06/adonet-command/)
+[[ADO.NET] Command 物件 (執行SQL命令) by R](https://riivalin.github.io/posts/2021/06/adonet-command/)       
 [[C# 筆記] .NET Core 使用 ADO.NET 預存程序(Stored Procedure) 實作 CRUD  by R](https://riivalin.github.io/posts/2023/07/webapi-crud-operation-with-sp-with-adonet-netcore7/)     
 [[C# 筆記] .NET Core 7.0 使用 ADO.NET 實作 CRUD 操作 by R](https://riivalin.github.io/posts/2023/07/webapi-crud-operation-with-adonet-dotnet-core7.md/)     
