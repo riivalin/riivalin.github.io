@@ -115,17 +115,21 @@ using (SqlConnection conn = new SqlConnection(connString))
     //開啟資料庫連線
     if (conn.State != ConnectionState.Open) conn.Open();
 
+    //準備SQL語句
+    string sql = @"update emp set EmpName = @EmpName where EmpId = @EmpId";
+
     //SQL語句(正確寫法是要 配合使用參數寫法，避免 SQL Injection 攻擊 --  @參數名稱+SqlParameter 的方式放入)
-    string sql = @"update emp set EmpName = 'OOO' where EmpId = 1";
+    //string sql = @"update emp set EmpName = 'OOO' where EmpId = 1";
 
-    //告訴SqlCommand要執行的SQL
+    //告訴SqlCommand 要執行的SQL 和 要連的db
     using (SqlCommand cmd = new SqlCommand(sql, conn))
-    {
-        //取得異動的筆數
-        int result = cmd.ExecuteNonQuery();
+    { 
+        //定義參數和要傳入的值
+        cmd.Parameters.AddWithValue("@EmpId", 1);
+        cmd.Parameters.AddWithValue("@EmpName", "張三");
 
-        //result=1 表示異動筆數共有一筆，代表更新成功
-        if (result == 1)
+        // 1代表 異動筆數共有一筆，代表更新成功
+        if (cmd.ExecuteNonQuery() == 1)
         {
             Console.WriteLine("更新成功");
         } else

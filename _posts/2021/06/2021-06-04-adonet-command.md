@@ -67,12 +67,18 @@ using (SqlConnection conn = new SqlConnection(connString))
     if (conn.State != ConnectionState.Open) conn.Open();
 
     //準備sql語句
+    string sql = @"update emp set EmpName = @EmpName where EmpId = @EmpId";
+    
     //SQL語句(正確寫法是要 配合使用參數寫法，避免 SQL Injection 攻擊 --  @參數名稱+SqlParameter 的方式放入)
-    string sql = "update Emp set EmpName = 'OOO' where EmpId = 1";
+    //string sql = "update Emp set EmpName = 'OOO' where EmpId = 1";
 
     //告訴SqlCommand要 執行的sql 和 連線的db
     using (SqlCommand cmd = new SqlCommand(sql, conn))
     {
+        //定義參數和要傳入的值
+        cmd.Parameters.AddWithValue("@EmpId", 1);
+        cmd.Parameters.AddWithValue("@EmpName", "張三");
+
         // 回傳1表示 異動筆數 共有一筆，代表更新成功 (會更新多筆，就要用 >0 來判斷)
         if (cmd.ExecuteNonQuery() == 1) //select會回傳-1
         {
