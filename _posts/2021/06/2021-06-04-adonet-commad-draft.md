@@ -3,7 +3,7 @@ layout: post
 title: "[ADO.NET] Command 物件 -- Draft"
 date: 2021-06-04 23:19:00 +0800
 categories: [Notes,ADO.NET,C#]
-tags: [C#,ADO.NET,command,,DataReader,ExecuteReader,ExecuteNonQuery]
+tags: [C#,ADO.NET,command,DataReader,ExecuteReader,ExecuteNonQuery]
 ---
 
 
