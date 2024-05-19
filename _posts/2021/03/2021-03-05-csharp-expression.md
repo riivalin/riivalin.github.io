@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] ?: 運算子"
 date: 2021-03-05 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,基礎語法,流程控制,"?:"]
+tags: [C#,基礎語法,流程控制]
 ---
 
 「選擇結構(Selection Structure)」會根據程式的「判斷條件」是否成立來決定程式最後要往哪一流程(程序)去跑。     

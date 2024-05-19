@@ -3,7 +3,7 @@ layout: post
 title: "[C# 筆記] 撰寫遞迴(Recursion)程式"
 date: 2021-04-05 23:59:00 +0800
 categories: [Notes,C#]
-tags: [C#,基礎語法,方法與參數,recursion,遞迴,遞迴(Recursion),"?:"]
+tags: [C#,基礎語法,方法與參數,recursion,遞迴,遞迴(Recursion)]
 ---
 
 
