@@ -9,7 +9,7 @@ tags: [C#,ADO.NET,command,SqlParameter,AddWithValue]
 SqlParameter可以防止sql注入問題     
 表示SqlCommand物件的參數，或與DataSet中列的對應。       
 
-> SQL語句正確寫法是要 配合使用參數寫法，避免 `SQL Injection`攻擊        
+> SQL語句正確寫法要 搭配使用參數寫法，避免 `SQL Injection`攻擊        
 > (@參數名稱 + SqlParameter的方式放入)
 
 
