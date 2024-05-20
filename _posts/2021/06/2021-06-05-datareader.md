@@ -6,6 +6,8 @@ categories: [Notes,ADO.NET,C#]
 tags: [C#,ADO.NET,command,DataReader,ExecuteReader]
 ---
 
+DataReader 是以**順向**、**唯讀**的方式來傳回資料。
+
 ## DataReader(MSDN)
 
 若要使用 DataReader 擷取資料，請建立 Command 物件的執行個體，再藉由呼叫 Command.ExecuteReader 擷取資料來源的資料列，建立 DataReader。 DataReader 提供無緩衝的資料流，可使程序邏輯有效地循序處理來自資料來源的結果。 需要擷取大量資料時，DataReader 是很好的選擇，因為資料不會快取至記憶體。     
