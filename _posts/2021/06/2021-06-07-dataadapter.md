@@ -3,16 +3,16 @@ layout: post
 title: "[ADO.NET] DataAdapter 物件(資料配接器)"
 date: 2021-06-07 23:49:00 +0800
 categories: [Notes,ADO.NET,C#]
-tags: [C#,ADO.NET,command,DataAdapter,DataSet,DataTable]
+tags: [C#,ADO.NET,DataAdapter,DataSet,DataTable]
 ---
-
-
 
 ## DataAdapter
 
 SqlDataAdapter：DataSet與SQL Server之間的橋接器(中介角色)。     
 
 把DataAdapter 物件所執行的 SQL命令的結果 填入 DataSet 中，並更新解析回 DB
+
+用SqlDataAdapter的 Fill方法時會自動開啟資料庫連接，並在方法執行完畢自動關閉連線。
 
 > - [SqlDataAdapter 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqldataadapter?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)代表一組資料命令和資料庫連線，用來填入 DataSet 並更新 SQL Server 資料庫。 此類別無法獲得繼承。     
 > - [DataSet 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.dataset?view=net-8.0) 代表資料的記憶體內部快取。
@@ -26,6 +26,16 @@ SqlDataAdapter adapter = new SqlDataAdapter(queryString, connection);
 DataSet customers = new DataSet();  
 adapter.Fill(customers, "Customers");
 ```
+
+> 用SqlDataAdapter的Fill方法時會自動開啟資料庫連接，並在方法執行完畢自動關閉連線。(所以不用寫conn.open/conn.close)
+
+### DataAdapter.Fill() 會自動開啟關閉DB
+
+看[MSDN](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)上的DataAdapter.Fill的說明：
+
+Fill 方法使用相關的 SelectCommand 屬性所指定的 SELECT 陳述式，從資料來源擷取資料列。與 SELECT 陳述式關聯的連接物件必須是有效的，但不需要是開啟的。如果在呼叫 Fill 之前關閉連接，它會先開啟以擷取資料，然後再關閉。如果在呼叫 Fill 之前開啟連接，它會保持開啟。
+
+原來DataAdapter會在需要時自動Open connection並在不需要時自動Close connection
 
 
 ## 填入資料 & 取出資料
@@ -47,14 +57,13 @@ string id = dt.Rows[0]["id"].ToString(); //dt.Rows[0]表示第一行資料，tab
 
 ```c#
 //建立 DataAdapter 來執行sql語句，並告訴它是連接哪個db
-using (SqlDataAdapter da = new(sql, conn))
-{
-    //建立DataTable，用來存放DataAdapter執行sql 的結果
-    DataTable dt = new();
+SqlDataAdapter da = new(sql, conn)
 
-    //DataAdapter呼叫Fill方法，Fill 會將執行sql 的結果 放入DataTable中
-    da.Fill(dt);
-}
+//建立DataTable，用來存放DataAdapter執行sql 的結果
+DataTable dt = new();
+
+//DataAdapter呼叫Fill方法，Fill 會將執行sql 的結果 放入DataTable中
+da.Fill(dt);
 ```
 
 直接把資料放入 DataTable 中
@@ -69,14 +78,13 @@ using (SqlDataAdapter da = new(sql, conn))
 
 ```c#
 //建立 DataAdapter 來執行sql語句，並告訴它是連接哪個db
-using (SqlDataAdapter da = new(sql, conn))
-{
-    //建立DataSet，用來存放DataAdapter執行sql 的結果
-    DataSet ds = new();
+SqlDataAdapter da = new(sql, conn)
 
-    //DataAdapter呼叫Fill方法，Fill 會將執行sql 的結果 放入DataSet中
-    da.Fill(ds); // 或者加上table名   da.Fill(ds,"emp")
-}
+//建立DataSet，用來存放DataAdapter執行sql 的結果
+DataSet ds = new();
+
+//DataAdapter呼叫Fill方法，Fill 會將執行sql 的結果 放入DataSet中
+da.Fill(ds); // 或者加上table名   da.Fill(ds,"emp")
 ```
 
 數據結果放到DataSet中，若要用到哪個table，      
@@ -88,14 +96,13 @@ using (SqlDataAdapter da = new(sql, conn))
 
 ```c#
 //建立 DataAdapter 來執行sql語句，並告訴它是連接哪個db
-using (SqlDataAdapter da = new(sql, conn)) 
-{
-    //建立DataSet，用來存放DataAdapter執行sql 的結果
-    DataSet ds = new();
+SqlDataAdapter da = new(sql, conn)
 
-    //DataAdapter呼叫Fill方法，Fill 會將執行sql 的結果 放入DataSet中
-    da.Fill(ds, "employee");
-}
+//建立DataSet，用來存放DataAdapter執行sql 的結果
+DataSet ds = new();
+
+//DataAdapter呼叫Fill方法，Fill 會將執行sql 的結果 放入DataSet中
+da.Fill(ds, "employee");
 ```
 
 用的時這樣取：`ds.Tables["employee"]` 
@@ -113,33 +120,32 @@ string connString = "Data Source=.;Initial catalog=DBTEST;User id=riva;Password=
 //建立db連接
 using (SqlConnection conn = new(connString))
 {
-    //開啟db
-    if (conn.State != ConnectionState.Open) conn.Open();
+    //用SqlDataAdapter的Fill方法時會自動開啟資料庫連接，並在方法執行完畢自動關閉連線。(所以不用寫conn.open/conn.close)
+    //if (conn.State != ConnectionState.Open) conn.Open();
 
     //建立 DataAdapter 來執行sql語句，並告訴它是連接哪個db
-    using (SqlDataAdapter da = new("select * from emp", conn))
-    {
-        //建立DataTable，用來存放DataAdapter執行sql 的結果
-        DataTable dt = new();
+    SqlDataAdapter da = new("select * from emp", conn)
+    
+    //建立DataTable，用來存放DataAdapter執行sql 的結果
+    DataTable dt = new();
 
-        //DataAdapter呼叫Fill方法，Fill 會將執行sql 的結果 放入DataTable中
-        da.Fill(dt);
-        
-        //將資料從datatable取出，並輸出到控制台上
-        //1.顯示第一筆資料
-        Console.WriteLine($"編號：{dt.Rows[0][0]}, 姓名：{dt.Rows[0][1]}");
+    //DataAdapter呼叫Fill方法，Fill 會將執行sql 的結果 放入DataTable中
+    da.Fill(dt);
+    
+    //將資料從datatable取出，並輸出到控制台上
+    //1.顯示第一筆資料
+    Console.WriteLine($"編號：{dt.Rows[0][0]}, 姓名：{dt.Rows[0][1]}");
 
-        //2.顯示全部資料: 兩次迴圈
-        foreach (DataRow row in dt.Rows) {
-            foreach (DataColumn column in dt.Columns) {
-                Console.WriteLine($"{row[column]}");
-            }
+    //2.顯示全部資料: 兩次迴圈
+    foreach (DataRow row in dt.Rows) {
+        foreach (DataColumn column in dt.Columns) {
+            Console.WriteLine($"{row[column]}");
         }
+    }
 
-        //3.如果想把某列的值拼接字串，那就去掉内層循环就行了
-        foreach (DataRow row in dt.Rows) {
-            Console.WriteLine($"編號：{row["EmpId"]}, 姓名：{row["EmpName"]}");
-        }
+    //3.如果想把某列的值拼接字串，那就去掉内層循环就行了
+    foreach (DataRow row in dt.Rows) {
+        Console.WriteLine($"編號：{row["EmpId"]}, 姓名：{row["EmpName"]}");
     }
 }
 ```
@@ -206,21 +212,17 @@ string connString = "Data Source=.;Initial catalog=DBTEST;User id=riva;Password=
 //建立db連接
 using (SqlConnection conn = new(connString))
 {
-    //開啟db
-    if (conn.State != ConnectionState.Open) conn.Open();
-
     //建立 DataAdapter 來執行sql語句，並告訴它是連接哪個db
-    using (SqlDataAdapter da = new("select * from emp", conn))
-    {
-        //建立DataSet，用來存放DataAdapter執行sql 的結果
-        DataSet ds = new();
+    SqlDataAdapter da = new("select * from emp", conn))
 
-        //DataAdapter呼叫Fill方法，Fill 會將執行sql 的結果 放入DataSet中
-        da.Fill(ds); //或是 加上table名： da.Fill(ds,"Emp"); 取值：ds.Tables["Emp"].Rows[0][0]
+    //建立DataSet，用來存放DataAdapter執行sql 的結果
+    DataSet ds = new();
 
-        //從DataSet將資料取出，並輸出到控制台上。或是 ds.Tables["Emp"].Rows[0][0]
-        Console.WriteLine($"編號：{ds.Tables[0].Rows[0][0]}, 姓名：{ds.Tables[0].Rows[0][1]}");
-    }
+    //DataAdapter呼叫Fill方法，Fill 會將執行sql 的結果 放入DataSet中
+    da.Fill(ds); //或是 加上table名： da.Fill(ds,"Emp"); 取值：ds.Tables["Emp"].Rows[0][0]
+
+    //從DataSet將資料取出，並輸出到控制台上。或是 ds.Tables["Emp"].Rows[0][0]
+    Console.WriteLine($"編號：{ds.Tables[0].Rows[0][0]}, 姓名：{ds.Tables[0].Rows[0][1]}");
 }
 ```
 
@@ -254,4 +256,5 @@ DataSet 可以比喻為一個記憶體中的資料庫，DataTable 是一個記�
 [MSDN - 從 DataAdapter 填入資料集](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)      
 [MSDN - SqlDataAdapter 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqldataadapter?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)        
 [MSDN - DataSet 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.dataset?view=net-8.0)
-[C#之DataSet和DataTable](https://www.cnblogs.com/wenjie0904/p/7719751.html)
+[C#之DataSet和DataTable](https://www.cnblogs.com/wenjie0904/p/7719751.html)     
+[[C#]DataAdapter的有趣現象 by gipi的學習筆記](https://dotblogs.com.tw/jimmyyu/2009/08/18/10141)
