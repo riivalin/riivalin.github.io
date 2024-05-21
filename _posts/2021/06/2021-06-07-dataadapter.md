@@ -9,13 +9,12 @@ tags: [C#,ADO.NET,DataAdapter,DataSet,DataTable]
 ## DataAdapter
 
 SqlDataAdapter：DataSet與SQL Server之間的橋接器(中介角色)。     
+把DataAdapter 物件所執行的 SQL命令的結果 填入 DataSet 中，並更新解析回 DB       
 
-把DataAdapter 物件所執行的 SQL命令的結果 填入 DataSet 中，並更新解析回 DB
+> 用SqlDataAdapter的 Fill方法時會自動開啟資料庫連接，並在方法執行完畢自動關閉連線。
 
-用SqlDataAdapter的 Fill方法時會自動開啟資料庫連接，並在方法執行完畢自動關閉連線。
-
-> - [SqlDataAdapter 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqldataadapter?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)代表一組資料命令和資料庫連線，用來填入 DataSet 並更新 SQL Server 資料庫。 此類別無法獲得繼承。     
-> - [DataSet 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.dataset?view=net-8.0) 代表資料的記憶體內部快取。
+- [SqlDataAdapter 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqldataadapter?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)代表一組資料命令和資料庫連線，用來填入 DataSet 並更新 SQL Server 資料庫。 此類別無法獲得繼承。     
+- [DataSet 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.dataset?view=net-8.0) 代表資料的記憶體內部快取。
 
 
 ```c#
@@ -27,7 +26,10 @@ DataSet customers = new DataSet();
 adapter.Fill(customers, "Customers");
 ```
 
-> 用SqlDataAdapter的Fill方法時會自動開啟資料庫連接，並在方法執行完畢自動關閉連線。(所以不用寫conn.open/conn.close)
+#### 注意        
+這個範例所顯示的程式碼並未明確開啟和關閉 Connection。 Fill 方法若發現連接尚未開啟，會隱含開啟 Connection 正在使用的 DataAdapter 。 如果 Fill 開啟了連接，則當 Fill 結束時也會一併關閉連接。 如此便可在處理單一作業時 (例如 Fill 或 Update)，簡化您的程式碼。 但是，如果您要執行需要開啟連接的多項作業，您可明確呼叫 Open 的 Connection方法，針對資料來源執行作業，然後呼叫 Close 的 Connection方法，如此即可改善應用程式的效能。 您應該儘量減少與資料來源之間的連接，以釋放資源給其他用戶端應用程式使用。
+
+> 用SqlDataAdapter的Fill方法時會自動開啟資料庫連接，並在方法執行完畢自動關閉連線。
 
 ### DataAdapter.Fill() 會自動開啟關閉DB
 
@@ -42,7 +44,7 @@ Fill 方法使用相關的 SelectCommand 屬性所指定的 SELECT 陳述式，�
 
 ```c#
 SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);  
-DataSet ds = new();
+DataSet ds = new(); //用來存放DataAdapter執行sql 的結果
 adapter.Fill(ds); //填入dataSet, ds.Tables[0] 就是你所要查詢的結果集
 string id = dt.Rows[0]["id"].ToString(); //dt.Rows[0]表示第一行資料，table.Rows[0]["id"]表示table中列id的值
 ```
@@ -256,5 +258,4 @@ DataSet 可以比喻為一個記憶體中的資料庫，DataTable 是一個記�
 [MSDN - 從 DataAdapter 填入資料集](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)      
 [MSDN - SqlDataAdapter 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqldataadapter?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)        
 [MSDN - DataSet 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.dataset?view=net-8.0)
-[C#之DataSet和DataTable](https://www.cnblogs.com/wenjie0904/p/7719751.html)     
-[[C#]DataAdapter的有趣現象 by gipi的學習筆記](https://dotblogs.com.tw/jimmyyu/2009/08/18/10141)
+[C#之DataSet和DataTable](https://www.cnblogs.com/wenjie0904/p/7719751.html) 
