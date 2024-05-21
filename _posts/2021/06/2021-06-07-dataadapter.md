@@ -255,7 +255,17 @@ DataSet 可以比喻為一個記憶體中的資料庫，DataTable 是一個記�
 - DataTable：資料表。
 
 
+## 注意
+
+如果只需要執行SQL語句或SP，就沒必要用到DataAdapter，直接用SqlCommand的Execute系列方法就可以了。 sqlDataadapter的作用是實作Dataset和DB之間的橋樑：例如將對DataSet的修改更新到資料庫。        
+
+
+
+
+
 [MSDN - 從 DataAdapter 填入資料集](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)      
 [MSDN - SqlDataAdapter 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqldataadapter?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)        
 [MSDN - DataSet 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.dataset?view=net-8.0)
-[C#之DataSet和DataTable](https://www.cnblogs.com/wenjie0904/p/7719751.html) 
+[C#之DataSet和DataTable](https://www.cnblogs.com/wenjie0904/p/7719751.html)     
+[[C#]DataAdapter的有趣現象](https://dotblogs.com.tw/jimmyyu/2009/08/18/10141)       
+[C#中Sql DataAdapter的使用](https://www.cnblogs.com/winformasp/articles/12028135.html)      
