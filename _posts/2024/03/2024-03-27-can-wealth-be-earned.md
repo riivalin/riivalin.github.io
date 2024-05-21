@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 淨空法師：造作惡業常有罪惡感好嗎？ (修持篇92)
+title: 淨空法師：財富是能賺得來的？ (因果篇26)
 date: 2024-03-27 23:23:00 +0800
 categories: [Amitabha,因果報應,淨空法師]
-tags: [淨空法師,惡業,念佛,阿彌陀佛,懺悔,後不再造,逆境惡緣,福報,財富,斷惡修善]
+tags: [淨空法師,因果,惡業,念佛,阿彌陀佛,懺悔,後不再造,逆境惡緣,福報,財富,斷惡修善]
 ---
 
 [![](https://www.amtb.tw/blog/wp-content/uploads/2022/02/29-515-0047-1461x1536.jpg)](https://www.amtb.tw/blog/wp-content/uploads/2022/02/29-515-0047-1461x1536.jpg)
