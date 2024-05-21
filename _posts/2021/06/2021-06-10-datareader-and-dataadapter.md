@@ -9,7 +9,18 @@ tags: [C#,ADO.NET,command,DataAdapter,DataReader]
 1. DataReader 和 DataAdapter 區別
 2. SqlDataAdapter 和 SqlCommand 區別
 3. SqlDataAdapter用法
-        
+
+[MSDN：DataAdapter 和 DataReader](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/dataadapters-and-datareaders?redirectedfrom=MSDN)     
+
+您可以使用 ADO.NET DataReader，從資料庫擷取順向唯讀資料流。 執行查詢時會傳回結果，並一直儲存於用戶端上的網路緩衝區中，直到您使用 DataReader 的 Read 方法對其加以要求為止。 使用 DataReader 可以提高應用程式的效能，方法是立即擷取可用的資料，及 (依預設) 一次只將一個資料列儲存到記憶體中，進而減少系統負荷。       
+
+DataAdapter 可用於從資料來源擷取資料，並填入 DataSet 內的資料表。 DataAdapter 亦可將對 DataSet 所做的變更解析回資料來源。 DataAdapter 會使用 .NET Framework 資料提供者的 Connection 物件連接到資料來源，並使用 Command 物件從資料來源擷取資料，以及將變更解析回資料來源。
+
+note: 
+- DataReader：順向、唯讀、連線資料存取(連線操作)、手動conn.open/close
+- DataAdapter：離線操作、fill方法會自動conn.open/close
+
+
 ## 1. DataReader 和 DataAdapter 區別
 
 SqlDataReader是一個向前的指針，本身不包含數據，調用一次 Read() 方法它就向前到下一條記錄，**一個SqlDataReader必須單獨佔用一個打開的資料庫連接**。
@@ -101,7 +112,8 @@ da.Fill(ds,"自訂虛擬表名");//使用DataAdapter的Fill方法(填充)，呼�
 ConnSql.Close ();//關閉資料庫
 ```
 
-[MSDN - DataAdapter 和 DataReader](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/dataadapters-and-datareaders?redirectedfrom=MSDN)     
+[MSDN - DataAdapter 和 DataReader](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/dataadapters-and-datareaders?redirectedfrom=MSDN)   
+[MSDN - 由 DataReader 擷取的資料](https://learn.microsoft.com/zh-tw/sql/connect/ado-net/retrieve-data-by-datareader?view=sql-server-ver16)  
 [MSDN - 從 DataAdapter 填入資料集](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)      
 [MSDN - SqlDataAdapter 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.sqlclient.sqldataadapter?view=netframework-4.8.1&viewFallbackFrom=dotnet-plat-ext-5.0)        
 [MSDN - DataSet 類別](https://learn.microsoft.com/zh-tw/dotnet/api/system.data.dataset?view=net-8.0)        
