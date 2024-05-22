@@ -3,10 +3,20 @@ layout: post
 title: "[ADO.NET] DataReader 物件(唯讀順向)"
 date: 2021-06-05 23:49:00 +0800
 categories: [Notes,ADO.NET,C#]
-tags: [C#,ADO.NET,command,DataReader,ExecuteReader]
+tags: [C#,ADO.NET,command,DataReader,ExecuteReader,DataSet,Read()]
 ---
 
-DataReader 是以**順向**、**唯讀**的方式來傳回資料。
+- DataReader 是以**順向**、**唯讀**的方式來傳回資料。
+- DataReader用於一行一行的讀取資料。
+DataSet是資料集...裡面放的是多個資料表.用來保存查詢到的資料. 它相對於DataReader可以建立本地副本，還可以進行很多操作，例如篩選，排序等，若對資料不進行操作最好選擇DataReader。
+
+- DataReader是基於連接(連線操作db)，它傳回的資料是唯讀只向前的，適合簡單瀏覽且耗時比較短的操作。
+DataSet物件會將所需資料讀入記憶體然後斷開連接(離線操作db)。它適合對資料進行複雜長時間的操作，並且需要更新資料的情況。
+
+- SqlDataReader只是建立與資料庫之間的類似於一個指標關係，在沒有呼叫Read()方法之間它不從資料讀出任何資料，而在呼叫Read()時也只是從資料庫中讀出一條資料。
+
+DataTable是資料表的一個複本，至於DataSet可以反它看作一個資料庫，因為它不但可以包括多個表而且還能包括各表之間的關係。所以在進行大量資料存取時(特別是分頁方式的存取)建議使用SqlDataReader，這樣可以節省大量的記憶體開銷.
+
 
 ## DataReader(MSDN)
 
@@ -95,5 +105,6 @@ using (SqlConnection conn = new SqlConnection(connString))
 [MSDN - 使用 DataReader 擷取資料](https://learn.microsoft.com/zh-tw/dotnet/framework/data/adonet/retrieving-data-using-a-datareader)
 [MVCNF03-ADO.NET  by JohnsonNote](https://hackmd.io/@johnsonnote/webdesign/https%3A%2F%2Fhackmd.io%2F%40johnsonnote%2Fadonet)  
 [CSDN - Ado.Net学习——基础知识记录](https://blog.csdn.net/SQWH_SSGS/article/details/109303103)   
+[CSDN - DataTable、DataView、DataReader和DataSet,DataGrid等的区别](https://blog.csdn.net/hdhai9451/article/details/4000513)
 [[ADO.NET] Command 物件 -- Draft  by R](https://riivalin.github.io/posts/2021/06/adonet-commad-draft/)    
 [[ADO.NET] Command 物件 (執行SQL命令) by R](https://riivalin.github.io/posts/2021/06/adonet-command/)
