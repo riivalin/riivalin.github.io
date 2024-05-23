@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記]"
+title: "[C# 筆記] 什麼是泛型(Generics) ?"
 date: 2021-07-01 06:09:00 +0800
 categories: [Notes,C#]
 tags: [C#,泛型,generic,T]
@@ -68,7 +68,7 @@ static void Show(object o) {
 ## 三、泛型類型參數
 
 **同一個方法來處理 傳入不同種型參數**
-        
+
 在泛型類型或方法定義中，類型參數是在其實體化泛型類型的變數時，客戶端指定的特定類型的佔位符。 泛型類別(`GenericList<T>`)無法按原樣使用，因為它不是真正的類型；它更像是類型的藍圖。 若要使用 `GenericList<T>`，客戶端程式碼必須透過指定尖括號內的類型參數來宣告並實例化建構型別。 此特定類別的類型參數可以是編譯器可識別的任何類型。 可建立任意數量的建構類型實例，其中每個使用不同的類型參數。
 
 上面例子中的程式碼可以修改如下：
@@ -116,5 +116,5 @@ Show<DateTime>(date);
 
 
 
-
+[MSDN - 泛型型別和方法](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/types/generics)     
 <https://www.cnblogs.com/dotnet261010/p/9034594.html>
