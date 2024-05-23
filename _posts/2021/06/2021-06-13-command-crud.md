@@ -26,8 +26,8 @@ using Microsoft.Data.SqlClient;
 
 連線資料庫使用的類別是`SqlConnection`，它需要一個連線字串，其包含：server是伺服器位址，一個點代表本機，也可以寫ip位址，存取別的機器，database是資料庫名稱，user id是用戶名，password(可以簡寫為pwd)是密碼。我使用這形式比較好記：
 
-```sql
-string connString = "server=.;database=test;user id=riva;password=1234;";
+```c#
+"server=.;database=test;user id=riva;password=1234;";
 ```
 
 再加上`encrypt=true;trust server certificate=true;`     
@@ -36,13 +36,15 @@ string connString = "server=.;database=test;user id=riva;password=1234;";
 了解這兩個元素就可以連接資料庫了：
 
 ```c#
+//注意，此時還沒有真正連接，我們需要呼叫open()方法，開啟連接
 SqlConnection conn = new(connString);
-conn.Open();//注意，此時還沒有真正連接，我們需要呼叫open()方法，開啟連接
+conn.Open();
 ```
 
 ```c#
 string connString = "server=.;database=test;user id=riva;password=1234;encrypt=true;trust server certificate=true";
-using (SqlConnection conn = new(connString)) {
+using (SqlConnection conn = new(connString)) 
+{
     //注意，此時還沒有真正連接，我們需要呼叫open()方法，開啟連接
     if (conn.State != ConnectionState.Open) conn.Open();
     // Do work here;
@@ -93,11 +95,11 @@ using (SqlCommand cmd = new SqlCommand(sql, conn))
 }
 ```
 
-練習一下查询，查詢客戶ID CONSH 的資料：
+練習一下查询，查詢客戶ID是 CONSH 的資料：
 
 ```c#
 //連線字串
-string connString = "server=.;database=Northwind;user id=riva;password=1234;encrypt=true;trust server certificate=true";
+string connString = "server=.;database=Northwind;user id=riva;password=1234;encrypt=true;trust server certificate=true;";
 
 //建立db連線
 using (SqlConnection conn = new(connString))
@@ -138,12 +140,19 @@ CONSH, Consolidated Holdings, Elizabeth Brown
 把這三個放在一塊是因為這三個在程式碼表現層面是一致的，都是呼叫SqlCommand的ExecuteNonQuery()方法，該方法傳回int類型的數據，也就是受影響的行數，
 
 ```c#
+//連線字串
 string connString = "server=.;database=dbtest;user id=riva;password=1234;encrypt=true;trust server certificate=true";
+
+//建立db連線
 using (SqlConnection conn = new(connString))
 {
+    //開啟db連接
     if (conn.State != ConnectionState.Open) conn.Open();
 
+    //準備SQL語句
     string sql = "insert into emp(EmpId,EmpName) values(@EmpId,@EmpName)";
+
+    //宣告SqlCommand，告訴它要執行的sql和 要連接的db
     using (SqlCommand cmd = new SqlCommand(sql, conn))
     {
         //設定sql參數對應的值
