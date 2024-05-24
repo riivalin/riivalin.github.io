@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] BinaryReader 和 BinaryWrite 讀取和寫入檔案內容"
+title: "[C# 筆記] 讀取、寫入txt文字檔（BnaryReader & BinaryWrite)"
 date: 2021-07-02 06:09:00 +0800
 categories: [Notes,C#]
 tags: [C#,FileStream,BinaryReader,StreamReader,File]
