@@ -17,7 +17,7 @@ tags: [C#,FileStream,StreamReader,StreamWrite]
 
 所以FileStream必須要掌握的。
 
-使用`using區塊`兩個作用：
+### 使用`using區塊`兩個作用：
 - 關閉Stream
 - 釋放Stream所佔的資源
 
@@ -50,7 +50,7 @@ StreamReader sr = new StreamReader(string path, Encoding encoding); //路徑,編
 為指定的資料流/檔名，初始化 StreamReader 類別的新實體，並使用預設的編碼（UTF-8）讀取檔案。      
 預設的編碼方式是UTF-8，Encoding.Default 表示的編碼方式也是 UTF-8
 
-### 寫入 txt 檔
+## 寫入 txt 檔
 
 ```c#
 //寫入txt檔
@@ -64,9 +64,9 @@ using(var sw = new StreamWriter(@"C:\Users\rivalin\Desktop\test.txt")) {
 
 `var sw = new StreamWriter(@"C:\Users\rivalin\Desktop\test.txt", append: true)`
 
-### 讀取txt檔
+## 讀取txt檔
 
-- ~~sr.Read()：讀一個字元，返回的是 字元的十進位值~~
+- sr.Read()：讀一個字元，返回的是 字元的十進位值
 - sr.ReadToEnd()：讀取資料流中**所有的資料**
 - sr.ReadLine()：讀取資料中的一行，回傳一整行的值
 - EndOfStream 是否讀到結尾

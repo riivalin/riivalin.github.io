@@ -56,7 +56,7 @@ var fs = FileStream.Open(path, FileMode.OpenOrCreate);
 var reader = new BinaryReader(fs, Encoding.UTF8);
 ```
 
-## BinaryWrite 以二進式方式寫入檔案內容
+## 寫入檔案
 
 - `BinaryWrite`：把資料用「二進位」方式寫進資料流(Stream)。
 
@@ -82,7 +82,7 @@ using (var fs = new FileStream(@"C:\Users\rivalin\Desktop\test.txt", FileMode.Op
 ```
 
 
-## BinaryReader 以二進式方式讀取檔案內容
+## 讀取檔案內容
 
 - `BinaryReader`：把指定的資料流(Stream)當成「二進位」值讀取。
 
