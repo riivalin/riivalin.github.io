@@ -6,6 +6,15 @@ categories: [Notes,C#]
 tags: [C#,FileStream,BinaryReader,StreamReader,File]
 ---
 
+- `BinaryReader`：把指定的資料流(Stream)當成「二進位」值讀取。
+- `BinaryWrite`：把資料用「二進位」方式寫進資料流(Stream)。
+
+`BinaryReader` 是把指定的資料流當成二進位值讀取，當然二進位值以不同的編碼方式讀取的意義就會不同。       
+例如：1 byte 的資料以整數的角度 跟以字元的角度 去看(讀取方式)就會有不同的結果。     
+
+`BinaryWrite`提供特定編碼方式，以「二進位」的方式寫入指定的資料流。
+
+---
 
 C#的FileStream類別提供了最原始的位元組層級上的文件讀取和寫入功能，但我們習慣於對字串操作，於是StreamWriter和StreamReader類別增強了FileStream，它讓我們在字串層級上操作文件，
 
@@ -13,17 +22,25 @@ C#的FileStream類別提供了最原始的位元組層級上的文件讀取和�
 
 (BinaryWriter 和 BinaryReader 類別用於讀取和寫入數據，而不是字串。)
 
+- BinaryReader/BinaryWrite 以二進式方式 讀取/寫入檔案內容
+- StreamReader/StreamWrite 以特定的編碼方式讀 取/寫入檔案內容
 
-- BinaryReader/BinaryWrite 以二進式方式讀取/寫入檔案內容
-- StreamReader/StreamWrite 以特定的編碼方式讀取/寫入檔案內容
 
-命名空間
+## 宣告方式
+
+```c#
+//BinaryReader和BinaryWrite 一開始需要接受資料流(stream) 才能進行相關操作
+BinaryReader reader = new BinaryReader(stream名稱);
+BinaryWrite write = BinaryWrite(stream名稱, 編碼方式)
+```
+
+### 命名空間
 
 ```c#
 using System.IO;
 ```
 
-用File開啟檔案
+### 用File開啟檔案
 
 ```c#
 //用File開啟檔案
@@ -31,7 +48,7 @@ var stream = File.Open(path, FileMode.OpenOrCreate);
 var reader = new BinaryReader(stream, Encoding.UTF8);
 ```
 
-或是用 FileStream 開啟檔案
+### 用 FileStream 開啟檔案
 
 ```c#
 //用File開啟檔案
@@ -39,12 +56,12 @@ var fs = FileStream.Open(path, FileMode.OpenOrCreate);
 var reader = new BinaryReader(fs, Encoding.UTF8);
 ```
 
-## BinaryReader 以二進式方式讀取檔案內容
+## BinaryWrite 以二進式方式寫入檔案內容
 
-BinaryReader 以特定的編碼方式，將基本資料型別當做二進位值讀取。
+- `BinaryWrite`：把資料用「二進位」方式寫進資料流(Stream)。
 
 ```c#
-//宣告FileStream，為開啟test.txt的檔案資料流，FileMode.OpenOrCreate 如果檔案不存在，就會新增
+//宣告FileStream，為開啟test.txt的檔案資料流，選擇FileMode.OpenOrCreate最保險，如果檔案不存在，就會新增一個
 using (var fs = new FileStream(@"C:\Users\rivalin\Desktop\test.txt", FileMode.OpenOrCreate))
 {
     //宣告BinaryReader用來寫入檔案
@@ -65,8 +82,11 @@ using (var fs = new FileStream(@"C:\Users\rivalin\Desktop\test.txt", FileMode.Op
 ```
 
 
-## BinaryWrite 以二進式方式讀取檔案內容
+## BinaryReader 以二進式方式讀取檔案內容
 
+- `BinaryReader`：把指定的資料流(Stream)當成「二進位」值讀取。
+
+BinaryReader 以特定的編碼方式，將基本資料型別當做二進位值讀取。
 
 ```c#
 float aspectRatio;
@@ -74,16 +94,16 @@ string tempDirectory;
 int autoSaveTime;
 bool showStatusBar;
 
-//宣告FileStream，為開啟test.txt的檔案資料流
+//宣告FileStream，來開啟test.txt的檔案資料流
 using (var fs = new FileStream(@"C:\Users\rivalin\Desktop\test.txt", FileMode.Open))
 {
-    //宣告BinaryReader用來讀出資料
+    //宣告BinaryReader的方式讀取資料 (把資料流當作二進制值讀取)
     using (var reader = new BinaryReader(fs, Encoding.UTF8, false))
     {
         aspectRatio = reader.ReadSingle();
         tempDirectory = reader.ReadString();
-        autoSaveTime = reader.ReadInt32();
-        showStatusBar = reader.ReadBoolean();
+        autoSaveTime = reader.ReadInt32(); //以整數方式讀取4bytes並傳回整數值，最後將指標往後移4bytes
+        showStatusBar = reader.ReadBoolean(); //以布林值的方式讀取1byte並傳回，並將指標移到下一個byte
 
         for (int i = 0; i < 11; i++) {
             Console.Write(reader.ReadInt32());
