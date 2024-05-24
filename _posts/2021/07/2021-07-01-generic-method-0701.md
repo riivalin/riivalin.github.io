@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[C# 筆記] 什麼是泛型(Generics) ?"
+title: "[C# 筆記] 什麼是泛型(Generics)?"
 date: 2021-07-01 06:09:00 +0800
 categories: [Notes,C#]
 tags: [C#,泛型,generic,T]
@@ -107,7 +107,7 @@ Show<DateTime>(date);
 
 泛型約束總共有五種
 
-|約束           |說明|
+|約束             |說明|
 |:---------------|:----|
 | T：結構         | 類型參數必須是值型|
 | T：類別        | 類型參數必須是參考類型；這一點也適用於任何類別、介面、委派或陣列類型。|
@@ -117,5 +117,5 @@ Show<DateTime>(date);
 
 
 
-[MSDN - 泛型型別和方法](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/types/generics)     
-<https://www.cnblogs.com/dotnet261010/p/9034594.html>
+[MSDN - 泛型型別和方法](https://learn.microsoft.com/zh-tw/dotnet/csharp/fundamentals/types/generics)        
+[C#泛型详解](https://www.cnblogs.com/dotnet261010/p/9034594.html)
