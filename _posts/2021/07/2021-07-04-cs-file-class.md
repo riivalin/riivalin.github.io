@@ -166,9 +166,9 @@ File.AppendAllText(@"C:\Users\rivalin\Desktop\test.txt", "今天天氣真好啊"
 
 讀數據提供了三個方法：
 
-- ReadAllBytes 以二進制的形式讀取
-- ReadAllLines 一行一行的讀取
-- ReadAllText 把所有字串一次性讀進來
+- `ReadAllBytes` 以二進制的形式讀取
+- `ReadAllLines` 一行一行的讀取
+- `ReadAllText` 把所有字串一次性讀進來
 
 這三種方式在使用File類來讀數據的時候，有一個很大的特點，就是不管你的數據有多大，在讀的時候都是 **一次性讀進來**，那這就意味著當我操作大文件的時候，對我們的記憶體負荷特別大，
         
@@ -180,10 +180,28 @@ File.AppendAllText(@"C:\Users\rivalin\Desktop\test.txt", "今天天氣真好啊"
 - 小文件：`File`
 
 
-# Does it not expect to be UTF-8 ?
+# Q：什麼時候用 ReadAllBytes？什麼時候用 ReadAllLines？
+
+如果我們需要處理文本文件每一行數據的時候，這個時候你就必須要用`ReadAllLines`，        
+因為他返回的是字串陣列，這個陣列裡就是一行一行的數據。      
+
+ReadAllBytes、ReadAllText 不能讓你一行一行操作數據，他給你返回的都是一個整體，      
+ReadAllBytes 他會返回一個整體的位元組陣列(`byte[]`)，        
+ReadAllText 他會返回一坨字串，沒有辦法拿到一行一行的數據。
+        
+如果你僅僅只想讀進來看一看，那麼這個ReadAllText是最簡單的。
+
+# 關於編碼
+## Does it not expect to be UTF-8 ?
+
+[MSDN](https://learn.microsoft.com/zh-tw/dotnet/fundamentals/runtime-libraries/system-text-encoding-default)        
 
 - On .NET Framework, it's your configured Windows code page. 
 - On .NET Core, it is UTF-8.
+
+## Q：什麼是編碼？ 
+編碼：把字串以怎樣的形式儲存為二進制。      
+ASCII、GBK、GB2123、UTF-8
 
 
 [MSDN - System.Text.Encoding.Default 屬性](https://learn.microsoft.com/zh-tw/dotnet/fundamentals/runtime-libraries/system-text-encoding-default)        
@@ -194,4 +212,5 @@ File.AppendAllText(@"C:\Users\rivalin\Desktop\test.txt", "今天天氣真好啊"
 [[C# 筆記] File 類別的基本操作  by R](https://riivalin.github.io/posts/2011/01/file/)       
 [[C# 筆記] File 讀寫文件  by R](https://riivalin.github.io/posts/2011/01/file-read-write/)      
 [[C# 筆記] File類、Path類、Directory類-複習  by R](https://riivalin.github.io/posts/2011/02/file-path-directory/)       
-[[C# 筆記][File] 工資翻倍-練習   by R](https://riivalin.github.io/posts/2011/02/file-1/)        
+[[C# 筆記][File] 工資翻倍-練習   by R](https://riivalin.github.io/posts/2011/02/file-1/)   
+[ 使用File類來讀取數據 in [C# 筆記] File類、Path類、Directory類-複習   by R](https://riivalin.github.io/posts/2011/02/file-path-directory/#使用file類來讀取數據)     
