@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[SwiftUI] ow to download JSON data from API with URLSession and @escaping"
-date: 1999-02-02 06:30:00 +0800
+date: 1999-02-03 06:30:00 +0800
 categories: [Notes,Swift]
 tags: [SwiftUI,json]
 ---
