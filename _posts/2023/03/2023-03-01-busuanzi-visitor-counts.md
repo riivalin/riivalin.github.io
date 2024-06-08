@@ -2,8 +2,8 @@
 layout: post
 title: 不蒜子極簡網頁計數器
 date: 2023-03-01 01:08:09 +0800
-categories: [Notes, Blog]
-tags: [Blog, Counter]
+categories: [Notes,Jekyll]
+tags: [Jekyll Blog,網頁計數器]
 ---
 
 不蒜子- 极简网页计数器 [https://busuanzi.ibruce.info](https://busuanzi.ibruce.info)

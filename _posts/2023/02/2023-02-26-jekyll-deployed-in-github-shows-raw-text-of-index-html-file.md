@@ -2,8 +2,8 @@
 layout: post
 title: "[Issue] Jekyll deployed in github shows raw text of index.html file"
 date: 2023-02-26 01:10:00 +0800
-categories: [Notes, Blog]
-tags: [Jekyll Blog, GitHub Action, Github Pages]
+categories: [Notes,Jekyll,GitHub]
+tags: [Jekyll Blog,GitHub Action, Github Pages]
 ---
 
 ### [Problem Description]

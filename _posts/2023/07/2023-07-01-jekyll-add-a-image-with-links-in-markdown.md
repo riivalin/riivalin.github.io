@@ -2,8 +2,8 @@
 layout: post
 title: "[Issue][Jekyll] How to add a image with links in markdown?"
 date: 2023-07-01 21:59:00 +0800
-categories: [Notes,Blog,Jekyll]
-tags: [Jekyll,markdown,error,issue]
+categories: [Notes,Jekyll]
+tags: [Jekyll Blog,markdown,error,issue]
 ---
 
 

@@ -2,8 +2,8 @@
 layout: post
 title: 記錄常用的commands
 date: 2023-02-20 02:10:00 +0800
-categories: [Notes, Blog]
-tags: [Commands]
+categories: [Notes,Jekyll]
+tags: [Jekyll Blog,Ruby,Commands]
 ---
 
 ```shell

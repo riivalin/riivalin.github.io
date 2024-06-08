@@ -2,7 +2,7 @@
 layout: post
 title: "[Notes] 移除VS2022的 Live Share 按钮"
 date: 2023-02-25 00:20:10 +0800
-categories: [Notes, Visual Studio]
+categories: [Notes,Visual Studio]
 tags: [Visual Studio]
 ---
 

@@ -2,8 +2,8 @@
 layout: post
 title: "[Jekyll] ERROR: Invalid first code point of tag name U+57FA"
 date: 2024-03-31 06:23:00 +0800
-categories: [Notes,Blog,Jekyll]
-tags: [Jekyll,error,issue,markdown]
+categories: [Notes,Jekyll]
+tags: [Jekyll Blog,error,issue,markdown]
 ---
 
 

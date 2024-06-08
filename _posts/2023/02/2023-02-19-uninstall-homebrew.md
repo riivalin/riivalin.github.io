@@ -2,8 +2,8 @@
 layout: post
 title: "[MacOS] 卸載刪除 Homebrew"
 date: 2023-02-19 00:10:00 +0800
-categories: [Notes, Blog]
-tags: [Homebrew, Commands]
+categories: [Notes,Jekyll]
+tags: [Jekyll Blog,Homebrew, Commands]
 ---
 
 將安裝 Homebrew 的指令 install 改為 uninstall 就可以了。
