@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "[CSS] Right Align Div CSS"
-date: 2016-01-01 23:00:00 +0800
-categories: [Notes, CSS]
+date: 1999-01-01 04:00:00 +0800
+categories: [Notes,CSS]
 tags: [CSS]
 ---
 
