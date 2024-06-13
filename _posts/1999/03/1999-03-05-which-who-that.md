@@ -6,6 +6,14 @@ categories: [English,英文文法]
 tags: [English,who which that]
 ---
 
+- which, Who 必要資訊，有逗號
+- which, Who 補充資訊，無逗號
+- that 必要資訊，不能有逗號
+
+> that 子句屬於必要的資訊，並非補充，就不可以有逗號
+
+---
+
 - 不加逗號：who/ which所引導的子句，提供的資訊**是必要的**，不可以有逗號。
 
 > 此時 who 或 which 可用 `that` 來替代。
