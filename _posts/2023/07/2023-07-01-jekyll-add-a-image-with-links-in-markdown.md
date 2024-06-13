@@ -15,6 +15,8 @@ internally linking to xxxxx, which does not exist...
 
 ## 解決方法
 
+I use it `[![](https://riva.io/x.jpg)]()`
+    
 以文字link方式中，放入Image連結的方式
 
 ```markdown
