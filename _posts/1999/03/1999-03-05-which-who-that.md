@@ -3,7 +3,7 @@ layout: post
 title: "[英文筆記] Who, which, that 前面有無逗點?"
 date: 1999-03-05 05:30:00 +0800
 categories: [English,英文文法]
-tags: [English,英文時態,被動式,被動語氣]
+tags: [English,who which that]
 ---
 
 - 不加逗號：who/ which所引導的子句，提供的資訊**是必要的**，不可以有逗號。
