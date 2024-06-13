@@ -40,9 +40,9 @@ tags: [身分證保護個資]
 
 再加上「遮住兩組背面號碼」
 
-[![](https://cdn2.ettoday.net/images/193/193032.jpg)](https://cdn2.ettoday.net/images/193/193032.jpg)
+[![](https://cdn2.ettoday.net/images/193/193032.jpg)]()
 
-[![](https://photo.minwt.com/img/Content/life/prevent-Leakage-out-of-my-profile/prevent-Leakage-out-of-my-profile_01.jpg)(https://photo.minwt.com/img/Content/life/prevent-Leakage-out-of-my-profile/prevent-Leakage-out-of-my-profile_01.jpg)]
+[![](https://photo.minwt.com/img/Content/life/prevent-Leakage-out-of-my-profile/prevent-Leakage-out-of-my-profile_01.jpg)]()
 
 
 中華民國身分證上共有三組號碼(見上圖)，正面有：
