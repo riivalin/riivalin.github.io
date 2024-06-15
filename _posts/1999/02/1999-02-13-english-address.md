@@ -3,8 +3,14 @@ layout: post
 title: 英文地址分段
 date: 1999-02-13 06:30:00 +0800
 categories: [Notes,雜七雜八]
-tags: [英文地址分段]
+tags: [英文地址分段,英文地址]
 ---
+
+
+[快速查詢|中文地址英譯](https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=207#result
+)       
+<https://www.post.gov.tw/post/internet/Postal/index.jsp?ID=207#result>
+
 
 第一行：門牌號, 街道名  
 第二行：鄉鎮市區, 縣市+郵遞區號         
@@ -12,6 +18,7 @@ tags: [英文地址分段]
 
 ```
 台中市南屯區大墩12街305號12樓之2 
+
 12/F-2, 305, Ta-tun 12th St. 
 Nan-tun District, Taichung 
 Taiwan 
@@ -47,7 +54,7 @@ Sub-Alley		街
 英文的地址寫法與中文不同，是由最小的單位(號或是幾樓之幾)，      
 往越大的區域(區、縣市、省)單位來寫，每個單位間以逗號(,)隔開即可     
 
-例如：
+## 範例：(說明)
 
 ```
 8F,No.500,Aly.14,Ln.11,Zhongzheng Rd.,West Dist.,Chiayi City 600,Taiwan
@@ -86,3 +93,63 @@ Sub-Alley		街
 同時有Address,City,State,Country這幾欄的話，      
 Address填您住址的「鄉(鎮)、路(街)、巷、弄、號、樓」即可，     
 縣(市)及國家留到City,Country欄再填。
+
+## 範例
+
+台灣 台中市 南區 建國北路 2 段 106 巷 52 弄 32 號之4 5 樓之 2  309 室
+```
+Rm. 309, 5F.-2, No. 105-4, Aly. 52, Ln. 106, Sec. 2, Jianguo N. Rd.
+South Dist., Taichung City 402,
+Taiwan (R.O.C.)
+```
+
+```
+台北市信義區忠孝東路四段 10 巷 8 弄 6 號 4 樓：
+
+4F., No.6, Aly. 8, Ln. 10, Sec. 4, Zhongxiao E. Rd., Xinyi Dist., Taipei City 110, Taiwan (R.O.C.)
+
+4F., No.6, Aly. 8, Ln. 10, Sec. 4, Zhongxiao E. Rd.
+Xinyi Dist., Taipei City 110
+Taiwan (R.O.C.)
+```
+
+||||
+|:------|:--------|:--------|
+| 地址單位	| 中文地址	| 英文地址翻譯 |
+|國名	|台灣	| Taiwan (R.O.C)|
+|縣市	|台中市 |	Taichung City |
+|鄉鎮市區 |	南區 |	South Dist. |
+|路／街／大道 |	建國北路2段	| Sec. 2, Jianguo N. Rd. |
+|巷	| 106巷	| Ln. 106 |
+|弄	| 52弄	| Aly. 52 |
+|號（之幾）	| 32號之4	| No. 32-4|
+|樓（之幾）	| 5樓之2	| 5F.-2 |
+|室	| 309室	| Rm.309 |
+
+        
+中文地址是從大單位到小單位，    
+但英文地址剛好反過來，是從最小單位到最大單位，      
+先寫幾室，最後再寫號碼。        
+如果有三碼或五碼郵遞區號（Zip Code）會放在縣／市的後面，        
+所以完成的地址會長這樣：
+        
+
+```
+Rm. 309, 5F.-2, No. 105-4, Aly. 52, Ln. 106, Sec. 2, Jianguo N. Rd.
+South Dist., Taichung City 402,
+Taiwan (R.O.C.)
+```
+
+## 國際郵件地址(橫式寫法)
+
+中華郵政全球資訊網-郵務業務- 國際郵件橫式信封書寫方式   
+
+[![](https://www.post.gov.tw/post/FileCenter/post_ww2/post_docdata_att/att_content/7A611EA3-6B47-4C16-A1B5-8D389B431532/8AD4BE9D-C267-4204-B0EF-505E05CE33A9.jpg)]()
+
+
+---
+
+
+
+
+TODO see: <https://english.cool/english-address/>
