@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Swift] Questions that may be asked in the interview."
+title: "[Swift] Questions that may be asked in the interview. (Draft)"
 date: 2016-01-01 06:30:00 +0800
 categories: [Notes,Swift]
 tags: [SwiftUI]
@@ -20,7 +20,7 @@ numberToInt(number: Int) throws -> { ... }
 Ans:        
 - `struct`: `call by value`，存的是內容。實體在本地     
 - `class`: `call by reference`，存的是地址。實體在遠端  
-        
+
 ## 測試
 
 ![](/assets/img/post/swift-interview-struct-cat.png)
@@ -33,3 +33,5 @@ Ans:
 ![](/assets/img/post/swift-interview-calc-area-1.png)
 
 ![](/assets/img/post/swift-interview-calc-area-2.png)
+
+
