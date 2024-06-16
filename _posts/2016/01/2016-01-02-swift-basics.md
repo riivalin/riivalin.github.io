@@ -169,6 +169,152 @@ inputCell.resignationHandler = {
 }
 ```
 
+---
+
+# Others
+## 什麼狀況會造成reference迴圈?     
+
+A: 當a,b互相`delegate`對方時，就算a release掉 還是會存在在記憶體中，`必須兩人都
+release 掉才行`
+
+```
+a.delegate = b
+b.delegate = a
+```
+
+# 用 try? 解析 JSON (draft)
+
+```swift
+//try?才是真正我一開始想要的處理過程：當有 error 要抛出的時候，會進到 else 程式碼區塊中
+guard let jsonDict = try? NSJSONSerialization.JSONObjectWithData(data, options: .AllowFragments) as? [String : AnyObject],
+        // Notice the extra question mark here!
+        todoListDict = jsonDict?["todos"] as? [[String : AnyObject]] else {
+            throw Error.InvalidJSON
+        }
+```
+
+---
+
+# nothing (test)
+
+```
+[Swift4][Sqlite3]
+select
+sqlite3_prepare_v2 == SQLITE_OK
+sqlite3_bind_text == SQLITE_OK
+sqlite3_step == SQLITE_ROW
+sqlite3_finalize(statement)
+
+insert
+sqlite3_prepare_v2 == SQLITE_OK
+sqlite3_bind_text == SQLITE_OK
+sqlite3_step == SQLITE_DONE
+sqlite3_finalize(statement)
+
+使用sqlite3_exec方法可以執行一段sql語句
+sqlite3_exec ==  SQLITE_OK
+sqlite3_finalize(statement)
+```
+
+#### [Swift][PlaygroundPage][TableView]
+
+```swift
+class WWDCMasterViewController: UITableViewController {
+    
+    var reasons = ["WWDC is great", "the people are awesome", "I love lab works", "key of success"]
+    
+    override func viewDidLoad() {
+        title = "Reason I should attend WWDC18"
+        view.backgroundColor = .lightGray
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.reasons.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell: UITableViewCell! = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        if cell == nil {
+            cell = UITableViewCell(style: .subtitle , reuseIdentifier: "Cell")
+            cell.accessoryType = .disclosureIndicator
+        }
+        
+        let reason = reasons[indexPath.row]
+        cell.detailTextLabel?.text = "I want to attend because\(reason)"
+        cell.textLabel?.text = "Reason #\(indexPath.row + 1)"
+        
+        return cell
+    }
+}
+
+let master = WWDCMasterViewController()
+let nav = UINavigationController(rootViewController: master)
+PlaygroundPage.current.liveView = nav
+```
+
+
+```swift
+let nextButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = UIColor.white
+        button.setTitleColor(.red, for: .normal)
+        button.setTitle("Hi 您好", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(nextButtonClick), for: .touchUpInside)
+        return button
+    }()
+        view.addSubview(nextButton)
+        setupLayoutConstrains()
+ 
+    @objc func nextButtonClick(sender: UIButton) {
+        let button = sender
+        let text = button.titleLabel?.text
+        
+        let postListController = PostListController()
+        postListController.title = text
+        navigationController?.pushViewController(postListController, animated: true)
+    }
+
+    func setupLayoutConstrains() {
+        nextButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        nextButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
+        nextButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        nextButton.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+}
+
+//==============
+
+//Model
+class Article {
+  var title: String
+  var body: String
+  var date: NSDate
+  var thumbnail: NSURL
+  var saved: Bool
+}
+
+//Controller
+class ArticleViewController: UIViewController {
+  var bodyTextView: UITextView
+  var titleLabel: UILabel
+  var dateLabel: UILabel
+
+  var article: Article {
+    didSet {
+      titleLabel.text = article.title
+      bodyTextView.text = article.body
+
+      let dateFormatter = NSDateFormatter()
+      dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+      dateLabel.text = dateFormatter.stringFromDate(article.date)
+    }
+  }
+}
+```
+
+- TODO see: delegate、protocol、tagart-action、closure
+- CGRect 就是iOS 中，一個UIView 的「origin (開始位置)」與「size (大小)」的表示方式。 
+
 [Stanford CS193p - Developing Apps for iOS  (斯坦福(Stanford) CS193p)](https://cs193p.sites.stanford.edu)           
 [[Swift] Questions that may be asked in the interview.  by R](https://riivalin.github.io/posts/2015/12/swift-questions-that-may-be-asked-in-the-interview/)     
 [Swift is a lot like C#  by R](https://riivalin.github.io/posts/1999/02/swift-is-a-lot-like-c-sharp/)
