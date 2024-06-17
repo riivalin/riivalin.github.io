@@ -8,6 +8,9 @@ tags: [SwiftUI]
 
 Riva Notes (just draft)
 
+![](/assets/img/post/swift-mvvc.png)
+
+        
 # try try? try! 的使用時機
 
 ## try
