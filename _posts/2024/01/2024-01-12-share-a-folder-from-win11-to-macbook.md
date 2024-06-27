@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Share a folder from Win11 to Macbook
-date: 2024-04-06 05:23:00 +0800
+date: 2024-01-12 05:23:00 +0800
 categories: [Notes,Others]
 tags: [win11,mac]
 ---
