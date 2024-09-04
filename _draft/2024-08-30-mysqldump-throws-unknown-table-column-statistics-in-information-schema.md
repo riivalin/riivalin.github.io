@@ -33,6 +33,7 @@ mysqldump: Couldn't execute 'SELECT COLUMN_NAME, JSON_EXTRACT(HISTOGRAM, '$."num
 
 理論上，MySQL Workbench 8.0.13以上版本可以透過取消「使用列統計」，但8.0.14和8.0.15上選項該被錯誤地移除了：
 
+
 # 解決方法
 
 1.下載MYSQL相對應版本的程式 
