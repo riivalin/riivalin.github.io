@@ -2,7 +2,7 @@
 layout: post
 title: "[Jekyll] Windows 上安装 jekyll"
 date: 2024-08-05 06:23:00 +0800
-categories: [Notes,Jekyll,WDM,wdm-errors]
+categories: [Notes,Jekyll]
 tags: [jekyll,windows ruby-installer,]
 ---
 
