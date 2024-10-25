@@ -18,6 +18,7 @@ private async Task<bool> MyMethod()
     string methodName = method.Name;
     Logger.LogInformation("Entering method {method}", methodName);
     // ... etc. ...
+}
 ```
 
 運行應用程式後，我檢查了日誌，發現它的方法名稱不是“MyMethod”，而是“MoveNext”。
