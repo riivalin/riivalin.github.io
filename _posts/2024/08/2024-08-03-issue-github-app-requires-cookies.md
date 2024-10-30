@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Issue] Github app requires cookies"
-date: 2024-04-03 06:23:00 +0800
+date: 2024-08-03 06:23:00 +0800
 categories: [Notes,GitHub]
 tags: [issue, GitHub App]
 ---

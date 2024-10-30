@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 不要嘗試的自殺死法
-date: 2024-04-04 06:23:00 +0800
+date: 2024-08-19 06:23:00 +0800
 categories: [Amitabha,自殺]
 tags: [自殺]
 ---

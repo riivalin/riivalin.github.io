@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Jekyll] WDM errors on Win11"
-date: 2024-08-04 06:23:00 +0800
+date: 2024-08-11 06:23:00 +0800
 categories: [Notes,Jekyll,WDM,wdm-errors]
 tags: [jekyll,wmd-errors]
 ---

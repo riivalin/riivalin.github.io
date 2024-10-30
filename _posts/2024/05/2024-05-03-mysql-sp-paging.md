@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[MySql][SP] 分頁 - 使用 SQL_CALC_FOUND_ROWS、FOUND_ROWS()"
-date: 2024-08-03 06:23:00 +0800
+date: 2024-05-03 06:23:00 +0800
 categories: [Notes,MySql]
 tags: [MySql,分頁,paging,SQL_CALC_FOUND_ROWS,FOUND_ROWS, do-while]
 ---

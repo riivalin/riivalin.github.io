@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 取得實際方法名稱（適用於async非同步方法）
-date: 2024-08-31 06:23:00 +0800
+date: 2024-05-31 06:23:00 +0800
 categories: [Notes,C#]
 tags: [C#,async,method-name]
 ---
