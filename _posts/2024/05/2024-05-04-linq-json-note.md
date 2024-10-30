@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "[C#] LINQ & JSON Note"
-date: 2024-05-02 06:23:00 +0800
+date: 2024-05-04 06:23:00 +0800
 categories: [Notes,C#]
-tags: [C#,Dictionary,DeserializeObject,JObject.Parse, GetProperty]
+tags: [C#,json,Dictionary,DeserializeObject,JObject.Parse, GetProperty]
 ---
 
 Take notes for myself...
