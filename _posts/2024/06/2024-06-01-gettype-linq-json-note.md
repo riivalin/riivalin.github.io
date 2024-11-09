@@ -3,7 +3,7 @@ layout: post
 title: "[C#] GetType: Language switching (dynamically obtained in three ways)"
 date: 2024-06-01 06:23:00 +0800
 categories: [Notes,C#]
-tags: [C#,dynamic,動態,語系,GetType,TryGetValue,IDictionary<string, object>,Dictionary,GetProperty]
+tags: [C#,dynamic,動態,語系,GetType,TryGetValue,IDictionary,Dictionary,GetProperty]
 ---
 
 
