@@ -14,7 +14,8 @@ Workbench 8.038
 
 伺服器在 11.5 上面運行，在使用 MySQL Workbench 8.038 執行Ｄata Ｅxport 時發生錯誤，出現下面畫面：
 
-![](/assets/img/post/mysql-workbench-mysqldump-export-error.png)
+![](/assets/img/post/mysql-workbench-mysqldump-export-error.png){: width="50%" height="50%"}
+
 
 
 原因是WORKBENCH版本是8.038，而MYSQL版本是11.5.2，所以是2個版本不合的原因，無法匯出資料。
