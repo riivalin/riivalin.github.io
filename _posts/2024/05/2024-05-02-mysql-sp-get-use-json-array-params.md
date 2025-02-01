@@ -2,7 +2,7 @@
 layout: post
 title: "[MySql][SP] 傳入參數值使用 json array 方式帶入"
 date: 2024-05-02 06:23:00 +0800
-categories: [Notes,MySql]
+categories: [Notes,MySQL]
 tags: [mysql,json,sp,sp (json array - ids)]
 ---
 
