@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[MySQL Workbench][Data Export] Error Unknown table 'column_statistics' in information_schema"
+title: "[MySQL Workbench][Data Export] Error Unknown table /'column_statistics/' in information_schema"
 date: 2025-01-01 05:06:10 +0800
 categories: [Notes,MySQL,Workbench]
 tags: [issue,mysql,mysqldump,MySQL Workbench,MariaDB,Data Export,mysql-workbench,mysql-8.0,column_statistics]
