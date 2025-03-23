@@ -6,8 +6,8 @@ categories: [Amitabha,法師開示,宣化上人]
 tags: [宣化上人,五戒十善,戒律,因果,修行,持戒,布施,忍辱,精進,禪定,智慧,應無所住而生其心,因緣,戒律,因果相續,善緣,惡緣,貪瞋痴,戒律,業,業報,業力,重報輕受]
 ---
 
-# ◎ 不要錯過受五戒的機會
-# ◎ Don't miss the chance to receive the five precepts
+## ◎ 不要錯過受五戒的機會
+## ◎ Don't miss the chance to receive the five precepts
 
 受五戒、八戒的人，都叫「優婆塞」、「優婆夷」，受過菩薩戒，就叫「菩薩」。本來只有出家人受菩薩戒，但因菩薩是自利利人的，所以在家人也可以受菩薩戒。
 
@@ -45,29 +45,29 @@ Another person may say, “I cannot promise not to kill. Sometimes, unintentiona
 
 In China, if a person cannot afford to pay (it used to cost two hundred US dollars), then he won’t be able to receive the precepts. That money did not go toward the purchase of a sash and robe. The preceptees had to purchase those items by themselves. They could buy better or lesser quality sashes and robes, depending on what they had to spend. Just to receive the precepts, one had to make an offering to the teacher and his temple of at least two hundred dollars.     
 
-# ◎ 什麼叫「居士」？    
-# ◎ Who are the lay people? 
+## ◎ 什麼叫「居士」？    
+## ◎ Who are the lay people? 
 
 什麼叫「居士」？居士，就是居家之士，也就是在家相信佛法的人，守持五戒奉行十善的人就叫居士。      
 
 A layperson is someone who believes in Buddhism, upholds the five precepts, and practices the ten good deeds and who has not left the home-life.        
 
-# ◎  什麼叫「五戒」？
-# ◎ What are the five precepts?
+## ◎  什麼叫「五戒」？
+## ◎ What are the five precepts?
 
 就是殺、盜、婬、妄、酒，五種戒。現在有很多人受過五戒了，這都叫居士了。  
 
 They are the precepts against killing, stealing, engaging in sexual misconduct, lying, and taking intoxicants. People who have received the five precepts are called lay people.
 
-# ◎ 什麼叫「十善」？
-# ◎ What are the ten good deeds?
+## ◎ 什麼叫「十善」？
+## ◎ What are the ten good deeds?
 
 十善是十惡的反面。十惡是什麼呢？身有三惡--殺、盜、婬。意有三惡--貪、瞋、癡。口有四惡--綺語、妄言、惡口、兩舌，幾乎佔了十惡的一半。       
 
 The ten good deeds are just the opposite of ten bad deeds. The ten bad deeds are: killing, stealing, and sexual misconduct, which are done by the body; greed, hatred, and ignorance, which belong to the mind; and lying, loose speech, harsh speech, and divisive speech, which are committed by the mouth. Notice that the offenses of the mouth account for almost half of the ten.     
 
-# ◎ 什麼叫「綺語」？
-# ◎ What is loose speech？
+## ◎ 什麼叫「綺語」？
+## ◎ What is loose speech？
 
 所說的話非常不正當，有的說某某女人如何如何，或者說某家如何如何，綺語所說的話近於邪，不正當的話。        
 
@@ -86,15 +86,15 @@ Harsh speech refers to scolding people, which creates mouth karma.
 
 Divisive speech means being double-tongued in the sense that one back-bites and causes schisms. Such a person tells A about B and then B about A, trying to split them up. That is how divisive speech works.       
 
-# ◎ 十善是什麼？
-# ◎ What are the ten good deeds?
+## ◎ 十善是什麼？
+## ◎ What are the ten good deeds?
 
 十惡反過來就是十善。十善是什麼？就是不殺生、不偷盜、不邪婬、不貪、不瞋、不癡、不綺語、不妄語、不惡口、不兩舌。這個惡，你不做了，就是善。居士要奉行十善，所以要守五戒行十善。        
 
 Turn the ten evil deeds around and they become the ten good deeds. What are the ten good deeds? They are: not killing, not stealing, not indulging in sexual misconduct, not being greedy, not harboring hatred, not being deluded, not using loose speech, not lying, not saying harsh words, and not engaging in divisive speech. If you can refrain from doing all these bad things, then you will be wholesome. Lay people should practice these ten good deeds. All lay people must observe the five precepts and practice the ten good deeds.     
 
-# ◎ 必須向出家人求戒
-# ◎ Precepts should be requested from a left-home person--an ordained monk
+## ◎ 必須向出家人求戒
+## ◎ Precepts should be requested from a left-home person--an ordained monk
 
 持戒就是「諸惡不做，眾善奉行。」戒有多少種呢？有很多種。有五戒--凡是皈依三寶的人，想往前再進步就要受五戒。受五戒後，再往前進步就是受八戒。受八戒後，再受十戒，那就是沙彌（尼）了。      
 
@@ -105,8 +105,8 @@ To uphold precepts is just to do no evil but do all good. How many precepts are 
 
 Lay people who like to receive precepts must request them from an ordained monk. To transmit precepts means to give the precept substance to the preceptees. The person who transmits the precept substance to you must be a Bhikshu. In the Vinaya, a Bhikshuni is not permitted to transmit precepts.
 
-# ◎ 佛教徒要守持的根本戒律
-# ◎ The basic rules to be observed by Buddhists
+## ◎ 佛教徒要守持的根本戒律
+## ◎ The basic rules to be observed by Buddhists
 
 五戒是佛教徒最根本要守的戒律，就是不殺生，不偷盜，不邪婬，不妄語，不飲酒。      
 
@@ -146,8 +146,8 @@ A little wine doesn’t hurt. However, if people drink a lot they will become co
 If we were to elaborate, the five precepts encompass many principles. The main point is that when we make sure our hands do no killing, we must also be sure that our minds do not entertain any thoughts of killing. Then we are truly upholding the precept against killing. The same applies to the precept against stealing. When our hands are not stealing, our minds must also be free of thoughts of stealing. Regardless of the value of objects, if someone uses something or takes something stealthily without getting permission, then that is considered to be a violation of the precept against stealing.
 
 
-# ◎ 可不可以抽菸？
-# ◎ Is smoking allowed?
+## ◎ 可不可以抽菸？
+## ◎ Is smoking allowed?
 
 好像有一個人到外面抽香菸。回來我問他﹕ 「你抽了幾支香菸？」 「我沒有抽啊！」 「有人看見你抽了嘛！他來告訴我的。」 「噢！那，我就抽一個。」       
 
@@ -175,8 +175,8 @@ People who smoke will fall into the hell of Flames after they die. The hell of F
 
 Why didn’t Shakyamuni Buddha prohibit smoking but disallowed drinking? It is because during that time when the Buddha was in the world no one knew about smoking.
 
-# ◎ 受五戒的重要性
-# ◎ The importance of receiving the five precepts
+## ◎ 受五戒的重要性
+## ◎ The importance of receiving the five precepts
 
 要是能持五戒十善，就能升到天上。「五戒」──殺、盜、婬、妄、酒。      
 
@@ -225,8 +225,8 @@ What’s bad about being cut into fragments? It will be hard for the spiritual n
 Thus, it’s said, “Once the human body is lost, it will not be recovered in tens of thousands of eons.” If we lose the human body, we will have to pass through millions of eons and still may not be able to regain it.     
 
 
-# ◎ 受五戒的好處
-# ◎ The benefits of receiving the five precepts
+## ◎ 受五戒的好處
+## ◎ The benefits of receiving the five precepts
 
 今生不籠鳥，來生不坐監； 今生不釣魚，來生不討飯； 今生不殺生，來生無災難； 今生不偷盜，來生無搶案； 今生不邪婬，來生無婚變； 今生不妄語，來生無欺騙； 今生不醉酒，來生不狂亂。      
 
@@ -290,8 +290,8 @@ Someone told me that the four people from the Philippines did not come to leave 
 
 “Not drinking in this life, we will not lose sanity in future lives.” Why is it that people lose their sanity or have mental illness in this life? It is because they drank too much and took a lot of drugs in previous lives. Therefore, the insanity continues into this life. The circular flow of cause and effect is this way whether you believe it or not. Whether you believe it or not I will say it just the same.       
 
-# ◎ 學佛法沒有什麼利益？
-# ◎ Is there no benefit in studying the Buddhadharma?
+## ◎ 學佛法沒有什麼利益？
+## ◎ Is there no benefit in studying the Buddhadharma?
 
 「唉！我學習佛法，研究佛法，聽經聞法，已經有這麼長的時間了，我還沒有得到什麼利益！」你想得到什麼利益？其實這個利益對你是很大的，你卻不知道。什麼利益呢？        
 
@@ -311,8 +311,8 @@ When learning Buddhadharma, you do not get involved in sexual misconduct. so you
 
 If purifying the three karmas is not a benefit of learning Buddhism, then what is it? If you don’t study the Buddhadharma, you may kill, or steal, or get involved in arson. Then the police will catch you and put you behind the bars, perhaps for life. Wouldn’t that be miserable? Since you are studying Buddhadharma, you are free from all these problems. If that is not a benefit, what is it then? Therefore, we should not grow weary of studying the Buddhadharma.      
 
-# ◎ 不受戒是真「自由」嗎？
-# ◎ Will "not receiving precepts" give you true freedom?
+## ◎ 不受戒是真「自由」嗎？
+## ◎ Will "not receiving precepts" give you true freedom?
 
 有這個邪知邪見的人說﹕「不要受戒。你受戒做什麼？何必弄個『戒』來管著你？不受戒多自由呢！你何必要受戒呀？」你以為不受戒是自由，卻很容易墮地獄了。那真是「自由」，很容易就跑到地獄去了。       
 
@@ -330,8 +330,8 @@ On the other hand if you have received precepts your time span in the hells can 
 
 It’s good for you to receive the precepts. Let me say this to you, “Having taken the Buddha’s precepts, living beings enter the position of all Buddhas.” When living beings take the precepts of Buddhas, it’s the same as having entered the position of the Buddha. Therefore, don’t disparage the precepts or slander the Vinaya of the Buddha.         
 
-# ◎ 破戒怎麼辦？
-# ◎ What if I break the precepts?
+## ◎ 破戒怎麼辦？
+## ◎ What if I break the precepts?
 
 「戒為成佛之母」，想要成佛就要持戒，不能犯戒的。犯戒就好像船有窟窿，你說這個船是不是要沉到大海裡去？所以犯戒就好像船沉到大海一樣，所以不是受了戒不持戒。你受了戒，就要守著戒；你不守著戒，那就是漏了。你這一漏，就成了有漏，不是無漏了。無漏就是你不破戒；你破了戒，就是漏。漏了怎麼辦？就要補。怎麼補？就要做功德，用錢或是用力量來做功德，在三寶的面前立功德贖罪，你立功就沒有罪了。      
 
@@ -340,8 +340,8 @@ It’s good for you to receive the precepts. Let me say this to you, “Having t
 Precepts are the mother of Buddhahood. If you want to become a Buddha, you must uphold precepts and not break them. Having transgressed the precepts is just like drifting in the ocean in a leaking boat. Won't the boat sink? Violating the precepts is just like causing the boat to sink in the ocean. When you have received the precepts, you must uphold them. If you don’t, it’s the same as having leaks. When you leak, you are not free of outflows. Having no outflows comes when we do not break the precepts; when you break the precepts, you have outflows. What should you do if that happens? You must mend the precepts. How? You may create merit and virtue either by making monetary donations or by doing volunteer work. By redeeming your offenses and establishing merit before the Triple Jewel, you will wipe out your offenses.        
 
 
-# ◎ 老修行的故事
-# ◎ The story of an old cultivator
+## ◎ 老修行的故事
+## ◎ The story of an old cultivator
 
 
 以前有個老修行，是在家人不是出家人。他受了五戒，另外又受了一個「食不語」的戒。可是他把五戒都犯了，就剩這個「食不語」的戒未犯。護這條戒的戒神就希望他快點犯這條戒，祂也好走了，不保護他。但是這個人始終也不犯這條戒，吃飯的時候，他總不講話。以後這個戒神就給他托夢﹕「你什麼戒都犯了，為什麼吃飯這個戒你不犯呢？你快點犯，我好離開你了。」       
@@ -362,8 +362,8 @@ The old cultivator thought to himself, “I only hold this one rule of eating in
 Therefore, receiving precepts is a very important matter in Buddhism.
 
 
-# ◎ 文殊菩薩的寶珠	
-# ◎ ManjusHri Bodhisattva's Precious Pearl
+## ◎ 文殊菩薩的寶珠	
+## ◎ ManjusHri Bodhisattva's Precious Pearl
 
 文殊師利這位菩薩修菩薩行時不打妄語，也不殺生也不偷盜。總而言之，他謹守戒律。由什麼證明他守戒律而不偷盜呢？他有一次對其他的菩薩講：「我從一發心修行就持不盜戒，所以現在我所有的東西就沒有人偷盜；不單沒有人偷盜，我就是把最值錢的東西放在地上，也沒有人會把它拿去。」
 
@@ -382,8 +382,8 @@ Some Bodhisattvas didn’t believe him and said, “We would like to test your c
 　	
 Manjushri Bodhisattva agreed to try the experiment. Thereupon, he put his most precious pearl--all Bodhisattvas possess many precious and valuable things--at the city gate. Many people passed through the gate in the next three days and sure enough, no one picked it up. The other Bodhisattvas then knew that Manjushri Bodhisattva had truly upheld the precept against stealing.                
 
-# ◎ 不要做自己的辯護律師
-# ◎ Don't act as your own defense attorney
+## ◎ 不要做自己的辯護律師
+## ◎ Don't act as your own defense attorney
 
 一樣的佛法，每一個人的講法不同，修行法不同，每一個人的見解不同，所以有很多種類的分別，又有很多種類的看法。
 
@@ -438,8 +438,8 @@ We must put an end to greed, hatred and delusion. Being free from greed, we will
 
 
 
-# ◎ 什麼是淨戒？	
-# ◎ What are PURE precepts?
+## ◎ 什麼是淨戒？	
+## ◎ What are PURE precepts?
 
 各位要注意這個「淨」字。淨，是什麼意思呢？就是不染污，就是清淨，絲毫的染污也沒有，這種淨就是一念不生謂之淨，淨念。
 
