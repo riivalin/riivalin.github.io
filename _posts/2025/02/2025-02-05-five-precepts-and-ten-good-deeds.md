@@ -316,9 +316,9 @@ tags: [聖嚴法師,戒律學綱要,五戒十善,戒律,因果,修行,持戒,布
 
 五戒配十善的情形，大致可以用下頁兩表說明：
 
-![](/assets/img/post/amitabhas_five_precepts_1.svg)
+![](/assets/img/post/amitabhas_five_precepts_1.png)
 
-![](/assets/img/post/amitabhas_five_precepts_2.svg)
+![](/assets/img/post/amitabhas_five_precepts_2.png)
 
 以上兩表，需要稍加說明：
 
