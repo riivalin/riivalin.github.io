@@ -7,7 +7,7 @@
 !.commitlintrc.json
 !.versionrc.json
 !.stylelintrc.json
-
+bundle exec jekyll serve --limit_posts 1 --no-watch
 # bundler cache
 _site
 vendor
