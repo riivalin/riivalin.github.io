@@ -185,6 +185,8 @@ compress_html:
     envs: [development]
 
 exclude:
+  - .jekyll-cache
+  - vendor
   - '*.gem'
   - '*.gemspec'
   - tools
