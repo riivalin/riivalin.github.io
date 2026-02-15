@@ -2,7 +2,7 @@
 layout: post
 title: "你有道，自然就有護法來護持"
 date: 2026-01-01 05:27:00 +0800
-categories: [居士文章]
+categories: [Amitabha,居士文章]
 tags: [因果定律,業報,業障]
 ---
 
