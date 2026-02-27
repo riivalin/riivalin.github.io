@@ -185,17 +185,34 @@ compress_html:
     envs: [development]
 
 exclude:
-  - .jekyll-cache
+  # 依賴與套件
+  - node_modules
   - vendor
-  - '*.gem'
-  - '*.gemspec'
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  
+  # 快取與暫存
+  - .jekyll-cache
+  - .sass-cache
+  - .jekyll-metadata
+  - tmp
+  
+  # 工具與設定檔
+  - gulpfile.js
+  - gruntfile.js
+  - bower_components
   - tools
+  
+  # 文件與雜項
   - README.md
   - CHANGELOG.md
   - LICENSE
-  - gulpfile.js
-  - node_modules
-  - package*.json
+  - "*.gem"
+  - "*.gemspec"
+  - .git
+  - .gitignore
 
 jekyll-archives:
   enabled: [categories, tags]

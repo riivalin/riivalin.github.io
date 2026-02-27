@@ -3,7 +3,7 @@ layout: post
 title: "賭博有什麼錯？"
 date: 2026-02-27 05:27:00 +0800
 categories: [Amitabha,因果報應]
-tags: [賭博,零和博弈,zero-sum game,零和遊戲,博弈,因果,因果定律,業報,業障]
+tags: [賭博,零和博弈,"zero-sum game",零和遊戲,博弈,因果,因果定律,業報,業障]
 ---
 
 賭博有什麼錯？(吉祥尊者)
